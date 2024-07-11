@@ -33,7 +33,7 @@ class modelTraining():
     def initiateModelTraining(self,df):
         try:
             mlflow.set_tracking_uri(
-                    "https://dagshub.com/sanket-profile/recommendationSystem.mlflow"
+                    "https://dagshub.com/sanket-profile/recommendationSys.mlflow"
                     )
             mlflow.set_experiment("Testing Recommendations")
             mlflow.autolog()
