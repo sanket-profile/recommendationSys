@@ -1,0 +1,143 @@
+[ 2024-07-11 01:49:20,464  97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[ 2024-07-11 01:49:20,464  97 werkzeug - INFO - [33mPress CTRL+C to quit[0m]
+[ 2024-07-11 01:49:20,464  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-11 01:49:21,542  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-11 01:49:21,554  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-11 01:49:28,662  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:49:28] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:49:30,794  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 01:49:30,804  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                description
+0  [best, horror, movie, ]]
+[ 2024-07-11 01:49:30,804  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 01:49:31,125  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 01:49:31,126  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 01:49:31,138  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 01:49:31,138  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 01:49:31,154  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 01:49:31,154  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 01:49:31,157  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 2.027264    2.0117953  -0.3861851  -0.07046741 -3.154816    0.21773513
+  -2.897205    2.4296694   1.3613634  -0.23045698  0.7710775   1.2024027
+  -1.7443342   0.2059307  -1.5795693  -0.60048884  1.8849895   0.68276197
+   1.8454727   0.31803447 -1.7091546   2.3558955   1.3975507   1.9494771
+   1.0485176   0.44453016 -1.5661849   0.22646233  0.47524616 -0.30178115
+   0.65425324  1.197593   -1.518076   -1.4781978  -0.04801582 -0.1534584
+   0.08482478  0.52480006 -0.9279617  -0.22143926 -0.59130514  0.01559465
+  -1.1058952   0.21716356 -0.99938667 -0.5855344   0.35896465  0.61682254
+  -1.0309865  -0.2326194   0.62279147  0.85003406  1.1666225  -1.0110298
+   0.44689882  0.12749211 -0.09379403 -0.30479476 -0.47749513  0.01389807
+  -0.7838287   0.2805114   0.1913101   0.3763462   0.19950068  0.7957513
+   0.8906927  -0.7694539  -0.5862705  -0.6532802   0.26078594  2.2234392
+  -0.7732745   0.2701764   0.5533119   1.4060212   1.3499604  -0.7698169
+   0.33566064 -0.85083055  0.8977505  -0.9337725   1.0091462  -1.3529981
+  -0.43350643 -0.13663653  0.4582456  -0.7205931   0.83006275  1.3165464
+   0.37158248  1.6596783   0.8677741   0.7084885  -0.9944784  -1.0849168
+   0.10550123  0.65863544 -0.01227171  0.03258549]]]
+[ 2024-07-11 01:49:31,157  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 01:49:58,868  48 COMPONENTS - INFO - Unnamed: 0.2                                                52609
+Unnamed: 0.1                                                52609
+Unnamed: 0                                                  54978
+title                                                     Mutants
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt8078958/
+poster_url      https://www.imdb.com/title/tt8078958/mediaview...
+storyline       Proportionally Sized Horror Film.Proportionall...
+Name: 52609, dtype: object]
+[ 2024-07-11 01:49:58,869  48 COMPONENTS - INFO - Unnamed: 0.2                                               178305
+Unnamed: 0.1                                               178305
+Unnamed: 0                                                 198922
+title                                            Camp Blood Kills
+genres                                            Horror Thriller
+videos                                                         []
+url                        https://www.imdb.com/title/tt10275180/
+poster_url      https://www.imdb.com/title/tt10275180/mediavie...
+storyline       A compilation of some of the best kill scenes ...
+Name: 178305, dtype: object]
+[ 2024-07-11 01:49:58,869  48 COMPONENTS - INFO - Unnamed: 0.2                                      400
+Unnamed: 0.1                                      400
+Unnamed: 0                                        400
+title                                 La Femme Vampir
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt1510273/
+poster_url                                           
+storyline                                         NaN
+Name: 400, dtype: object]
+[ 2024-07-11 01:49:58,869  48 COMPONENTS - INFO - Unnamed: 0.2                                                  445
+Unnamed: 0.1                                                  445
+Unnamed: 0                                                    445
+title                             Zombie Beast of the Confederacy
+genres                                                     Horror
+videos                                                         []
+url                        https://www.imdb.com/title/tt16107862/
+poster_url      https://www.imdb.com/title/tt16107862/mediavie...
+storyline                                                     NaN
+Name: 445, dtype: object]
+[ 2024-07-11 01:49:58,869  48 COMPONENTS - INFO - Unnamed: 0.2                                                 1877
+Unnamed: 0.1                                                 1877
+Unnamed: 0                                                   1880
+title                                                           2
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt1144456/
+poster_url      https://www.imdb.com/title/tt1144456/mediaview...
+storyline                                                     NaN
+Name: 1877, dtype: object]
+[ 2024-07-11 01:49:58,870  48 COMPONENTS - INFO - Unnamed: 0.2                                     1878
+Unnamed: 0.1                                     1878
+Unnamed: 0                                       1881
+title                                   Final Curtain
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt1808130/
+poster_url                                           
+storyline                                         NaN
+Name: 1878, dtype: object]
+[ 2024-07-11 01:49:58,870  48 COMPONENTS - INFO - Unnamed: 0.2                                                 1948
+Unnamed: 0.1                                                 1948
+Unnamed: 0                                                   1952
+title                                                Humanhunters
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt8177940/
+poster_url      https://www.imdb.com/title/tt8177940/mediaview...
+storyline                                                     NaN
+Name: 1948, dtype: object]
+[ 2024-07-11 01:49:58,870  48 COMPONENTS - INFO - Unnamed: 0.2                                     1977
+Unnamed: 0.1                                     1977
+Unnamed: 0                                       1981
+title                                A Pound of Flesh
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt0393608/
+poster_url                                           
+storyline                                         NaN
+Name: 1977, dtype: object]
+[ 2024-07-11 01:49:58,870  48 COMPONENTS - INFO - Unnamed: 0.2                                                 2465
+Unnamed: 0.1                                                 2465
+Unnamed: 0                                                   2472
+title                                                 No. 1 Villa
+genres                                                     Horror
+videos                                                         []
+url                        https://www.imdb.com/title/tt10500444/
+poster_url      https://www.imdb.com/title/tt10500444/mediavie...
+storyline                                                     NaN
+Name: 2465, dtype: object]
+[ 2024-07-11 01:49:58,870  48 COMPONENTS - INFO - Unnamed: 0.2                                                 3671
+Unnamed: 0.1                                                 3671
+Unnamed: 0                                                   3687
+title                                                      Jagoda
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt3605010/
+poster_url      https://www.imdb.com/title/tt3605010/mediaview...
+storyline                                                     NaN
+Name: 3671, dtype: object]
+[ 2024-07-11 01:49:58,901  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Mutants', 'poster_url': 'https://www.imdb.com/title/tt8078958/mediaviewer/rm4091106560', 'videos': '', 'genres': 'Horror', 'storyline': 'Proportionally Sized Horror Film.Proportionally Sized Horror Film.'}, 1: {'title': 'Camp Blood Kills', 'poster_url': 'https://www.imdb.com/title/tt10275180/mediaviewer/rm2992858112', 'videos': '', 'genres': 'Horror Thriller', 'storyline': 'A compilation of some of the best kill scenes from the long running indie horror movie franchise.A compilation of some of the best kill scenes from the long running indie horror movie franchise.'}, 2: {'title': 'La Femme Vampir', 'poster_url': '', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 3: {'title': 'Zombie Beast of the Confederacy', 'poster_url': 'https://www.imdb.com/title/tt16107862/mediaviewer/rm235792385', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 4: {'title': '2', 'poster_url': 'https://www.imdb.com/title/tt1144456/mediaviewer/rm2097379072', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 5: {'title': 'Final Curtain', 'poster_url': '', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 6: {'title': 'Humanhunters', 'poster_url': 'https://www.imdb.com/title/tt8177940/mediaviewer/rm786515968', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 7: {'title': 'A Pound of Flesh', 'poster_url': '', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 8: {'title': 'No. 1 Villa', 'poster_url': 'https://www.imdb.com/title/tt10500444/mediaviewer/rm2320407809', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 9: {'title': 'Jagoda', 'poster_url': 'https://www.imdb.com/title/tt3605010/mediaviewer/rm3406110464', 'videos': '', 'genres': 'Horror', 'storyline': nan}}]
+[ 2024-07-11 01:49:59,077  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:49:59] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:50:52,582  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/recommendationSystem/application.py', reloading]
+[ 2024-07-11 01:50:52,820  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-11 01:54:51,996  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-11 02:55:23,573  97 werkzeug - INFO -  * Restarting with stat]

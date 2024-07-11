@@ -1,0 +1,1723 @@
+[ 2024-07-11 03:30:31,094  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-11 03:30:31,104  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-11 03:30:54,002  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 03:30:54,012  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :              description
+0  [best, horror, movie]]
+[ 2024-07-11 03:30:54,012  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 03:30:54,358  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 03:30:54,358  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 03:30:54,373  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 03:30:54,373  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 03:30:54,389  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 03:30:54,389  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 03:30:54,393  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 2.3648448   2.9859223  -0.33661917 -0.3214475  -3.395247   -0.40737838
+  -2.7757568   4.21159     2.1072283   0.40974557  1.3849691   1.601675
+  -2.2536047   0.15033722 -2.1352286  -0.6678771   2.4661038   0.7716798
+   2.665637    0.19274388 -2.3633525   2.9658055   2.0834174   2.5689497
+   1.5917097   0.4707923  -2.0546787   0.2730468   0.6268582  -0.45689094
+   0.88299924  1.5023202  -1.9306562  -2.0028718  -0.17080975 -0.25250807
+   0.10337622  0.66419184 -1.301773   -0.30280796 -0.91138965  0.03351484
+  -1.4844534   0.24651481 -1.2937398  -0.80157256  0.47459793  0.7990143
+  -1.3832681  -0.3497847   0.7787443   1.1201819   1.5460604  -1.3619379
+   0.6044199   0.18168211 -0.09739715 -0.42656425 -0.61971587  0.05170067
+  -1.0143118   0.39282236  0.22813961  0.5118448   0.30240676  1.1027831
+   1.219538   -1.0324383  -0.75334126 -0.8791374   0.35598075  2.9650729
+  -1.0333637   0.3833582   0.7060369   1.8611503   1.8022711  -1.049882
+   0.42781433 -1.1255413   1.1965531  -1.2650832   1.3440632  -1.7998321
+  -0.58079934 -0.17326713  0.60949284 -0.9508713   1.1021932   1.7574683
+   0.4835371   2.2091188   1.1568332   0.9478915  -1.320989   -1.4501883
+   0.16567254  0.88529503 -0.04658177  0.05179779]]]
+[ 2024-07-11 03:30:54,393  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 03:31:22,116  84 COMPONENTS - INFO - Unnamed: 0.2                                                52609
+Unnamed: 0.1                                                52609
+Unnamed: 0                                                  54978
+title                                                     Mutants
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt8078958/
+poster_url      https://www.imdb.com/title/tt8078958/mediaview...
+storyline       Proportionally Sized Horror Film.Proportionall...
+description     ['horror', 'proportionally', 'sized', 'filmpro...
+Name: 52609, dtype: object]
+[ 2024-07-11 03:31:23,479  84 COMPONENTS - INFO - Unnamed: 0.2                                               178305
+Unnamed: 0.1                                               178305
+Unnamed: 0                                                 198922
+title                                            Camp Blood Kills
+genres                                            Horror Thriller
+videos                                                         []
+url                        https://www.imdb.com/title/tt10275180/
+poster_url      https://www.imdb.com/title/tt10275180/mediavie...
+storyline       A compilation of some of the best kill scenes ...
+description     ['horror', 'thriller', 'compilation', 'best', ...
+Name: 178305, dtype: object]
+[ 2024-07-11 03:31:24,795  84 COMPONENTS - INFO - Unnamed: 0.2                                      400
+Unnamed: 0.1                                      400
+Unnamed: 0                                        400
+title                                 La Femme Vampir
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt1510273/
+poster_url                                           
+storyline                                         NaN
+description                            ['horror', '']
+Name: 400, dtype: object]
+[ 2024-07-11 03:31:24,796  84 COMPONENTS - INFO - Unnamed: 0.2                                                  445
+Unnamed: 0.1                                                  445
+Unnamed: 0                                                    445
+title                             Zombie Beast of the Confederacy
+genres                                                     Horror
+videos                                                         []
+url                        https://www.imdb.com/title/tt16107862/
+poster_url      https://www.imdb.com/title/tt16107862/mediavie...
+storyline                                                     NaN
+description                                        ['horror', '']
+Name: 445, dtype: object]
+[ 2024-07-11 03:31:25,840  84 COMPONENTS - INFO - Unnamed: 0.2                                                 1877
+Unnamed: 0.1                                                 1877
+Unnamed: 0                                                   1880
+title                                                           2
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt1144456/
+poster_url      https://www.imdb.com/title/tt1144456/mediaview...
+storyline                                                     NaN
+description                                        ['horror', '']
+Name: 1877, dtype: object]
+[ 2024-07-11 03:31:26,980  84 COMPONENTS - INFO - Unnamed: 0.2                                     1878
+Unnamed: 0.1                                     1878
+Unnamed: 0                                       1881
+title                                   Final Curtain
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt1808130/
+poster_url                                           
+storyline                                         NaN
+description                            ['horror', '']
+Name: 1878, dtype: object]
+[ 2024-07-11 03:31:26,981  84 COMPONENTS - INFO - Unnamed: 0.2                                                 1948
+Unnamed: 0.1                                                 1948
+Unnamed: 0                                                   1952
+title                                                Humanhunters
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt8177940/
+poster_url      https://www.imdb.com/title/tt8177940/mediaview...
+storyline                                                     NaN
+description                                        ['horror', '']
+Name: 1948, dtype: object]
+[ 2024-07-11 03:31:28,223  84 COMPONENTS - INFO - Unnamed: 0.2                                     1977
+Unnamed: 0.1                                     1977
+Unnamed: 0                                       1981
+title                                A Pound of Flesh
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt0393608/
+poster_url                                           
+storyline                                         NaN
+description                            ['horror', '']
+Name: 1977, dtype: object]
+[ 2024-07-11 03:31:28,224  84 COMPONENTS - INFO - Unnamed: 0.2                                                 2465
+Unnamed: 0.1                                                 2465
+Unnamed: 0                                                   2472
+title                                                 No. 1 Villa
+genres                                                     Horror
+videos                                                         []
+url                        https://www.imdb.com/title/tt10500444/
+poster_url      https://www.imdb.com/title/tt10500444/mediavie...
+storyline                                                     NaN
+description                                        ['horror', '']
+Name: 2465, dtype: object]
+[ 2024-07-11 03:31:30,046  84 COMPONENTS - INFO - Unnamed: 0.2                                                 3671
+Unnamed: 0.1                                                 3671
+Unnamed: 0                                                   3687
+title                                                      Jagoda
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt3605010/
+poster_url      https://www.imdb.com/title/tt3605010/mediaview...
+storyline                                                     NaN
+description                                        ['horror', '']
+Name: 3671, dtype: object]
+[ 2024-07-11 03:31:31,477  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Mutants', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNWFlN2QzMmYtMDg4MS00OTViLTg5NmMtMjg1MzY4NDVkZDYyXkEyXkFqcGdeQXVyMzUyMzA1NDE@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': 'Proportionally Sized Horror Film.Proportionally Sized Horror Film.'}, 1: {'title': 'Camp Blood Kills', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMTc5NTA3MDgtOWQ0OC00MmQ4LTk1NWYtYjdlOWVhODk5MTAzXkEyXkFqcGdeQXVyMjY5MDIzMjQ@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror Thriller', 'storyline': 'A compilation of some of the best kill scenes from the long running indie horror movie franchise.A compilation of some of the best kill scenes from the long running indie horror movie franchise.'}, 2: {'title': 'La Femme Vampir', 'poster_url': '', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}, 3: {'title': 'Zombie Beast of the Confederacy', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYTA1ZjA2NTktMTFhZi00OWNmLWIwYjQtODgwZGI0N2Q1ZDE2XkEyXkFqcGdeQXVyOTE5MTQ5OQ@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}, 4: {'title': '2', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BODRkODA1MGUtODJjNS00NmNjLWExMmMtYzM3Nzk0ZTk0YTg4XkEyXkFqcGdeQXVyNjU1MjgyNDk@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}, 5: {'title': 'Final Curtain', 'poster_url': '', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}, 6: {'title': 'Humanhunters', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOTJkZjFhNmItOWMwOS00NzU0LWEyOWItNWI1M2FjMjg5OWFhXkEyXkFqcGdeQXVyNzczOTQ2ODM@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}, 7: {'title': 'A Pound of Flesh', 'poster_url': '', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}, 8: {'title': 'No. 1 Villa', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYTc2OWRkZGMtNDA0Ny00ZWNiLThiMjgtMDVkZDljZTFlNzY3XkEyXkFqcGdeQXVyNTM0MDc1ODE@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}, 9: {'title': 'Jagoda', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BY2Y3NzgwYjMtNWE5MC00MTczLTg1MDktNzkxNTVjNTBlM2EwXkEyXkFqcGdeQXVyMTE4OTEwMjM@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}}]
+[ 2024-07-11 03:31:31,658  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:31:31] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 03:31:49,647  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 03:31:49,657  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                        description
+0  [best, comedy, thriller, movie]]
+[ 2024-07-11 03:31:49,658  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 03:31:49,840  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 03:31:49,840  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 03:31:49,842  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 03:31:49,842  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 03:31:49,844  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 03:31:49,844  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 03:31:49,845  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 4.542228    5.3305964   0.76305586 -2.3848414  -0.65925944 -0.06829308
+  -2.0616944   3.048444    2.0408525   0.64661163  1.3885565  -2.1493442
+  -2.3654675   2.6116352  -1.2978818   1.6705278   2.0789294   0.79749393
+  -0.15080257 -1.3331467  -1.6332043  -0.43169352  0.823289   -0.20055808
+  -1.596574   -0.04214517 -1.2630711  -1.1849735  -0.16919535  0.8986609
+   1.7293378   1.1561394  -0.4994902  -1.7983338  -0.46737206 -0.59389305
+  -0.16181816  0.44564214 -1.3105904  -0.02620291 -0.5568496   0.2221244
+  -0.7417786   0.5066161  -0.86751336 -1.0020535   0.72297084  0.8976856
+  -0.6558992  -0.34285033  0.61722136  0.9382838   1.0145762  -1.2027819
+   0.05538324  0.13004114  0.06500121 -0.38010722 -0.46760824  0.10380846
+  -0.70004976  0.4596751  -0.11455664  0.4483621   0.08622607  1.1814722
+   0.74414223 -0.84930104 -0.6559571  -0.726204    0.38320014  2.2091315
+  -0.8700481   0.30202016  0.49251565  1.4126036   1.4750409  -0.7716844
+   0.2780644  -0.84109205  0.9124673  -0.9460999   1.1270242  -1.3399715
+  -0.4453922  -0.1769439   0.4589636  -0.64263475  0.7621366   1.3650837
+   0.3295736   1.6820703   0.9151998   0.60652107 -0.9348147  -1.1284333
+   0.13032751  0.6826577   0.0871774   0.03260644]]]
+[ 2024-07-11 03:31:49,845  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 03:32:17,082  84 COMPONENTS - INFO - Unnamed: 0.2                                                17374
+Unnamed: 0.1                                                17374
+Unnamed: 0                                                  17697
+title                                          It'll Be All Right
+genres                                            Comedy Thriller
+videos                                                         []
+url                        https://www.imdb.com/title/tt12435394/
+poster_url      https://www.imdb.com/title/tt12435394/mediavie...
+storyline                                                     NaN
+description                            ['comedy', 'thriller', '']
+Name: 17374, dtype: object]
+[ 2024-07-11 03:32:18,484  84 COMPONENTS - INFO - Unnamed: 0.2                                    42382
+Unnamed: 0.1                                    42382
+Unnamed: 0                                      43960
+title                        Our Man in the Caribbean
+genres                                Comedy Thriller
+videos                                             []
+url             https://www.imdb.com/title/tt0313440/
+poster_url                                           
+storyline                                         NaN
+description                ['comedy', 'thriller', '']
+Name: 42382, dtype: object]
+[ 2024-07-11 03:32:18,485  84 COMPONENTS - INFO - Unnamed: 0.2                                    45754
+Unnamed: 0.1                                    45754
+Unnamed: 0                                      47583
+title                   I'd Rather Be in Philadelphia
+genres                                Comedy Thriller
+videos                                             []
+url             https://www.imdb.com/title/tt0357774/
+poster_url                                           
+storyline                                         NaN
+description                ['comedy', 'thriller', '']
+Name: 45754, dtype: object]
+[ 2024-07-11 03:32:18,486  84 COMPONENTS - INFO - Unnamed: 0.2                                                61187
+Unnamed: 0.1                                                61187
+Unnamed: 0                                                  64355
+title                                               Midnight Walk
+genres                                            Comedy Thriller
+videos                                                         []
+url                        https://www.imdb.com/title/tt10621066/
+poster_url      https://www.imdb.com/title/tt10621066/mediavie...
+storyline                                                     NaN
+description                            ['comedy', 'thriller', '']
+Name: 61187, dtype: object]
+[ 2024-07-11 03:32:20,491  84 COMPONENTS - INFO - Unnamed: 0.2                                    112376
+Unnamed: 0.1                                    112376
+Unnamed: 0                                      121844
+title                                       Going Live
+genres                                 Comedy Thriller
+videos                                              []
+url             https://www.imdb.com/title/tt10984300/
+poster_url                                            
+storyline                                          NaN
+description                 ['comedy', 'thriller', '']
+Name: 112376, dtype: object]
+[ 2024-07-11 03:32:20,491  84 COMPONENTS - INFO - Unnamed: 0.2                                               159995
+Unnamed: 0.1                                               159995
+Unnamed: 0                                                 177324
+title                                               Wait a Minute
+genres                                            Comedy Thriller
+videos                                                         []
+url                         https://www.imdb.com/title/tt0373432/
+poster_url      https://www.imdb.com/title/tt0373432/mediaview...
+storyline                                                     NaN
+description                            ['comedy', 'thriller', '']
+Name: 159995, dtype: object]
+[ 2024-07-11 03:32:22,662  84 COMPONENTS - INFO - Unnamed: 0.2                                    75132
+Unnamed: 0.1                                    75132
+Unnamed: 0                                      79707
+title                           For Services Rendered
+genres                          Adult Comedy Thriller
+videos                                             []
+url             https://www.imdb.com/title/tt0137551/
+poster_url                                           
+storyline                                         NaN
+description       ['adult', 'comedy', 'thriller', '']
+Name: 75132, dtype: object]
+[ 2024-07-11 03:32:22,663  84 COMPONENTS - INFO - Unnamed: 0.2                                    55316
+Unnamed: 0.1                                    55316
+Unnamed: 0                                      57938
+title                         Da nao Guang Chang Long
+genres                        Comedy Musical Thriller
+videos                                             []
+url             https://www.imdb.com/title/tt0231425/
+poster_url                                           
+storyline                                         NaN
+description     ['comedy', 'musical', 'thriller', '']
+Name: 55316, dtype: object]
+[ 2024-07-11 03:32:22,664  84 COMPONENTS - INFO - Unnamed: 0.2                                   115706
+Unnamed: 0.1                                   115706
+Unnamed: 0                                     125695
+title                                   Viva Ranchera
+genres                        Comedy Musical Thriller
+videos                                             []
+url             https://www.imdb.com/title/tt1152374/
+poster_url                                           
+storyline                                         NaN
+description     ['comedy', 'musical', 'thriller', '']
+Name: 115706, dtype: object]
+[ 2024-07-11 03:32:22,664  84 COMPONENTS - INFO - Unnamed: 0.2                                               215002
+Unnamed: 0.1                                               215002
+Unnamed: 0                                                 243116
+title                                                Dailao yugui
+genres                                    Comedy Musical Thriller
+videos                                                         []
+url                         https://www.imdb.com/title/tt0230115/
+poster_url      https://www.imdb.com/title/tt0230115/mediaview...
+storyline                                                     NaN
+description                 ['comedy', 'musical', 'thriller', '']
+Name: 215002, dtype: object]
+[ 2024-07-11 03:32:24,159  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': "It'll Be All Right", 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNzM0N2JhMzctYjJkOS00OGExLWJjYjMtZmQzM2Q2ZmNjMTM2XkEyXkFqcGdeQXVyMjY4NTM1MDk@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy Thriller', 'storyline': "['comedy', 'thriller', '']"}, 1: {'title': 'Our Man in the Caribbean', 'poster_url': '', 'videos': '', 'genres': 'Comedy Thriller', 'storyline': "['comedy', 'thriller', '']"}, 2: {'title': "I'd Rather Be in Philadelphia", 'poster_url': '', 'videos': '', 'genres': 'Comedy Thriller', 'storyline': "['comedy', 'thriller', '']"}, 3: {'title': 'Midnight Walk', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMTgxZGQ2Y2QtMGU3YS00MTk2LWEyMWMtYmFiMDcwZTYzNzJjXkEyXkFqcGdeQXVyNzE4NjMzMjg@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy Thriller', 'storyline': "['comedy', 'thriller', '']"}, 4: {'title': 'Going Live', 'poster_url': '', 'videos': '', 'genres': 'Comedy Thriller', 'storyline': "['comedy', 'thriller', '']"}, 5: {'title': 'Wait a Minute', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMDY0ZDQwMjYtYzc4YS00NDMxLTljOGQtYzkzNDZlNDlmNDExXkEyXkFqcGdeQXVyMTU2NDIyOQ@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy Thriller', 'storyline': "['comedy', 'thriller', '']"}, 6: {'title': 'For Services Rendered', 'poster_url': '', 'videos': '', 'genres': 'Adult Comedy Thriller', 'storyline': "['adult', 'comedy', 'thriller', '']"}, 7: {'title': 'Da nao Guang Chang Long', 'poster_url': '', 'videos': '', 'genres': 'Comedy Musical Thriller', 'storyline': "['comedy', 'musical', 'thriller', '']"}, 8: {'title': 'Viva Ranchera', 'poster_url': '', 'videos': '', 'genres': 'Comedy Musical Thriller', 'storyline': "['comedy', 'musical', 'thriller', '']"}, 9: {'title': 'Dailao yugui', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMGU4Yjg0NWYtNzc2YS00NzI2LTlkMmEtMjMxZTk1NTJjMTBiXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy Musical Thriller', 'storyline': "['comedy', 'musical', 'thriller', '']"}}]
+[ 2024-07-11 03:32:24,281  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:32:24] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 03:32:51,198  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 03:32:51,203  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :              description
+0  [best, comedy, movie]]
+[ 2024-07-11 03:32:51,203  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 03:32:51,376  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 03:32:51,376  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 03:32:51,377  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 03:32:51,377  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 03:32:51,378  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 03:32:51,378  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 03:32:51,391  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 4.856505    3.6901538  -1.8687915  -3.070257   -0.7621592   2.054553
+  -2.3754182   2.5323505   1.2275385  -0.13885644  1.494168   -2.3387432
+  -2.0815477   1.8720315  -1.9498658   2.0222228   2.6614234   0.34357557
+   1.5255193  -1.0605801  -1.722977    0.6935935   1.8023479   1.0696324
+  -0.02726562  0.15846083 -1.4108965  -0.89316684  0.24639785 -0.89206964
+   0.6676416   1.5956659  -1.4622426  -1.5708089   0.3757276  -0.04032225
+   0.15674695  1.060902   -1.295307   -0.39014426 -0.24021667  0.5393939
+  -1.1336479   0.5067884  -0.7767136  -0.9127699   0.51458734  0.63713604
+  -1.0396894  -0.11571902  0.86035764  1.1895101   1.567238   -1.4358203
+   0.14508261  0.27189514 -0.07832193 -0.69747764 -0.5430979  -0.0528082
+  -0.9594117   0.27655667  0.07337034  0.58975685 -0.00892068  1.2266233
+   1.1976429  -1.1674495  -0.80913866 -0.97367686  0.45872834  2.9825687
+  -1.1392595   0.38971773  0.54733145  1.8461664   1.8489059  -1.0740471
+   0.41845533 -1.1598791   1.2702405  -1.1310545   1.3277451  -1.7918608
+  -0.58560103 -0.18098772  0.5269878  -0.9325606   1.1817602   1.772577
+   0.55063856  2.2235436   1.1519368   0.9042995  -1.2783202  -1.4569538
+   0.09768535  0.9150628  -0.05131801  0.02984147]]]
+[ 2024-07-11 03:32:51,391  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 03:33:18,935  84 COMPONENTS - INFO - Unnamed: 0.2                                                 7542
+Unnamed: 0.1                                                 7542
+Unnamed: 0                                                   7605
+title                                       For Goodness Sake III
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0289192/
+poster_url                                                       
+storyline       A short film about being the best we can be: a...
+description     ['comedy', 'short', 'film', 'best', 'good', 'p...
+Name: 7542, dtype: object]
+[ 2024-07-11 03:33:18,936  84 COMPONENTS - INFO - Unnamed: 0.2                                                85131
+Unnamed: 0.1                                                85131
+Unnamed: 0                                                  90838
+title                                                     Musings
+genres                             Animation Short Comedy Fantasy
+videos                                                         []
+url                         https://www.imdb.com/title/tt3345328/
+poster_url                                                       
+storyline       An artist fights with his Muse over the best d...
+description     ['animation', 'short', 'comedy', 'fantasy', 'a...
+Name: 85131, dtype: object]
+[ 2024-07-11 03:33:18,936  84 COMPONENTS - INFO - Unnamed: 0.2                                                95187
+Unnamed: 0.1                                                95187
+Unnamed: 0                                                 102133
+title                                 The Tiniest Pumpkin Smasher
+genres                                     Animation Short Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt2851576/
+poster_url                                                       
+storyline       In this super short silent animation, the tini...
+description     ['animation', 'short', 'comedy', 'super', 'sil...
+Name: 95187, dtype: object]
+[ 2024-07-11 03:33:18,937  84 COMPONENTS - INFO - Unnamed: 0.2                                                50459
+Unnamed: 0.1                                                50459
+Unnamed: 0                                                  52650
+title                                     The Sketch Comedy Movie
+genres                                                     Comedy
+videos          [{'link': 'https://www.imdb.com/video/vi262496...
+url                        https://www.imdb.com/title/tt13304532/
+poster_url      https://www.imdb.com/title/tt13304532/mediavie...
+storyline       It's a sketch comedy film about...sketch comed...
+description     ['comedy', 'sketch', 'film', 'aboutsketch', 'c...
+Name: 50459, dtype: object]
+[ 2024-07-11 03:33:20,377  84 COMPONENTS - INFO - Unnamed: 0.2                                                19630
+Unnamed: 0.1                                                19630
+Unnamed: 0                                                  20027
+title           Spotlight International Film Festival: Best of...
+genres                                 Action Comedy Drama Sci-Fi
+videos          [{'link': 'https://www.imdb.com/video/vi208547...
+url                        https://www.imdb.com/title/tt15943614/
+poster_url      https://www.imdb.com/title/tt15943614/mediavie...
+storyline       When Sean Astin, D. B. Sweeney, Michael Muhney...
+description     ['action', 'comedy', 'drama', 'scifi', 'sean',...
+Name: 19630, dtype: object]
+[ 2024-07-11 03:33:21,956  84 COMPONENTS - INFO - Unnamed: 0.2                                                72635
+Unnamed: 0.1                                                72635
+Unnamed: 0                                                  76940
+title                                       Hercules in Hollywood
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0452630/
+poster_url      https://www.imdb.com/title/tt0452630/mediaview...
+storyline       A spoof on the campy debut film of Arnold Schw...
+description     ['comedy', 'spoof', 'campy', 'debut', 'film', ...
+Name: 72635, dtype: object]
+[ 2024-07-11 03:33:23,334  84 COMPONENTS - INFO - Unnamed: 0.2                                                35741
+Unnamed: 0.1                                                35741
+Unnamed: 0                                                  36916
+title                                          I Know Jack Venice
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt2400654/
+poster_url                                                       
+storyline       A mockumentary where adult film star Jack Veni...
+description     ['comedy', 'mockumentary', 'adult', 'film', 's...
+Name: 35741, dtype: object]
+[ 2024-07-11 03:33:23,336  84 COMPONENTS - INFO - Unnamed: 0.2                                               197207
+Unnamed: 0.1                                               197207
+Unnamed: 0                                                 221501
+title                                        The Red Boot Diaries
+genres                                               Comedy Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt0357090/
+poster_url                                                       
+storyline       Short Film Starring Betsy Brandt.Short Film St...
+description     ['comedy', 'short', 'film', 'starring', 'betsy...
+Name: 197207, dtype: object]
+[ 2024-07-11 03:33:23,337  84 COMPONENTS - INFO - Unnamed: 0.2                                               159385
+Unnamed: 0.1                                               159385
+Unnamed: 0                                                 176605
+title                                     Red Desert Penitentiary
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0089891/
+poster_url      https://www.imdb.com/title/tt0089891/mediaview...
+storyline       Hollywood movie making types are spoofed.Holly...
+description     ['comedy', 'hollywood', 'movie', 'making', 'ty...
+Name: 159385, dtype: object]
+[ 2024-07-11 03:33:24,874  84 COMPONENTS - INFO - Unnamed: 0.2                                      413
+Unnamed: 0.1                                      413
+Unnamed: 0                                        413
+title                                   Film Contest?
+genres                                         Comedy
+videos                                             []
+url             https://www.imdb.com/title/tt1002446/
+poster_url                                           
+storyline                                         NaN
+description                            ['comedy', '']
+Name: 413, dtype: object]
+[ 2024-07-11 03:33:25,017  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'For Goodness Sake III', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': 'A short film about being the best we can be: a GOOD person!A short film about being the best we can be: a GOOD person!'}, 1: {'title': 'Musings', 'poster_url': '', 'videos': '', 'genres': 'Animation Short Comedy Fantasy', 'storyline': 'An artist fights with his Muse over the best direction to take his latest story.An artist fights with his Muse over the best direction to take his latest story.'}, 2: {'title': 'The Tiniest Pumpkin Smasher', 'poster_url': '', 'videos': '', 'genres': 'Animation Short Comedy', 'storyline': 'In this super short silent animation, the tiniest pumpkin smasher does what it does best.In this super short silent animation, the tiniest pumpkin smasher does what it does best.'}, 3: {'title': 'The Sketch Comedy Movie', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOWY2MTg3ZTgtZDZiMC00MGFjLWEzZjktNDNhODAwMWNiN2E5XkEyXkFqcGdeQXVyMTk2MzA5NTk@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2624962841', 'genres': 'Comedy', 'storyline': "It's a sketch comedy film about...sketch comedies.It's a sketch comedy film about...sketch comedies."}, 4: {'title': 'Spotlight International Film Festival: Best of the Festival - Volume 1', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYTAzZGFjNzAtNTZjNC00NjM5LWFmYWUtODI5NzJiZmQxYmFhXkEyXkFqcGdeQXVyNTI0MjQyMTg@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2085471257', 'genres': 'Action Comedy Drama Sci-Fi', 'storyline': 'When Sean Astin, D. B. Sweeney, Michael Muhney and Jessica Roszko collide, you have a mix of the best short independent films since Sundance. Checkout the finest short films from drama to animation with a little bit of thriller and comedy.When Sean Astin, D. B. Sweeney, Michael Muhney and Jessica Roszko collide, you have a mix of the best short independent films since Sundance. Checkout the finest short films from drama to animation with a little bit of thriller and comedy.'}, 5: {'title': 'Hercules in Hollywood', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMjYzMjgwNzExMl5BMl5BanBnXkFtZTcwNDE0NDYyNA@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy', 'storyline': 'A spoof on the campy debut film of Arnold Schwarzenegger, Hercules in New York.A spoof on the campy debut film of Arnold Schwarzenegger, Hercules in New York.'}, 6: {'title': 'I Know Jack Venice', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': "A mockumentary where adult film star Jack Venice's fans and co-workers are interviewed.A mockumentary where adult film star Jack Venice's fans and co-workers are interviewed."}, 7: {'title': 'The Red Boot Diaries', 'poster_url': '', 'videos': '', 'genres': 'Comedy Short', 'storyline': 'Short Film Starring Betsy Brandt.Short Film Starring Betsy Brandt.'}, 8: {'title': 'Red Desert Penitentiary', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOTg4Njc5YzgtYTMwNy00MGVjLTgxMTktNzQyNmJkMWMwYjAzXkEyXkFqcGdeQXVyMzU0NzkwMDg@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy', 'storyline': 'Hollywood movie making types are spoofed.Hollywood movie making types are spoofed.'}, 9: {'title': 'Film Contest?', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': "['comedy', '']"}}]
+[ 2024-07-11 03:33:25,186  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:33:25] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 03:49:17,594  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 03:49:17,622  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :              description
+0  [best, comedy, movie]]
+[ 2024-07-11 03:49:17,622  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 03:49:17,825  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 03:49:17,825  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 03:49:17,827  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 03:49:17,827  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 03:49:17,828  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 03:49:17,828  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 03:49:17,833  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 4.856505    3.6901538  -1.8687915  -3.070257   -0.7621592   2.054553
+  -2.3754182   2.5323505   1.2275385  -0.13885644  1.494168   -2.3387432
+  -2.0815477   1.8720315  -1.9498658   2.0222228   2.6614234   0.34357557
+   1.5255193  -1.0605801  -1.722977    0.6935935   1.8023479   1.0696324
+  -0.02726562  0.15846083 -1.4108965  -0.89316684  0.24639785 -0.89206964
+   0.6676416   1.5956659  -1.4622426  -1.5708089   0.3757276  -0.04032225
+   0.15674695  1.060902   -1.295307   -0.39014426 -0.24021667  0.5393939
+  -1.1336479   0.5067884  -0.7767136  -0.9127699   0.51458734  0.63713604
+  -1.0396894  -0.11571902  0.86035764  1.1895101   1.567238   -1.4358203
+   0.14508261  0.27189514 -0.07832193 -0.69747764 -0.5430979  -0.0528082
+  -0.9594117   0.27655667  0.07337034  0.58975685 -0.00892068  1.2266233
+   1.1976429  -1.1674495  -0.80913866 -0.97367686  0.45872834  2.9825687
+  -1.1392595   0.38971773  0.54733145  1.8461664   1.8489059  -1.0740471
+   0.41845533 -1.1598791   1.2702405  -1.1310545   1.3277451  -1.7918608
+  -0.58560103 -0.18098772  0.5269878  -0.9325606   1.1817602   1.772577
+   0.55063856  2.2235436   1.1519368   0.9042995  -1.2783202  -1.4569538
+   0.09768535  0.9150628  -0.05131801  0.02984147]]]
+[ 2024-07-11 03:49:17,833  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 03:49:36,044  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:49:36] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 03:49:38,880  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 03:49:38,923  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :              description
+0  [best, comedy, movie]]
+[ 2024-07-11 03:49:38,923  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 03:49:39,205  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 03:49:39,209  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 03:49:39,211  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 03:49:39,211  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 03:49:39,306  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 03:49:39,307  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 03:49:39,309  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 4.856505    3.6901538  -1.8687915  -3.070257   -0.7621592   2.054553
+  -2.3754182   2.5323505   1.2275385  -0.13885644  1.494168   -2.3387432
+  -2.0815477   1.8720315  -1.9498658   2.0222228   2.6614234   0.34357557
+   1.5255193  -1.0605801  -1.722977    0.6935935   1.8023479   1.0696324
+  -0.02726562  0.15846083 -1.4108965  -0.89316684  0.24639785 -0.89206964
+   0.6676416   1.5956659  -1.4622426  -1.5708089   0.3757276  -0.04032225
+   0.15674695  1.060902   -1.295307   -0.39014426 -0.24021667  0.5393939
+  -1.1336479   0.5067884  -0.7767136  -0.9127699   0.51458734  0.63713604
+  -1.0396894  -0.11571902  0.86035764  1.1895101   1.567238   -1.4358203
+   0.14508261  0.27189514 -0.07832193 -0.69747764 -0.5430979  -0.0528082
+  -0.9594117   0.27655667  0.07337034  0.58975685 -0.00892068  1.2266233
+   1.1976429  -1.1674495  -0.80913866 -0.97367686  0.45872834  2.9825687
+  -1.1392595   0.38971773  0.54733145  1.8461664   1.8489059  -1.0740471
+   0.41845533 -1.1598791   1.2702405  -1.1310545   1.3277451  -1.7918608
+  -0.58560103 -0.18098772  0.5269878  -0.9325606   1.1817602   1.772577
+   0.55063856  2.2235436   1.1519368   0.9042995  -1.2783202  -1.4569538
+   0.09768535  0.9150628  -0.05131801  0.02984147]]]
+[ 2024-07-11 03:49:39,309  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 03:49:46,363  84 COMPONENTS - INFO - Unnamed: 0.2                                                 7542
+Unnamed: 0.1                                                 7542
+Unnamed: 0                                                   7605
+title                                       For Goodness Sake III
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0289192/
+poster_url                                                       
+storyline       A short film about being the best we can be: a...
+description     ['comedy', 'short', 'film', 'best', 'good', 'p...
+Name: 7542, dtype: object]
+[ 2024-07-11 03:49:46,365  84 COMPONENTS - INFO - Unnamed: 0.2                                                85131
+Unnamed: 0.1                                                85131
+Unnamed: 0                                                  90838
+title                                                     Musings
+genres                             Animation Short Comedy Fantasy
+videos                                                         []
+url                         https://www.imdb.com/title/tt3345328/
+poster_url                                                       
+storyline       An artist fights with his Muse over the best d...
+description     ['animation', 'short', 'comedy', 'fantasy', 'a...
+Name: 85131, dtype: object]
+[ 2024-07-11 03:49:46,365  84 COMPONENTS - INFO - Unnamed: 0.2                                                95187
+Unnamed: 0.1                                                95187
+Unnamed: 0                                                 102133
+title                                 The Tiniest Pumpkin Smasher
+genres                                     Animation Short Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt2851576/
+poster_url                                                       
+storyline       In this super short silent animation, the tini...
+description     ['animation', 'short', 'comedy', 'super', 'sil...
+Name: 95187, dtype: object]
+[ 2024-07-11 03:49:46,366  84 COMPONENTS - INFO - Unnamed: 0.2                                                50459
+Unnamed: 0.1                                                50459
+Unnamed: 0                                                  52650
+title                                     The Sketch Comedy Movie
+genres                                                     Comedy
+videos          [{'link': 'https://www.imdb.com/video/vi262496...
+url                        https://www.imdb.com/title/tt13304532/
+poster_url      https://www.imdb.com/title/tt13304532/mediavie...
+storyline       It's a sketch comedy film about...sketch comed...
+description     ['comedy', 'sketch', 'film', 'aboutsketch', 'c...
+Name: 50459, dtype: object]
+[ 2024-07-11 03:49:47,852  84 COMPONENTS - INFO - Unnamed: 0.2                                                19630
+Unnamed: 0.1                                                19630
+Unnamed: 0                                                  20027
+title           Spotlight International Film Festival: Best of...
+genres                                 Action Comedy Drama Sci-Fi
+videos          [{'link': 'https://www.imdb.com/video/vi208547...
+url                        https://www.imdb.com/title/tt15943614/
+poster_url      https://www.imdb.com/title/tt15943614/mediavie...
+storyline       When Sean Astin, D. B. Sweeney, Michael Muhney...
+description     ['action', 'comedy', 'drama', 'scifi', 'sean',...
+Name: 19630, dtype: object]
+[ 2024-07-11 03:49:49,800  84 COMPONENTS - INFO - Unnamed: 0.2                                                72635
+Unnamed: 0.1                                                72635
+Unnamed: 0                                                  76940
+title                                       Hercules in Hollywood
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0452630/
+poster_url      https://www.imdb.com/title/tt0452630/mediaview...
+storyline       A spoof on the campy debut film of Arnold Schw...
+description     ['comedy', 'spoof', 'campy', 'debut', 'film', ...
+Name: 72635, dtype: object]
+[ 2024-07-11 03:49:51,292  84 COMPONENTS - INFO - Unnamed: 0.2                                                35741
+Unnamed: 0.1                                                35741
+Unnamed: 0                                                  36916
+title                                          I Know Jack Venice
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt2400654/
+poster_url                                                       
+storyline       A mockumentary where adult film star Jack Veni...
+description     ['comedy', 'mockumentary', 'adult', 'film', 's...
+Name: 35741, dtype: object]
+[ 2024-07-11 03:49:51,293  84 COMPONENTS - INFO - Unnamed: 0.2                                               197207
+Unnamed: 0.1                                               197207
+Unnamed: 0                                                 221501
+title                                        The Red Boot Diaries
+genres                                               Comedy Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt0357090/
+poster_url                                                       
+storyline       Short Film Starring Betsy Brandt.Short Film St...
+description     ['comedy', 'short', 'film', 'starring', 'betsy...
+Name: 197207, dtype: object]
+[ 2024-07-11 03:49:51,300  84 COMPONENTS - INFO - Unnamed: 0.2                                               159385
+Unnamed: 0.1                                               159385
+Unnamed: 0                                                 176605
+title                                     Red Desert Penitentiary
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0089891/
+poster_url      https://www.imdb.com/title/tt0089891/mediaview...
+storyline       Hollywood movie making types are spoofed.Holly...
+description     ['comedy', 'hollywood', 'movie', 'making', 'ty...
+Name: 159385, dtype: object]
+[ 2024-07-11 03:49:52,625  84 COMPONENTS - INFO - Unnamed: 0.2                                      413
+Unnamed: 0.1                                      413
+Unnamed: 0                                        413
+title                                   Film Contest?
+genres                                         Comedy
+videos                                             []
+url             https://www.imdb.com/title/tt1002446/
+poster_url                                           
+storyline                                         NaN
+description                            ['comedy', '']
+Name: 413, dtype: object]
+[ 2024-07-11 03:49:52,659  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'For Goodness Sake III', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': 'A short film about being the best we can be: a GOOD person!A short film about being the best we can be: a GOOD person!'}, 1: {'title': 'Musings', 'poster_url': '', 'videos': '', 'genres': 'Animation Short Comedy Fantasy', 'storyline': 'An artist fights with his Muse over the best direction to take his latest story.An artist fights with his Muse over the best direction to take his latest story.'}, 2: {'title': 'The Tiniest Pumpkin Smasher', 'poster_url': '', 'videos': '', 'genres': 'Animation Short Comedy', 'storyline': 'In this super short silent animation, the tiniest pumpkin smasher does what it does best.In this super short silent animation, the tiniest pumpkin smasher does what it does best.'}, 3: {'title': 'The Sketch Comedy Movie', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOWY2MTg3ZTgtZDZiMC00MGFjLWEzZjktNDNhODAwMWNiN2E5XkEyXkFqcGdeQXVyMTk2MzA5NTk@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2624962841', 'genres': 'Comedy', 'storyline': "It's a sketch comedy film about...sketch comedies.It's a sketch comedy film about...sketch comedies."}, 4: {'title': 'Spotlight International Film Festival: Best of the Festival - Volume 1', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYTAzZGFjNzAtNTZjNC00NjM5LWFmYWUtODI5NzJiZmQxYmFhXkEyXkFqcGdeQXVyNTI0MjQyMTg@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2085471257', 'genres': 'Action Comedy Drama Sci-Fi', 'storyline': 'When Sean Astin, D. B. Sweeney, Michael Muhney and Jessica Roszko collide, you have a mix of the best short independent films since Sundance. Checkout the finest short films from drama to animation with a little bit of thriller and comedy.When Sean Astin, D. B. Sweeney, Michael Muhney and Jessica Roszko collide, you have a mix of the best short independent films since Sundance. Checkout the finest short films from drama to animation with a little bit of thriller and comedy.'}, 5: {'title': 'Hercules in Hollywood', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMjYzMjgwNzExMl5BMl5BanBnXkFtZTcwNDE0NDYyNA@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy', 'storyline': 'A spoof on the campy debut film of Arnold Schwarzenegger, Hercules in New York.A spoof on the campy debut film of Arnold Schwarzenegger, Hercules in New York.'}, 6: {'title': 'I Know Jack Venice', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': "A mockumentary where adult film star Jack Venice's fans and co-workers are interviewed.A mockumentary where adult film star Jack Venice's fans and co-workers are interviewed."}, 7: {'title': 'The Red Boot Diaries', 'poster_url': '', 'videos': '', 'genres': 'Comedy Short', 'storyline': 'Short Film Starring Betsy Brandt.Short Film Starring Betsy Brandt.'}, 8: {'title': 'Red Desert Penitentiary', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOTg4Njc5YzgtYTMwNy00MGVjLTgxMTktNzQyNmJkMWMwYjAzXkEyXkFqcGdeQXVyMzU0NzkwMDg@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy', 'storyline': 'Hollywood movie making types are spoofed.Hollywood movie making types are spoofed.'}, 9: {'title': 'Film Contest?', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': "['comedy', '']"}}]
+[ 2024-07-11 03:49:52,837  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:49:52] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 03:50:14,165  84 COMPONENTS - INFO - Unnamed: 0.2                                                 7542
+Unnamed: 0.1                                                 7542
+Unnamed: 0                                                   7605
+title                                       For Goodness Sake III
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0289192/
+poster_url                                                       
+storyline       A short film about being the best we can be: a...
+description     ['comedy', 'short', 'film', 'best', 'good', 'p...
+Name: 7542, dtype: object]
+[ 2024-07-11 03:50:14,167  84 COMPONENTS - INFO - Unnamed: 0.2                                                85131
+Unnamed: 0.1                                                85131
+Unnamed: 0                                                  90838
+title                                                     Musings
+genres                             Animation Short Comedy Fantasy
+videos                                                         []
+url                         https://www.imdb.com/title/tt3345328/
+poster_url                                                       
+storyline       An artist fights with his Muse over the best d...
+description     ['animation', 'short', 'comedy', 'fantasy', 'a...
+Name: 85131, dtype: object]
+[ 2024-07-11 03:50:14,167  84 COMPONENTS - INFO - Unnamed: 0.2                                                95187
+Unnamed: 0.1                                                95187
+Unnamed: 0                                                 102133
+title                                 The Tiniest Pumpkin Smasher
+genres                                     Animation Short Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt2851576/
+poster_url                                                       
+storyline       In this super short silent animation, the tini...
+description     ['animation', 'short', 'comedy', 'super', 'sil...
+Name: 95187, dtype: object]
+[ 2024-07-11 03:50:14,167  84 COMPONENTS - INFO - Unnamed: 0.2                                                50459
+Unnamed: 0.1                                                50459
+Unnamed: 0                                                  52650
+title                                     The Sketch Comedy Movie
+genres                                                     Comedy
+videos          [{'link': 'https://www.imdb.com/video/vi262496...
+url                        https://www.imdb.com/title/tt13304532/
+poster_url      https://www.imdb.com/title/tt13304532/mediavie...
+storyline       It's a sketch comedy film about...sketch comed...
+description     ['comedy', 'sketch', 'film', 'aboutsketch', 'c...
+Name: 50459, dtype: object]
+[ 2024-07-11 03:50:15,494  84 COMPONENTS - INFO - Unnamed: 0.2                                                19630
+Unnamed: 0.1                                                19630
+Unnamed: 0                                                  20027
+title           Spotlight International Film Festival: Best of...
+genres                                 Action Comedy Drama Sci-Fi
+videos          [{'link': 'https://www.imdb.com/video/vi208547...
+url                        https://www.imdb.com/title/tt15943614/
+poster_url      https://www.imdb.com/title/tt15943614/mediavie...
+storyline       When Sean Astin, D. B. Sweeney, Michael Muhney...
+description     ['action', 'comedy', 'drama', 'scifi', 'sean',...
+Name: 19630, dtype: object]
+[ 2024-07-11 03:50:16,285  84 COMPONENTS - INFO - Unnamed: 0.2                                                72635
+Unnamed: 0.1                                                72635
+Unnamed: 0                                                  76940
+title                                       Hercules in Hollywood
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0452630/
+poster_url      https://www.imdb.com/title/tt0452630/mediaview...
+storyline       A spoof on the campy debut film of Arnold Schw...
+description     ['comedy', 'spoof', 'campy', 'debut', 'film', ...
+Name: 72635, dtype: object]
+[ 2024-07-11 03:50:16,982  84 COMPONENTS - INFO - Unnamed: 0.2                                                35741
+Unnamed: 0.1                                                35741
+Unnamed: 0                                                  36916
+title                                          I Know Jack Venice
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt2400654/
+poster_url                                                       
+storyline       A mockumentary where adult film star Jack Veni...
+description     ['comedy', 'mockumentary', 'adult', 'film', 's...
+Name: 35741, dtype: object]
+[ 2024-07-11 03:50:16,983  84 COMPONENTS - INFO - Unnamed: 0.2                                               197207
+Unnamed: 0.1                                               197207
+Unnamed: 0                                                 221501
+title                                        The Red Boot Diaries
+genres                                               Comedy Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt0357090/
+poster_url                                                       
+storyline       Short Film Starring Betsy Brandt.Short Film St...
+description     ['comedy', 'short', 'film', 'starring', 'betsy...
+Name: 197207, dtype: object]
+[ 2024-07-11 03:50:16,984  84 COMPONENTS - INFO - Unnamed: 0.2                                               159385
+Unnamed: 0.1                                               159385
+Unnamed: 0                                                 176605
+title                                     Red Desert Penitentiary
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0089891/
+poster_url      https://www.imdb.com/title/tt0089891/mediaview...
+storyline       Hollywood movie making types are spoofed.Holly...
+description     ['comedy', 'hollywood', 'movie', 'making', 'ty...
+Name: 159385, dtype: object]
+[ 2024-07-11 03:50:17,739  84 COMPONENTS - INFO - Unnamed: 0.2                                      413
+Unnamed: 0.1                                      413
+Unnamed: 0                                        413
+title                                   Film Contest?
+genres                                         Comedy
+videos                                             []
+url             https://www.imdb.com/title/tt1002446/
+poster_url                                           
+storyline                                         NaN
+description                            ['comedy', '']
+Name: 413, dtype: object]
+[ 2024-07-11 03:50:17,785  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'For Goodness Sake III', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': 'A short film about being the best we can be: a GOOD person!A short film about being the best we can be: a GOOD person!'}, 1: {'title': 'Musings', 'poster_url': '', 'videos': '', 'genres': 'Animation Short Comedy Fantasy', 'storyline': 'An artist fights with his Muse over the best direction to take his latest story.An artist fights with his Muse over the best direction to take his latest story.'}, 2: {'title': 'The Tiniest Pumpkin Smasher', 'poster_url': '', 'videos': '', 'genres': 'Animation Short Comedy', 'storyline': 'In this super short silent animation, the tiniest pumpkin smasher does what it does best.In this super short silent animation, the tiniest pumpkin smasher does what it does best.'}, 3: {'title': 'The Sketch Comedy Movie', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOWY2MTg3ZTgtZDZiMC00MGFjLWEzZjktNDNhODAwMWNiN2E5XkEyXkFqcGdeQXVyMTk2MzA5NTk@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2624962841', 'genres': 'Comedy', 'storyline': "It's a sketch comedy film about...sketch comedies.It's a sketch comedy film about...sketch comedies."}, 4: {'title': 'Spotlight International Film Festival: Best of the Festival - Volume 1', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYTAzZGFjNzAtNTZjNC00NjM5LWFmYWUtODI5NzJiZmQxYmFhXkEyXkFqcGdeQXVyNTI0MjQyMTg@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2085471257', 'genres': 'Action Comedy Drama Sci-Fi', 'storyline': 'When Sean Astin, D. B. Sweeney, Michael Muhney and Jessica Roszko collide, you have a mix of the best short independent films since Sundance. Checkout the finest short films from drama to animation with a little bit of thriller and comedy.When Sean Astin, D. B. Sweeney, Michael Muhney and Jessica Roszko collide, you have a mix of the best short independent films since Sundance. Checkout the finest short films from drama to animation with a little bit of thriller and comedy.'}, 5: {'title': 'Hercules in Hollywood', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMjYzMjgwNzExMl5BMl5BanBnXkFtZTcwNDE0NDYyNA@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy', 'storyline': 'A spoof on the campy debut film of Arnold Schwarzenegger, Hercules in New York.A spoof on the campy debut film of Arnold Schwarzenegger, Hercules in New York.'}, 6: {'title': 'I Know Jack Venice', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': "A mockumentary where adult film star Jack Venice's fans and co-workers are interviewed.A mockumentary where adult film star Jack Venice's fans and co-workers are interviewed."}, 7: {'title': 'The Red Boot Diaries', 'poster_url': '', 'videos': '', 'genres': 'Comedy Short', 'storyline': 'Short Film Starring Betsy Brandt.Short Film Starring Betsy Brandt.'}, 8: {'title': 'Red Desert Penitentiary', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOTg4Njc5YzgtYTMwNy00MGVjLTgxMTktNzQyNmJkMWMwYjAzXkEyXkFqcGdeQXVyMzU0NzkwMDg@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy', 'storyline': 'Hollywood movie making types are spoofed.Hollywood movie making types are spoofed.'}, 9: {'title': 'Film Contest?', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': "['comedy', '']"}}]
+[ 2024-07-11 03:50:17,891  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:50:17] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 03:51:09,005  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:51:09] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 03:51:12,519  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 03:51:12,526  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :              description
+0  [best, comedy, movie]]
+[ 2024-07-11 03:51:12,527  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 03:51:12,744  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 03:51:12,744  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 03:51:12,746  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 03:51:12,746  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 03:51:12,747  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 03:51:12,747  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 03:51:12,748  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 4.856505    3.6901538  -1.8687915  -3.070257   -0.7621592   2.054553
+  -2.3754182   2.5323505   1.2275385  -0.13885644  1.494168   -2.3387432
+  -2.0815477   1.8720315  -1.9498658   2.0222228   2.6614234   0.34357557
+   1.5255193  -1.0605801  -1.722977    0.6935935   1.8023479   1.0696324
+  -0.02726562  0.15846083 -1.4108965  -0.89316684  0.24639785 -0.89206964
+   0.6676416   1.5956659  -1.4622426  -1.5708089   0.3757276  -0.04032225
+   0.15674695  1.060902   -1.295307   -0.39014426 -0.24021667  0.5393939
+  -1.1336479   0.5067884  -0.7767136  -0.9127699   0.51458734  0.63713604
+  -1.0396894  -0.11571902  0.86035764  1.1895101   1.567238   -1.4358203
+   0.14508261  0.27189514 -0.07832193 -0.69747764 -0.5430979  -0.0528082
+  -0.9594117   0.27655667  0.07337034  0.58975685 -0.00892068  1.2266233
+   1.1976429  -1.1674495  -0.80913866 -0.97367686  0.45872834  2.9825687
+  -1.1392595   0.38971773  0.54733145  1.8461664   1.8489059  -1.0740471
+   0.41845533 -1.1598791   1.2702405  -1.1310545   1.3277451  -1.7918608
+  -0.58560103 -0.18098772  0.5269878  -0.9325606   1.1817602   1.772577
+   0.55063856  2.2235436   1.1519368   0.9042995  -1.2783202  -1.4569538
+   0.09768535  0.9150628  -0.05131801  0.02984147]]]
+[ 2024-07-11 03:51:12,748  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 03:51:40,382  84 COMPONENTS - INFO - Unnamed: 0.2                                                 7542
+Unnamed: 0.1                                                 7542
+Unnamed: 0                                                   7605
+title                                       For Goodness Sake III
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0289192/
+poster_url                                                       
+storyline       A short film about being the best we can be: a...
+description     ['comedy', 'short', 'film', 'best', 'good', 'p...
+Name: 7542, dtype: object]
+[ 2024-07-11 03:51:40,384  84 COMPONENTS - INFO - Unnamed: 0.2                                                85131
+Unnamed: 0.1                                                85131
+Unnamed: 0                                                  90838
+title                                                     Musings
+genres                             Animation Short Comedy Fantasy
+videos                                                         []
+url                         https://www.imdb.com/title/tt3345328/
+poster_url                                                       
+storyline       An artist fights with his Muse over the best d...
+description     ['animation', 'short', 'comedy', 'fantasy', 'a...
+Name: 85131, dtype: object]
+[ 2024-07-11 03:51:40,384  84 COMPONENTS - INFO - Unnamed: 0.2                                                95187
+Unnamed: 0.1                                                95187
+Unnamed: 0                                                 102133
+title                                 The Tiniest Pumpkin Smasher
+genres                                     Animation Short Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt2851576/
+poster_url                                                       
+storyline       In this super short silent animation, the tini...
+description     ['animation', 'short', 'comedy', 'super', 'sil...
+Name: 95187, dtype: object]
+[ 2024-07-11 03:51:40,385  84 COMPONENTS - INFO - Unnamed: 0.2                                                50459
+Unnamed: 0.1                                                50459
+Unnamed: 0                                                  52650
+title                                     The Sketch Comedy Movie
+genres                                                     Comedy
+videos          [{'link': 'https://www.imdb.com/video/vi262496...
+url                        https://www.imdb.com/title/tt13304532/
+poster_url      https://www.imdb.com/title/tt13304532/mediavie...
+storyline       It's a sketch comedy film about...sketch comed...
+description     ['comedy', 'sketch', 'film', 'aboutsketch', 'c...
+Name: 50459, dtype: object]
+[ 2024-07-11 03:51:41,676  84 COMPONENTS - INFO - Unnamed: 0.2                                                19630
+Unnamed: 0.1                                                19630
+Unnamed: 0                                                  20027
+title           Spotlight International Film Festival: Best of...
+genres                                 Action Comedy Drama Sci-Fi
+videos          [{'link': 'https://www.imdb.com/video/vi208547...
+url                        https://www.imdb.com/title/tt15943614/
+poster_url      https://www.imdb.com/title/tt15943614/mediavie...
+storyline       When Sean Astin, D. B. Sweeney, Michael Muhney...
+description     ['action', 'comedy', 'drama', 'scifi', 'sean',...
+Name: 19630, dtype: object]
+[ 2024-07-11 03:51:42,985  84 COMPONENTS - INFO - Unnamed: 0.2                                                72635
+Unnamed: 0.1                                                72635
+Unnamed: 0                                                  76940
+title                                       Hercules in Hollywood
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0452630/
+poster_url      https://www.imdb.com/title/tt0452630/mediaview...
+storyline       A spoof on the campy debut film of Arnold Schw...
+description     ['comedy', 'spoof', 'campy', 'debut', 'film', ...
+Name: 72635, dtype: object]
+[ 2024-07-11 03:51:44,141  84 COMPONENTS - INFO - Unnamed: 0.2                                                35741
+Unnamed: 0.1                                                35741
+Unnamed: 0                                                  36916
+title                                          I Know Jack Venice
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt2400654/
+poster_url                                                       
+storyline       A mockumentary where adult film star Jack Veni...
+description     ['comedy', 'mockumentary', 'adult', 'film', 's...
+Name: 35741, dtype: object]
+[ 2024-07-11 03:51:44,142  84 COMPONENTS - INFO - Unnamed: 0.2                                               197207
+Unnamed: 0.1                                               197207
+Unnamed: 0                                                 221501
+title                                        The Red Boot Diaries
+genres                                               Comedy Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt0357090/
+poster_url                                                       
+storyline       Short Film Starring Betsy Brandt.Short Film St...
+description     ['comedy', 'short', 'film', 'starring', 'betsy...
+Name: 197207, dtype: object]
+[ 2024-07-11 03:51:44,143  84 COMPONENTS - INFO - Unnamed: 0.2                                               159385
+Unnamed: 0.1                                               159385
+Unnamed: 0                                                 176605
+title                                     Red Desert Penitentiary
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0089891/
+poster_url      https://www.imdb.com/title/tt0089891/mediaview...
+storyline       Hollywood movie making types are spoofed.Holly...
+description     ['comedy', 'hollywood', 'movie', 'making', 'ty...
+Name: 159385, dtype: object]
+[ 2024-07-11 03:51:45,289  84 COMPONENTS - INFO - Unnamed: 0.2                                      413
+Unnamed: 0.1                                      413
+Unnamed: 0                                        413
+title                                   Film Contest?
+genres                                         Comedy
+videos                                             []
+url             https://www.imdb.com/title/tt1002446/
+poster_url                                           
+storyline                                         NaN
+description                            ['comedy', '']
+Name: 413, dtype: object]
+[ 2024-07-11 03:51:45,330  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'For Goodness Sake III', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': 'A short film about being the best we can be: a GOOD person!A short film about being the best we can be: a GOOD person!'}, 1: {'title': 'Musings', 'poster_url': '', 'videos': '', 'genres': 'Animation Short Comedy Fantasy', 'storyline': 'An artist fights with his Muse over the best direction to take his latest story.An artist fights with his Muse over the best direction to take his latest story.'}, 2: {'title': 'The Tiniest Pumpkin Smasher', 'poster_url': '', 'videos': '', 'genres': 'Animation Short Comedy', 'storyline': 'In this super short silent animation, the tiniest pumpkin smasher does what it does best.In this super short silent animation, the tiniest pumpkin smasher does what it does best.'}, 3: {'title': 'The Sketch Comedy Movie', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOWY2MTg3ZTgtZDZiMC00MGFjLWEzZjktNDNhODAwMWNiN2E5XkEyXkFqcGdeQXVyMTk2MzA5NTk@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2624962841', 'genres': 'Comedy', 'storyline': "It's a sketch comedy film about...sketch comedies.It's a sketch comedy film about...sketch comedies."}, 4: {'title': 'Spotlight International Film Festival: Best of the Festival - Volume 1', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYTAzZGFjNzAtNTZjNC00NjM5LWFmYWUtODI5NzJiZmQxYmFhXkEyXkFqcGdeQXVyNTI0MjQyMTg@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2085471257', 'genres': 'Action Comedy Drama Sci-Fi', 'storyline': 'When Sean Astin, D. B. Sweeney, Michael Muhney and Jessica Roszko collide, you have a mix of the best short independent films since Sundance. Checkout the finest short films from drama to animation with a little bit of thriller and comedy.When Sean Astin, D. B. Sweeney, Michael Muhney and Jessica Roszko collide, you have a mix of the best short independent films since Sundance. Checkout the finest short films from drama to animation with a little bit of thriller and comedy.'}, 5: {'title': 'Hercules in Hollywood', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMjYzMjgwNzExMl5BMl5BanBnXkFtZTcwNDE0NDYyNA@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy', 'storyline': 'A spoof on the campy debut film of Arnold Schwarzenegger, Hercules in New York.A spoof on the campy debut film of Arnold Schwarzenegger, Hercules in New York.'}, 6: {'title': 'I Know Jack Venice', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': "A mockumentary where adult film star Jack Venice's fans and co-workers are interviewed.A mockumentary where adult film star Jack Venice's fans and co-workers are interviewed."}, 7: {'title': 'The Red Boot Diaries', 'poster_url': '', 'videos': '', 'genres': 'Comedy Short', 'storyline': 'Short Film Starring Betsy Brandt.Short Film Starring Betsy Brandt.'}, 8: {'title': 'Red Desert Penitentiary', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOTg4Njc5YzgtYTMwNy00MGVjLTgxMTktNzQyNmJkMWMwYjAzXkEyXkFqcGdeQXVyMzU0NzkwMDg@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy', 'storyline': 'Hollywood movie making types are spoofed.Hollywood movie making types are spoofed.'}, 9: {'title': 'Film Contest?', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': "['comedy', '']"}}]
+[ 2024-07-11 03:51:45,416  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:51:45] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 03:51:45,437  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:51:45] "GET /static/images/action3.jpeg HTTP/1.1" 200 -]
+[ 2024-07-11 03:51:45,437  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:51:45] "GET /static/images/comedy2.jpeg HTTP/1.1" 200 -]
+[ 2024-07-11 03:51:45,438  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:51:45] "GET /static/images/horror3.jpeg HTTP/1.1" 200 -]
+[ 2024-07-11 03:51:45,438  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:51:45] "GET /static/images/comedy.jpeg HTTP/1.1" 200 -]
+[ 2024-07-11 03:55:00,266  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 03:55:00,276  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :              description
+0  [best, comedy, movie]]
+[ 2024-07-11 03:55:00,276  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 03:55:00,496  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 03:55:00,497  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 03:55:00,497  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 03:55:00,497  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 03:55:00,498  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 03:55:00,498  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 03:55:00,499  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 4.856505    3.6901538  -1.8687915  -3.070257   -0.7621592   2.054553
+  -2.3754182   2.5323505   1.2275385  -0.13885644  1.494168   -2.3387432
+  -2.0815477   1.8720315  -1.9498658   2.0222228   2.6614234   0.34357557
+   1.5255193  -1.0605801  -1.722977    0.6935935   1.8023479   1.0696324
+  -0.02726562  0.15846083 -1.4108965  -0.89316684  0.24639785 -0.89206964
+   0.6676416   1.5956659  -1.4622426  -1.5708089   0.3757276  -0.04032225
+   0.15674695  1.060902   -1.295307   -0.39014426 -0.24021667  0.5393939
+  -1.1336479   0.5067884  -0.7767136  -0.9127699   0.51458734  0.63713604
+  -1.0396894  -0.11571902  0.86035764  1.1895101   1.567238   -1.4358203
+   0.14508261  0.27189514 -0.07832193 -0.69747764 -0.5430979  -0.0528082
+  -0.9594117   0.27655667  0.07337034  0.58975685 -0.00892068  1.2266233
+   1.1976429  -1.1674495  -0.80913866 -0.97367686  0.45872834  2.9825687
+  -1.1392595   0.38971773  0.54733145  1.8461664   1.8489059  -1.0740471
+   0.41845533 -1.1598791   1.2702405  -1.1310545   1.3277451  -1.7918608
+  -0.58560103 -0.18098772  0.5269878  -0.9325606   1.1817602   1.772577
+   0.55063856  2.2235436   1.1519368   0.9042995  -1.2783202  -1.4569538
+   0.09768535  0.9150628  -0.05131801  0.02984147]]]
+[ 2024-07-11 03:55:00,499  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 03:55:27,943  84 COMPONENTS - INFO - Unnamed: 0.2                                                 7542
+Unnamed: 0.1                                                 7542
+Unnamed: 0                                                   7605
+title                                       For Goodness Sake III
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0289192/
+poster_url                                                       
+storyline       A short film about being the best we can be: a...
+description     ['comedy', 'short', 'film', 'best', 'good', 'p...
+Name: 7542, dtype: object]
+[ 2024-07-11 03:55:27,945  84 COMPONENTS - INFO - Unnamed: 0.2                                                85131
+Unnamed: 0.1                                                85131
+Unnamed: 0                                                  90838
+title                                                     Musings
+genres                             Animation Short Comedy Fantasy
+videos                                                         []
+url                         https://www.imdb.com/title/tt3345328/
+poster_url                                                       
+storyline       An artist fights with his Muse over the best d...
+description     ['animation', 'short', 'comedy', 'fantasy', 'a...
+Name: 85131, dtype: object]
+[ 2024-07-11 03:55:27,945  84 COMPONENTS - INFO - Unnamed: 0.2                                                95187
+Unnamed: 0.1                                                95187
+Unnamed: 0                                                 102133
+title                                 The Tiniest Pumpkin Smasher
+genres                                     Animation Short Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt2851576/
+poster_url                                                       
+storyline       In this super short silent animation, the tini...
+description     ['animation', 'short', 'comedy', 'super', 'sil...
+Name: 95187, dtype: object]
+[ 2024-07-11 03:55:27,945  84 COMPONENTS - INFO - Unnamed: 0.2                                                50459
+Unnamed: 0.1                                                50459
+Unnamed: 0                                                  52650
+title                                     The Sketch Comedy Movie
+genres                                                     Comedy
+videos          [{'link': 'https://www.imdb.com/video/vi262496...
+url                        https://www.imdb.com/title/tt13304532/
+poster_url      https://www.imdb.com/title/tt13304532/mediavie...
+storyline       It's a sketch comedy film about...sketch comed...
+description     ['comedy', 'sketch', 'film', 'aboutsketch', 'c...
+Name: 50459, dtype: object]
+[ 2024-07-11 03:55:29,447  84 COMPONENTS - INFO - Unnamed: 0.2                                                19630
+Unnamed: 0.1                                                19630
+Unnamed: 0                                                  20027
+title           Spotlight International Film Festival: Best of...
+genres                                 Action Comedy Drama Sci-Fi
+videos          [{'link': 'https://www.imdb.com/video/vi208547...
+url                        https://www.imdb.com/title/tt15943614/
+poster_url      https://www.imdb.com/title/tt15943614/mediavie...
+storyline       When Sean Astin, D. B. Sweeney, Michael Muhney...
+description     ['action', 'comedy', 'drama', 'scifi', 'sean',...
+Name: 19630, dtype: object]
+[ 2024-07-11 03:55:30,773  84 COMPONENTS - INFO - Unnamed: 0.2                                                72635
+Unnamed: 0.1                                                72635
+Unnamed: 0                                                  76940
+title                                       Hercules in Hollywood
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0452630/
+poster_url      https://www.imdb.com/title/tt0452630/mediaview...
+storyline       A spoof on the campy debut film of Arnold Schw...
+description     ['comedy', 'spoof', 'campy', 'debut', 'film', ...
+Name: 72635, dtype: object]
+[ 2024-07-11 03:55:31,995  84 COMPONENTS - INFO - Unnamed: 0.2                                                35741
+Unnamed: 0.1                                                35741
+Unnamed: 0                                                  36916
+title                                          I Know Jack Venice
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt2400654/
+poster_url                                                       
+storyline       A mockumentary where adult film star Jack Veni...
+description     ['comedy', 'mockumentary', 'adult', 'film', 's...
+Name: 35741, dtype: object]
+[ 2024-07-11 03:55:31,996  84 COMPONENTS - INFO - Unnamed: 0.2                                               197207
+Unnamed: 0.1                                               197207
+Unnamed: 0                                                 221501
+title                                        The Red Boot Diaries
+genres                                               Comedy Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt0357090/
+poster_url                                                       
+storyline       Short Film Starring Betsy Brandt.Short Film St...
+description     ['comedy', 'short', 'film', 'starring', 'betsy...
+Name: 197207, dtype: object]
+[ 2024-07-11 03:55:31,997  84 COMPONENTS - INFO - Unnamed: 0.2                                               159385
+Unnamed: 0.1                                               159385
+Unnamed: 0                                                 176605
+title                                     Red Desert Penitentiary
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0089891/
+poster_url      https://www.imdb.com/title/tt0089891/mediaview...
+storyline       Hollywood movie making types are spoofed.Holly...
+description     ['comedy', 'hollywood', 'movie', 'making', 'ty...
+Name: 159385, dtype: object]
+[ 2024-07-11 03:55:33,171  84 COMPONENTS - INFO - Unnamed: 0.2                                      413
+Unnamed: 0.1                                      413
+Unnamed: 0                                        413
+title                                   Film Contest?
+genres                                         Comedy
+videos                                             []
+url             https://www.imdb.com/title/tt1002446/
+poster_url                                           
+storyline                                         NaN
+description                            ['comedy', '']
+Name: 413, dtype: object]
+[ 2024-07-11 03:55:33,214  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'For Goodness Sake III', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': 'A short film about being the best we can be: a GOOD person!A short film about being the best we can be: a GOOD person!'}, 1: {'title': 'Musings', 'poster_url': '', 'videos': '', 'genres': 'Animation Short Comedy Fantasy', 'storyline': 'An artist fights with his Muse over the best direction to take his latest story.An artist fights with his Muse over the best direction to take his latest story.'}, 2: {'title': 'The Tiniest Pumpkin Smasher', 'poster_url': '', 'videos': '', 'genres': 'Animation Short Comedy', 'storyline': 'In this super short silent animation, the tiniest pumpkin smasher does what it does best.In this super short silent animation, the tiniest pumpkin smasher does what it does best.'}, 3: {'title': 'The Sketch Comedy Movie', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOWY2MTg3ZTgtZDZiMC00MGFjLWEzZjktNDNhODAwMWNiN2E5XkEyXkFqcGdeQXVyMTk2MzA5NTk@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2624962841', 'genres': 'Comedy', 'storyline': "It's a sketch comedy film about...sketch comedies.It's a sketch comedy film about...sketch comedies."}, 4: {'title': 'Spotlight International Film Festival: Best of the Festival - Volume 1', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYTAzZGFjNzAtNTZjNC00NjM5LWFmYWUtODI5NzJiZmQxYmFhXkEyXkFqcGdeQXVyNTI0MjQyMTg@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2085471257', 'genres': 'Action Comedy Drama Sci-Fi', 'storyline': 'When Sean Astin, D. B. Sweeney, Michael Muhney and Jessica Roszko collide, you have a mix of the best short independent films since Sundance. Checkout the finest short films from drama to animation with a little bit of thriller and comedy.When Sean Astin, D. B. Sweeney, Michael Muhney and Jessica Roszko collide, you have a mix of the best short independent films since Sundance. Checkout the finest short films from drama to animation with a little bit of thriller and comedy.'}, 5: {'title': 'Hercules in Hollywood', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMjYzMjgwNzExMl5BMl5BanBnXkFtZTcwNDE0NDYyNA@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy', 'storyline': 'A spoof on the campy debut film of Arnold Schwarzenegger, Hercules in New York.A spoof on the campy debut film of Arnold Schwarzenegger, Hercules in New York.'}, 6: {'title': 'I Know Jack Venice', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': "A mockumentary where adult film star Jack Venice's fans and co-workers are interviewed.A mockumentary where adult film star Jack Venice's fans and co-workers are interviewed."}, 7: {'title': 'The Red Boot Diaries', 'poster_url': '', 'videos': '', 'genres': 'Comedy Short', 'storyline': 'Short Film Starring Betsy Brandt.Short Film Starring Betsy Brandt.'}, 8: {'title': 'Red Desert Penitentiary', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOTg4Njc5YzgtYTMwNy00MGVjLTgxMTktNzQyNmJkMWMwYjAzXkEyXkFqcGdeQXVyMzU0NzkwMDg@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy', 'storyline': 'Hollywood movie making types are spoofed.Hollywood movie making types are spoofed.'}, 9: {'title': 'Film Contest?', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': "['comedy', '']"}}]
+[ 2024-07-11 03:55:33,420  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:55:33] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 03:55:33,426  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:55:33] "GET /static/images/action.jpeg HTTP/1.1" 200 -]
+[ 2024-07-11 03:55:33,428  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:55:33] "[36mGET /static/images/default.png HTTP/1.1[0m" 304 -]
+[ 2024-07-11 03:56:26,209  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 03:56:26,217  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [documentary, animation, wracked, piano, movie...]
+[ 2024-07-11 03:56:26,218  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 03:56:26,433  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 03:56:26,433  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 03:56:26,434  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 03:56:26,434  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 03:56:26,435  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 03:56:26,435  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 03:56:26,436  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 1.8967904  -0.73113286 -1.2329236  -1.1562688   0.32696682 -0.30616975
+   1.2037568   2.1048336  -0.05548815 -0.42337635 -0.08834572 -0.11979103
+  -1.1555815   0.3433092  -0.64594674 -0.27641237 -0.33633488  0.60109264
+  -0.6709588  -0.56394136 -0.7143524  -0.32678485  0.23105365 -0.14907274
+  -0.48552325  0.16928944 -0.7384781  -0.4721684  -0.03686894 -0.41615465
+  -0.30611485 -0.00566506 -0.32127792 -0.33253315  0.29783377  1.1274103
+   0.67585    -0.01758113  0.56207216  0.73469514  0.21199751 -0.05787256
+  -0.9571219   0.11797661  0.15072657  0.8533858   0.37903854 -0.05267082
+  -0.2580038   0.36224568 -0.11540674  1.192529    0.69139504 -0.29974386
+   0.03032753 -0.31241462 -1.2908676   0.32758015  0.19819847 -0.08784063
+  -0.4271565  -0.8242845  -0.2636864   0.3997286  -0.38713166  0.12348578
+   0.5980153   0.04409724 -0.23956554 -0.5869839   0.2757333   0.01931811
+   0.24045816  0.9878097   0.8959501   0.2601332  -0.07965473 -0.50084114
+  -0.33730745  0.08647639  0.03367659  0.08886626  0.48006645 -0.564422
+  -0.28502467 -0.19605777  0.25310802 -0.24916308 -0.13998562 -0.12638578
+   0.3454694  -0.41038075 -0.38462943  0.08038444 -0.16117728 -0.04654754
+   0.19055115 -0.00946014  0.2751025  -0.04758507]]]
+[ 2024-07-11 03:56:26,436  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 03:56:53,924  84 COMPONENTS - INFO - Unnamed: 0.2                                               139766
+Unnamed: 0.1                                               139766
+Unnamed: 0                                                 153487
+title                             Look at Life: Putting on an Act
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt1732089/
+poster_url                                                       
+storyline       The captivating story of amateur dramatics in ...
+description     ['documentary', 'short', 'captivating', 'story...
+Name: 139766, dtype: object]
+[ 2024-07-11 03:56:53,926  84 COMPONENTS - INFO - Unnamed: 0.2                                                89137
+Unnamed: 0.1                                                89137
+Unnamed: 0                                                  95301
+title                                         Flickering Memories
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt0404965/
+poster_url                                                       
+storyline       Reflections of a demolished movie theater.Refl...
+description     ['documentary', 'short', 'reflections', 'demol...
+Name: 89137, dtype: object]
+[ 2024-07-11 03:56:53,926  84 COMPONENTS - INFO - Unnamed: 0.2                                               218425
+Unnamed: 0.1                                               218425
+Unnamed: 0                                                 247326
+title                                        Charlie Buenos Aires
+genres                                            Animation Short
+videos                                                         []
+url                        https://www.imdb.com/title/tt10691812/
+poster_url      https://www.imdb.com/title/tt10691812/mediavie...
+storyline       Charlie was a famous video game character duri...
+description     ['animation', 'short', 'charlie', 'famous', 'v...
+Name: 218425, dtype: object]
+[ 2024-07-11 03:56:55,252  84 COMPONENTS - INFO - Unnamed: 0.2                                               103122
+Unnamed: 0.1                                               103122
+Unnamed: 0                                                 111200
+title                                              Unwieldy Beast
+genres                          Documentary Short Biography Music
+videos          [{'link': 'https://www.imdb.com/video/vi278958...
+url                         https://www.imdb.com/title/tt2142961/
+poster_url      https://www.imdb.com/title/tt2142961/mediaview...
+storyline       A delightful story about a musician that wante...
+description     ['documentary', 'short', 'biography', 'music',...
+Name: 103122, dtype: object]
+[ 2024-07-11 03:56:56,353  84 COMPONENTS - INFO - Unnamed: 0.2                                               193798
+Unnamed: 0.1                                               193798
+Unnamed: 0                                                 217408
+title                                                   Re-Gifted
+genres                                            Animation Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt8637270/
+poster_url      https://www.imdb.com/title/tt8637270/mediaview...
+storyline       Story of a re-gifted music box.Story of a re-g...
+description     ['animation', 'short', 'story', 'regifted', 'm...
+Name: 193798, dtype: object]
+[ 2024-07-11 03:56:58,037  84 COMPONENTS - INFO - Unnamed: 0.2                                                81509
+Unnamed: 0.1                                                81509
+Unnamed: 0                                                  86785
+title                                A Session with the Committee
+genres                                         Comedy Documentary
+videos                                                         []
+url                         https://www.imdb.com/title/tt0064962/
+poster_url      https://www.imdb.com/title/tt0064962/mediaview...
+storyline       Recording of a live performance by a sketch co...
+description     ['comedy', 'documentary', 'recording', 'live',...
+Name: 81509, dtype: object]
+[ 2024-07-11 03:56:59,343  84 COMPONENTS - INFO - Unnamed: 0.2                                               191471
+Unnamed: 0.1                                               191471
+Unnamed: 0                                                 214631
+title                                    The Legend of Bo Diddley
+genres                                    Documentary Short Music
+videos                                                         []
+url                         https://www.imdb.com/title/tt0060622/
+poster_url                                                       
+storyline       A documentary of Bo Diddley playing his songs....
+description     ['documentary', 'short', 'music', 'bo', 'diddl...
+Name: 191471, dtype: object]
+[ 2024-07-11 03:56:59,344  84 COMPONENTS - INFO - Unnamed: 0.2                                               137316
+Unnamed: 0.1                                               137316
+Unnamed: 0                                                 150660
+title                                Through the Technicolor Lens
+genres                                            Animation Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt6341504/
+poster_url      https://www.imdb.com/title/tt6341504/mediaview...
+storyline       After watching an old technicolor musical movi...
+description     ['animation', 'short', 'watching', 'old', 'tec...
+Name: 137316, dtype: object]
+[ 2024-07-11 03:57:00,766  84 COMPONENTS - INFO - Unnamed: 0.2                                                   12
+Unnamed: 0.1                                                   12
+Unnamed: 0                                                     12
+title                                               Wracked piano
+genres                                      Documentary Animation
+videos                                                         []
+url                         https://www.imdb.com/title/tt9792770/
+poster_url      https://www.imdb.com/title/tt9792770/mediaview...
+storyline       The Wracked piano is a movie of an old, abando...
+description     ['documentary', 'animation', 'wracked', 'piano...
+Name: 12, dtype: object]
+[ 2024-07-11 03:57:02,532  84 COMPONENTS - INFO - Unnamed: 0.2                                               102979
+Unnamed: 0.1                                               102979
+Unnamed: 0                                                 111040
+title           Crescendo: On How Not To Remain Quiet with Mic...
+genres                                          Documentary Short
+videos                                                         []
+url                        https://www.imdb.com/title/tt10295918/
+poster_url                                                       
+storyline       An opera singer finds his voice.An opera singe...
+description     ['documentary', 'short', 'opera', 'singer', 'f...
+Name: 102979, dtype: object]
+[ 2024-07-11 03:57:02,576  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Look at Life: Putting on an Act', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'The captivating story of amateur dramatics in Britain, from Opera to the old time music hall.The captivating story of amateur dramatics in Britain, from Opera to the old time music hall.'}, 1: {'title': 'Flickering Memories', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'Reflections of a demolished movie theater.Reflections of a demolished movie theater.'}, 2: {'title': 'Charlie Buenos Aires', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZDcwN2I1NWYtMmVkNi00NDM3LWFjNWUtYmYzNGI1NTAyYjQ1XkEyXkFqcGdeQXVyNjAwNTM5OA@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': "Charlie was a famous video game character during the 80s. Nowadays he is currently retired and lives in Buenos Aires. This is the story of the world's most famous video game circus told by its protagonists.Charlie was a famous video game character during the 80s. Nowadays he is currently retired and lives in Buenos Aires. This is the story of the world's most famous video game circus told by its protagonists."}, 3: {'title': 'Unwieldy Beast', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZjUzNmZjMjEtYzRmMi00ZTQ5LThjODQtODZiOGY4OTUwZDIwXkEyXkFqcGdeQXVyMjYyOTEwMjU@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2789580313', 'genres': 'Documentary Short Biography Music', 'storyline': 'A delightful story about a musician that wanted to play his piano in the streets of San Francisco. You might be surprised how he did it.A delightful story about a musician that wanted to play his piano in the streets of San Francisco. You might be surprised how he did it.'}, 4: {'title': 'Re-Gifted', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNGRhNDU5NGQtNDY4ZC00ZGM5LTgzMTktZTM2NjkwOGJiNTljXkEyXkFqcGdeQXVyMjk1NzAxNg@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': 'Story of a re-gifted music box.Story of a re-gifted music box.'}, 5: {'title': 'A Session with the Committee', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNTkyNmI4NjItMzMxYS00NWZiLThmZWMtMzZjNjFhN2U1OTBkXkEyXkFqcGdeQXVyNTU3MTY2Mg@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy Documentary', 'storyline': 'Recording of a live performance by a sketch comedy troupe.Recording of a live performance by a sketch comedy troupe.'}, 6: {'title': 'The Legend of Bo Diddley', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short Music', 'storyline': 'A documentary of Bo Diddley playing his songs.A documentary of Bo Diddley playing his songs.'}, 7: {'title': 'Through the Technicolor Lens', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYjZlMzJlZjMtYTFmOC00N2FjLThjZjktOWQ5MzRhYmIzZmRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjE4NzA4NzE@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': 'After watching an old technicolor musical movie at local theater, Ceseelia witnesses the grimy streets being taken over by the world of lights, color, and music she loves.After watching an old technicolor musical movie at local theater, Ceseelia witnesses the grimy streets being taken over by the world of lights, color, and music she loves.'}, 8: {'title': 'Wracked piano', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNTViYmU0NzMtNmI1Zi00YjM2LTk2MTQtNWRmMjdmOGNiNmJkXkEyXkFqcGdeQXVyNjk5NDYxODY@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary Animation', 'storyline': "The Wracked piano is a movie of an old, abandoned piano Bösendorfer model 225, who lives in the studio of Radio Slovenia. The story is being told in a documentary language through fiction and animation. The movie presents true stories, supported by history facts and documents. They are complementd with statements and referrals of two slovenian literary works. It is also based on written notes, radio play and CD from Gregor Strnisa. Author's imagination and creativity glues it into a coherent documentary.The Wracked piano is a movie of an old, abandoned piano Bösendorfer model 225, who lives in the studio of Radio Slovenia. The story is being told in a documentary language through fiction and animation. The movie presents true stories, supported by history facts and documents. They are complementd with statements and referrals of two slovenian literary works. It is also based on written notes, radio play and CD from Gregor Strnisa. Author's imagination and creativity glues it into a coherent documentary."}, 9: {'title': 'Crescendo: On How Not To Remain Quiet with Michael Fabiano', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'An opera singer finds his voice.An opera singer finds his voice.'}}]
+[ 2024-07-11 03:57:02,771  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:57:02] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 03:59:25,925  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 03:59:25,937  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [documentary, animation, wracked, piano, movie...]
+[ 2024-07-11 03:59:25,937  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 03:59:26,131  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 03:59:26,131  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 03:59:26,133  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 03:59:26,133  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 03:59:26,134  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 03:59:26,134  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 03:59:26,139  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 1.8967904  -0.73113286 -1.2329236  -1.1562688   0.32696682 -0.30616975
+   1.2037568   2.1048336  -0.05548815 -0.42337635 -0.08834572 -0.11979103
+  -1.1555815   0.3433092  -0.64594674 -0.27641237 -0.33633488  0.60109264
+  -0.6709588  -0.56394136 -0.7143524  -0.32678485  0.23105365 -0.14907274
+  -0.48552325  0.16928944 -0.7384781  -0.4721684  -0.03686894 -0.41615465
+  -0.30611485 -0.00566506 -0.32127792 -0.33253315  0.29783377  1.1274103
+   0.67585    -0.01758113  0.56207216  0.73469514  0.21199751 -0.05787256
+  -0.9571219   0.11797661  0.15072657  0.8533858   0.37903854 -0.05267082
+  -0.2580038   0.36224568 -0.11540674  1.192529    0.69139504 -0.29974386
+   0.03032753 -0.31241462 -1.2908676   0.32758015  0.19819847 -0.08784063
+  -0.4271565  -0.8242845  -0.2636864   0.3997286  -0.38713166  0.12348578
+   0.5980153   0.04409724 -0.23956554 -0.5869839   0.2757333   0.01931811
+   0.24045816  0.9878097   0.8959501   0.2601332  -0.07965473 -0.50084114
+  -0.33730745  0.08647639  0.03367659  0.08886626  0.48006645 -0.564422
+  -0.28502467 -0.19605777  0.25310802 -0.24916308 -0.13998562 -0.12638578
+   0.3454694  -0.41038075 -0.38462943  0.08038444 -0.16117728 -0.04654754
+   0.19055115 -0.00946014  0.2751025  -0.04758507]]]
+[ 2024-07-11 03:59:26,139  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 03:59:53,615  84 COMPONENTS - INFO - Unnamed: 0.2                                               139766
+Unnamed: 0.1                                               139766
+Unnamed: 0                                                 153487
+title                             Look at Life: Putting on an Act
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt1732089/
+poster_url                                                       
+storyline       The captivating story of amateur dramatics in ...
+description     ['documentary', 'short', 'captivating', 'story...
+Name: 139766, dtype: object]
+[ 2024-07-11 03:59:53,617  84 COMPONENTS - INFO - Unnamed: 0.2                                                89137
+Unnamed: 0.1                                                89137
+Unnamed: 0                                                  95301
+title                                         Flickering Memories
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt0404965/
+poster_url                                                       
+storyline       Reflections of a demolished movie theater.Refl...
+description     ['documentary', 'short', 'reflections', 'demol...
+Name: 89137, dtype: object]
+[ 2024-07-11 03:59:53,618  84 COMPONENTS - INFO - Unnamed: 0.2                                               218425
+Unnamed: 0.1                                               218425
+Unnamed: 0                                                 247326
+title                                        Charlie Buenos Aires
+genres                                            Animation Short
+videos                                                         []
+url                        https://www.imdb.com/title/tt10691812/
+poster_url      https://www.imdb.com/title/tt10691812/mediavie...
+storyline       Charlie was a famous video game character duri...
+description     ['animation', 'short', 'charlie', 'famous', 'v...
+Name: 218425, dtype: object]
+[ 2024-07-11 03:59:55,049  84 COMPONENTS - INFO - Unnamed: 0.2                                               103122
+Unnamed: 0.1                                               103122
+Unnamed: 0                                                 111200
+title                                              Unwieldy Beast
+genres                          Documentary Short Biography Music
+videos          [{'link': 'https://www.imdb.com/video/vi278958...
+url                         https://www.imdb.com/title/tt2142961/
+poster_url      https://www.imdb.com/title/tt2142961/mediaview...
+storyline       A delightful story about a musician that wante...
+description     ['documentary', 'short', 'biography', 'music',...
+Name: 103122, dtype: object]
+[ 2024-07-11 03:59:56,469  84 COMPONENTS - INFO - Unnamed: 0.2                                               193798
+Unnamed: 0.1                                               193798
+Unnamed: 0                                                 217408
+title                                                   Re-Gifted
+genres                                            Animation Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt8637270/
+poster_url      https://www.imdb.com/title/tt8637270/mediaview...
+storyline       Story of a re-gifted music box.Story of a re-g...
+description     ['animation', 'short', 'story', 'regifted', 'm...
+Name: 193798, dtype: object]
+[ 2024-07-11 03:59:57,696  84 COMPONENTS - INFO - Unnamed: 0.2                                                81509
+Unnamed: 0.1                                                81509
+Unnamed: 0                                                  86785
+title                                A Session with the Committee
+genres                                         Comedy Documentary
+videos                                                         []
+url                         https://www.imdb.com/title/tt0064962/
+poster_url      https://www.imdb.com/title/tt0064962/mediaview...
+storyline       Recording of a live performance by a sketch co...
+description     ['comedy', 'documentary', 'recording', 'live',...
+Name: 81509, dtype: object]
+[ 2024-07-11 03:59:59,536  84 COMPONENTS - INFO - Unnamed: 0.2                                               191471
+Unnamed: 0.1                                               191471
+Unnamed: 0                                                 214631
+title                                    The Legend of Bo Diddley
+genres                                    Documentary Short Music
+videos                                                         []
+url                         https://www.imdb.com/title/tt0060622/
+poster_url                                                       
+storyline       A documentary of Bo Diddley playing his songs....
+description     ['documentary', 'short', 'music', 'bo', 'diddl...
+Name: 191471, dtype: object]
+[ 2024-07-11 03:59:59,537  84 COMPONENTS - INFO - Unnamed: 0.2                                               137316
+Unnamed: 0.1                                               137316
+Unnamed: 0                                                 150660
+title                                Through the Technicolor Lens
+genres                                            Animation Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt6341504/
+poster_url      https://www.imdb.com/title/tt6341504/mediaview...
+storyline       After watching an old technicolor musical movi...
+description     ['animation', 'short', 'watching', 'old', 'tec...
+Name: 137316, dtype: object]
+[ 2024-07-11 04:00:00,721  84 COMPONENTS - INFO - Unnamed: 0.2                                                   12
+Unnamed: 0.1                                                   12
+Unnamed: 0                                                     12
+title                                               Wracked piano
+genres                                      Documentary Animation
+videos                                                         []
+url                         https://www.imdb.com/title/tt9792770/
+poster_url      https://www.imdb.com/title/tt9792770/mediaview...
+storyline       The Wracked piano is a movie of an old, abando...
+description     ['documentary', 'animation', 'wracked', 'piano...
+Name: 12, dtype: object]
+[ 2024-07-11 04:00:01,857  84 COMPONENTS - INFO - Unnamed: 0.2                                               102979
+Unnamed: 0.1                                               102979
+Unnamed: 0                                                 111040
+title           Crescendo: On How Not To Remain Quiet with Mic...
+genres                                          Documentary Short
+videos                                                         []
+url                        https://www.imdb.com/title/tt10295918/
+poster_url                                                       
+storyline       An opera singer finds his voice.An opera singe...
+description     ['documentary', 'short', 'opera', 'singer', 'f...
+Name: 102979, dtype: object]
+[ 2024-07-11 04:00:01,901  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Look at Life: Putting on an Act', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'The captivating story of amateur dramatics in Britain, from Opera to the old time music hall.The captivating story of amateur dramatics in Britain, from Opera to the old time music hall.'}, 1: {'title': 'Flickering Memories', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'Reflections of a demolished movie theater.Reflections of a demolished movie theater.'}, 2: {'title': 'Charlie Buenos Aires', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZDcwN2I1NWYtMmVkNi00NDM3LWFjNWUtYmYzNGI1NTAyYjQ1XkEyXkFqcGdeQXVyNjAwNTM5OA@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': "Charlie was a famous video game character during the 80s. Nowadays he is currently retired and lives in Buenos Aires. This is the story of the world's most famous video game circus told by its protagonists.Charlie was a famous video game character during the 80s. Nowadays he is currently retired and lives in Buenos Aires. This is the story of the world's most famous video game circus told by its protagonists."}, 3: {'title': 'Unwieldy Beast', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZjUzNmZjMjEtYzRmMi00ZTQ5LThjODQtODZiOGY4OTUwZDIwXkEyXkFqcGdeQXVyMjYyOTEwMjU@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2789580313', 'genres': 'Documentary Short Biography Music', 'storyline': 'A delightful story about a musician that wanted to play his piano in the streets of San Francisco. You might be surprised how he did it.A delightful story about a musician that wanted to play his piano in the streets of San Francisco. You might be surprised how he did it.'}, 4: {'title': 'Re-Gifted', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNGRhNDU5NGQtNDY4ZC00ZGM5LTgzMTktZTM2NjkwOGJiNTljXkEyXkFqcGdeQXVyMjk1NzAxNg@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': 'Story of a re-gifted music box.Story of a re-gifted music box.'}, 5: {'title': 'A Session with the Committee', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNTkyNmI4NjItMzMxYS00NWZiLThmZWMtMzZjNjFhN2U1OTBkXkEyXkFqcGdeQXVyNTU3MTY2Mg@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy Documentary', 'storyline': 'Recording of a live performance by a sketch comedy troupe.Recording of a live performance by a sketch comedy troupe.'}, 6: {'title': 'The Legend of Bo Diddley', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short Music', 'storyline': 'A documentary of Bo Diddley playing his songs.A documentary of Bo Diddley playing his songs.'}, 7: {'title': 'Through the Technicolor Lens', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYjZlMzJlZjMtYTFmOC00N2FjLThjZjktOWQ5MzRhYmIzZmRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjE4NzA4NzE@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': 'After watching an old technicolor musical movie at local theater, Ceseelia witnesses the grimy streets being taken over by the world of lights, color, and music she loves.After watching an old technicolor musical movie at local theater, Ceseelia witnesses the grimy streets being taken over by the world of lights, color, and music she loves.'}, 8: {'title': 'Wracked piano', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNTViYmU0NzMtNmI1Zi00YjM2LTk2MTQtNWRmMjdmOGNiNmJkXkEyXkFqcGdeQXVyNjk5NDYxODY@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary Animation', 'storyline': "The Wracked piano is a movie of an old, abandoned piano Bösendorfer model 225, who lives in the studio of Radio Slovenia. The story is being told in a documentary language through fiction and animation. The movie presents true stories, supported by history facts and documents. They are complementd with statements and referrals of two slovenian literary works. It is also based on written notes, radio play and CD from Gregor Strnisa. Author's imagination and creativity glues it into a coherent documentary.The Wracked piano is a movie of an old, abandoned piano Bösendorfer model 225, who lives in the studio of Radio Slovenia. The story is being told in a documentary language through fiction and animation. The movie presents true stories, supported by history facts and documents. They are complementd with statements and referrals of two slovenian literary works. It is also based on written notes, radio play and CD from Gregor Strnisa. Author's imagination and creativity glues it into a coherent documentary."}, 9: {'title': 'Crescendo: On How Not To Remain Quiet with Michael Fabiano', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'An opera singer finds his voice.An opera singer finds his voice.'}}]
+[ 2024-07-11 04:00:02,105  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 04:00:02] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 04:00:02,117  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 04:00:02] "GET /static/images/action2.jpeg HTTP/1.1" 200 -]
+[ 2024-07-11 04:00:02,117  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 04:00:02] "[36mGET /static/images/action.jpeg HTTP/1.1[0m" 304 -]
+[ 2024-07-11 04:00:02,118  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 04:00:02] "[36mGET /static/images/default.png HTTP/1.1[0m" 304 -]
+[ 2024-07-11 04:05:03,534  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 04:05:03,546  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [documentary, animation, wracked, piano, movie...]
+[ 2024-07-11 04:05:03,546  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 04:05:03,749  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 04:05:03,749  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 04:05:03,751  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 04:05:03,751  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 04:05:03,752  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 04:05:03,752  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 04:05:03,764  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 1.8967904  -0.73113286 -1.2329236  -1.1562688   0.32696682 -0.30616975
+   1.2037568   2.1048336  -0.05548815 -0.42337635 -0.08834572 -0.11979103
+  -1.1555815   0.3433092  -0.64594674 -0.27641237 -0.33633488  0.60109264
+  -0.6709588  -0.56394136 -0.7143524  -0.32678485  0.23105365 -0.14907274
+  -0.48552325  0.16928944 -0.7384781  -0.4721684  -0.03686894 -0.41615465
+  -0.30611485 -0.00566506 -0.32127792 -0.33253315  0.29783377  1.1274103
+   0.67585    -0.01758113  0.56207216  0.73469514  0.21199751 -0.05787256
+  -0.9571219   0.11797661  0.15072657  0.8533858   0.37903854 -0.05267082
+  -0.2580038   0.36224568 -0.11540674  1.192529    0.69139504 -0.29974386
+   0.03032753 -0.31241462 -1.2908676   0.32758015  0.19819847 -0.08784063
+  -0.4271565  -0.8242845  -0.2636864   0.3997286  -0.38713166  0.12348578
+   0.5980153   0.04409724 -0.23956554 -0.5869839   0.2757333   0.01931811
+   0.24045816  0.9878097   0.8959501   0.2601332  -0.07965473 -0.50084114
+  -0.33730745  0.08647639  0.03367659  0.08886626  0.48006645 -0.564422
+  -0.28502467 -0.19605777  0.25310802 -0.24916308 -0.13998562 -0.12638578
+   0.3454694  -0.41038075 -0.38462943  0.08038444 -0.16117728 -0.04654754
+   0.19055115 -0.00946014  0.2751025  -0.04758507]]]
+[ 2024-07-11 04:05:03,764  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 04:05:31,388  84 COMPONENTS - INFO - Unnamed: 0.2                                               139766
+Unnamed: 0.1                                               139766
+Unnamed: 0                                                 153487
+title                             Look at Life: Putting on an Act
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt1732089/
+poster_url                                                       
+storyline       The captivating story of amateur dramatics in ...
+description     ['documentary', 'short', 'captivating', 'story...
+Name: 139766, dtype: object]
+[ 2024-07-11 04:05:31,390  84 COMPONENTS - INFO - Unnamed: 0.2                                                89137
+Unnamed: 0.1                                                89137
+Unnamed: 0                                                  95301
+title                                         Flickering Memories
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt0404965/
+poster_url                                                       
+storyline       Reflections of a demolished movie theater.Refl...
+description     ['documentary', 'short', 'reflections', 'demol...
+Name: 89137, dtype: object]
+[ 2024-07-11 04:05:31,391  84 COMPONENTS - INFO - Unnamed: 0.2                                               218425
+Unnamed: 0.1                                               218425
+Unnamed: 0                                                 247326
+title                                        Charlie Buenos Aires
+genres                                            Animation Short
+videos                                                         []
+url                        https://www.imdb.com/title/tt10691812/
+poster_url      https://www.imdb.com/title/tt10691812/mediavie...
+storyline       Charlie was a famous video game character duri...
+description     ['animation', 'short', 'charlie', 'famous', 'v...
+Name: 218425, dtype: object]
+[ 2024-07-11 04:05:32,646  84 COMPONENTS - INFO - Unnamed: 0.2                                               103122
+Unnamed: 0.1                                               103122
+Unnamed: 0                                                 111200
+title                                              Unwieldy Beast
+genres                          Documentary Short Biography Music
+videos          [{'link': 'https://www.imdb.com/video/vi278958...
+url                         https://www.imdb.com/title/tt2142961/
+poster_url      https://www.imdb.com/title/tt2142961/mediaview...
+storyline       A delightful story about a musician that wante...
+description     ['documentary', 'short', 'biography', 'music',...
+Name: 103122, dtype: object]
+[ 2024-07-11 04:05:33,969  84 COMPONENTS - INFO - Unnamed: 0.2                                               193798
+Unnamed: 0.1                                               193798
+Unnamed: 0                                                 217408
+title                                                   Re-Gifted
+genres                                            Animation Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt8637270/
+poster_url      https://www.imdb.com/title/tt8637270/mediaview...
+storyline       Story of a re-gifted music box.Story of a re-g...
+description     ['animation', 'short', 'story', 'regifted', 'm...
+Name: 193798, dtype: object]
+[ 2024-07-11 04:05:35,119  84 COMPONENTS - INFO - Unnamed: 0.2                                                81509
+Unnamed: 0.1                                                81509
+Unnamed: 0                                                  86785
+title                                A Session with the Committee
+genres                                         Comedy Documentary
+videos                                                         []
+url                         https://www.imdb.com/title/tt0064962/
+poster_url      https://www.imdb.com/title/tt0064962/mediaview...
+storyline       Recording of a live performance by a sketch co...
+description     ['comedy', 'documentary', 'recording', 'live',...
+Name: 81509, dtype: object]
+[ 2024-07-11 04:05:36,585  84 COMPONENTS - INFO - Unnamed: 0.2                                               191471
+Unnamed: 0.1                                               191471
+Unnamed: 0                                                 214631
+title                                    The Legend of Bo Diddley
+genres                                    Documentary Short Music
+videos                                                         []
+url                         https://www.imdb.com/title/tt0060622/
+poster_url                                                       
+storyline       A documentary of Bo Diddley playing his songs....
+description     ['documentary', 'short', 'music', 'bo', 'diddl...
+Name: 191471, dtype: object]
+[ 2024-07-11 04:05:36,586  84 COMPONENTS - INFO - Unnamed: 0.2                                               137316
+Unnamed: 0.1                                               137316
+Unnamed: 0                                                 150660
+title                                Through the Technicolor Lens
+genres                                            Animation Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt6341504/
+poster_url      https://www.imdb.com/title/tt6341504/mediaview...
+storyline       After watching an old technicolor musical movi...
+description     ['animation', 'short', 'watching', 'old', 'tec...
+Name: 137316, dtype: object]
+[ 2024-07-11 04:05:37,771  84 COMPONENTS - INFO - Unnamed: 0.2                                                   12
+Unnamed: 0.1                                                   12
+Unnamed: 0                                                     12
+title                                               Wracked piano
+genres                                      Documentary Animation
+videos                                                         []
+url                         https://www.imdb.com/title/tt9792770/
+poster_url      https://www.imdb.com/title/tt9792770/mediaview...
+storyline       The Wracked piano is a movie of an old, abando...
+description     ['documentary', 'animation', 'wracked', 'piano...
+Name: 12, dtype: object]
+[ 2024-07-11 04:05:39,002  84 COMPONENTS - INFO - Unnamed: 0.2                                               102979
+Unnamed: 0.1                                               102979
+Unnamed: 0                                                 111040
+title           Crescendo: On How Not To Remain Quiet with Mic...
+genres                                          Documentary Short
+videos                                                         []
+url                        https://www.imdb.com/title/tt10295918/
+poster_url                                                       
+storyline       An opera singer finds his voice.An opera singe...
+description     ['documentary', 'short', 'opera', 'singer', 'f...
+Name: 102979, dtype: object]
+[ 2024-07-11 04:05:39,041  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Look at Life: Putting on an Act', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'The captivating story of amateur dramatics in Britain, from Opera to the old time music hall.The captivating story of amateur dramatics in Britain, from Opera to the old time music hall.'}, 1: {'title': 'Flickering Memories', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'Reflections of a demolished movie theater.Reflections of a demolished movie theater.'}, 2: {'title': 'Charlie Buenos Aires', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZDcwN2I1NWYtMmVkNi00NDM3LWFjNWUtYmYzNGI1NTAyYjQ1XkEyXkFqcGdeQXVyNjAwNTM5OA@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': "Charlie was a famous video game character during the 80s. Nowadays he is currently retired and lives in Buenos Aires. This is the story of the world's most famous video game circus told by its protagonists.Charlie was a famous video game character during the 80s. Nowadays he is currently retired and lives in Buenos Aires. This is the story of the world's most famous video game circus told by its protagonists."}, 3: {'title': 'Unwieldy Beast', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZjUzNmZjMjEtYzRmMi00ZTQ5LThjODQtODZiOGY4OTUwZDIwXkEyXkFqcGdeQXVyMjYyOTEwMjU@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2789580313', 'genres': 'Documentary Short Biography Music', 'storyline': 'A delightful story about a musician that wanted to play his piano in the streets of San Francisco. You might be surprised how he did it.A delightful story about a musician that wanted to play his piano in the streets of San Francisco. You might be surprised how he did it.'}, 4: {'title': 'Re-Gifted', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNGRhNDU5NGQtNDY4ZC00ZGM5LTgzMTktZTM2NjkwOGJiNTljXkEyXkFqcGdeQXVyMjk1NzAxNg@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': 'Story of a re-gifted music box.Story of a re-gifted music box.'}, 5: {'title': 'A Session with the Committee', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNTkyNmI4NjItMzMxYS00NWZiLThmZWMtMzZjNjFhN2U1OTBkXkEyXkFqcGdeQXVyNTU3MTY2Mg@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy Documentary', 'storyline': 'Recording of a live performance by a sketch comedy troupe.Recording of a live performance by a sketch comedy troupe.'}, 6: {'title': 'The Legend of Bo Diddley', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short Music', 'storyline': 'A documentary of Bo Diddley playing his songs.A documentary of Bo Diddley playing his songs.'}, 7: {'title': 'Through the Technicolor Lens', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYjZlMzJlZjMtYTFmOC00N2FjLThjZjktOWQ5MzRhYmIzZmRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjE4NzA4NzE@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': 'After watching an old technicolor musical movie at local theater, Ceseelia witnesses the grimy streets being taken over by the world of lights, color, and music she loves.After watching an old technicolor musical movie at local theater, Ceseelia witnesses the grimy streets being taken over by the world of lights, color, and music she loves.'}, 8: {'title': 'Wracked piano', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNTViYmU0NzMtNmI1Zi00YjM2LTk2MTQtNWRmMjdmOGNiNmJkXkEyXkFqcGdeQXVyNjk5NDYxODY@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary Animation', 'storyline': "The Wracked piano is a movie of an old, abandoned piano Bösendorfer model 225, who lives in the studio of Radio Slovenia. The story is being told in a documentary language through fiction and animation. The movie presents true stories, supported by history facts and documents. They are complementd with statements and referrals of two slovenian literary works. It is also based on written notes, radio play and CD from Gregor Strnisa. Author's imagination and creativity glues it into a coherent documentary.The Wracked piano is a movie of an old, abandoned piano Bösendorfer model 225, who lives in the studio of Radio Slovenia. The story is being told in a documentary language through fiction and animation. The movie presents true stories, supported by history facts and documents. They are complementd with statements and referrals of two slovenian literary works. It is also based on written notes, radio play and CD from Gregor Strnisa. Author's imagination and creativity glues it into a coherent documentary."}, 9: {'title': 'Crescendo: On How Not To Remain Quiet with Michael Fabiano', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'An opera singer finds his voice.An opera singer finds his voice.'}}]
+[ 2024-07-11 04:05:39,233  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 04:05:39] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 04:05:39,245  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 04:05:39] "[36mGET /static/images/horror3.jpeg HTTP/1.1[0m" 304 -]
+[ 2024-07-11 04:06:23,287  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 04:06:23] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 04:06:35,347  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 04:06:35,357  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [documentary, animation, wracked, piano, movie...]
+[ 2024-07-11 04:06:35,357  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 04:06:35,594  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 04:06:35,594  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 04:06:35,595  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 04:06:35,595  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 04:06:35,596  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 04:06:35,596  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 04:06:35,599  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 1.8967904  -0.73113286 -1.2329236  -1.1562688   0.32696682 -0.30616975
+   1.2037568   2.1048336  -0.05548815 -0.42337635 -0.08834572 -0.11979103
+  -1.1555815   0.3433092  -0.64594674 -0.27641237 -0.33633488  0.60109264
+  -0.6709588  -0.56394136 -0.7143524  -0.32678485  0.23105365 -0.14907274
+  -0.48552325  0.16928944 -0.7384781  -0.4721684  -0.03686894 -0.41615465
+  -0.30611485 -0.00566506 -0.32127792 -0.33253315  0.29783377  1.1274103
+   0.67585    -0.01758113  0.56207216  0.73469514  0.21199751 -0.05787256
+  -0.9571219   0.11797661  0.15072657  0.8533858   0.37903854 -0.05267082
+  -0.2580038   0.36224568 -0.11540674  1.192529    0.69139504 -0.29974386
+   0.03032753 -0.31241462 -1.2908676   0.32758015  0.19819847 -0.08784063
+  -0.4271565  -0.8242845  -0.2636864   0.3997286  -0.38713166  0.12348578
+   0.5980153   0.04409724 -0.23956554 -0.5869839   0.2757333   0.01931811
+   0.24045816  0.9878097   0.8959501   0.2601332  -0.07965473 -0.50084114
+  -0.33730745  0.08647639  0.03367659  0.08886626  0.48006645 -0.564422
+  -0.28502467 -0.19605777  0.25310802 -0.24916308 -0.13998562 -0.12638578
+   0.3454694  -0.41038075 -0.38462943  0.08038444 -0.16117728 -0.04654754
+   0.19055115 -0.00946014  0.2751025  -0.04758507]]]
+[ 2024-07-11 04:06:35,599  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 04:07:03,081  84 COMPONENTS - INFO - Unnamed: 0.2                                               139766
+Unnamed: 0.1                                               139766
+Unnamed: 0                                                 153487
+title                             Look at Life: Putting on an Act
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt1732089/
+poster_url                                                       
+storyline       The captivating story of amateur dramatics in ...
+description     ['documentary', 'short', 'captivating', 'story...
+Name: 139766, dtype: object]
+[ 2024-07-11 04:07:03,082  84 COMPONENTS - INFO - Unnamed: 0.2                                                89137
+Unnamed: 0.1                                                89137
+Unnamed: 0                                                  95301
+title                                         Flickering Memories
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt0404965/
+poster_url                                                       
+storyline       Reflections of a demolished movie theater.Refl...
+description     ['documentary', 'short', 'reflections', 'demol...
+Name: 89137, dtype: object]
+[ 2024-07-11 04:07:03,082  84 COMPONENTS - INFO - Unnamed: 0.2                                               218425
+Unnamed: 0.1                                               218425
+Unnamed: 0                                                 247326
+title                                        Charlie Buenos Aires
+genres                                            Animation Short
+videos                                                         []
+url                        https://www.imdb.com/title/tt10691812/
+poster_url      https://www.imdb.com/title/tt10691812/mediavie...
+storyline       Charlie was a famous video game character duri...
+description     ['animation', 'short', 'charlie', 'famous', 'v...
+Name: 218425, dtype: object]
+[ 2024-07-11 04:07:04,345  84 COMPONENTS - INFO - Unnamed: 0.2                                               103122
+Unnamed: 0.1                                               103122
+Unnamed: 0                                                 111200
+title                                              Unwieldy Beast
+genres                          Documentary Short Biography Music
+videos          [{'link': 'https://www.imdb.com/video/vi278958...
+url                         https://www.imdb.com/title/tt2142961/
+poster_url      https://www.imdb.com/title/tt2142961/mediaview...
+storyline       A delightful story about a musician that wante...
+description     ['documentary', 'short', 'biography', 'music',...
+Name: 103122, dtype: object]
+[ 2024-07-11 04:07:05,343  84 COMPONENTS - INFO - Unnamed: 0.2                                               193798
+Unnamed: 0.1                                               193798
+Unnamed: 0                                                 217408
+title                                                   Re-Gifted
+genres                                            Animation Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt8637270/
+poster_url      https://www.imdb.com/title/tt8637270/mediaview...
+storyline       Story of a re-gifted music box.Story of a re-g...
+description     ['animation', 'short', 'story', 'regifted', 'm...
+Name: 193798, dtype: object]
+[ 2024-07-11 04:07:06,521  84 COMPONENTS - INFO - Unnamed: 0.2                                                81509
+Unnamed: 0.1                                                81509
+Unnamed: 0                                                  86785
+title                                A Session with the Committee
+genres                                         Comedy Documentary
+videos                                                         []
+url                         https://www.imdb.com/title/tt0064962/
+poster_url      https://www.imdb.com/title/tt0064962/mediaview...
+storyline       Recording of a live performance by a sketch co...
+description     ['comedy', 'documentary', 'recording', 'live',...
+Name: 81509, dtype: object]
+[ 2024-07-11 04:07:07,849  84 COMPONENTS - INFO - Unnamed: 0.2                                               191471
+Unnamed: 0.1                                               191471
+Unnamed: 0                                                 214631
+title                                    The Legend of Bo Diddley
+genres                                    Documentary Short Music
+videos                                                         []
+url                         https://www.imdb.com/title/tt0060622/
+poster_url                                                       
+storyline       A documentary of Bo Diddley playing his songs....
+description     ['documentary', 'short', 'music', 'bo', 'diddl...
+Name: 191471, dtype: object]
+[ 2024-07-11 04:07:07,851  84 COMPONENTS - INFO - Unnamed: 0.2                                               137316
+Unnamed: 0.1                                               137316
+Unnamed: 0                                                 150660
+title                                Through the Technicolor Lens
+genres                                            Animation Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt6341504/
+poster_url      https://www.imdb.com/title/tt6341504/mediaview...
+storyline       After watching an old technicolor musical movi...
+description     ['animation', 'short', 'watching', 'old', 'tec...
+Name: 137316, dtype: object]
+[ 2024-07-11 04:07:09,073  84 COMPONENTS - INFO - Unnamed: 0.2                                                   12
+Unnamed: 0.1                                                   12
+Unnamed: 0                                                     12
+title                                               Wracked piano
+genres                                      Documentary Animation
+videos                                                         []
+url                         https://www.imdb.com/title/tt9792770/
+poster_url      https://www.imdb.com/title/tt9792770/mediaview...
+storyline       The Wracked piano is a movie of an old, abando...
+description     ['documentary', 'animation', 'wracked', 'piano...
+Name: 12, dtype: object]
+[ 2024-07-11 04:07:10,279  84 COMPONENTS - INFO - Unnamed: 0.2                                               102979
+Unnamed: 0.1                                               102979
+Unnamed: 0                                                 111040
+title           Crescendo: On How Not To Remain Quiet with Mic...
+genres                                          Documentary Short
+videos                                                         []
+url                        https://www.imdb.com/title/tt10295918/
+poster_url                                                       
+storyline       An opera singer finds his voice.An opera singe...
+description     ['documentary', 'short', 'opera', 'singer', 'f...
+Name: 102979, dtype: object]
+[ 2024-07-11 04:07:10,325  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Look at Life: Putting on an Act', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'The captivating story of amateur dramatics in Britain, from Opera to the old time music hall.The captivating story of amateur dramatics in Britain, from Opera to the old time music hall.'}, 1: {'title': 'Flickering Memories', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'Reflections of a demolished movie theater.Reflections of a demolished movie theater.'}, 2: {'title': 'Charlie Buenos Aires', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZDcwN2I1NWYtMmVkNi00NDM3LWFjNWUtYmYzNGI1NTAyYjQ1XkEyXkFqcGdeQXVyNjAwNTM5OA@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': "Charlie was a famous video game character during the 80s. Nowadays he is currently retired and lives in Buenos Aires. This is the story of the world's most famous video game circus told by its protagonists.Charlie was a famous video game character during the 80s. Nowadays he is currently retired and lives in Buenos Aires. This is the story of the world's most famous video game circus told by its protagonists."}, 3: {'title': 'Unwieldy Beast', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZjUzNmZjMjEtYzRmMi00ZTQ5LThjODQtODZiOGY4OTUwZDIwXkEyXkFqcGdeQXVyMjYyOTEwMjU@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2789580313', 'genres': 'Documentary Short Biography Music', 'storyline': 'A delightful story about a musician that wanted to play his piano in the streets of San Francisco. You might be surprised how he did it.A delightful story about a musician that wanted to play his piano in the streets of San Francisco. You might be surprised how he did it.'}, 4: {'title': 'Re-Gifted', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNGRhNDU5NGQtNDY4ZC00ZGM5LTgzMTktZTM2NjkwOGJiNTljXkEyXkFqcGdeQXVyMjk1NzAxNg@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': 'Story of a re-gifted music box.Story of a re-gifted music box.'}, 5: {'title': 'A Session with the Committee', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNTkyNmI4NjItMzMxYS00NWZiLThmZWMtMzZjNjFhN2U1OTBkXkEyXkFqcGdeQXVyNTU3MTY2Mg@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy Documentary', 'storyline': 'Recording of a live performance by a sketch comedy troupe.Recording of a live performance by a sketch comedy troupe.'}, 6: {'title': 'The Legend of Bo Diddley', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short Music', 'storyline': 'A documentary of Bo Diddley playing his songs.A documentary of Bo Diddley playing his songs.'}, 7: {'title': 'Through the Technicolor Lens', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYjZlMzJlZjMtYTFmOC00N2FjLThjZjktOWQ5MzRhYmIzZmRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjE4NzA4NzE@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': 'After watching an old technicolor musical movie at local theater, Ceseelia witnesses the grimy streets being taken over by the world of lights, color, and music she loves.After watching an old technicolor musical movie at local theater, Ceseelia witnesses the grimy streets being taken over by the world of lights, color, and music she loves.'}, 8: {'title': 'Wracked piano', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNTViYmU0NzMtNmI1Zi00YjM2LTk2MTQtNWRmMjdmOGNiNmJkXkEyXkFqcGdeQXVyNjk5NDYxODY@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary Animation', 'storyline': "The Wracked piano is a movie of an old, abandoned piano Bösendorfer model 225, who lives in the studio of Radio Slovenia. The story is being told in a documentary language through fiction and animation. The movie presents true stories, supported by history facts and documents. They are complementd with statements and referrals of two slovenian literary works. It is also based on written notes, radio play and CD from Gregor Strnisa. Author's imagination and creativity glues it into a coherent documentary.The Wracked piano is a movie of an old, abandoned piano Bösendorfer model 225, who lives in the studio of Radio Slovenia. The story is being told in a documentary language through fiction and animation. The movie presents true stories, supported by history facts and documents. They are complementd with statements and referrals of two slovenian literary works. It is also based on written notes, radio play and CD from Gregor Strnisa. Author's imagination and creativity glues it into a coherent documentary."}, 9: {'title': 'Crescendo: On How Not To Remain Quiet with Michael Fabiano', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'An opera singer finds his voice.An opera singer finds his voice.'}}]
+[ 2024-07-11 04:07:10,525  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 04:07:10] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 04:07:10,537  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 04:07:10] "GET /static/images/action2.jpeg HTTP/1.1" 200 -]
+[ 2024-07-11 04:07:10,537  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 04:07:10] "GET /static/images/horror3.jpeg HTTP/1.1" 200 -]
+[ 2024-07-11 04:07:10,537  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 04:07:10] "GET /static/images/comedy6.jpeg HTTP/1.1" 200 -]
+[ 2024-07-11 14:04:12,218  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 14:04:12,248  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [documentary, animation, wracked, piano, movie...]
+[ 2024-07-11 14:04:12,248  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 14:04:12,463  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 14:04:12,463  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 14:04:12,465  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 14:04:12,465  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 14:04:12,466  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 14:04:12,466  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 14:04:12,476  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 1.8967904  -0.73113286 -1.2329236  -1.1562688   0.32696682 -0.30616975
+   1.2037568   2.1048336  -0.05548815 -0.42337635 -0.08834572 -0.11979103
+  -1.1555815   0.3433092  -0.64594674 -0.27641237 -0.33633488  0.60109264
+  -0.6709588  -0.56394136 -0.7143524  -0.32678485  0.23105365 -0.14907274
+  -0.48552325  0.16928944 -0.7384781  -0.4721684  -0.03686894 -0.41615465
+  -0.30611485 -0.00566506 -0.32127792 -0.33253315  0.29783377  1.1274103
+   0.67585    -0.01758113  0.56207216  0.73469514  0.21199751 -0.05787256
+  -0.9571219   0.11797661  0.15072657  0.8533858   0.37903854 -0.05267082
+  -0.2580038   0.36224568 -0.11540674  1.192529    0.69139504 -0.29974386
+   0.03032753 -0.31241462 -1.2908676   0.32758015  0.19819847 -0.08784063
+  -0.4271565  -0.8242845  -0.2636864   0.3997286  -0.38713166  0.12348578
+   0.5980153   0.04409724 -0.23956554 -0.5869839   0.2757333   0.01931811
+   0.24045816  0.9878097   0.8959501   0.2601332  -0.07965473 -0.50084114
+  -0.33730745  0.08647639  0.03367659  0.08886626  0.48006645 -0.564422
+  -0.28502467 -0.19605777  0.25310802 -0.24916308 -0.13998562 -0.12638578
+   0.3454694  -0.41038075 -0.38462943  0.08038444 -0.16117728 -0.04654754
+   0.19055115 -0.00946014  0.2751025  -0.04758507]]]
+[ 2024-07-11 14:04:12,476  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 14:04:40,289  84 COMPONENTS - INFO - Unnamed: 0.2                                               139766
+Unnamed: 0.1                                               139766
+Unnamed: 0                                                 153487
+title                             Look at Life: Putting on an Act
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt1732089/
+poster_url                                                       
+storyline       The captivating story of amateur dramatics in ...
+description     ['documentary', 'short', 'captivating', 'story...
+Name: 139766, dtype: object]
+[ 2024-07-11 14:04:40,290  84 COMPONENTS - INFO - Unnamed: 0.2                                                89137
+Unnamed: 0.1                                                89137
+Unnamed: 0                                                  95301
+title                                         Flickering Memories
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt0404965/
+poster_url                                                       
+storyline       Reflections of a demolished movie theater.Refl...
+description     ['documentary', 'short', 'reflections', 'demol...
+Name: 89137, dtype: object]
+[ 2024-07-11 14:04:40,290  84 COMPONENTS - INFO - Unnamed: 0.2                                               218425
+Unnamed: 0.1                                               218425
+Unnamed: 0                                                 247326
+title                                        Charlie Buenos Aires
+genres                                            Animation Short
+videos                                                         []
+url                        https://www.imdb.com/title/tt10691812/
+poster_url      https://www.imdb.com/title/tt10691812/mediavie...
+storyline       Charlie was a famous video game character duri...
+description     ['animation', 'short', 'charlie', 'famous', 'v...
+Name: 218425, dtype: object]
+[ 2024-07-11 14:04:41,924  84 COMPONENTS - INFO - Unnamed: 0.2                                               103122
+Unnamed: 0.1                                               103122
+Unnamed: 0                                                 111200
+title                                              Unwieldy Beast
+genres                          Documentary Short Biography Music
+videos          [{'link': 'https://www.imdb.com/video/vi278958...
+url                         https://www.imdb.com/title/tt2142961/
+poster_url      https://www.imdb.com/title/tt2142961/mediaview...
+storyline       A delightful story about a musician that wante...
+description     ['documentary', 'short', 'biography', 'music',...
+Name: 103122, dtype: object]
+[ 2024-07-11 14:04:43,150  84 COMPONENTS - INFO - Unnamed: 0.2                                               193798
+Unnamed: 0.1                                               193798
+Unnamed: 0                                                 217408
+title                                                   Re-Gifted
+genres                                            Animation Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt8637270/
+poster_url      https://www.imdb.com/title/tt8637270/mediaview...
+storyline       Story of a re-gifted music box.Story of a re-g...
+description     ['animation', 'short', 'story', 'regifted', 'm...
+Name: 193798, dtype: object]
+[ 2024-07-11 14:04:46,378  84 COMPONENTS - INFO - Unnamed: 0.2                                                81509
+Unnamed: 0.1                                                81509
+Unnamed: 0                                                  86785
+title                                A Session with the Committee
+genres                                         Comedy Documentary
+videos                                                         []
+url                         https://www.imdb.com/title/tt0064962/
+poster_url      https://www.imdb.com/title/tt0064962/mediaview...
+storyline       Recording of a live performance by a sketch co...
+description     ['comedy', 'documentary', 'recording', 'live',...
+Name: 81509, dtype: object]
+[ 2024-07-11 14:04:47,709  84 COMPONENTS - INFO - Unnamed: 0.2                                               191471
+Unnamed: 0.1                                               191471
+Unnamed: 0                                                 214631
+title                                    The Legend of Bo Diddley
+genres                                    Documentary Short Music
+videos                                                         []
+url                         https://www.imdb.com/title/tt0060622/
+poster_url                                                       
+storyline       A documentary of Bo Diddley playing his songs....
+description     ['documentary', 'short', 'music', 'bo', 'diddl...
+Name: 191471, dtype: object]
+[ 2024-07-11 14:04:47,710  84 COMPONENTS - INFO - Unnamed: 0.2                                               137316
+Unnamed: 0.1                                               137316
+Unnamed: 0                                                 150660
+title                                Through the Technicolor Lens
+genres                                            Animation Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt6341504/
+poster_url      https://www.imdb.com/title/tt6341504/mediaview...
+storyline       After watching an old technicolor musical movi...
+description     ['animation', 'short', 'watching', 'old', 'tec...
+Name: 137316, dtype: object]
+[ 2024-07-11 14:04:49,005  84 COMPONENTS - INFO - Unnamed: 0.2                                                   12
+Unnamed: 0.1                                                   12
+Unnamed: 0                                                     12
+title                                               Wracked piano
+genres                                      Documentary Animation
+videos                                                         []
+url                         https://www.imdb.com/title/tt9792770/
+poster_url      https://www.imdb.com/title/tt9792770/mediaview...
+storyline       The Wracked piano is a movie of an old, abando...
+description     ['documentary', 'animation', 'wracked', 'piano...
+Name: 12, dtype: object]
+[ 2024-07-11 14:04:50,383  84 COMPONENTS - INFO - Unnamed: 0.2                                               102979
+Unnamed: 0.1                                               102979
+Unnamed: 0                                                 111040
+title           Crescendo: On How Not To Remain Quiet with Mic...
+genres                                          Documentary Short
+videos                                                         []
+url                        https://www.imdb.com/title/tt10295918/
+poster_url                                                       
+storyline       An opera singer finds his voice.An opera singe...
+description     ['documentary', 'short', 'opera', 'singer', 'f...
+Name: 102979, dtype: object]
+[ 2024-07-11 14:04:50,435  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Look at Life: Putting on an Act', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'The captivating story of amateur dramatics in Britain, from Opera to the old time music hall.The captivating story of amateur dramatics in Britain, from Opera to the old time music hall.'}, 1: {'title': 'Flickering Memories', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'Reflections of a demolished movie theater.Reflections of a demolished movie theater.'}, 2: {'title': 'Charlie Buenos Aires', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZDcwN2I1NWYtMmVkNi00NDM3LWFjNWUtYmYzNGI1NTAyYjQ1XkEyXkFqcGdeQXVyNjAwNTM5OA@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': "Charlie was a famous video game character during the 80s. Nowadays he is currently retired and lives in Buenos Aires. This is the story of the world's most famous video game circus told by its protagonists.Charlie was a famous video game character during the 80s. Nowadays he is currently retired and lives in Buenos Aires. This is the story of the world's most famous video game circus told by its protagonists."}, 3: {'title': 'Unwieldy Beast', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZjUzNmZjMjEtYzRmMi00ZTQ5LThjODQtODZiOGY4OTUwZDIwXkEyXkFqcGdeQXVyMjYyOTEwMjU@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2789580313', 'genres': 'Documentary Short Biography Music', 'storyline': 'A delightful story about a musician that wanted to play his piano in the streets of San Francisco. You might be surprised how he did it.A delightful story about a musician that wanted to play his piano in the streets of San Francisco. You might be surprised how he did it.'}, 4: {'title': 'Re-Gifted', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNGRhNDU5NGQtNDY4ZC00ZGM5LTgzMTktZTM2NjkwOGJiNTljXkEyXkFqcGdeQXVyMjk1NzAxNg@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': 'Story of a re-gifted music box.Story of a re-gifted music box.'}, 5: {'title': 'A Session with the Committee', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNTkyNmI4NjItMzMxYS00NWZiLThmZWMtMzZjNjFhN2U1OTBkXkEyXkFqcGdeQXVyNTU3MTY2Mg@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy Documentary', 'storyline': 'Recording of a live performance by a sketch comedy troupe.Recording of a live performance by a sketch comedy troupe.'}, 6: {'title': 'The Legend of Bo Diddley', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short Music', 'storyline': 'A documentary of Bo Diddley playing his songs.A documentary of Bo Diddley playing his songs.'}, 7: {'title': 'Through the Technicolor Lens', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYjZlMzJlZjMtYTFmOC00N2FjLThjZjktOWQ5MzRhYmIzZmRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjE4NzA4NzE@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short', 'storyline': 'After watching an old technicolor musical movie at local theater, Ceseelia witnesses the grimy streets being taken over by the world of lights, color, and music she loves.After watching an old technicolor musical movie at local theater, Ceseelia witnesses the grimy streets being taken over by the world of lights, color, and music she loves.'}, 8: {'title': 'Wracked piano', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNTViYmU0NzMtNmI1Zi00YjM2LTk2MTQtNWRmMjdmOGNiNmJkXkEyXkFqcGdeQXVyNjk5NDYxODY@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary Animation', 'storyline': "The Wracked piano is a movie of an old, abandoned piano Bösendorfer model 225, who lives in the studio of Radio Slovenia. The story is being told in a documentary language through fiction and animation. The movie presents true stories, supported by history facts and documents. They are complementd with statements and referrals of two slovenian literary works. It is also based on written notes, radio play and CD from Gregor Strnisa. Author's imagination and creativity glues it into a coherent documentary.The Wracked piano is a movie of an old, abandoned piano Bösendorfer model 225, who lives in the studio of Radio Slovenia. The story is being told in a documentary language through fiction and animation. The movie presents true stories, supported by history facts and documents. They are complementd with statements and referrals of two slovenian literary works. It is also based on written notes, radio play and CD from Gregor Strnisa. Author's imagination and creativity glues it into a coherent documentary."}, 9: {'title': 'Crescendo: On How Not To Remain Quiet with Michael Fabiano', 'poster_url': '', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'An opera singer finds his voice.An opera singer finds his voice.'}}]
+[ 2024-07-11 14:04:50,626  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 14:04:50] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 14:04:50,642  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 14:04:50] "[36mGET /static/images/comedy.jpeg HTTP/1.1[0m" 304 -]

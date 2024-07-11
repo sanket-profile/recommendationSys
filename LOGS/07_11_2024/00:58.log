@@ -1,0 +1,944 @@
+[ 2024-07-11 00:58:47,493  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-11 00:58:47,503  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-11 00:58:52,933  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 00:58:52,945  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [movie, dinosaurs, people, little, horror, thr...]
+[ 2024-07-11 00:58:52,946  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 00:58:53,243  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 00:58:53,244  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 00:58:53,250  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 00:58:53,250  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 00:58:53,265  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 00:58:53,265  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 00:58:53,266  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 0.18754405 -0.789632   -2.7328324   3.0946634  -2.690498   -0.18204921
+  -0.3837613   2.5755162   1.1848258   0.07997366 -0.37928104  1.3371694
+   0.4835178  -1.0768423  -0.8258082   0.63661706  0.756158    1.1726627
+   2.0729277  -1.1748934  -0.98006564  0.6921027   1.8683665   0.23090042
+   0.5833832  -1.2397722  -1.3462033   0.20500866  0.85556173 -1.0249736
+   2.0367947   0.23246217 -0.48358065 -0.18997109  1.3664503  -0.3881832
+   0.67546874 -0.01882338  0.4897199   0.20994963  0.39863428 -0.11880853
+  -0.2535556   0.06013892 -0.69314414 -0.7002884   0.0672183   0.30356482
+  -0.34677887 -0.62380314 -0.48202264 -0.610522    0.29232126  0.945114
+  -0.7855193   0.44522956 -0.5560284  -0.9112705  -0.09956916  0.6403524
+   0.8244194   0.10002303 -0.10465798  0.6392772  -0.13464688 -0.51662916
+   0.45225602 -0.44232106 -0.9022305  -0.18952958  0.06550684  1.1020916
+   0.5454313   0.20585233  0.03961719 -0.12775663 -0.8447232   0.02265673
+  -1.5585058  -0.23346746  1.098012    0.2009306  -0.32761714 -0.6511142
+  -1.2211988  -0.03699126  0.71845037 -0.7195855  -0.7285066   0.58040094
+   0.34503505 -0.5683948   0.22014514 -0.5613619  -0.55809814  0.43298173
+   0.6390676  -0.05351109  0.62716913 -0.05770205]]]
+[ 2024-07-11 00:58:53,266  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 00:59:21,147  47 COMPONENTS - INFO - Unnamed: 0.2                                                56157
+Unnamed: 0.1                                                56157
+Unnamed: 0                                                  58860
+title                        Adventure at the Center of the Earth
+genres                            Sci-Fi Horror Adventure Fantasy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0126205/
+poster_url      https://www.imdb.com/title/tt0126205/mediaview...
+storyline       Mexican horror film with a variety of classic ...
+Name: 56157, dtype: object]
+[ 2024-07-11 00:59:21,149  47 COMPONENTS - INFO - Unnamed: 0.2                                                68653
+Unnamed: 0.1                                                68653
+Unnamed: 0                                                  72539
+title                                      The Mister Burger Show
+genres                                     Animation Short Comedy
+videos                                                         []
+url                        https://www.imdb.com/title/tt15511934/
+poster_url      https://www.imdb.com/title/tt15511934/mediavie...
+storyline       The Mister Burger Show is a comedic adult-them...
+Name: 68653, dtype: object]
+[ 2024-07-11 00:59:21,149  47 COMPONENTS - INFO - Unnamed: 0.2                                               214398
+Unnamed: 0.1                                               214398
+Unnamed: 0                                                 242368
+title                                                Terrortory 2
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt6802950/
+poster_url      https://www.imdb.com/title/tt6802950/mediaview...
+storyline       The sequel to the hit anthology film: Four chi...
+Name: 214398, dtype: object]
+[ 2024-07-11 00:59:21,149  47 COMPONENTS - INFO - Unnamed: 0.2                                               134430
+Unnamed: 0.1                                               134430
+Unnamed: 0                                                 147336
+title                                                 Trashtastic
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt5224644/
+poster_url      https://www.imdb.com/title/tt5224644/mediaview...
+storyline       Anthology compilation of of the most Insane, s...
+Name: 134430, dtype: object]
+[ 2024-07-11 00:59:21,149  47 COMPONENTS - INFO - Unnamed: 0.2                                               128144
+Unnamed: 0.1                                               128144
+Unnamed: 0                                                 140032
+title                                 Adventures in Dinosaur City
+genres                                   Adventure Family Fantasy
+videos          [{'link': 'https://www.imdb.com/video/vi322055...
+url                         https://www.imdb.com/title/tt0103621/
+poster_url      https://www.imdb.com/title/tt0103621/mediaview...
+storyline       A scientist's kids are sucked into a TV screen...
+Name: 128144, dtype: object]
+[ 2024-07-11 00:59:21,150  47 COMPONENTS - INFO - Unnamed: 0.2                                                45359
+Unnamed: 0.1                                                45359
+Unnamed: 0                                                  47154
+title                                                 Blood Clots
+genres                                              Comedy Horror
+videos          [{'link': 'https://www.imdb.com/video/vi907655...
+url                         https://www.imdb.com/title/tt8833552/
+poster_url      https://www.imdb.com/title/tt8833552/mediaview...
+storyline       Featuring cannibals, zombies and other funny c...
+Name: 45359, dtype: object]
+[ 2024-07-11 00:59:21,150  47 COMPONENTS - INFO - Unnamed: 0.2                                                83698
+Unnamed: 0.1                                                83698
+Unnamed: 0                                                  89232
+title                                               Skipper's Jam
+genres                                            Animation Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt9568612/
+poster_url      https://www.imdb.com/title/tt9568612/mediaview...
+storyline       Skipper's Jam follows the story of a crazy lit...
+Name: 83698, dtype: object]
+[ 2024-07-11 00:59:21,150  47 COMPONENTS - INFO - Unnamed: 0.2                                               128472
+Unnamed: 0.1                                               128472
+Unnamed: 0                                                 140421
+title                                       League of Superheroes
+genres                                      Action Comedy Fantasy
+videos          [{'link': 'https://www.imdb.com/video/vi125840...
+url                         https://www.imdb.com/title/tt4515698/
+poster_url      https://www.imdb.com/title/tt4515698/mediaview...
+storyline       The ultimate underground superhero movie. Foll...
+Name: 128472, dtype: object]
+[ 2024-07-11 00:59:21,150  47 COMPONENTS - INFO - Unnamed: 0.2                                                50708
+Unnamed: 0.1                                                50708
+Unnamed: 0                                                  52921
+title             Creature from Cannibal Creek - Get Me Pictures!
+genres                                            Animation Short
+videos                                                         []
+url                        https://www.imdb.com/title/tt10502972/
+poster_url      https://www.imdb.com/title/tt10502972/mediavie...
+storyline       No-Z Pecker does his best to track down the Cr...
+Name: 50708, dtype: object]
+[ 2024-07-11 00:59:21,151  47 COMPONENTS - INFO - Unnamed: 0.2                                               126506
+Unnamed: 0.1                                               126506
+Unnamed: 0                                                 138162
+title                            Mini Pet Pals - The Four Seasons
+genres                                                  Animation
+videos                                                         []
+url                        https://www.imdb.com/title/tt11559464/
+poster_url      https://www.imdb.com/title/tt11559464/mediavie...
+storyline       The top favorite series on RAI YOYO turns into...
+Name: 126506, dtype: object]
+[ 2024-07-11 00:59:21,181  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Adventure at the Center of the Earth', 'poster_url': 'https://www.imdb.com/title/tt0126205/mediaviewer/rm1905171712', 'videos': '', 'genres': 'Sci-Fi Horror Adventure Fantasy', 'storyline': 'Mexican horror film with a variety of classic monsters, bat-like creatures, a rat-faced monster, dinosaurs and a cyclops.Mexican horror film with a variety of classic monsters, bat-like creatures, a rat-faced monster, dinosaurs and a cyclops.'}, 1: {'title': 'The Mister Burger Show', 'poster_url': 'https://www.imdb.com/title/tt15511934/mediaviewer/rm1113650689', 'videos': '', 'genres': 'Animation Short Comedy', 'storyline': 'The Mister Burger Show is a comedic adult-themed animated cartoon. Mr. Burger and his friends go into the woods to look for the legendary forest beast, "Bigfood", but end up being abducted by a group of very rude aliens. NerdNation Media. Science fiction, comedy, horror and amazing animation content for distribution to all global streaming platforms. This is the home of "Mister Burger, the animated series", "LoneStar" (live-action sci-fi series), "13 ways to survive horror movie!" (Documentary/instructional series), "The Indies" (live-action comedy series) and the feature film horror anthology, "3 past midnight". —Mac McCallsterThe Mister Burger Show is a comedic adult-themed animated cartoon. Mr. Burger and his friends go into the woods to look for the legendary forest beast, "Bigfood", but end up being abducted by a group of very rude aliens. NerdNation Media. Science fiction, comedy, horror and amazing animation content for distribution to all global streaming platforms. This is the home of "Mister Burger, the animated series", "LoneStar" (live-action sci-fi series), "13 ways to survive horror movie!" (Documentary/instructional series), "The Indies" (live-action comedy series) and the feature film horror anthology, "3 past midnight". —Mac McCallster'}, 2: {'title': 'Terrortory 2', 'poster_url': 'https://www.imdb.com/title/tt6802950/mediaviewer/rm3097248000', 'videos': '', 'genres': 'Horror', 'storyline': 'The sequel to the hit anthology film: Four chilling stories tied together by one man traveling through the terrifying land known as The Terrortory. Featuring monsters from the first film--The Midnight Clown and Smiling Jack--as well as all-new creatures.The sequel to the hit anthology film: Four chilling stories tied together by one man traveling through the terrifying land known as The Terrortory. Featuring monsters from the first film--The Midnight Clown and Smiling Jack--as well as all-new creatures.'}, 3: {'title': 'Trashtastic', 'poster_url': 'https://www.imdb.com/title/tt5224644/mediaviewer/rm2097224448', 'videos': '', 'genres': 'Horror', 'storyline': 'Anthology compilation of of the most Insane, scary, extreme and downright stupid. Independent Low-Budget Movie Trailers from across the globe.Anthology compilation of of the most Insane, scary, extreme and downright stupid. Independent Low-Budget Movie Trailers from across the globe.'}, 4: {'title': 'Adventures in Dinosaur City', 'poster_url': 'https://www.imdb.com/title/tt0103621/mediaviewer/rm173775872', 'videos': 'https://www.imdb.com/video/vi3220554521', 'genres': 'Adventure Family Fantasy', 'storyline': "A scientist's kids are sucked into a TV screen and wind up in the Stone Age with cavemen and dinosaurs.A scientist's kids are sucked into a TV screen and wind up in the Stone Age with cavemen and dinosaurs."}, 5: {'title': 'Blood Clots', 'poster_url': 'https://www.imdb.com/title/tt8833552/mediaviewer/rm4169315329', 'videos': 'https://www.imdb.com/video/vi907655961', 'genres': 'Comedy Horror', 'storyline': 'Featuring cannibals, zombies and other funny creatures, Blood Clots consists of seven carefully curated, bloody horror stories by seven different filmmakers.Featuring cannibals, zombies and other funny creatures, Blood Clots consists of seven carefully curated, bloody horror stories by seven different filmmakers.'}, 6: {'title': "Skipper's Jam", 'poster_url': 'https://www.imdb.com/title/tt9568612/mediaviewer/rm4189159681', 'videos': '', 'genres': 'Animation Short', 'storyline': "Skipper's Jam follows the story of a crazy little creature named Skipper; who dreams of making music, but is crewing on a ship full of pirates who just don't dig it. Skipper's Jam is a hilarious and eclectic romp that is sure to entertain both children and adults alike with its off-the-wall characters and world.Skipper's Jam follows the story of a crazy little creature named Skipper; who dreams of making music, but is crewing on a ship full of pirates who just don't dig it. Skipper's Jam is a hilarious and eclectic romp that is sure to entertain both children and adults alike with its off-the-wall characters and world."}, 7: {'title': 'League of Superheroes', 'poster_url': 'https://www.imdb.com/title/tt4515698/mediaviewer/rm2304330496', 'videos': 'https://www.imdb.com/video/vi1258403865', 'genres': 'Action Comedy Fantasy', 'storyline': 'The ultimate underground superhero movie. Follow the adventures of over 20 of the most unique and outrageous heroes and villains from every corner of the galaxy. Action, adventure, humor and horror collide in this incredible homage and middle finger to the superhero blockbuster. —Wild Eye ReleasingThe ultimate underground superhero movie. Follow the adventures of over 20 of the most unique and outrageous heroes and villains from every corner of the galaxy. Action, adventure, humor and horror collide in this incredible homage and middle finger to the superhero blockbuster. —Wild Eye Releasing'}, 8: {'title': 'Creature from Cannibal Creek - Get Me Pictures!', 'poster_url': 'https://www.imdb.com/title/tt10502972/mediaviewer/rm3378288897', 'videos': '', 'genres': 'Animation Short', 'storyline': 'No-Z Pecker does his best to track down the Creature from Cannibal Creek in this animated cartoon from Survival Zombie Films.No-Z Pecker does his best to track down the Creature from Cannibal Creek in this animated cartoon from Survival Zombie Films.'}, 9: {'title': 'Mini Pet Pals - The Four Seasons', 'poster_url': 'https://www.imdb.com/title/tt11559464/mediaviewer/rm442007809', 'videos': '', 'genres': 'Animation', 'storyline': "The top favorite series on RAI YOYO turns into a feature film, so that the captivating adventure continues throughout all four seasons with the Mini Pet Pals. A wonderful playground is the setting for their amazing adventures, from which they always learn something useful. Holly the kitten; Moby the puppy; Diva the duckling; Top Hat the rabbit; Nameless the chick, and Pio the frog: they are the protagonists of this engaging movie targeted for a preschool audience. The story is divided in four parts to simplify our little viewers' understanding of how the four seasons change the playground over the course of a year, therefore affecting the environment and the Mini Pet Pals' moods.The top favorite series on RAI YOYO turns into a feature film, so that the captivating adventure continues throughout all four seasons with the Mini Pet Pals. A wonderful playground is the setting for their amazing adventures, from which they always learn something useful. Holly the kitten; Moby the puppy; Diva the duckling; Top Hat the rabbit; Nameless the chick, and Pio the frog: they are the protagonists of this engaging movie targeted for a preschool audience. The story is divided in four parts to simplify our little viewers' understanding of how the four seasons change the playground over the course of a year, therefore affecting the environment and the Mini Pet Pals' moods."}}]
+[ 2024-07-11 00:59:21,323  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 00:59:21] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:02:03,208  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:02:03] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:02:04,118  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:02:04] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:02:04,588  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:02:04] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:02:04,784  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:02:04] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:02:04,970  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:02:04] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:02:05,169  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:02:05] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:02:10,298  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 01:02:10,306  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [movie, dinosaurs, people, little, horror, thr...]
+[ 2024-07-11 01:02:10,306  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 01:02:10,514  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 01:02:10,514  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 01:02:10,515  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 01:02:10,515  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 01:02:10,516  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 01:02:10,516  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 01:02:10,521  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 0.18754405 -0.789632   -2.7328324   3.0946634  -2.690498   -0.18204921
+  -0.3837613   2.5755162   1.1848258   0.07997366 -0.37928104  1.3371694
+   0.4835178  -1.0768423  -0.8258082   0.63661706  0.756158    1.1726627
+   2.0729277  -1.1748934  -0.98006564  0.6921027   1.8683665   0.23090042
+   0.5833832  -1.2397722  -1.3462033   0.20500866  0.85556173 -1.0249736
+   2.0367947   0.23246217 -0.48358065 -0.18997109  1.3664503  -0.3881832
+   0.67546874 -0.01882338  0.4897199   0.20994963  0.39863428 -0.11880853
+  -0.2535556   0.06013892 -0.69314414 -0.7002884   0.0672183   0.30356482
+  -0.34677887 -0.62380314 -0.48202264 -0.610522    0.29232126  0.945114
+  -0.7855193   0.44522956 -0.5560284  -0.9112705  -0.09956916  0.6403524
+   0.8244194   0.10002303 -0.10465798  0.6392772  -0.13464688 -0.51662916
+   0.45225602 -0.44232106 -0.9022305  -0.18952958  0.06550684  1.1020916
+   0.5454313   0.20585233  0.03961719 -0.12775663 -0.8447232   0.02265673
+  -1.5585058  -0.23346746  1.098012    0.2009306  -0.32761714 -0.6511142
+  -1.2211988  -0.03699126  0.71845037 -0.7195855  -0.7285066   0.58040094
+   0.34503505 -0.5683948   0.22014514 -0.5613619  -0.55809814  0.43298173
+   0.6390676  -0.05351109  0.62716913 -0.05770205]]]
+[ 2024-07-11 01:02:10,521  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 01:02:37,703  47 COMPONENTS - INFO - Unnamed: 0.2                                                56157
+Unnamed: 0.1                                                56157
+Unnamed: 0                                                  58860
+title                        Adventure at the Center of the Earth
+genres                            Sci-Fi Horror Adventure Fantasy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0126205/
+poster_url      https://www.imdb.com/title/tt0126205/mediaview...
+storyline       Mexican horror film with a variety of classic ...
+Name: 56157, dtype: object]
+[ 2024-07-11 01:02:37,704  47 COMPONENTS - INFO - Unnamed: 0.2                                                68653
+Unnamed: 0.1                                                68653
+Unnamed: 0                                                  72539
+title                                      The Mister Burger Show
+genres                                     Animation Short Comedy
+videos                                                         []
+url                        https://www.imdb.com/title/tt15511934/
+poster_url      https://www.imdb.com/title/tt15511934/mediavie...
+storyline       The Mister Burger Show is a comedic adult-them...
+Name: 68653, dtype: object]
+[ 2024-07-11 01:02:37,704  47 COMPONENTS - INFO - Unnamed: 0.2                                               214398
+Unnamed: 0.1                                               214398
+Unnamed: 0                                                 242368
+title                                                Terrortory 2
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt6802950/
+poster_url      https://www.imdb.com/title/tt6802950/mediaview...
+storyline       The sequel to the hit anthology film: Four chi...
+Name: 214398, dtype: object]
+[ 2024-07-11 01:02:37,705  47 COMPONENTS - INFO - Unnamed: 0.2                                               134430
+Unnamed: 0.1                                               134430
+Unnamed: 0                                                 147336
+title                                                 Trashtastic
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt5224644/
+poster_url      https://www.imdb.com/title/tt5224644/mediaview...
+storyline       Anthology compilation of of the most Insane, s...
+Name: 134430, dtype: object]
+[ 2024-07-11 01:02:37,705  47 COMPONENTS - INFO - Unnamed: 0.2                                               128144
+Unnamed: 0.1                                               128144
+Unnamed: 0                                                 140032
+title                                 Adventures in Dinosaur City
+genres                                   Adventure Family Fantasy
+videos          [{'link': 'https://www.imdb.com/video/vi322055...
+url                         https://www.imdb.com/title/tt0103621/
+poster_url      https://www.imdb.com/title/tt0103621/mediaview...
+storyline       A scientist's kids are sucked into a TV screen...
+Name: 128144, dtype: object]
+[ 2024-07-11 01:02:37,705  47 COMPONENTS - INFO - Unnamed: 0.2                                                45359
+Unnamed: 0.1                                                45359
+Unnamed: 0                                                  47154
+title                                                 Blood Clots
+genres                                              Comedy Horror
+videos          [{'link': 'https://www.imdb.com/video/vi907655...
+url                         https://www.imdb.com/title/tt8833552/
+poster_url      https://www.imdb.com/title/tt8833552/mediaview...
+storyline       Featuring cannibals, zombies and other funny c...
+Name: 45359, dtype: object]
+[ 2024-07-11 01:02:37,705  47 COMPONENTS - INFO - Unnamed: 0.2                                                83698
+Unnamed: 0.1                                                83698
+Unnamed: 0                                                  89232
+title                                               Skipper's Jam
+genres                                            Animation Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt9568612/
+poster_url      https://www.imdb.com/title/tt9568612/mediaview...
+storyline       Skipper's Jam follows the story of a crazy lit...
+Name: 83698, dtype: object]
+[ 2024-07-11 01:02:37,706  47 COMPONENTS - INFO - Unnamed: 0.2                                               128472
+Unnamed: 0.1                                               128472
+Unnamed: 0                                                 140421
+title                                       League of Superheroes
+genres                                      Action Comedy Fantasy
+videos          [{'link': 'https://www.imdb.com/video/vi125840...
+url                         https://www.imdb.com/title/tt4515698/
+poster_url      https://www.imdb.com/title/tt4515698/mediaview...
+storyline       The ultimate underground superhero movie. Foll...
+Name: 128472, dtype: object]
+[ 2024-07-11 01:02:37,706  47 COMPONENTS - INFO - Unnamed: 0.2                                                50708
+Unnamed: 0.1                                                50708
+Unnamed: 0                                                  52921
+title             Creature from Cannibal Creek - Get Me Pictures!
+genres                                            Animation Short
+videos                                                         []
+url                        https://www.imdb.com/title/tt10502972/
+poster_url      https://www.imdb.com/title/tt10502972/mediavie...
+storyline       No-Z Pecker does his best to track down the Cr...
+Name: 50708, dtype: object]
+[ 2024-07-11 01:02:37,706  47 COMPONENTS - INFO - Unnamed: 0.2                                               126506
+Unnamed: 0.1                                               126506
+Unnamed: 0                                                 138162
+title                            Mini Pet Pals - The Four Seasons
+genres                                                  Animation
+videos                                                         []
+url                        https://www.imdb.com/title/tt11559464/
+poster_url      https://www.imdb.com/title/tt11559464/mediavie...
+storyline       The top favorite series on RAI YOYO turns into...
+Name: 126506, dtype: object]
+[ 2024-07-11 01:02:37,739  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Adventure at the Center of the Earth', 'poster_url': 'https://www.imdb.com/title/tt0126205/mediaviewer/rm1905171712', 'videos': '', 'genres': 'Sci-Fi Horror Adventure Fantasy', 'storyline': 'Mexican horror film with a variety of classic monsters, bat-like creatures, a rat-faced monster, dinosaurs and a cyclops.Mexican horror film with a variety of classic monsters, bat-like creatures, a rat-faced monster, dinosaurs and a cyclops.'}, 1: {'title': 'The Mister Burger Show', 'poster_url': 'https://www.imdb.com/title/tt15511934/mediaviewer/rm1113650689', 'videos': '', 'genres': 'Animation Short Comedy', 'storyline': 'The Mister Burger Show is a comedic adult-themed animated cartoon. Mr. Burger and his friends go into the woods to look for the legendary forest beast, "Bigfood", but end up being abducted by a group of very rude aliens. NerdNation Media. Science fiction, comedy, horror and amazing animation content for distribution to all global streaming platforms. This is the home of "Mister Burger, the animated series", "LoneStar" (live-action sci-fi series), "13 ways to survive horror movie!" (Documentary/instructional series), "The Indies" (live-action comedy series) and the feature film horror anthology, "3 past midnight". —Mac McCallsterThe Mister Burger Show is a comedic adult-themed animated cartoon. Mr. Burger and his friends go into the woods to look for the legendary forest beast, "Bigfood", but end up being abducted by a group of very rude aliens. NerdNation Media. Science fiction, comedy, horror and amazing animation content for distribution to all global streaming platforms. This is the home of "Mister Burger, the animated series", "LoneStar" (live-action sci-fi series), "13 ways to survive horror movie!" (Documentary/instructional series), "The Indies" (live-action comedy series) and the feature film horror anthology, "3 past midnight". —Mac McCallster'}, 2: {'title': 'Terrortory 2', 'poster_url': 'https://www.imdb.com/title/tt6802950/mediaviewer/rm3097248000', 'videos': '', 'genres': 'Horror', 'storyline': 'The sequel to the hit anthology film: Four chilling stories tied together by one man traveling through the terrifying land known as The Terrortory. Featuring monsters from the first film--The Midnight Clown and Smiling Jack--as well as all-new creatures.The sequel to the hit anthology film: Four chilling stories tied together by one man traveling through the terrifying land known as The Terrortory. Featuring monsters from the first film--The Midnight Clown and Smiling Jack--as well as all-new creatures.'}, 3: {'title': 'Trashtastic', 'poster_url': 'https://www.imdb.com/title/tt5224644/mediaviewer/rm2097224448', 'videos': '', 'genres': 'Horror', 'storyline': 'Anthology compilation of of the most Insane, scary, extreme and downright stupid. Independent Low-Budget Movie Trailers from across the globe.Anthology compilation of of the most Insane, scary, extreme and downright stupid. Independent Low-Budget Movie Trailers from across the globe.'}, 4: {'title': 'Adventures in Dinosaur City', 'poster_url': 'https://www.imdb.com/title/tt0103621/mediaviewer/rm173775872', 'videos': 'https://www.imdb.com/video/vi3220554521', 'genres': 'Adventure Family Fantasy', 'storyline': "A scientist's kids are sucked into a TV screen and wind up in the Stone Age with cavemen and dinosaurs.A scientist's kids are sucked into a TV screen and wind up in the Stone Age with cavemen and dinosaurs."}, 5: {'title': 'Blood Clots', 'poster_url': 'https://www.imdb.com/title/tt8833552/mediaviewer/rm4169315329', 'videos': 'https://www.imdb.com/video/vi907655961', 'genres': 'Comedy Horror', 'storyline': 'Featuring cannibals, zombies and other funny creatures, Blood Clots consists of seven carefully curated, bloody horror stories by seven different filmmakers.Featuring cannibals, zombies and other funny creatures, Blood Clots consists of seven carefully curated, bloody horror stories by seven different filmmakers.'}, 6: {'title': "Skipper's Jam", 'poster_url': 'https://www.imdb.com/title/tt9568612/mediaviewer/rm4189159681', 'videos': '', 'genres': 'Animation Short', 'storyline': "Skipper's Jam follows the story of a crazy little creature named Skipper; who dreams of making music, but is crewing on a ship full of pirates who just don't dig it. Skipper's Jam is a hilarious and eclectic romp that is sure to entertain both children and adults alike with its off-the-wall characters and world.Skipper's Jam follows the story of a crazy little creature named Skipper; who dreams of making music, but is crewing on a ship full of pirates who just don't dig it. Skipper's Jam is a hilarious and eclectic romp that is sure to entertain both children and adults alike with its off-the-wall characters and world."}, 7: {'title': 'League of Superheroes', 'poster_url': 'https://www.imdb.com/title/tt4515698/mediaviewer/rm2304330496', 'videos': 'https://www.imdb.com/video/vi1258403865', 'genres': 'Action Comedy Fantasy', 'storyline': 'The ultimate underground superhero movie. Follow the adventures of over 20 of the most unique and outrageous heroes and villains from every corner of the galaxy. Action, adventure, humor and horror collide in this incredible homage and middle finger to the superhero blockbuster. —Wild Eye ReleasingThe ultimate underground superhero movie. Follow the adventures of over 20 of the most unique and outrageous heroes and villains from every corner of the galaxy. Action, adventure, humor and horror collide in this incredible homage and middle finger to the superhero blockbuster. —Wild Eye Releasing'}, 8: {'title': 'Creature from Cannibal Creek - Get Me Pictures!', 'poster_url': 'https://www.imdb.com/title/tt10502972/mediaviewer/rm3378288897', 'videos': '', 'genres': 'Animation Short', 'storyline': 'No-Z Pecker does his best to track down the Creature from Cannibal Creek in this animated cartoon from Survival Zombie Films.No-Z Pecker does his best to track down the Creature from Cannibal Creek in this animated cartoon from Survival Zombie Films.'}, 9: {'title': 'Mini Pet Pals - The Four Seasons', 'poster_url': 'https://www.imdb.com/title/tt11559464/mediaviewer/rm442007809', 'videos': '', 'genres': 'Animation', 'storyline': "The top favorite series on RAI YOYO turns into a feature film, so that the captivating adventure continues throughout all four seasons with the Mini Pet Pals. A wonderful playground is the setting for their amazing adventures, from which they always learn something useful. Holly the kitten; Moby the puppy; Diva the duckling; Top Hat the rabbit; Nameless the chick, and Pio the frog: they are the protagonists of this engaging movie targeted for a preschool audience. The story is divided in four parts to simplify our little viewers' understanding of how the four seasons change the playground over the course of a year, therefore affecting the environment and the Mini Pet Pals' moods.The top favorite series on RAI YOYO turns into a feature film, so that the captivating adventure continues throughout all four seasons with the Mini Pet Pals. A wonderful playground is the setting for their amazing adventures, from which they always learn something useful. Holly the kitten; Moby the puppy; Diva the duckling; Top Hat the rabbit; Nameless the chick, and Pio the frog: they are the protagonists of this engaging movie targeted for a preschool audience. The story is divided in four parts to simplify our little viewers' understanding of how the four seasons change the playground over the course of a year, therefore affecting the environment and the Mini Pet Pals' moods."}}]
+[ 2024-07-11 01:02:37,900  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:02:37] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:06:31,658  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 01:06:31,684  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [movie, dinosaurs, people, little, horror, thr...]
+[ 2024-07-11 01:06:31,684  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 01:06:31,873  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 01:06:31,874  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 01:06:31,883  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 01:06:31,883  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 01:06:31,887  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 01:06:31,887  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 01:06:31,916  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 0.18754405 -0.789632   -2.7328324   3.0946634  -2.690498   -0.18204921
+  -0.3837613   2.5755162   1.1848258   0.07997366 -0.37928104  1.3371694
+   0.4835178  -1.0768423  -0.8258082   0.63661706  0.756158    1.1726627
+   2.0729277  -1.1748934  -0.98006564  0.6921027   1.8683665   0.23090042
+   0.5833832  -1.2397722  -1.3462033   0.20500866  0.85556173 -1.0249736
+   2.0367947   0.23246217 -0.48358065 -0.18997109  1.3664503  -0.3881832
+   0.67546874 -0.01882338  0.4897199   0.20994963  0.39863428 -0.11880853
+  -0.2535556   0.06013892 -0.69314414 -0.7002884   0.0672183   0.30356482
+  -0.34677887 -0.62380314 -0.48202264 -0.610522    0.29232126  0.945114
+  -0.7855193   0.44522956 -0.5560284  -0.9112705  -0.09956916  0.6403524
+   0.8244194   0.10002303 -0.10465798  0.6392772  -0.13464688 -0.51662916
+   0.45225602 -0.44232106 -0.9022305  -0.18952958  0.06550684  1.1020916
+   0.5454313   0.20585233  0.03961719 -0.12775663 -0.8447232   0.02265673
+  -1.5585058  -0.23346746  1.098012    0.2009306  -0.32761714 -0.6511142
+  -1.2211988  -0.03699126  0.71845037 -0.7195855  -0.7285066   0.58040094
+   0.34503505 -0.5683948   0.22014514 -0.5613619  -0.55809814  0.43298173
+   0.6390676  -0.05351109  0.62716913 -0.05770205]]]
+[ 2024-07-11 01:06:31,916  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 01:06:35,605  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:06:35] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:06:41,729  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:06:41] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:06:59,465  47 COMPONENTS - INFO - Unnamed: 0.2                                                56157
+Unnamed: 0.1                                                56157
+Unnamed: 0                                                  58860
+title                        Adventure at the Center of the Earth
+genres                            Sci-Fi Horror Adventure Fantasy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0126205/
+poster_url      https://www.imdb.com/title/tt0126205/mediaview...
+storyline       Mexican horror film with a variety of classic ...
+Name: 56157, dtype: object]
+[ 2024-07-11 01:06:59,465  47 COMPONENTS - INFO - Unnamed: 0.2                                                68653
+Unnamed: 0.1                                                68653
+Unnamed: 0                                                  72539
+title                                      The Mister Burger Show
+genres                                     Animation Short Comedy
+videos                                                         []
+url                        https://www.imdb.com/title/tt15511934/
+poster_url      https://www.imdb.com/title/tt15511934/mediavie...
+storyline       The Mister Burger Show is a comedic adult-them...
+Name: 68653, dtype: object]
+[ 2024-07-11 01:06:59,465  47 COMPONENTS - INFO - Unnamed: 0.2                                               214398
+Unnamed: 0.1                                               214398
+Unnamed: 0                                                 242368
+title                                                Terrortory 2
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt6802950/
+poster_url      https://www.imdb.com/title/tt6802950/mediaview...
+storyline       The sequel to the hit anthology film: Four chi...
+Name: 214398, dtype: object]
+[ 2024-07-11 01:06:59,466  47 COMPONENTS - INFO - Unnamed: 0.2                                               134430
+Unnamed: 0.1                                               134430
+Unnamed: 0                                                 147336
+title                                                 Trashtastic
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt5224644/
+poster_url      https://www.imdb.com/title/tt5224644/mediaview...
+storyline       Anthology compilation of of the most Insane, s...
+Name: 134430, dtype: object]
+[ 2024-07-11 01:06:59,466  47 COMPONENTS - INFO - Unnamed: 0.2                                               128144
+Unnamed: 0.1                                               128144
+Unnamed: 0                                                 140032
+title                                 Adventures in Dinosaur City
+genres                                   Adventure Family Fantasy
+videos          [{'link': 'https://www.imdb.com/video/vi322055...
+url                         https://www.imdb.com/title/tt0103621/
+poster_url      https://www.imdb.com/title/tt0103621/mediaview...
+storyline       A scientist's kids are sucked into a TV screen...
+Name: 128144, dtype: object]
+[ 2024-07-11 01:06:59,466  47 COMPONENTS - INFO - Unnamed: 0.2                                                45359
+Unnamed: 0.1                                                45359
+Unnamed: 0                                                  47154
+title                                                 Blood Clots
+genres                                              Comedy Horror
+videos          [{'link': 'https://www.imdb.com/video/vi907655...
+url                         https://www.imdb.com/title/tt8833552/
+poster_url      https://www.imdb.com/title/tt8833552/mediaview...
+storyline       Featuring cannibals, zombies and other funny c...
+Name: 45359, dtype: object]
+[ 2024-07-11 01:06:59,466  47 COMPONENTS - INFO - Unnamed: 0.2                                                83698
+Unnamed: 0.1                                                83698
+Unnamed: 0                                                  89232
+title                                               Skipper's Jam
+genres                                            Animation Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt9568612/
+poster_url      https://www.imdb.com/title/tt9568612/mediaview...
+storyline       Skipper's Jam follows the story of a crazy lit...
+Name: 83698, dtype: object]
+[ 2024-07-11 01:06:59,467  47 COMPONENTS - INFO - Unnamed: 0.2                                               128472
+Unnamed: 0.1                                               128472
+Unnamed: 0                                                 140421
+title                                       League of Superheroes
+genres                                      Action Comedy Fantasy
+videos          [{'link': 'https://www.imdb.com/video/vi125840...
+url                         https://www.imdb.com/title/tt4515698/
+poster_url      https://www.imdb.com/title/tt4515698/mediaview...
+storyline       The ultimate underground superhero movie. Foll...
+Name: 128472, dtype: object]
+[ 2024-07-11 01:06:59,467  47 COMPONENTS - INFO - Unnamed: 0.2                                                50708
+Unnamed: 0.1                                                50708
+Unnamed: 0                                                  52921
+title             Creature from Cannibal Creek - Get Me Pictures!
+genres                                            Animation Short
+videos                                                         []
+url                        https://www.imdb.com/title/tt10502972/
+poster_url      https://www.imdb.com/title/tt10502972/mediavie...
+storyline       No-Z Pecker does his best to track down the Cr...
+Name: 50708, dtype: object]
+[ 2024-07-11 01:06:59,467  47 COMPONENTS - INFO - Unnamed: 0.2                                               126506
+Unnamed: 0.1                                               126506
+Unnamed: 0                                                 138162
+title                            Mini Pet Pals - The Four Seasons
+genres                                                  Animation
+videos                                                         []
+url                        https://www.imdb.com/title/tt11559464/
+poster_url      https://www.imdb.com/title/tt11559464/mediavie...
+storyline       The top favorite series on RAI YOYO turns into...
+Name: 126506, dtype: object]
+[ 2024-07-11 01:06:59,499  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Adventure at the Center of the Earth', 'poster_url': 'https://www.imdb.com/title/tt0126205/mediaviewer/rm1905171712', 'videos': '', 'genres': 'Sci-Fi Horror Adventure Fantasy', 'storyline': 'Mexican horror film with a variety of classic monsters, bat-like creatures, a rat-faced monster, dinosaurs and a cyclops.Mexican horror film with a variety of classic monsters, bat-like creatures, a rat-faced monster, dinosaurs and a cyclops.'}, 1: {'title': 'The Mister Burger Show', 'poster_url': 'https://www.imdb.com/title/tt15511934/mediaviewer/rm1113650689', 'videos': '', 'genres': 'Animation Short Comedy', 'storyline': 'The Mister Burger Show is a comedic adult-themed animated cartoon. Mr. Burger and his friends go into the woods to look for the legendary forest beast, "Bigfood", but end up being abducted by a group of very rude aliens. NerdNation Media. Science fiction, comedy, horror and amazing animation content for distribution to all global streaming platforms. This is the home of "Mister Burger, the animated series", "LoneStar" (live-action sci-fi series), "13 ways to survive horror movie!" (Documentary/instructional series), "The Indies" (live-action comedy series) and the feature film horror anthology, "3 past midnight". —Mac McCallsterThe Mister Burger Show is a comedic adult-themed animated cartoon. Mr. Burger and his friends go into the woods to look for the legendary forest beast, "Bigfood", but end up being abducted by a group of very rude aliens. NerdNation Media. Science fiction, comedy, horror and amazing animation content for distribution to all global streaming platforms. This is the home of "Mister Burger, the animated series", "LoneStar" (live-action sci-fi series), "13 ways to survive horror movie!" (Documentary/instructional series), "The Indies" (live-action comedy series) and the feature film horror anthology, "3 past midnight". —Mac McCallster'}, 2: {'title': 'Terrortory 2', 'poster_url': 'https://www.imdb.com/title/tt6802950/mediaviewer/rm3097248000', 'videos': '', 'genres': 'Horror', 'storyline': 'The sequel to the hit anthology film: Four chilling stories tied together by one man traveling through the terrifying land known as The Terrortory. Featuring monsters from the first film--The Midnight Clown and Smiling Jack--as well as all-new creatures.The sequel to the hit anthology film: Four chilling stories tied together by one man traveling through the terrifying land known as The Terrortory. Featuring monsters from the first film--The Midnight Clown and Smiling Jack--as well as all-new creatures.'}, 3: {'title': 'Trashtastic', 'poster_url': 'https://www.imdb.com/title/tt5224644/mediaviewer/rm2097224448', 'videos': '', 'genres': 'Horror', 'storyline': 'Anthology compilation of of the most Insane, scary, extreme and downright stupid. Independent Low-Budget Movie Trailers from across the globe.Anthology compilation of of the most Insane, scary, extreme and downright stupid. Independent Low-Budget Movie Trailers from across the globe.'}, 4: {'title': 'Adventures in Dinosaur City', 'poster_url': 'https://www.imdb.com/title/tt0103621/mediaviewer/rm173775872', 'videos': 'https://www.imdb.com/video/vi3220554521', 'genres': 'Adventure Family Fantasy', 'storyline': "A scientist's kids are sucked into a TV screen and wind up in the Stone Age with cavemen and dinosaurs.A scientist's kids are sucked into a TV screen and wind up in the Stone Age with cavemen and dinosaurs."}, 5: {'title': 'Blood Clots', 'poster_url': 'https://www.imdb.com/title/tt8833552/mediaviewer/rm4169315329', 'videos': 'https://www.imdb.com/video/vi907655961', 'genres': 'Comedy Horror', 'storyline': 'Featuring cannibals, zombies and other funny creatures, Blood Clots consists of seven carefully curated, bloody horror stories by seven different filmmakers.Featuring cannibals, zombies and other funny creatures, Blood Clots consists of seven carefully curated, bloody horror stories by seven different filmmakers.'}, 6: {'title': "Skipper's Jam", 'poster_url': 'https://www.imdb.com/title/tt9568612/mediaviewer/rm4189159681', 'videos': '', 'genres': 'Animation Short', 'storyline': "Skipper's Jam follows the story of a crazy little creature named Skipper; who dreams of making music, but is crewing on a ship full of pirates who just don't dig it. Skipper's Jam is a hilarious and eclectic romp that is sure to entertain both children and adults alike with its off-the-wall characters and world.Skipper's Jam follows the story of a crazy little creature named Skipper; who dreams of making music, but is crewing on a ship full of pirates who just don't dig it. Skipper's Jam is a hilarious and eclectic romp that is sure to entertain both children and adults alike with its off-the-wall characters and world."}, 7: {'title': 'League of Superheroes', 'poster_url': 'https://www.imdb.com/title/tt4515698/mediaviewer/rm2304330496', 'videos': 'https://www.imdb.com/video/vi1258403865', 'genres': 'Action Comedy Fantasy', 'storyline': 'The ultimate underground superhero movie. Follow the adventures of over 20 of the most unique and outrageous heroes and villains from every corner of the galaxy. Action, adventure, humor and horror collide in this incredible homage and middle finger to the superhero blockbuster. —Wild Eye ReleasingThe ultimate underground superhero movie. Follow the adventures of over 20 of the most unique and outrageous heroes and villains from every corner of the galaxy. Action, adventure, humor and horror collide in this incredible homage and middle finger to the superhero blockbuster. —Wild Eye Releasing'}, 8: {'title': 'Creature from Cannibal Creek - Get Me Pictures!', 'poster_url': 'https://www.imdb.com/title/tt10502972/mediaviewer/rm3378288897', 'videos': '', 'genres': 'Animation Short', 'storyline': 'No-Z Pecker does his best to track down the Creature from Cannibal Creek in this animated cartoon from Survival Zombie Films.No-Z Pecker does his best to track down the Creature from Cannibal Creek in this animated cartoon from Survival Zombie Films.'}, 9: {'title': 'Mini Pet Pals - The Four Seasons', 'poster_url': 'https://www.imdb.com/title/tt11559464/mediaviewer/rm442007809', 'videos': '', 'genres': 'Animation', 'storyline': "The top favorite series on RAI YOYO turns into a feature film, so that the captivating adventure continues throughout all four seasons with the Mini Pet Pals. A wonderful playground is the setting for their amazing adventures, from which they always learn something useful. Holly the kitten; Moby the puppy; Diva the duckling; Top Hat the rabbit; Nameless the chick, and Pio the frog: they are the protagonists of this engaging movie targeted for a preschool audience. The story is divided in four parts to simplify our little viewers' understanding of how the four seasons change the playground over the course of a year, therefore affecting the environment and the Mini Pet Pals' moods.The top favorite series on RAI YOYO turns into a feature film, so that the captivating adventure continues throughout all four seasons with the Mini Pet Pals. A wonderful playground is the setting for their amazing adventures, from which they always learn something useful. Holly the kitten; Moby the puppy; Diva the duckling; Top Hat the rabbit; Nameless the chick, and Pio the frog: they are the protagonists of this engaging movie targeted for a preschool audience. The story is divided in four parts to simplify our little viewers' understanding of how the four seasons change the playground over the course of a year, therefore affecting the environment and the Mini Pet Pals' moods."}}]
+[ 2024-07-11 01:06:59,600  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:06:59] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:07:07,765  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 01:07:07,771  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                             description
+0  [horror, movie, ghost, come, person]]
+[ 2024-07-11 01:07:07,771  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 01:07:07,953  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 01:07:07,953  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 01:07:07,954  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 01:07:07,954  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 01:07:07,954  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 01:07:07,954  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 01:07:07,960  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[-1.7668734   1.1357497  -1.516157    1.4610175  -3.0765288  -1.3415239
+  -1.2226138   2.5392876   0.37119538 -0.2739778  -0.6247161   3.0367894
+  -1.1627957   0.02109342 -2.1413743   0.48730385  1.5505273   0.5662572
+   1.578155   -1.2452492  -1.0143167   1.6443692   1.4452168   1.1899276
+   1.154258   -1.0467759  -0.806438   -0.1450702   1.3966516   0.4437736
+  -0.09909495 -0.2602435  -0.8174739  -0.6544988   0.10568304 -1.0373629
+  -0.05942272  1.7034358   0.5031444   0.67096794 -0.8719556   1.5147341
+  -0.16037513  0.54221874 -0.19933684  0.04096708  0.8540883   1.5719212
+  -0.5198977  -1.1082623   0.5543482  -0.6049463   0.7626813   0.30152386
+  -0.4045919   0.48203292 -0.7253884   0.40405285 -1.3741903   0.23755857
+   1.2689266   0.2940453   0.1822321  -0.2959276  -0.544226    1.2536432
+  -0.9209315  -1.1052336   0.9657505  -0.8873202  -1.5946451   1.5495068
+  -0.23471765 -0.04520503 -1.2509656  -0.42377388  1.0683736  -1.4866308
+  -1.4265164  -0.17110513  0.72245973 -0.25578558  0.01843704 -0.19467226
+  -1.1036686  -0.7345496   0.425149   -0.516658   -1.2187253  -0.5711223
+  -0.13640808 -0.27632505  1.2926916   0.5674251  -0.38121557 -1.4424188
+  -0.14281075 -0.4032116   0.22581126 -0.10377575]]]
+[ 2024-07-11 01:07:07,961  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 01:07:35,144  47 COMPONENTS - INFO - Unnamed: 0.2                                               137005
+Unnamed: 0.1                                               137005
+Unnamed: 0                                                 150319
+title                                          There Is a Monster
+genres                                                     Horror
+videos          [{'link': 'https://www.imdb.com/video/vi182005...
+url                        https://www.imdb.com/title/tt23037638/
+poster_url      https://www.imdb.com/title/tt23037638/mediavie...
+storyline       A man is haunted and hunted by a monster that ...
+Name: 137005, dtype: object]
+[ 2024-07-11 01:07:35,145  47 COMPONENTS - INFO - Unnamed: 0.2                                               101096
+Unnamed: 0.1                                               101096
+Unnamed: 0                                                 108868
+title                                                        Shed
+genres                                                     Horror
+videos                                                         []
+url                        https://www.imdb.com/title/tt10280172/
+poster_url      https://www.imdb.com/title/tt10280172/mediavie...
+storyline       SHED is an indie horror movie with skin-steali...
+Name: 101096, dtype: object]
+[ 2024-07-11 01:07:35,145  47 COMPONENTS - INFO - Unnamed: 0.2                                                93260
+Unnamed: 0.1                                                93260
+Unnamed: 0                                                  99934
+title                                               Monster Couch
+genres                                                  Animation
+videos                                                         []
+url                        https://www.imdb.com/title/tt26741520/
+poster_url      https://www.imdb.com/title/tt26741520/mediavie...
+storyline       What do Dracula, Frankenstein and a haunted co...
+Name: 93260, dtype: object]
+[ 2024-07-11 01:07:35,146  47 COMPONENTS - INFO - Unnamed: 0.2                                               189421
+Unnamed: 0.1                                               189421
+Unnamed: 0                                                 212134
+title                                         Taken from Sherwood
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt2042667/
+poster_url                                                    NaN
+storyline       The creators of a Internet ghost hunters show,...
+Name: 189421, dtype: object]
+[ 2024-07-11 01:07:35,146  47 COMPONENTS - INFO - Unnamed: 0.2                                               212074
+Unnamed: 0.1                                               212074
+Unnamed: 0                                                 239508
+title                                                    Bed Bugs
+genres                                            Horror Thriller
+videos                                                         []
+url                        https://www.imdb.com/title/tt10937366/
+poster_url      https://www.imdb.com/title/tt10937366/mediavie...
+storyline       5 kids go trick or treating and at each house ...
+Name: 212074, dtype: object]
+[ 2024-07-11 01:07:35,146  47 COMPONENTS - INFO - Unnamed: 0.2                                               108741
+Unnamed: 0.1                                               108741
+Unnamed: 0                                                 117640
+title                                                     Matinee
+genres                                    Horror Mystery Thriller
+videos                                                         []
+url                         https://www.imdb.com/title/tt0095602/
+poster_url      https://www.imdb.com/title/tt0095602/mediaview...
+storyline       Welcome to Holsten, B.C., a small town where n...
+Name: 108741, dtype: object]
+[ 2024-07-11 01:07:35,146  47 COMPONENTS - INFO - Unnamed: 0.2                                                95702
+Unnamed: 0.1                                                95702
+Unnamed: 0                                                 102718
+title                                                   Scarefest
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt5176156/
+poster_url      https://www.imdb.com/title/tt5176156/mediaview...
+storyline       A night of Halloween fun turns into a nightmar...
+Name: 95702, dtype: object]
+[ 2024-07-11 01:07:35,147  47 COMPONENTS - INFO - Unnamed: 0.2                                               111052
+Unnamed: 0.1                                               111052
+Unnamed: 0                                                 120295
+title                                           The Last Werewolf
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt4155420/
+poster_url                                                    NaN
+storyline       A man turns into a werewolf but is it real?A m...
+Name: 111052, dtype: object]
+[ 2024-07-11 01:07:35,147  47 COMPONENTS - INFO - Unnamed: 0.2                                                56758
+Unnamed: 0.1                                                56758
+Unnamed: 0                                                  59509
+title                          Chilling Visions: 5 Senses of Fear
+genres                                                     Horror
+videos          [{'link': 'https://www.imdb.com/video/vi589146...
+url                         https://www.imdb.com/title/tt2425886/
+poster_url      https://www.imdb.com/title/tt2425886/mediaview...
+storyline       From the people that brought you Steve Niles' ...
+Name: 56758, dtype: object]
+[ 2024-07-11 01:07:35,147  47 COMPONENTS - INFO - Unnamed: 0.2                                                13323
+Unnamed: 0.1                                                13323
+Unnamed: 0                                                  13510
+title                                                 Reel Horror
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt0089894/
+poster_url      https://www.imdb.com/title/tt0089894/mediaview...
+storyline       Evil spirits that emerge from cans of old movi...
+Name: 13323, dtype: object]
+[ 2024-07-11 01:07:35,182  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'There Is a Monster', 'poster_url': 'https://www.imdb.com/title/tt23037638/mediaviewer/rm1305359873', 'videos': 'https://www.imdb.com/video/vi1820051225', 'genres': 'Horror', 'storyline': 'A man is haunted and hunted by a monster that only he can see.A man is haunted and hunted by a monster that only he can see.'}, 1: {'title': 'Shed', 'poster_url': 'https://www.imdb.com/title/tt10280172/mediaviewer/rm960783360', 'videos': '', 'genres': 'Horror', 'storyline': "SHED is an indie horror movie with skin-stealing monsters. But really, it's about love.SHED is an indie horror movie with skin-stealing monsters. But really, it's about love."}, 2: {'title': 'Monster Couch', 'poster_url': 'https://www.imdb.com/title/tt26741520/mediaviewer/rm1964454145', 'videos': '', 'genres': 'Animation', 'storyline': 'What do Dracula, Frankenstein and a haunted couch have in common? They love to watch scary movies on Halloween.What do Dracula, Frankenstein and a haunted couch have in common? They love to watch scary movies on Halloween.'}, 3: {'title': 'Taken from Sherwood', 'poster_url': nan, 'videos': '', 'genres': 'Horror', 'storyline': 'The creators of a Internet ghost hunters show, film their latest episode. Soon after arriving they find out why people are disappearing. A masked stranger hunts them down through the dark forest of Sherwood.The creators of a Internet ghost hunters show, film their latest episode. Soon after arriving they find out why people are disappearing. A masked stranger hunts them down through the dark forest of Sherwood.'}, 4: {'title': 'Bed Bugs', 'poster_url': 'https://www.imdb.com/title/tt10937366/mediaviewer/rm1758326529', 'videos': '', 'genres': 'Horror Thriller', 'storyline': '5 kids go trick or treating and at each house hears a scary story about The Boogeyman, Vampires, Demons, Puppets, and a film director.5 kids go trick or treating and at each house hears a scary story about The Boogeyman, Vampires, Demons, Puppets, and a film director.'}, 5: {'title': 'Matinee', 'poster_url': 'https://www.imdb.com/title/tt0095602/mediaviewer/rm3160499456', 'videos': '', 'genres': 'Horror Mystery Thriller', 'storyline': "Welcome to Holsten, B.C., a small town where no one is very happy. Two years ago the local movie theatre had a horror film festival, during which a local teen was murdered at the same moment and manner as the onscreen character. Now another horror movie festival is set to happen, and some people feel history will repeat itself. Sure enough, as the line between movies and reality blurs, the horror doesn't stay onscreen. —Richard Martin <acme@portal.ca>Welcome to Holsten, B.C., a small town where no one is very happy. Two years ago the local movie theatre had a horror film festival, during which a local teen was murdered at the same moment and manner as the onscreen character. Now another horror movie festival is set to happen, and some people feel history will repeat itself. Sure enough, as the line between movies and reality blurs, the horror doesn't stay onscreen. —Richard Martin <acme@portal.ca>"}, 6: {'title': 'Scarefest', 'poster_url': 'https://www.imdb.com/title/tt5176156/mediaviewer/rm263578368', 'videos': '', 'genres': 'Horror', 'storyline': "A night of Halloween fun turns into a nightmare for some friends who become the unwitting stars of a sadistic filmmaker's slasher movie.A night of Halloween fun turns into a nightmare for some friends who become the unwitting stars of a sadistic filmmaker's slasher movie."}, 7: {'title': 'The Last Werewolf', 'poster_url': nan, 'videos': '', 'genres': 'Horror', 'storyline': 'A man turns into a werewolf but is it real?A man turns into a werewolf but is it real?'}, 8: {'title': 'Chilling Visions: 5 Senses of Fear', 'poster_url': 'https://www.imdb.com/title/tt2425886/mediaviewer/rm820944896', 'videos': 'https://www.imdb.com/video/vi589146393', 'genres': 'Horror', 'storyline': "From the people that brought you Steve Niles' Remains and Dead Souls comes a terrifying new anthology film based on the human senses...From the people that brought you Steve Niles' Remains and Dead Souls comes a terrifying new anthology film based on the human senses..."}, 9: {'title': 'Reel Horror', 'poster_url': 'https://www.imdb.com/title/tt0089894/mediaviewer/rm2167400704', 'videos': '', 'genres': 'Horror', 'storyline': 'Evil spirits that emerge from cans of old movie film terrorize a neighborhood.Evil spirits that emerge from cans of old movie film terrorize a neighborhood.'}}]
+[ 2024-07-11 01:07:35,255  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:07:35] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:08:12,266  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:08:12] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:08:49,112  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:08:49] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:08:52,273  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:08:52] "[33mGET /search?query=horror%20movie%20where%20ghost%20come%20to%20a%20person HTTP/1.1[0m" 404 -]
+[ 2024-07-11 01:09:02,845  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:09:02] "[33mGET /search?query=horror%20movie%20where%20ghost%20come%20to%20a%20person HTTP/1.1[0m" 404 -]
+[ 2024-07-11 01:09:27,668  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:09:27] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:09:39,244  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:09:39] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:09:50,154  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:09:50] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:09:51,282  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:09:51] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:10:00,758  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 01:10:00,766  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                description
+0  [best, horror, movie, ]]
+[ 2024-07-11 01:10:00,767  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 01:10:01,025  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 01:10:01,028  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 01:10:01,040  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 01:10:01,040  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 01:10:01,041  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 01:10:01,041  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 01:10:01,048  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 2.027264    2.0117953  -0.3861851  -0.07046741 -3.154816    0.21773513
+  -2.897205    2.4296694   1.3613634  -0.23045698  0.7710775   1.2024027
+  -1.7443342   0.2059307  -1.5795693  -0.60048884  1.8849895   0.68276197
+   1.8454727   0.31803447 -1.7091546   2.3558955   1.3975507   1.9494771
+   1.0485176   0.44453016 -1.5661849   0.22646233  0.47524616 -0.30178115
+   0.65425324  1.197593   -1.518076   -1.4781978  -0.04801582 -0.1534584
+   0.08482478  0.52480006 -0.9279617  -0.22143926 -0.59130514  0.01559465
+  -1.1058952   0.21716356 -0.99938667 -0.5855344   0.35896465  0.61682254
+  -1.0309865  -0.2326194   0.62279147  0.85003406  1.1666225  -1.0110298
+   0.44689882  0.12749211 -0.09379403 -0.30479476 -0.47749513  0.01389807
+  -0.7838287   0.2805114   0.1913101   0.3763462   0.19950068  0.7957513
+   0.8906927  -0.7694539  -0.5862705  -0.6532802   0.26078594  2.2234392
+  -0.7732745   0.2701764   0.5533119   1.4060212   1.3499604  -0.7698169
+   0.33566064 -0.85083055  0.8977505  -0.9337725   1.0091462  -1.3529981
+  -0.43350643 -0.13663653  0.4582456  -0.7205931   0.83006275  1.3165464
+   0.37158248  1.6596783   0.8677741   0.7084885  -0.9944784  -1.0849168
+   0.10550123  0.65863544 -0.01227171  0.03258549]]]
+[ 2024-07-11 01:10:01,049  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 01:10:29,774  47 COMPONENTS - INFO - Unnamed: 0.2                                                52609
+Unnamed: 0.1                                                52609
+Unnamed: 0                                                  54978
+title                                                     Mutants
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt8078958/
+poster_url      https://www.imdb.com/title/tt8078958/mediaview...
+storyline       Proportionally Sized Horror Film.Proportionall...
+Name: 52609, dtype: object]
+[ 2024-07-11 01:10:29,776  47 COMPONENTS - INFO - Unnamed: 0.2                                               178305
+Unnamed: 0.1                                               178305
+Unnamed: 0                                                 198922
+title                                            Camp Blood Kills
+genres                                            Horror Thriller
+videos                                                         []
+url                        https://www.imdb.com/title/tt10275180/
+poster_url      https://www.imdb.com/title/tt10275180/mediavie...
+storyline       A compilation of some of the best kill scenes ...
+Name: 178305, dtype: object]
+[ 2024-07-11 01:10:29,776  47 COMPONENTS - INFO - Unnamed: 0.2                                      400
+Unnamed: 0.1                                      400
+Unnamed: 0                                        400
+title                                 La Femme Vampir
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt1510273/
+poster_url                                        NaN
+storyline                                         NaN
+Name: 400, dtype: object]
+[ 2024-07-11 01:10:29,776  47 COMPONENTS - INFO - Unnamed: 0.2                                                  445
+Unnamed: 0.1                                                  445
+Unnamed: 0                                                    445
+title                             Zombie Beast of the Confederacy
+genres                                                     Horror
+videos                                                         []
+url                        https://www.imdb.com/title/tt16107862/
+poster_url      https://www.imdb.com/title/tt16107862/mediavie...
+storyline                                                     NaN
+Name: 445, dtype: object]
+[ 2024-07-11 01:10:29,777  47 COMPONENTS - INFO - Unnamed: 0.2                                                 1877
+Unnamed: 0.1                                                 1877
+Unnamed: 0                                                   1880
+title                                                           2
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt1144456/
+poster_url      https://www.imdb.com/title/tt1144456/mediaview...
+storyline                                                     NaN
+Name: 1877, dtype: object]
+[ 2024-07-11 01:10:29,777  47 COMPONENTS - INFO - Unnamed: 0.2                                     1878
+Unnamed: 0.1                                     1878
+Unnamed: 0                                       1881
+title                                   Final Curtain
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt1808130/
+poster_url                                        NaN
+storyline                                         NaN
+Name: 1878, dtype: object]
+[ 2024-07-11 01:10:29,777  47 COMPONENTS - INFO - Unnamed: 0.2                                                 1948
+Unnamed: 0.1                                                 1948
+Unnamed: 0                                                   1952
+title                                                Humanhunters
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt8177940/
+poster_url      https://www.imdb.com/title/tt8177940/mediaview...
+storyline                                                     NaN
+Name: 1948, dtype: object]
+[ 2024-07-11 01:10:29,777  47 COMPONENTS - INFO - Unnamed: 0.2                                     1977
+Unnamed: 0.1                                     1977
+Unnamed: 0                                       1981
+title                                A Pound of Flesh
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt0393608/
+poster_url                                        NaN
+storyline                                         NaN
+Name: 1977, dtype: object]
+[ 2024-07-11 01:10:29,777  47 COMPONENTS - INFO - Unnamed: 0.2                                                 2465
+Unnamed: 0.1                                                 2465
+Unnamed: 0                                                   2472
+title                                                 No. 1 Villa
+genres                                                     Horror
+videos                                                         []
+url                        https://www.imdb.com/title/tt10500444/
+poster_url      https://www.imdb.com/title/tt10500444/mediavie...
+storyline                                                     NaN
+Name: 2465, dtype: object]
+[ 2024-07-11 01:10:29,778  47 COMPONENTS - INFO - Unnamed: 0.2                                                 3671
+Unnamed: 0.1                                                 3671
+Unnamed: 0                                                   3687
+title                                                      Jagoda
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt3605010/
+poster_url      https://www.imdb.com/title/tt3605010/mediaview...
+storyline                                                     NaN
+Name: 3671, dtype: object]
+[ 2024-07-11 01:10:29,805  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Mutants', 'poster_url': 'https://www.imdb.com/title/tt8078958/mediaviewer/rm4091106560', 'videos': '', 'genres': 'Horror', 'storyline': 'Proportionally Sized Horror Film.Proportionally Sized Horror Film.'}, 1: {'title': 'Camp Blood Kills', 'poster_url': 'https://www.imdb.com/title/tt10275180/mediaviewer/rm2992858112', 'videos': '', 'genres': 'Horror Thriller', 'storyline': 'A compilation of some of the best kill scenes from the long running indie horror movie franchise.A compilation of some of the best kill scenes from the long running indie horror movie franchise.'}, 2: {'title': 'La Femme Vampir', 'poster_url': nan, 'videos': '', 'genres': 'Horror', 'storyline': nan}, 3: {'title': 'Zombie Beast of the Confederacy', 'poster_url': 'https://www.imdb.com/title/tt16107862/mediaviewer/rm235792385', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 4: {'title': '2', 'poster_url': 'https://www.imdb.com/title/tt1144456/mediaviewer/rm2097379072', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 5: {'title': 'Final Curtain', 'poster_url': nan, 'videos': '', 'genres': 'Horror', 'storyline': nan}, 6: {'title': 'Humanhunters', 'poster_url': 'https://www.imdb.com/title/tt8177940/mediaviewer/rm786515968', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 7: {'title': 'A Pound of Flesh', 'poster_url': nan, 'videos': '', 'genres': 'Horror', 'storyline': nan}, 8: {'title': 'No. 1 Villa', 'poster_url': 'https://www.imdb.com/title/tt10500444/mediaviewer/rm2320407809', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 9: {'title': 'Jagoda', 'poster_url': 'https://www.imdb.com/title/tt3605010/mediaviewer/rm3406110464', 'videos': '', 'genres': 'Horror', 'storyline': nan}}]
+[ 2024-07-11 01:10:29,975  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:10:29] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:31:36,347  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 01:31:36,371  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                description
+0  [best, horror, movie, ]]
+[ 2024-07-11 01:31:36,372  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 01:31:36,576  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 01:31:36,576  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 01:31:36,577  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 01:31:36,577  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 01:31:36,578  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 01:31:36,578  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 01:31:36,582  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 2.027264    2.0117953  -0.3861851  -0.07046741 -3.154816    0.21773513
+  -2.897205    2.4296694   1.3613634  -0.23045698  0.7710775   1.2024027
+  -1.7443342   0.2059307  -1.5795693  -0.60048884  1.8849895   0.68276197
+   1.8454727   0.31803447 -1.7091546   2.3558955   1.3975507   1.9494771
+   1.0485176   0.44453016 -1.5661849   0.22646233  0.47524616 -0.30178115
+   0.65425324  1.197593   -1.518076   -1.4781978  -0.04801582 -0.1534584
+   0.08482478  0.52480006 -0.9279617  -0.22143926 -0.59130514  0.01559465
+  -1.1058952   0.21716356 -0.99938667 -0.5855344   0.35896465  0.61682254
+  -1.0309865  -0.2326194   0.62279147  0.85003406  1.1666225  -1.0110298
+   0.44689882  0.12749211 -0.09379403 -0.30479476 -0.47749513  0.01389807
+  -0.7838287   0.2805114   0.1913101   0.3763462   0.19950068  0.7957513
+   0.8906927  -0.7694539  -0.5862705  -0.6532802   0.26078594  2.2234392
+  -0.7732745   0.2701764   0.5533119   1.4060212   1.3499604  -0.7698169
+   0.33566064 -0.85083055  0.8977505  -0.9337725   1.0091462  -1.3529981
+  -0.43350643 -0.13663653  0.4582456  -0.7205931   0.83006275  1.3165464
+   0.37158248  1.6596783   0.8677741   0.7084885  -0.9944784  -1.0849168
+   0.10550123  0.65863544 -0.01227171  0.03258549]]]
+[ 2024-07-11 01:31:36,582  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 01:32:04,595  47 COMPONENTS - INFO - Unnamed: 0.2                                                52609
+Unnamed: 0.1                                                52609
+Unnamed: 0                                                  54978
+title                                                     Mutants
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt8078958/
+poster_url      https://www.imdb.com/title/tt8078958/mediaview...
+storyline       Proportionally Sized Horror Film.Proportionall...
+Name: 52609, dtype: object]
+[ 2024-07-11 01:32:04,595  47 COMPONENTS - INFO - Unnamed: 0.2                                               178305
+Unnamed: 0.1                                               178305
+Unnamed: 0                                                 198922
+title                                            Camp Blood Kills
+genres                                            Horror Thriller
+videos                                                         []
+url                        https://www.imdb.com/title/tt10275180/
+poster_url      https://www.imdb.com/title/tt10275180/mediavie...
+storyline       A compilation of some of the best kill scenes ...
+Name: 178305, dtype: object]
+[ 2024-07-11 01:32:04,596  47 COMPONENTS - INFO - Unnamed: 0.2                                      400
+Unnamed: 0.1                                      400
+Unnamed: 0                                        400
+title                                 La Femme Vampir
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt1510273/
+poster_url                                        NaN
+storyline                                         NaN
+Name: 400, dtype: object]
+[ 2024-07-11 01:32:04,596  47 COMPONENTS - INFO - Unnamed: 0.2                                                  445
+Unnamed: 0.1                                                  445
+Unnamed: 0                                                    445
+title                             Zombie Beast of the Confederacy
+genres                                                     Horror
+videos                                                         []
+url                        https://www.imdb.com/title/tt16107862/
+poster_url      https://www.imdb.com/title/tt16107862/mediavie...
+storyline                                                     NaN
+Name: 445, dtype: object]
+[ 2024-07-11 01:32:04,596  47 COMPONENTS - INFO - Unnamed: 0.2                                                 1877
+Unnamed: 0.1                                                 1877
+Unnamed: 0                                                   1880
+title                                                           2
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt1144456/
+poster_url      https://www.imdb.com/title/tt1144456/mediaview...
+storyline                                                     NaN
+Name: 1877, dtype: object]
+[ 2024-07-11 01:32:04,597  47 COMPONENTS - INFO - Unnamed: 0.2                                     1878
+Unnamed: 0.1                                     1878
+Unnamed: 0                                       1881
+title                                   Final Curtain
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt1808130/
+poster_url                                        NaN
+storyline                                         NaN
+Name: 1878, dtype: object]
+[ 2024-07-11 01:32:04,597  47 COMPONENTS - INFO - Unnamed: 0.2                                                 1948
+Unnamed: 0.1                                                 1948
+Unnamed: 0                                                   1952
+title                                                Humanhunters
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt8177940/
+poster_url      https://www.imdb.com/title/tt8177940/mediaview...
+storyline                                                     NaN
+Name: 1948, dtype: object]
+[ 2024-07-11 01:32:04,597  47 COMPONENTS - INFO - Unnamed: 0.2                                     1977
+Unnamed: 0.1                                     1977
+Unnamed: 0                                       1981
+title                                A Pound of Flesh
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt0393608/
+poster_url                                        NaN
+storyline                                         NaN
+Name: 1977, dtype: object]
+[ 2024-07-11 01:32:04,597  47 COMPONENTS - INFO - Unnamed: 0.2                                                 2465
+Unnamed: 0.1                                                 2465
+Unnamed: 0                                                   2472
+title                                                 No. 1 Villa
+genres                                                     Horror
+videos                                                         []
+url                        https://www.imdb.com/title/tt10500444/
+poster_url      https://www.imdb.com/title/tt10500444/mediavie...
+storyline                                                     NaN
+Name: 2465, dtype: object]
+[ 2024-07-11 01:32:04,597  47 COMPONENTS - INFO - Unnamed: 0.2                                                 3671
+Unnamed: 0.1                                                 3671
+Unnamed: 0                                                   3687
+title                                                      Jagoda
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt3605010/
+poster_url      https://www.imdb.com/title/tt3605010/mediaview...
+storyline                                                     NaN
+Name: 3671, dtype: object]
+[ 2024-07-11 01:32:04,623  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Mutants', 'poster_url': 'https://www.imdb.com/title/tt8078958/mediaviewer/rm4091106560', 'videos': '', 'genres': 'Horror', 'storyline': 'Proportionally Sized Horror Film.Proportionally Sized Horror Film.'}, 1: {'title': 'Camp Blood Kills', 'poster_url': 'https://www.imdb.com/title/tt10275180/mediaviewer/rm2992858112', 'videos': '', 'genres': 'Horror Thriller', 'storyline': 'A compilation of some of the best kill scenes from the long running indie horror movie franchise.A compilation of some of the best kill scenes from the long running indie horror movie franchise.'}, 2: {'title': 'La Femme Vampir', 'poster_url': nan, 'videos': '', 'genres': 'Horror', 'storyline': nan}, 3: {'title': 'Zombie Beast of the Confederacy', 'poster_url': 'https://www.imdb.com/title/tt16107862/mediaviewer/rm235792385', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 4: {'title': '2', 'poster_url': 'https://www.imdb.com/title/tt1144456/mediaviewer/rm2097379072', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 5: {'title': 'Final Curtain', 'poster_url': nan, 'videos': '', 'genres': 'Horror', 'storyline': nan}, 6: {'title': 'Humanhunters', 'poster_url': 'https://www.imdb.com/title/tt8177940/mediaviewer/rm786515968', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 7: {'title': 'A Pound of Flesh', 'poster_url': nan, 'videos': '', 'genres': 'Horror', 'storyline': nan}, 8: {'title': 'No. 1 Villa', 'poster_url': 'https://www.imdb.com/title/tt10500444/mediaviewer/rm2320407809', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 9: {'title': 'Jagoda', 'poster_url': 'https://www.imdb.com/title/tt3605010/mediaviewer/rm3406110464', 'videos': '', 'genres': 'Horror', 'storyline': nan}}]
+[ 2024-07-11 01:32:04,739  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:32:04] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:33:41,444  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:33:41] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:33:43,616  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 01:33:43,628  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                description
+0  [best, horror, movie, ]]
+[ 2024-07-11 01:33:43,628  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 01:33:43,847  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 01:33:43,847  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 01:33:43,850  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 01:33:43,850  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 01:33:43,851  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 01:33:43,851  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 01:33:43,855  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 2.027264    2.0117953  -0.3861851  -0.07046741 -3.154816    0.21773513
+  -2.897205    2.4296694   1.3613634  -0.23045698  0.7710775   1.2024027
+  -1.7443342   0.2059307  -1.5795693  -0.60048884  1.8849895   0.68276197
+   1.8454727   0.31803447 -1.7091546   2.3558955   1.3975507   1.9494771
+   1.0485176   0.44453016 -1.5661849   0.22646233  0.47524616 -0.30178115
+   0.65425324  1.197593   -1.518076   -1.4781978  -0.04801582 -0.1534584
+   0.08482478  0.52480006 -0.9279617  -0.22143926 -0.59130514  0.01559465
+  -1.1058952   0.21716356 -0.99938667 -0.5855344   0.35896465  0.61682254
+  -1.0309865  -0.2326194   0.62279147  0.85003406  1.1666225  -1.0110298
+   0.44689882  0.12749211 -0.09379403 -0.30479476 -0.47749513  0.01389807
+  -0.7838287   0.2805114   0.1913101   0.3763462   0.19950068  0.7957513
+   0.8906927  -0.7694539  -0.5862705  -0.6532802   0.26078594  2.2234392
+  -0.7732745   0.2701764   0.5533119   1.4060212   1.3499604  -0.7698169
+   0.33566064 -0.85083055  0.8977505  -0.9337725   1.0091462  -1.3529981
+  -0.43350643 -0.13663653  0.4582456  -0.7205931   0.83006275  1.3165464
+   0.37158248  1.6596783   0.8677741   0.7084885  -0.9944784  -1.0849168
+   0.10550123  0.65863544 -0.01227171  0.03258549]]]
+[ 2024-07-11 01:33:43,855  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 01:34:10,953  47 COMPONENTS - INFO - Unnamed: 0.2                                                52609
+Unnamed: 0.1                                                52609
+Unnamed: 0                                                  54978
+title                                                     Mutants
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt8078958/
+poster_url      https://www.imdb.com/title/tt8078958/mediaview...
+storyline       Proportionally Sized Horror Film.Proportionall...
+Name: 52609, dtype: object]
+[ 2024-07-11 01:34:10,955  47 COMPONENTS - INFO - Unnamed: 0.2                                               178305
+Unnamed: 0.1                                               178305
+Unnamed: 0                                                 198922
+title                                            Camp Blood Kills
+genres                                            Horror Thriller
+videos                                                         []
+url                        https://www.imdb.com/title/tt10275180/
+poster_url      https://www.imdb.com/title/tt10275180/mediavie...
+storyline       A compilation of some of the best kill scenes ...
+Name: 178305, dtype: object]
+[ 2024-07-11 01:34:10,955  47 COMPONENTS - INFO - Unnamed: 0.2                                      400
+Unnamed: 0.1                                      400
+Unnamed: 0                                        400
+title                                 La Femme Vampir
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt1510273/
+poster_url                                        NaN
+storyline                                         NaN
+Name: 400, dtype: object]
+[ 2024-07-11 01:34:10,955  47 COMPONENTS - INFO - Unnamed: 0.2                                                  445
+Unnamed: 0.1                                                  445
+Unnamed: 0                                                    445
+title                             Zombie Beast of the Confederacy
+genres                                                     Horror
+videos                                                         []
+url                        https://www.imdb.com/title/tt16107862/
+poster_url      https://www.imdb.com/title/tt16107862/mediavie...
+storyline                                                     NaN
+Name: 445, dtype: object]
+[ 2024-07-11 01:34:10,955  47 COMPONENTS - INFO - Unnamed: 0.2                                                 1877
+Unnamed: 0.1                                                 1877
+Unnamed: 0                                                   1880
+title                                                           2
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt1144456/
+poster_url      https://www.imdb.com/title/tt1144456/mediaview...
+storyline                                                     NaN
+Name: 1877, dtype: object]
+[ 2024-07-11 01:34:10,955  47 COMPONENTS - INFO - Unnamed: 0.2                                     1878
+Unnamed: 0.1                                     1878
+Unnamed: 0                                       1881
+title                                   Final Curtain
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt1808130/
+poster_url                                        NaN
+storyline                                         NaN
+Name: 1878, dtype: object]
+[ 2024-07-11 01:34:10,956  47 COMPONENTS - INFO - Unnamed: 0.2                                                 1948
+Unnamed: 0.1                                                 1948
+Unnamed: 0                                                   1952
+title                                                Humanhunters
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt8177940/
+poster_url      https://www.imdb.com/title/tt8177940/mediaview...
+storyline                                                     NaN
+Name: 1948, dtype: object]
+[ 2024-07-11 01:34:10,956  47 COMPONENTS - INFO - Unnamed: 0.2                                     1977
+Unnamed: 0.1                                     1977
+Unnamed: 0                                       1981
+title                                A Pound of Flesh
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt0393608/
+poster_url                                        NaN
+storyline                                         NaN
+Name: 1977, dtype: object]
+[ 2024-07-11 01:34:10,956  47 COMPONENTS - INFO - Unnamed: 0.2                                                 2465
+Unnamed: 0.1                                                 2465
+Unnamed: 0                                                   2472
+title                                                 No. 1 Villa
+genres                                                     Horror
+videos                                                         []
+url                        https://www.imdb.com/title/tt10500444/
+poster_url      https://www.imdb.com/title/tt10500444/mediavie...
+storyline                                                     NaN
+Name: 2465, dtype: object]
+[ 2024-07-11 01:34:10,956  47 COMPONENTS - INFO - Unnamed: 0.2                                                 3671
+Unnamed: 0.1                                                 3671
+Unnamed: 0                                                   3687
+title                                                      Jagoda
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt3605010/
+poster_url      https://www.imdb.com/title/tt3605010/mediaview...
+storyline                                                     NaN
+Name: 3671, dtype: object]
+[ 2024-07-11 01:34:10,993  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Mutants', 'poster_url': 'https://www.imdb.com/title/tt8078958/mediaviewer/rm4091106560', 'videos': '', 'genres': 'Horror', 'storyline': 'Proportionally Sized Horror Film.Proportionally Sized Horror Film.'}, 1: {'title': 'Camp Blood Kills', 'poster_url': 'https://www.imdb.com/title/tt10275180/mediaviewer/rm2992858112', 'videos': '', 'genres': 'Horror Thriller', 'storyline': 'A compilation of some of the best kill scenes from the long running indie horror movie franchise.A compilation of some of the best kill scenes from the long running indie horror movie franchise.'}, 2: {'title': 'La Femme Vampir', 'poster_url': nan, 'videos': '', 'genres': 'Horror', 'storyline': nan}, 3: {'title': 'Zombie Beast of the Confederacy', 'poster_url': 'https://www.imdb.com/title/tt16107862/mediaviewer/rm235792385', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 4: {'title': '2', 'poster_url': 'https://www.imdb.com/title/tt1144456/mediaviewer/rm2097379072', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 5: {'title': 'Final Curtain', 'poster_url': nan, 'videos': '', 'genres': 'Horror', 'storyline': nan}, 6: {'title': 'Humanhunters', 'poster_url': 'https://www.imdb.com/title/tt8177940/mediaviewer/rm786515968', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 7: {'title': 'A Pound of Flesh', 'poster_url': nan, 'videos': '', 'genres': 'Horror', 'storyline': nan}, 8: {'title': 'No. 1 Villa', 'poster_url': 'https://www.imdb.com/title/tt10500444/mediaviewer/rm2320407809', 'videos': '', 'genres': 'Horror', 'storyline': nan}, 9: {'title': 'Jagoda', 'poster_url': 'https://www.imdb.com/title/tt3605010/mediaviewer/rm3406110464', 'videos': '', 'genres': 'Horror', 'storyline': nan}}]
+[ 2024-07-11 01:34:11,191  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 01:34:11] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 01:37:11,684  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/recommendationSystem/src/utils.py', reloading]

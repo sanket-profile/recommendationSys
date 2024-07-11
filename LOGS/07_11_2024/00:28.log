@@ -1,0 +1,41 @@
+[ 2024-07-11 00:28:48,185  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 00:28:48,188  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :         description
+0  [olive, satchel]]
+[ 2024-07-11 00:28:48,188  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 00:28:48,525  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 00:28:48,525  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 00:28:48,527  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 00:28:48,528  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 00:28:48,541  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 00:28:48,541  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 00:28:48,542  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[-0.93698364  2.2812316  -3.3818908  -0.7850346   4.4046626   1.0889862
+   0.6275643  -0.07994081  0.53636956  0.21861096  0.43864495 -0.04717257
+  -0.4691248  -1.0934492   0.950062    0.6149937  -1.1892679   0.49581426
+   1.824469    0.04024452  2.8905149  -0.7214535   2.8411968  -0.5754873
+  -0.49023846 -1.9127789  -0.56307906  1.8108692   0.20203502 -0.20850393
+  -1.3390487  -0.01729393 -0.5460237   0.97925043  0.561533   -0.02403113
+   0.32534868 -1.852463   -0.78358144 -1.0746251  -1.6388754   0.32688197
+  -0.6509885   0.6653481   0.19873418 -0.6191989   1.3956213   1.4540414
+   1.0852029   0.64464515  0.2294881   0.24030729  1.8172624  -1.1067626
+   0.8398861  -0.4247005  -1.2467668   0.98666555 -0.02884827 -0.0892904
+  -0.72005844 -0.17996396  1.2678745  -1.0592573  -1.9546154   0.443911
+   0.3724261  -0.01266912 -0.2350924   1.3168142  -0.51189244 -1.541739
+  -1.5664008   0.02085043 -0.03790405  1.2822266  -0.3485624   2.686674
+  -0.3140737  -1.1305727  -0.24524169 -0.85555184 -0.53400373  0.64407384
+   0.5382612  -0.5657941   0.6088019   0.58536327 -0.8912869   0.38943616
+   0.18698753  0.6336592  -1.681399    0.58652914  0.43443838  0.25818458
+  -0.37909973  0.43771824 -0.35440123 -0.06508745]]]
+[ 2024-07-11 00:28:48,542  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 00:28:53,799  35 COMPONENTS - INFO - VIDEO URLS ARE:--> https://www.imdb.com/video/vi2554053913]
+[ 2024-07-11 00:29:15,491  49 COMPONENTS - INFO - Unnamed: 0.2                                               184003
+Unnamed: 0.1                                               184003
+Unnamed: 0                                                 205741
+title                                              Axe Me Another
+genres                              Family Comedy Animation Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt0024850/
+poster_url      https://www.imdb.com/title/tt0024850/mediaview...
+storyline       Pierre Bluto, running a logging camp, has thro...
+Name: 184003, dtype: object]

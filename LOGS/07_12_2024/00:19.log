@@ -1,0 +1,303 @@
+[ 2024-07-12 00:19:14,463  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-12 00:19:14,470  97 werkzeug - INFO -  * Debugger PIN: 521-569-415]
+[ 2024-07-12 00:19:18,715  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:19:18] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-12 00:19:37,956  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-12 00:19:37,966  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [man, goes, jungle, soon, made, mistake, found...]
+[ 2024-07-12 00:19:37,966  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-12 00:19:38,252  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-12 00:19:38,252  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-12 00:19:38,255  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-12 00:19:38,255  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-12 00:19:38,271  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-12 00:19:38,271  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-12 00:19:38,272  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[-5.9240289e+00  3.3554769e-01 -1.7796235e+00  1.0829664e-01
+   9.0263385e-01 -2.0473335e+00 -2.2638169e-01 -5.3513479e-01
+   1.1020782e+00 -1.8624767e+00 -1.5560205e+00  1.8942444e+00
+  -1.4719115e+00  1.5854521e-01 -4.9996752e-01  4.7645822e-01
+  -1.3228823e+00  1.0584340e+00 -2.3332921e-01 -1.1309438e+00
+  -6.8450525e-02 -6.4952552e-02  6.2859303e-01  6.0656482e-01
+  -4.3562660e-01 -4.8752520e-02 -3.1874183e-01  1.9118245e-01
+   4.9699414e-01  1.2701812e-01  3.5852507e-02 -2.6092678e-01
+  -1.0255713e+00 -3.4343815e-01 -1.9548257e-01 -1.4328668e-01
+  -4.9692360e-01  6.7664242e-01  3.4255001e-01 -2.9338723e-01
+  -3.7099999e-01  6.3827807e-01  3.5507804e-01  5.7853353e-01
+  -5.7620410e-02 -3.6825159e-01 -5.7944977e-01  7.2869205e-01
+  -5.6355642e-03  5.1304817e-01 -2.5330654e-01 -1.1574985e+00
+  -3.0489531e-01  6.5686518e-01  4.6479683e-02  9.6963502e-02
+  -9.1545984e-02 -2.2742230e-01  5.2318357e-02 -2.6541963e-01
+   5.9535455e-02  7.4427724e-01 -4.1723654e-01  2.8163520e-01
+   3.9182383e-01  5.1691669e-01 -2.1885906e-01 -3.8980380e-01
+   3.1386715e-01 -1.8535945e-01 -6.6528827e-01  1.0408265e-01
+   3.2881281e-01 -3.5343179e-01 -2.6896977e-01 -1.3503370e-01
+  -6.1605370e-01 -9.2974389e-01  7.6198399e-01 -3.0699661e-01
+   3.8409179e-01  4.7436357e-02  5.8851027e-01 -6.8809785e-02
+  -2.9061310e-02  4.2751306e-01 -2.3691122e-01  3.6220038e-01
+  -4.2247874e-01  4.4277504e-01 -7.8655887e-01  4.0506452e-01
+  -5.0675515e-02 -1.6978863e-01 -4.7429535e-01 -7.2335559e-01
+  -2.4271825e-01 -7.7489100e-04 -4.4220167e-01 -4.8210084e-02]]]
+[ 2024-07-12 00:19:38,272  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-12 00:20:05,512  145 COMPONENTS - INFO - Unnamed: 0.2                                                97412
+Unnamed: 0.1                                                97412
+Unnamed: 0                                                 104675
+title                                                      Spasmo
+genres                                    Horror Mystery Thriller
+videos          [{'link': 'https://www.imdb.com/video/vi192944...
+url                         https://www.imdb.com/title/tt0072196/
+poster_url      https://www.imdb.com/title/tt0072196/mediaview...
+storyline       Christian (Robert Hoffman) and his girlfriend ...
+description     ['horror', 'mystery', 'thriller', 'christian',...
+Name: 97412, dtype: object]
+[ 2024-07-12 00:20:07,408  145 COMPONENTS - INFO - Unnamed: 0.2                                               132811
+Unnamed: 0.1                                               132811
+Unnamed: 0                                                 145444
+title                         Edgar Allan Poe's Lighthouse Keeper
+genres                                                     Horror
+videos          [{'link': 'https://www.imdb.com/video/vi294745...
+url                         https://www.imdb.com/title/tt3181898/
+poster_url      https://www.imdb.com/title/tt3181898/mediaview...
+storyline       A castaway awakes on a beach with wounded fore...
+description     ['horror', 'castaway', 'awakes', 'beach', 'wou...
+Name: 132811, dtype: object]
+[ 2024-07-12 00:20:09,244  145 COMPONENTS - INFO - Unnamed: 0.2                                                44365
+Unnamed: 0.1                                                44365
+Unnamed: 0                                                  46087
+title                                              Predatory Moon
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt3272572/
+poster_url      https://www.imdb.com/title/tt3272572/mediaview...
+storyline       Kyle Reading is a zoologist who has been study...
+description     ['horror', 'kyle', 'reading', 'zoologist', 'st...
+Name: 44365, dtype: object]
+[ 2024-07-12 00:20:10,649  145 COMPONENTS - INFO - Unnamed: 0.2                                               120636
+Unnamed: 0.1                                               120636
+Unnamed: 0                                                 131399
+title                               Gacy: Serial Killer Next Door
+genres                                                     Horror
+videos          [{'link': 'https://www.imdb.com/video/vi694535...
+url                        https://www.imdb.com/title/tt23736318/
+poster_url      https://www.imdb.com/title/tt23736318/mediavie...
+storyline       A young neighbor becomes suspicious of his new...
+description     ['horror', 'young', 'neighbor', 'becomes', 'su...
+Name: 120636, dtype: object]
+[ 2024-07-12 00:20:11,797  145 COMPONENTS - INFO - Unnamed: 0.2                                               121775
+Unnamed: 0.1                                               121775
+Unnamed: 0                                                 132689
+title                                        Return of a Stranger
+genres                                             Crime Thriller
+videos                                                         []
+url                         https://www.imdb.com/title/tt0055369/
+poster_url      https://www.imdb.com/title/tt0055369/mediaview...
+storyline       John and Pam have bought a terrace house in a ...
+description     ['crime', 'thriller', 'john', 'pam', 'bought',...
+Name: 121775, dtype: object]
+[ 2024-07-12 00:20:13,393  145 COMPONENTS - INFO - Unnamed: 0.2                                               126494
+Unnamed: 0.1                                               126494
+Unnamed: 0                                                 138147
+title                                                        Irul
+genres                                           Mystery Thriller
+videos          [{'link': 'https://www.imdb.com/video/vi401943...
+url                        https://www.imdb.com/title/tt13103212/
+poster_url      https://www.imdb.com/title/tt13103212/mediavie...
+storyline       Archana and Alex a couple go on a trip on week...
+description     ['mystery', 'thriller', 'archana', 'alex', 'co...
+Name: 126494, dtype: object]
+[ 2024-07-12 00:20:14,976  145 COMPONENTS - INFO - Unnamed: 0.2                                               154444
+Unnamed: 0.1                                               154444
+Unnamed: 0                                                 170713
+title                              Madness - Gli occhi della luna
+genres                                Crime Horror Music Thriller
+videos                                                         []
+url                         https://www.imdb.com/title/tt0198681/
+poster_url      https://www.imdb.com/title/tt0198681/mediaview...
+storyline       Three men flee at night from an asylum. One is...
+description     ['crime', 'horror', 'music', 'thriller', 'thre...
+Name: 154444, dtype: object]
+[ 2024-07-12 00:20:16,234  145 COMPONENTS - INFO - Unnamed: 0.2                                                37924
+Unnamed: 0.1                                                37924
+Unnamed: 0                                                  39230
+title                                                        Raaz
+genres                                           Thriller Mystery
+videos                                                         []
+url                         https://www.imdb.com/title/tt0206238/
+poster_url      https://www.imdb.com/title/tt0206238/mediaview...
+storyline       Kumar, though of Indian origin, lives in Afric...
+description     ['thriller', 'mystery', 'kumar', 'though', 'in...
+Name: 37924, dtype: object]
+[ 2024-07-12 00:20:17,440  145 COMPONENTS - INFO - Unnamed: 0.2                                                55200
+Unnamed: 0.1                                                55200
+Unnamed: 0                                                  57809
+title                                             Misteri Dilaila
+genres                                    Horror Mystery Thriller
+videos                                                         []
+url                         https://www.imdb.com/title/tt9820594/
+poster_url      https://www.imdb.com/title/tt9820594/mediaview...
+storyline       Husband and wife Jefri and Dilaila go on a vac...
+description     ['horror', 'mystery', 'thriller', 'husband', '...
+Name: 55200, dtype: object]
+[ 2024-07-12 00:20:18,781  145 COMPONENTS - INFO - Unnamed: 0.2                                                73654
+Unnamed: 0.1                                                73654
+Unnamed: 0                                                  78071
+title                                            Pen choo kab pee
+genres                                     Horror Mystery Romance
+videos                                                         []
+url                         https://www.imdb.com/title/tt0950500/
+poster_url      https://www.imdb.com/title/tt0950500/mediaview...
+storyline       Nualjan's life took a happy turn when violin p...
+description     ['horror', 'mystery', 'romance', 'nualjans', '...
+Name: 73654, dtype: object]
+[ 2024-07-12 00:20:20,777  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Spasmo', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNGY4NWRkZTItNGE3ZS00NzcyLWIwOWYtM2EwNzk5YTQyMzRhXkEyXkFqcGdeQXVyMjA0MzYwMDY@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi1929446169', 'genres': 'Horror Mystery Thriller', 'storyline': "Christian (Robert Hoffman) and his girlfriend are taking a walk on a deserted beach when they discover a woman's body lying on the sand; a closer look proves that she's alive. The next day Christian meets her again at a yacht party and they fall in love. Later, at a nearby motel, they're preparing to go to bed together when an intruder breaks in and starts beating Christian, who accidentally shoots him with his own gun. A few hours later they finds out that the corpse is missing, and weird incidents start happening. —ØrnåsChristian (Robert Hoffman) and his girlfriend are taking a walk on a deserted beach when they discover a woman's body lying on the sand; a closer look proves that she's alive. The next day Christian meets her again at a yacht party and they fall in love. Later, at a nearby motel, they're preparing to go to bed together when an intruder breaks in and starts beating Christian, who accidentally shoots him with his own gun. A few hours later they finds out that the corpse is missing, and weird incidents start happening. —Ørnås"}, 1: {'title': "Edgar Allan Poe's Lighthouse Keeper", 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNTM5NzkyZDQtOTM3Zi00NDY0LWJiN2ItMDcyMjVkMWU0M2JhL2ltYWdlXkEyXkFqcGdeQXVyNjg0MzUyNTg@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi29474585', 'genres': 'Horror', 'storyline': 'A castaway awakes on a beach with wounded forehead and sees a woman leaving the place. He takes his satchel and follows her. While climbing a cliff, he falls and faints. He wakes up with amnesia in a lighthouse and the keeper Walsh explains that they are isolated in a remote peninsula where nobody can leave. The only means of transportation to San Francisco is a ferry that will arrive two weeks later. Last but not the least, he warns that he shall always keep a light burning during the night. He goes to the woods in the morning and meets the woman again. He learns that her name is Nora and they fall in love with each other. When he returns to the lighthouse, Nora explains that Walsh is crazy and she cannot go there. During the night, the young man blows out the candle and sees spectral creatures. What are the secrets of Walsh, Nora and the lighthouse? —Claudio Carvalho, Rio de Janeiro, BrazilA castaway awakes on a beach with wounded forehead and sees a woman leaving the place. He takes his satchel and follows her. While climbing a cliff, he falls and faints. He wakes up with amnesia in a lighthouse and the keeper Walsh explains that they are isolated in a remote peninsula where nobody can leave. The only means of transportation to San Francisco is a ferry that will arrive two weeks later. Last but not the least, he warns that he shall always keep a light burning during the night. He goes to the woods in the morning and meets the woman again. He learns that her name is Nora and they fall in love with each other. When he returns to the lighthouse, Nora explains that Walsh is crazy and she cannot go there. During the night, the young man blows out the candle and sees spectral creatures. What are the secrets of Walsh, Nora and the lighthouse? —Claudio Carvalho, Rio de Janeiro, Brazil'}, 2: {'title': 'Predatory Moon', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMGM2ZTI5YWUtY2E4YS00Y2FmLWFlMTUtMjQ1ZDA5YTNkZTYwXkEyXkFqcGdeQXVyMjkzOTE1NDY@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': 'Kyle Reading is a zoologist who has been studying wild animal attacks across the country in hopes of finding ways to prevent them. When a young boy is allegedly killed by a bear in Florida, Kyle launches his own investigation. He quickly turns his attention to Dean Clout, the child\'s uncle, who somehow survived the vicious attack. Dean, infamous for being the town drunk, remembers very little about his brush with the bear. Found unconscious in the woods, he only recalls that he and the boy were left there by a friend who went to run an errand and never came back. But in the weeks following the attack, Dean begins to drop some of his bad habits and pick up some strange new ones. Kyle is convinced that Dean was actually attacked by a werewolf and wants to help him deal with his new condition while keeping the rest of his family safe. He knows that the lycanthropic disease runs in a twenty-eight day cycle and that Dean is running out of time. Unfortunately for Kyle, there is someone who has been keeping a close eye on him. Someone who sees an advantage to having a stranger in town who cries "werewolf". —Shiva Rodriguez'}, 3: {'title': 'Gacy: Serial Killer Next Door', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOTg0OGZiNjAtM2U2Zi00NDcyLTk1YzEtZmE0MDExYmZmOTJkXkEyXkFqcGdeQXVyMTkzMzY4NA@@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi694535961', 'genres': 'Horror', 'storyline': "A young neighbor becomes suspicious of his new neighbor, John Gacy. He witnesses him bringing men home but they never leave, he tells his parents, who know something's up and call the detectives. They then start to wonder if it's really true while their son does some investigating of his own. He finds the bodies under the house and snaps some photos, he forgets his camera in his hurried escape and is kidnapped by Gacy while getting out of the shower. His parents get woken up by a plate night call from the detectives who confirm his son is right, the parents then realize their son is missing and his father goes on a rescue mission and barely gets there in time. Gacy is seen lowering himself into the Crawlspace and the movie ends. —CarrieA young neighbor becomes suspicious of his new neighbor, John Gacy. He witnesses him bringing men home but they never leave, he tells his parents, who know something's up and call the detectives. They then start to wonder if it's really true while their son does some investigating of his own. He finds the bodies under the house and snaps some photos, he forgets his camera in his hurried escape and is kidnapped by Gacy while getting out of the shower. His parents get woken up by a plate night call from the detectives who confirm his son is right, the parents then realize their son is missing and his father goes on a rescue mission and barely gets there in time. Gacy is seen lowering himself into the Crawlspace and the movie ends. —Carrie"}, 4: {'title': 'Return of a Stranger', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNWU3YjkwNWUtMzYyMS00NDgwLWFkZWMtZTE4YzExNTcyNzIzXkEyXkFqcGdeQXVyMTQwMzQ1MA@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Crime Thriller', 'storyline': 'John and Pam have bought a terrace house in a village, and move into it with their little son. In the middle of the night Pam notices that a man is peeping at them from the pavement outside. When he reemerges on the same spot in daytime, she starts becoming nervous. When she later bumps into the same man in the local supermarket, she gets terrified. She tells her husband that when she was 14 years old and lived in an orphanage, a 25 year old man courted her, gave her lots of presents and finally wanted to marry her. She tried to avoid him, he raped her, and it all ended with him being imprisoned. She is sure that he now has come back. Step by step the foreigner escalates his terror against the couple, ending in an attempt to murder John. By sheer luck John is saved, while a colleague happens to be killed instead of him. As a final stroke the stranger tries to capture Pam in her home at night and kidnap her. When John and Pam try to call for help, they find out that their telephone line is cut off, and their car tires punctured. They can just sit in the darkness and wait for the stranger to arrive. —Maths Jesperson {maths.jesperson1@comhem.se}'}, 5: {'title': 'Irul', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BODZjMmFiZjctYWQ2NS00MDY2LWIzNTktYzMxMDhkODdjYzA1XkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi4019437593', 'genres': 'Mystery Thriller', 'storyline': "Archana and Alex a couple go on a trip on weekend. At night in the way when their car breakdown forces a couple to seek shelter in a nearby home. As soon time passes the power switches of. The owner and Alex goes to the basement to on the power. Where both saw a dead body of a women. Soon inside the house suggests there's a killer between them. —jadhavaruta@gmail.comArchana and Alex a couple go on a trip on weekend. At night in the way when their car breakdown forces a couple to seek shelter in a nearby home. As soon time passes the power switches of. The owner and Alex goes to the basement to on the power. Where both saw a dead body of a women. Soon inside the house suggests there's a killer between them. —jadhavaruta@gmail.com"}, 6: {'title': 'Madness - Gli occhi della luna', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZDIyMDk4YTctMTAzNS00ZTZhLWE4YzYtMDhhOWY3OTlmYWIzL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQ3Njg3MQ@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Crime Horror Music Thriller', 'storyline': 'Three men flee at night from an asylum. One is taken back, another accidentally falls under a car and dies, but the third manages to lose track and takes refuge in a country house. The next day, a group of boys arrive at the cottage for a party: the man meanwhile has hidden upstairs, and makes sure not to get noticed by the young. But the party soon degenerates when the boys take LSD; when they wake up, they discover that a girl lies lifeless on the ground. —WikipediaThree men flee at night from an asylum. One is taken back, another accidentally falls under a car and dies, but the third manages to lose track and takes refuge in a country house. The next day, a group of boys arrive at the cottage for a party: the man meanwhile has hidden upstairs, and makes sure not to get noticed by the young. But the party soon degenerates when the boys take LSD; when they wake up, they discover that a girl lies lifeless on the ground. —Wikipedia'}, 7: {'title': 'Raaz', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMTc3OTUwODU2OV5BMl5BanBnXkFtZTcwODg1ODgzMQ@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Thriller Mystery', 'storyline': 'Kumar, though of Indian origin, lives in Africa. He has recurring dreams of a Railway Station in India called "Viran Nagar". He decides to find for himself and travels to India along with his friend, Rocky. They are able to find Viran Nagar railway station, which is exactly as Kumar had dreamed of. When they go to find a ride, the locals shy away from them as behave as though they have seen a ghost. They find temporary accommodations and set out to discover the mystery behind Kumar\'s dreams. Then a young woman, Sapna, meets with Kumar, tells him that she has been awaiting his return, and now they can be together again. But Kumar has never been to this place before, and ends up even more confused. Then another local villager named Bansi tells them he had himself seen Kumar getting killed and buried in the nearby forest. Kumar and Rocky must now find out who was killed, and why the villagers believe that Kumar has returned from the grave. —rAjOo (gunwanti@hotmail.com)Kumar, though of Indian origin, lives in Africa. He has recurring dreams of a Railway Station in India called "Viran Nagar". He decides to find for himself and travels to India along with his friend, Rocky. They are able to find Viran Nagar railway station, which is exactly as Kumar had dreamed of. When they go to find a ride, the locals shy away from them as behave as though they have seen a ghost. They find temporary accommodations and set out to discover the mystery behind Kumar\'s dreams. Then a young woman, Sapna, meets with Kumar, tells him that she has been awaiting his return, and now they can be together again. But Kumar has never been to this place before, and ends up even more confused. Then another local villager named Bansi tells them he had himself seen Kumar getting killed and buried in the nearby forest. Kumar and Rocky must now find out who was killed, and why the villagers believe that Kumar has returned from the grave. —rAjOo (gunwanti@hotmail.com)'}, 8: {'title': 'Misteri Dilaila', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMmZhN2JiMGQtNzAzNS00YTIyLWEyM2QtNTRkYzJlMzYyODhiXkEyXkFqcGdeQXVyMzY3MDU4NDk@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror Mystery Thriller', 'storyline': "Husband and wife Jefri and Dilaila go on a vacation in Fraser's Hill, Pahang, staying at Dilaila's late father's mansion while there. Their first night there is already an unpleasant one as Jefri is disturbed by spooky happenings. The next morning, things turn worse as he discovers his wife is missing. Imam Aziz informs him a day later that Dilaila has been found but when he meets the woman, he immediately notices that she is not his wife, even though she insists that she is. —cinema.com.myHusband and wife Jefri and Dilaila go on a vacation in Fraser's Hill, Pahang, staying at Dilaila's late father's mansion while there. Their first night there is already an unpleasant one as Jefri is disturbed by spooky happenings. The next morning, things turn worse as he discovers his wife is missing. Imam Aziz informs him a day later that Dilaila has been found but when he meets the woman, he immediately notices that she is not his wife, even though she insists that she is. —cinema.com.my"}, 9: {'title': 'Pen choo kab pee', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMDdkNDAwMTQtMWUwZi00ZDliLTg5MTAtYjg1MGI3ZjcwZDlmXkEyXkFqcGdeQXVyNjAzNDg0MzY@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror Mystery Romance', 'storyline': "Nualjan's life took a happy turn when violin player Chob arrived in her village Cholburi. It was love at first sight and she got pregnant. Then Chob told her he will leave for business to Bangkok for a few days. He will be back soon he promised, but Chob never came back. Now, months later, Nualjan can't wait any longer and decides to search for him. On her way to Bangkok, she arrives at a mysterious pension. Supervisor miss Somjit refuses to let the very pregnant Nualjan stay at first however. She finally relents, but demands that she stays away from the main house, where the owner madame Ranjuan resides. Nualjan soon finds out there's something going on on the premises. Why does she see moving shadows? Who is the man cutting wood in the middle of the night, who is the old woman living in a garden shed? Only Choy, another guest, seems interested in her and is willing to tell about the disturbing peculiarities of the estate. But not everything. —Arnoud Tiele (imdb@tiele.nl)Nualjan's life took a happy turn when violin player Chob arrived in her village Cholburi. It was love at first sight and she got pregnant. Then Chob told her he will leave for business to Bangkok for a few days. He will be back soon he promised, but Chob never came back. Now, months later, Nualjan can't wait any longer and decides to search for him. On her way to Bangkok, she arrives at a mysterious pension. Supervisor miss Somjit refuses to let the very pregnant Nualjan stay at first however. She finally relents, but demands that she stays away from the main house, where the owner madame Ranjuan resides. Nualjan soon finds out there's something going on on the premises. Why does she see moving shadows? Who is the man cutting wood in the middle of the night, who is the old woman living in a garden shed? Only Choy, another guest, seems interested in her and is willing to tell about the disturbing peculiarities of the estate. But not everything. —Arnoud Tiele (imdb@tiele.nl)"}}]
+[ 2024-07-12 00:20:20,873  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:20:20] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-12 00:21:31,171  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-12 00:21:31,195  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [husband, wife, jefri, dilaila, go, vacation, ...]
+[ 2024-07-12 00:21:31,195  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-12 00:21:31,383  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-12 00:21:31,383  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-12 00:21:31,384  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-12 00:21:31,384  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-12 00:21:31,385  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-12 00:21:31,385  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-12 00:21:31,388  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[-5.7587438e+00  9.0973204e-01 -1.5935100e+00 -1.2113388e+00
+   4.9463341e-01 -2.0996652e+00 -7.1571589e-02 -1.5958364e-01
+   4.1707698e-01 -1.6479104e+00 -3.6796215e-01  1.5879145e+00
+  -1.2877761e+00  5.5039275e-01 -7.6244217e-01 -1.4291759e-01
+  -3.4620404e-01  8.7765580e-01  8.5478544e-02 -4.0355496e-02
+   5.4938573e-01 -3.4163034e-01  5.7605529e-01  1.5039898e-02
+   3.3289924e-01 -5.0882608e-01  2.4574658e-01  3.8653737e-01
+  -2.5295934e-01 -4.1006696e-01 -1.6318180e-01  6.1257035e-02
+   2.4950963e-01 -2.5980332e-01 -1.5431380e-01 -3.9063236e-01
+  -3.3957100e-01 -3.5431538e-02  2.9381084e-01 -5.2754804e-02
+   4.7162771e-02  8.6071327e-02  4.3149233e-01 -7.5597927e-02
+   5.4197419e-02  7.7565223e-02  9.0788603e-02  3.6493051e-01
+  -4.7594520e-01  5.1624276e-02  3.9150011e-02 -7.5966762e-03
+  -1.5974191e-01  3.9215907e-01  3.4856310e-01 -3.7884855e-01
+   7.7340968e-02  6.6914991e-02  1.5615998e-01  1.1237132e-01
+  -2.3916458e-01  3.5731798e-01  1.9534428e-01  4.6148036e-02
+  -3.6636695e-02 -1.6649978e-01 -7.6863547e-03 -2.5366181e-01
+  -1.6736186e-01  3.5876010e-02 -1.8344592e-01 -2.0409781e-01
+  -3.1193268e-01  4.1892913e-01 -2.4676350e-01 -8.3065584e-02
+  -2.2033933e-01  2.6410639e-01  1.9244581e-02 -3.3806290e-02
+  -4.6146870e-02  1.8466713e-01  1.2544590e-01  3.5556608e-01
+  -1.7167513e-01  2.1575241e-01  1.7146483e-01  1.1456681e-01
+   7.3389756e-03  7.2503433e-02  3.9448667e-01  2.3347946e-01
+  -1.1323228e-01 -5.7238355e-02  1.1870322e-01 -2.0787024e-01
+   1.3735130e-02  1.3062838e-01  4.6459667e-02 -1.2816397e-06]]]
+[ 2024-07-12 00:21:31,388  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-12 00:21:58,579  145 COMPONENTS - INFO - Unnamed: 0.2                                                55200
+Unnamed: 0.1                                                55200
+Unnamed: 0                                                  57809
+title                                             Misteri Dilaila
+genres                                    Horror Mystery Thriller
+videos                                                         []
+url                         https://www.imdb.com/title/tt9820594/
+poster_url      https://www.imdb.com/title/tt9820594/mediaview...
+storyline       Husband and wife Jefri and Dilaila go on a vac...
+description     ['horror', 'mystery', 'thriller', 'husband', '...
+Name: 55200, dtype: object]
+[ 2024-07-12 00:22:00,056  145 COMPONENTS - INFO - Unnamed: 0.2                                                29031
+Unnamed: 0.1                                                29031
+Unnamed: 0                                                  29848
+title                                                   Barbarian
+genres                                    Horror Mystery Thriller
+videos          [{'link': 'https://www.imdb.com/video/vi181913...
+url                        https://www.imdb.com/title/tt15791034/
+poster_url      https://www.imdb.com/title/tt15791034/mediavie...
+storyline       In town for a job interview, a young woman arr...
+description     ['horror', 'mystery', 'thriller', 'town', 'job...
+Name: 29031, dtype: object]
+[ 2024-07-12 00:22:01,052  145 COMPONENTS - INFO - Unnamed: 0.2                                                 3157
+Unnamed: 0.1                                                 3157
+Unnamed: 0                                                   3169
+title                                               Woh Kaun Thi?
+genres                             Drama Mystery Romance Thriller
+videos          [{'link': 'https://www.imdb.com/video/vi391864...
+url                         https://www.imdb.com/title/tt0232960/
+poster_url      https://www.imdb.com/title/tt0232960/mediaview...
+storyline       Dr Anand is depressed after sudden death of hi...
+description     ['drama', 'mystery', 'romance', 'thriller', 'd...
+Name: 3157, dtype: object]
+[ 2024-07-12 00:22:02,400  145 COMPONENTS - INFO - Unnamed: 0.2                                                73654
+Unnamed: 0.1                                                73654
+Unnamed: 0                                                  78071
+title                                            Pen choo kab pee
+genres                                     Horror Mystery Romance
+videos                                                         []
+url                         https://www.imdb.com/title/tt0950500/
+poster_url      https://www.imdb.com/title/tt0950500/mediaview...
+storyline       Nualjan's life took a happy turn when violin p...
+description     ['horror', 'mystery', 'romance', 'nualjans', '...
+Name: 73654, dtype: object]
+[ 2024-07-12 00:22:03,529  145 COMPONENTS - INFO - Unnamed: 0.2                                                97412
+Unnamed: 0.1                                                97412
+Unnamed: 0                                                 104675
+title                                                      Spasmo
+genres                                    Horror Mystery Thriller
+videos          [{'link': 'https://www.imdb.com/video/vi192944...
+url                         https://www.imdb.com/title/tt0072196/
+poster_url      https://www.imdb.com/title/tt0072196/mediaview...
+storyline       Christian (Robert Hoffman) and his girlfriend ...
+description     ['horror', 'mystery', 'thriller', 'christian',...
+Name: 97412, dtype: object]
+[ 2024-07-12 00:22:04,290  145 COMPONENTS - INFO - Unnamed: 0.2                                               135478
+Unnamed: 0.1                                               135478
+Unnamed: 0                                                 148553
+title                                              Scream of Fear
+genres                                            Horror Thriller
+videos          [{'link': 'https://www.imdb.com/video/vi339507...
+url                         https://www.imdb.com/title/tt0055505/
+poster_url      https://www.imdb.com/title/tt0055505/mediaview...
+storyline       Penny Appleby's parents were divorced when she...
+description     ['horror', 'thriller', 'penny', 'applebys', 'p...
+Name: 135478, dtype: object]
+[ 2024-07-12 00:22:05,300  145 COMPONENTS - INFO - Unnamed: 0.2                                               208921
+Unnamed: 0.1                                               208921
+Unnamed: 0                                                 235711
+title                                               The Mutilator
+genres                                            Horror Thriller
+videos          [{'link': 'https://www.imdb.com/video/vi237540...
+url                         https://www.imdb.com/title/tt0124014/
+poster_url      https://www.imdb.com/title/tt0124014/mediaview...
+storyline       On the day of his father's birthday, the boy E...
+description     ['horror', 'thriller', 'day', 'fathers', 'birt...
+Name: 208921, dtype: object]
+[ 2024-07-12 00:22:06,687  145 COMPONENTS - INFO - Unnamed: 0.2                                                10079
+Unnamed: 0.1                                                10079
+Unnamed: 0                                                  10194
+title                                             Something Waits
+genres                                               Horror Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt0451207/
+poster_url      https://www.imdb.com/title/tt0451207/mediaview...
+storyline       A newly married couple buy a large fixer-upper...
+description     ['horror', 'short', 'newly', 'married', 'coupl...
+Name: 10079, dtype: object]
+[ 2024-07-12 00:22:07,966  145 COMPONENTS - INFO - Unnamed: 0.2                                               214063
+Unnamed: 0.1                                               214063
+Unnamed: 0                                                 241934
+title                                           Empire of Passion
+genres                                       Drama Horror Romance
+videos          [{'link': 'https://www.imdb.com/video/vi998742...
+url                         https://www.imdb.com/title/tt0077132/
+poster_url      https://www.imdb.com/title/tt0077132/mediaview...
+storyline       A young man has an affair with an older woman....
+description     ['drama', 'horror', 'romance', 'young', 'man',...
+Name: 214063, dtype: object]
+[ 2024-07-12 00:22:08,969  145 COMPONENTS - INFO - Unnamed: 0.2                                                75938
+Unnamed: 0.1                                                75938
+Unnamed: 0                                                  80600
+title                                              Slub doskonaly
+genres                                             Comedy Romance
+videos          [{'link': 'https://www.imdb.com/video/vi322028...
+url                        https://www.imdb.com/title/tt21846774/
+poster_url      https://www.imdb.com/title/tt21846774/mediavie...
+storyline       This wedding didn't go well from the start. Th...
+description     ['comedy', 'romance', 'wedding', 'didnt', 'go'...
+Name: 75938, dtype: object]
+[ 2024-07-12 00:22:10,289  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Misteri Dilaila', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMmZhN2JiMGQtNzAzNS00YTIyLWEyM2QtNTRkYzJlMzYyODhiXkEyXkFqcGdeQXVyMzY3MDU4NDk@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror Mystery Thriller', 'storyline': "Husband and wife Jefri and Dilaila go on a vacation in Fraser's Hill, Pahang, staying at Dilaila's late father's mansion while there. Their first night there is already an unpleasant one as Jefri is disturbed by spooky happenings. The next morning, things turn worse as he discovers his wife is missing. Imam Aziz informs him a day later that Dilaila has been found but when he meets the woman, he immediately notices that she is not his wife, even though she insists that she is. —cinema.com.myHusband and wife Jefri and Dilaila go on a vacation in Fraser's Hill, Pahang, staying at Dilaila's late father's mansion while there. Their first night there is already an unpleasant one as Jefri is disturbed by spooky happenings. The next morning, things turn worse as he discovers his wife is missing. Imam Aziz informs him a day later that Dilaila has been found but when he meets the woman, he immediately notices that she is not his wife, even though she insists that she is. —cinema.com.my"}, 1: {'title': 'Barbarian', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BN2M3Y2NhMGYtYjUxOS00M2UwLTlmMGUtYzY4MzFlNjZkYzY2XkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi1819132441', 'genres': 'Horror Mystery Thriller', 'storyline': 'In town for a job interview, a young woman arrives at her Airbnb rental late at night only to find that the house has been mistakenly double-booked and a strange man is already staying there. Against her better judgment, she decides to stay the night anyway, but soon discovers that there is much more to be afraid of in the house than the other house guest.In town for a job interview, a young woman arrives at her Airbnb rental late at night only to find that the house has been mistakenly double-booked and a strange man is already staying there. Against her better judgment, she decides to stay the night anyway, but soon discovers that there is much more to be afraid of in the house than the other house guest.'}, 2: {'title': 'Woh Kaun Thi?', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNTJjZTlkOTMtOGMyZS00YmNmLTk1YWMtNjZmNTA1ZmY2ZjQ2XkEyXkFqcGdeQXVyMzA4OTQ3MTQ@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi3918642713', 'genres': 'Drama Mystery Romance Thriller', 'storyline': "Dr Anand is depressed after sudden death of his lover Seema.On a stormy night he meets a woman in white clad and asks him for lift.After the woman sits in his car strange things start to happen she gets down at her destination and suddenly disappears in graveyard.On the same night he is called to dilapidated mansion where he sees the same girl as his patient who as passed away .He takes help of cops and finds that everything has been changed when cops arrive and the girl is no where. The cops tell him that such thing has happened many a times at this mansion with many other doctors.Next day he sees that same girl as died in train accident.Anand's marriage is arranged by is mother to Sandhya.On the wedding night Anand is shocked to see that Sandhya is the same mysterious girl he encountered in stormy night. —alex.mjacko@gmail.comDr Anand is depressed after sudden death of his lover Seema.On a stormy night he meets a woman in white clad and asks him for lift.After the woman sits in his car strange things start to happen she gets down at her destination and suddenly disappears in graveyard.On the same night he is called to dilapidated mansion where he sees the same girl as his patient who as passed away .He takes help of cops and finds that everything has been changed when cops arrive and the girl is no where. The cops tell him that such thing has happened many a times at this mansion with many other doctors.Next day he sees that same girl as died in train accident.Anand's marriage is arranged by is mother to Sandhya.On the wedding night Anand is shocked to see that Sandhya is the same mysterious girl he encountered in stormy night. —alex.mjacko@gmail.com"}, 3: {'title': 'Pen choo kab pee', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMDdkNDAwMTQtMWUwZi00ZDliLTg5MTAtYjg1MGI3ZjcwZDlmXkEyXkFqcGdeQXVyNjAzNDg0MzY@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror Mystery Romance', 'storyline': "Nualjan's life took a happy turn when violin player Chob arrived in her village Cholburi. It was love at first sight and she got pregnant. Then Chob told her he will leave for business to Bangkok for a few days. He will be back soon he promised, but Chob never came back. Now, months later, Nualjan can't wait any longer and decides to search for him. On her way to Bangkok, she arrives at a mysterious pension. Supervisor miss Somjit refuses to let the very pregnant Nualjan stay at first however. She finally relents, but demands that she stays away from the main house, where the owner madame Ranjuan resides. Nualjan soon finds out there's something going on on the premises. Why does she see moving shadows? Who is the man cutting wood in the middle of the night, who is the old woman living in a garden shed? Only Choy, another guest, seems interested in her and is willing to tell about the disturbing peculiarities of the estate. But not everything. —Arnoud Tiele (imdb@tiele.nl)Nualjan's life took a happy turn when violin player Chob arrived in her village Cholburi. It was love at first sight and she got pregnant. Then Chob told her he will leave for business to Bangkok for a few days. He will be back soon he promised, but Chob never came back. Now, months later, Nualjan can't wait any longer and decides to search for him. On her way to Bangkok, she arrives at a mysterious pension. Supervisor miss Somjit refuses to let the very pregnant Nualjan stay at first however. She finally relents, but demands that she stays away from the main house, where the owner madame Ranjuan resides. Nualjan soon finds out there's something going on on the premises. Why does she see moving shadows? Who is the man cutting wood in the middle of the night, who is the old woman living in a garden shed? Only Choy, another guest, seems interested in her and is willing to tell about the disturbing peculiarities of the estate. But not everything. —Arnoud Tiele (imdb@tiele.nl)"}, 4: {'title': 'Spasmo', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNGY4NWRkZTItNGE3ZS00NzcyLWIwOWYtM2EwNzk5YTQyMzRhXkEyXkFqcGdeQXVyMjA0MzYwMDY@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi1929446169', 'genres': 'Horror Mystery Thriller', 'storyline': "Christian (Robert Hoffman) and his girlfriend are taking a walk on a deserted beach when they discover a woman's body lying on the sand; a closer look proves that she's alive. The next day Christian meets her again at a yacht party and they fall in love. Later, at a nearby motel, they're preparing to go to bed together when an intruder breaks in and starts beating Christian, who accidentally shoots him with his own gun. A few hours later they finds out that the corpse is missing, and weird incidents start happening. —ØrnåsChristian (Robert Hoffman) and his girlfriend are taking a walk on a deserted beach when they discover a woman's body lying on the sand; a closer look proves that she's alive. The next day Christian meets her again at a yacht party and they fall in love. Later, at a nearby motel, they're preparing to go to bed together when an intruder breaks in and starts beating Christian, who accidentally shoots him with his own gun. A few hours later they finds out that the corpse is missing, and weird incidents start happening. —Ørnås"}, 5: {'title': 'Scream of Fear', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BM2M3MWZkN2MtYTFlYS00M2EzLWFmNzktNmMyMGNmMGQ1N2NmXkEyXkFqcGdeQXVyMjI4MjA5MzA@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi3395075865', 'genres': 'Horror Thriller', 'storyline': "Penny Appleby's parents were divorced when she was young and she grew up with her mother. After her mother's death, wheelchair-bound Penny accepts her father's invitation to live with him, but when she arrives, she learns that her father is away, though her stepmother, whom she's meeting for the first time, warmly welcomes her. On her first night there, Penny sees a light in the summerhouse; when she investigates, she sees her father sitting there--apparently dead. Others see nothing there and tell her she must have imagined it. She later sees his body in the library, then in the pool. She comes to believe that her stepmother and her father's friend, Doctor Pierre Gerard, are plotting to drive her insane. She gets a sympathetic ear from Bob, the chauffeur, who feels that there must be some rational explanation for what has been happening. —garykmcdPenny Appleby's parents were divorced when she was young and she grew up with her mother. After her mother's death, wheelchair-bound Penny accepts her father's invitation to live with him, but when she arrives, she learns that her father is away, though her stepmother, whom she's meeting for the first time, warmly welcomes her. On her first night there, Penny sees a light in the summerhouse; when she investigates, she sees her father sitting there--apparently dead. Others see nothing there and tell her she must have imagined it. She later sees his body in the library, then in the pool. She comes to believe that her stepmother and her father's friend, Doctor Pierre Gerard, are plotting to drive her insane. She gets a sympathetic ear from Bob, the chauffeur, who feels that there must be some rational explanation for what has been happening. —garykmcd"}, 6: {'title': 'The Mutilator', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYjRhMzM4NmMtYmZlOC00ODJlLTg5NjQtNjk4ZWUwMDY5MDU4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2375402265', 'genres': 'Horror Thriller', 'storyline': "On the day of his father's birthday, the boy Ed decides to clean his father's hunting rifle and accidentally shoots and kills his mother that was baking a cake in the kitchen. His father Ed Sr. is mentally affected by the incident. Years later, Ed is in a bar with college friends and they do not know what to do in the holidays, since they have not reserved any place to go. Out of the blue, Ed receives a phone call from his estranged father that asks him to close his fishing house in an island since it is off season. His friends invite themselves to go with him and spend a couple of days on the beach. Ed drives to the island with his girlfriend Pam and the couples Ralph and Sue, and Mike and Linda. They find the house open and an ax missing, but do not report to the police. Further, there is anyone in the island but them. Soon a killer starts to kill them one by one and hang them in a locker in the house garage. Who might be the serial-killer? —Claudio Carvalho, Rio de Janeiro, BrazilOn the day of his father's birthday, the boy Ed decides to clean his father's hunting rifle and accidentally shoots and kills his mother that was baking a cake in the kitchen. His father Ed Sr. is mentally affected by the incident. Years later, Ed is in a bar with college friends and they do not know what to do in the holidays, since they have not reserved any place to go. Out of the blue, Ed receives a phone call from his estranged father that asks him to close his fishing house in an island since it is off season. His friends invite themselves to go with him and spend a couple of days on the beach. Ed drives to the island with his girlfriend Pam and the couples Ralph and Sue, and Mike and Linda. They find the house open and an ax missing, but do not report to the police. Further, there is anyone in the island but them. Soon a killer starts to kill them one by one and hang them in a locker in the house garage. Who might be the serial-killer? —Claudio Carvalho, Rio de Janeiro, Brazil"}, 7: {'title': 'Something Waits', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOWUyNjMwZmEtNDdkZC00MjhlLWI3N2UtZjczODliMjUzNmQxXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror Short', 'storyline': "A newly married couple buy a large fixer-upper. They're not quite sure why they received such a good deal on the house but soon find out that it's because of rumors of a murder that happened long ago. When the husband is called away on business, his young wife is left alone to finish moving in. As the night unfolds, she begins noticing odd things happening in the house. She dismisses them as her imagination. Is it just her imagination or is it really the ghost of another young wife? Only time will tell if she survives the night. —Heath CrawfordA newly married couple buy a large fixer-upper. They're not quite sure why they received such a good deal on the house but soon find out that it's because of rumors of a murder that happened long ago. When the husband is called away on business, his young wife is left alone to finish moving in. As the night unfolds, she begins noticing odd things happening in the house. She dismisses them as her imagination. Is it just her imagination or is it really the ghost of another young wife? Only time will tell if she survives the night. —Heath Crawford"}, 8: {'title': 'Empire of Passion', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNmViMzJkNzktMzQ5Ny00OGY2LThmNmYtYTNiNzhlNDI5NjE1XkEyXkFqcGdeQXVyMzIwNDY4NDI@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi998742041', 'genres': 'Drama Horror Romance', 'storyline': "A young man has an affair with an older woman. He is very jealous of her husband and decides that they should kill him. One night, after the husband had plenty of sake to drink and was in bed, they strangle him and dump his body down a well. To avert any suspicions, she pretends her husband has gone off to Tokyo to work. For three years the wife and her lover secretly see each other. Finally, suspicions become very strong and people begin to gossip. To make matters worse, her husband's ghost begins to haunt her and the law arrives to investigate her husband's disappearance. —Kevin Risch <krisch@intranet.on.ca>A young man has an affair with an older woman. He is very jealous of her husband and decides that they should kill him. One night, after the husband had plenty of sake to drink and was in bed, they strangle him and dump his body down a well. To avert any suspicions, she pretends her husband has gone off to Tokyo to work. For three years the wife and her lover secretly see each other. Finally, suspicions become very strong and people begin to gossip. To make matters worse, her husband's ghost begins to haunt her and the law arrives to investigate her husband's disappearance. —Kevin Risch <krisch@intranet.on.ca>"}, 9: {'title': 'Slub doskonaly', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYTNkYWFlOGYtYTc2MC00MDk2LWIxOTgtZDQ0MzUwZjRmMDcyXkEyXkFqcGdeQXVyMTEwMTY3NDI@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi322028825', 'genres': 'Comedy Romance', 'storyline': "This wedding didn't go well from the start. The bride is pregnant and her possessive mommy doesn't want to hear about the baby's real father. The groom basically does not know his future wife, and he was forced to marry by eloquent blackmail by his future mother-in-law. When the wedding day arrives, a real avalanche of events sets in. The groom wakes up in the bridal suite with a gigantic headache after a lavish bachelor party with a woman he doesn't know. There is a knock on the door, you must act quickly and hide your mistress in the bathroom. Luckily, it's just the best man. Unfortunately, a moment later, the future bride and her mother burst into the same room. If both men want to get out of the predicament, they must quickly come up with an alternative version of events. However, this only makes matters worse, because with each lie they fall into the next. It soon turns out that everyone here has something to hide. This day starts to look dangerously like the biggest disaster in the life of the future mother-in-law, father-in-law, witness, wedding planner and everyone around. The trouble that awaits them and getting out of it will seem like an impossible twist. And even if they succeed, it will only be a second of silence before the storm and a prelude to what lies ahead. One thing seems certain: this wedding will be talked about for a long time. Just a question... is it like Mommy wanted? —G"}}]
+[ 2024-07-12 00:22:10,370  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:22:10] "POST /predict HTTP/1.1" 200 -]

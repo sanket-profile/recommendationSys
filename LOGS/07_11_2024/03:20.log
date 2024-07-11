@@ -1,0 +1,461 @@
+[ 2024-07-11 03:20:43,752  97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[ 2024-07-11 03:20:43,752  97 werkzeug - INFO - [33mPress CTRL+C to quit[0m]
+[ 2024-07-11 03:20:43,753  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-11 03:20:44,895  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-11 03:20:44,905  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-11 03:20:50,554  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:20:50] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 03:20:56,904  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 03:20:56,921  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [documentary, follows, amy, powney, daughter, ...]
+[ 2024-07-11 03:20:56,921  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 03:20:57,246  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 03:20:57,247  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 03:20:57,251  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 03:20:57,251  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 03:20:57,268  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 03:20:57,268  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 03:20:57,269  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[-5.65573454e-01 -3.34888244e+00  3.02166671e-01 -5.23226738e-01
+  -6.72224998e-01 -7.99407363e-02 -8.71062279e-01  5.77340126e-01
+  -1.69174284e-01  9.73128617e-01  2.88446218e-01 -1.95598948e+00
+   6.38330877e-01  5.49405098e-01  9.96536314e-01 -9.24093008e-01
+  -1.45135522e-01  1.44830897e-01 -6.77489877e-01 -1.14875715e-02
+   6.54707924e-02  3.43570739e-01 -4.48695570e-02  2.46523499e-01
+   4.41332161e-01  7.64448568e-02 -5.84618628e-01  6.20144010e-01
+  -5.56229830e-01  5.62250651e-02  3.62508655e-01 -4.27054614e-01
+   8.23839679e-02  3.49167168e-01  8.89435485e-02  4.32574227e-02
+  -6.38477087e-01  4.14636463e-01  2.15237603e-01 -4.72847730e-01
+   3.06168795e-01 -2.03179009e-03 -3.23842108e-01 -2.50733614e-01
+  -1.74915925e-01 -7.03510642e-01  1.53828934e-01 -4.49492276e-01
+  -3.76113653e-01 -1.66275054e-01 -7.63622597e-02  1.01394534e+00
+  -1.43511426e+00  4.78133142e-01  1.06514551e-01 -2.44424731e-01
+  -2.53122836e-01  1.76550120e-01 -1.69505253e-01  3.27850640e-01
+   6.51958942e-01  8.54731500e-02 -3.18344146e-01 -3.78542095e-01
+  -1.88916743e-01 -2.24099934e-01  6.60928488e-01  1.28609478e-01
+  -2.61909246e-01  3.90546322e-01  1.33700013e-01 -3.56101513e-01
+  -7.68282950e-01 -2.17338018e-02 -3.95274937e-01  1.76472500e-01
+  -3.44746798e-01 -3.19182932e-01 -7.84906149e-02 -7.61292800e-02
+  -4.77726758e-01 -5.40606957e-03 -1.99733004e-01 -2.16589123e-01
+   7.61452392e-02  5.02786972e-02  3.46004844e-01  1.46675557e-01
+  -5.52340150e-01 -2.24870026e-01 -4.57565129e-01 -5.49461484e-01
+   3.79014879e-01  6.70268163e-02  3.06490928e-01  2.23991051e-01
+   1.65496543e-01 -3.18932950e-01  4.60145950e-01 -1.00714639e-02]]]
+[ 2024-07-11 03:20:57,269  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 03:21:24,657  84 COMPONENTS - INFO - Unnamed: 0.2                                                    2
+Unnamed: 0.1                                                    2
+Unnamed: 0                                                      2
+title                                          Fashion Reimagined
+genres                                                Documentary
+videos          [{'link': 'https://www.imdb.com/video/vi255405...
+url                        https://www.imdb.com/title/tt18292986/
+poster_url      https://www.imdb.com/title/tt18292986/mediavie...
+storyline       Follows Amy Powney, a daughter of environmenta...
+description     ['documentary', 'follows', 'amy', 'powney', 'd...
+Name: 2, dtype: object]
+[ 2024-07-11 03:21:26,098  84 COMPONENTS - INFO - Unnamed: 0.2                                               171115
+Unnamed: 0.1                                               171115
+Unnamed: 0                                                 190490
+title                                             What the Health
+genres                                                Documentary
+videos          [{'link': 'https://www.imdb.com/video/vi303561...
+url                         https://www.imdb.com/title/tt5541848/
+poster_url      https://www.imdb.com/title/tt5541848/mediaview...
+storyline       What the Health is a ground breaking feature l...
+description     ['documentary', 'health', 'ground', 'breaking'...
+Name: 171115, dtype: object]
+[ 2024-07-11 03:21:27,414  84 COMPONENTS - INFO - Unnamed: 0.2                                               131285
+Unnamed: 0.1                                               131285
+Unnamed: 0                                                 143668
+title                                  The UNIDO Energy Programme
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt5622222/
+poster_url      https://www.imdb.com/title/tt5622222/mediaview...
+storyline       Sustainable energy is the golden thread that c...
+description     ['documentary', 'short', 'sustainable', 'energ...
+Name: 131285, dtype: object]
+[ 2024-07-11 03:21:28,738  84 COMPONENTS - INFO - Unnamed: 0.2                                               150354
+Unnamed: 0.1                                               150354
+Unnamed: 0                                                 165918
+title                                                  Real Value
+genres                        Documentary Biography Drama History
+videos                                                         []
+url                         https://www.imdb.com/title/tt3262476/
+poster_url      https://www.imdb.com/title/tt3262476/mediaview...
+storyline       Real Value is an independent documentary by fi...
+description     ['documentary', 'biography', 'drama', 'history...
+Name: 150354, dtype: object]
+[ 2024-07-11 03:21:30,079  84 COMPONENTS - INFO - Unnamed: 0.2                                               199909
+Unnamed: 0.1                                               199909
+Unnamed: 0                                                 224748
+title                                      A Fibreshed for London
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt8396374/
+poster_url      https://www.imdb.com/title/tt8396374/mediaview...
+storyline       A Fibreshed for London (2015) is a documentary...
+description     ['documentary', 'short', 'fibreshed', 'london'...
+Name: 199909, dtype: object]
+[ 2024-07-11 03:21:31,658  84 COMPONENTS - INFO - Unnamed: 0.2                                                 7360
+Unnamed: 0.1                                                 7360
+Unnamed: 0                                                   7420
+title                                        The Riddle of Sweden
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt4708598/
+poster_url      https://www.imdb.com/title/tt4708598/mediaview...
+storyline       The Swedish people, nature and culture, the we...
+description     ['documentary', 'short', 'swedish', 'people', ...
+Name: 7360, dtype: object]
+[ 2024-07-11 03:21:33,005  84 COMPONENTS - INFO - Unnamed: 0.2                                               174096
+Unnamed: 0.1                                               174096
+Unnamed: 0                                                 194011
+title                                              A Maasai Story
+genres                                          Documentary Short
+videos          [{'link': 'https://www.imdb.com/video/vi427070...
+url                         https://www.imdb.com/title/tt7559156/
+poster_url      https://www.imdb.com/title/tt7559156/mediaview...
+storyline       Ethical fashion makes the change. In 2017 Isti...
+description     ['documentary', 'short', 'ethical', 'fashion',...
+Name: 174096, dtype: object]
+[ 2024-07-11 03:21:34,256  84 COMPONENTS - INFO - Unnamed: 0.2                                               164179
+Unnamed: 0.1                                               164179
+Unnamed: 0                                                 182298
+title                                            Brave Blue World
+genres                                                Documentary
+videos          [{'link': 'https://www.imdb.com/video/vi331984...
+url                        https://www.imdb.com/title/tt11921004/
+poster_url      https://www.imdb.com/title/tt11921004/mediavie...
+storyline       Brave Blue World is a documentary exploring th...
+description     ['documentary', 'brave', 'blue', 'world', 'exp...
+Name: 164179, dtype: object]
+[ 2024-07-11 03:21:35,873  84 COMPONENTS - INFO - Unnamed: 0.2                                                34665
+Unnamed: 0.1                                                34665
+Unnamed: 0                                                  35777
+title                                           Post to Paycheque
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt6251072/
+poster_url      https://www.imdb.com/title/tt6251072/mediaview...
+storyline       Post To Paycheque is a twenty-minute short dra...
+description     ['documentary', 'short', 'post', 'paycheque', ...
+Name: 34665, dtype: object]
+[ 2024-07-11 03:21:37,149  84 COMPONENTS - INFO - Unnamed: 0.2                                                 3376
+Unnamed: 0.1                                                 3376
+Unnamed: 0                                                   3390
+title                                       The Garden of Secrets
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt9349940/
+poster_url      https://www.imdb.com/title/tt9349940/mediaview...
+storyline       A documentary that explores the power of biomi...
+description     ['documentary', 'short', 'explores', 'power', ...
+Name: 3376, dtype: object]
+[ 2024-07-11 03:21:38,859  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Fashion Reimagined', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYWJhY2ZlNmMtMjI4ZC00OTAzLTliZTctZTc1ODRiMzE1OTM3XkEyXkFqcGdeQXVyMTU2Njk3Mjk@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2554053913', 'genres': 'Documentary', 'storyline': "Follows Amy Powney, a daughter of environmental activists, during her trajectory from outsider to industry leader as she sets out to create a fashion collection that's ethical and sustainable at every level.Follows Amy Powney, a daughter of environmental activists, during her trajectory from outsider to industry leader as she sets out to create a fashion collection that's ethical and sustainable at every level."}, 1: {'title': 'What the Health', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYWU3ZTk1ZDgtNTFlOC00MGRjLWFiZmQtYmI0Y2JjMmI5YTBkXkEyXkFqcGdeQXVyNzI5MjI4MTc@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi3035611929', 'genres': 'Documentary', 'storyline': 'What the Health is a ground breaking feature length documentary from the award-winning filmmakers of Cowspiracy, that follows the exciting journey of intrepid filmmaker, Kip Andersen, as he uncovers the impacts of highly processed industrial animal foods on our personal health and greater community, and explores why leading health organizations continue to promote the industry despite countless medical studies and research showing deleterious effects of these products on our health.What the Health is a ground breaking feature length documentary from the award-winning filmmakers of Cowspiracy, that follows the exciting journey of intrepid filmmaker, Kip Andersen, as he uncovers the impacts of highly processed industrial animal foods on our personal health and greater community, and explores why leading health organizations continue to promote the industry despite countless medical studies and research showing deleterious effects of these products on our health.'}, 2: {'title': 'The UNIDO Energy Programme', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOTNkMzM0OGQtOGU1MS00MTEyLTg2MTktM2Y5MmQxM2U2ZjE1XkEyXkFqcGdeQXVyMjQ2NTMwMjg@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary Short', 'storyline': "Sustainable energy is the golden thread that connects economic and social development with an environmental sustainability that allows the world to flourish. UNIDO seeks to promote sustainable energy solutions in moving towards building 'Climate Resilient Industries'. UNIDO promotes sustainable energy solutions to assist industry in reducing their energy consumption, as well as using clean renewable energy in the most efficient manner for the enhancement of industrial competitiveness and productivity, while mainstreaming gender and increasing employment opportunities. —AnonymousSustainable energy is the golden thread that connects economic and social development with an environmental sustainability that allows the world to flourish. UNIDO seeks to promote sustainable energy solutions in moving towards building 'Climate Resilient Industries'. UNIDO promotes sustainable energy solutions to assist industry in reducing their energy consumption, as well as using clean renewable energy in the most efficient manner for the enhancement of industrial competitiveness and productivity, while mainstreaming gender and increasing employment opportunities. —Anonymous"}, 3: {'title': 'Real Value', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BODU4YmVmYWUtZTM2NC00MDU5LTgzNWItN2UyODAzMTIzNzE5XkEyXkFqcGdeQXVyMjEwNjU2Njg@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary Biography Drama History', 'storyline': "Real Value is an independent documentary by filmmaker Jesse Borkowski that explores how today's thought leaders and social entrepreneurs are re-envisioning business as a powerful force for positive social change - creating long-term, sustainable value in their communities by focusing on people and planet over profit. —AnonymousReal Value is an independent documentary by filmmaker Jesse Borkowski that explores how today's thought leaders and social entrepreneurs are re-envisioning business as a powerful force for positive social change - creating long-term, sustainable value in their communities by focusing on people and planet over profit. —Anonymous"}, 4: {'title': 'A Fibreshed for London', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYzE1Yjc4NWMtMjA3Yy00OWI2LTg5YWUtMDM4NjY1MWQ1YTJkXkEyXkFqcGdeQXVyODc3MDY3Nzc@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'A Fibreshed for London (2015) is a documentary film that explores the current state of the textile industry in London by meeting with remarkable people who are doing their part to make the industry more sustainable. "Fibreshed develops regenerative textile systems that are based on carbon farming, regional manufacturing and public education" A fibreshed is a bio region that is allocated to encourage the local growth, processing and manufacture of natural textile cloth and garments. The Greater London Fibreshed has been set up to create a network that will feed the London Wardrobe, a project that has been set up with the aim to research whether locally produced garments are possible for a city like London. The documentary follows the stories of some of the people that embarked on this journey. —Jessica Smulders CohenA Fibreshed for London (2015) is a documentary film that explores the current state of the textile industry in London by meeting with remarkable people who are doing their part to make the industry more sustainable. "Fibreshed develops regenerative textile systems that are based on carbon farming, regional manufacturing and public education" A fibreshed is a bio region that is allocated to encourage the local growth, processing and manufacture of natural textile cloth and garments. The Greater London Fibreshed has been set up to create a network that will feed the London Wardrobe, a project that has been set up with the aim to research whether locally produced garments are possible for a city like London. The documentary follows the stories of some of the people that embarked on this journey. —Jessica Smulders Cohen'}, 5: {'title': 'The Riddle of Sweden', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMmU0OTI3MDEtZTIzNy00Y2ZmLWFjYjktZjA5YTE2N2ZhMjI3XkEyXkFqcGdeQXVyMjI3MDczMjI@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'The Swedish people, nature and culture, the welfare, social and health care. Swedish inventions, industry international projects. Swedish beauty and design.The Swedish people, nature and culture, the welfare, social and health care. Swedish inventions, industry international projects. Swedish beauty and design.'}, 6: {'title': 'A Maasai Story', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BN2IwMmYyNTEtODY2Ny00ZTMyLWIwNDktYmQ2NzBjNTA2ZGY5XkEyXkFqcGdeQXVyMDc3NzE2OA@@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi4270702873', 'genres': 'Documentary Short', 'storyline': 'Ethical fashion makes the change. In 2017 Istituto Oikos started "Terra", a project funded by the Italian Agency for Cooperation and Development, which aims to improve livelihood of Maasai communities in the Arusha Region (Northern Tanzania) developing environmentally sustainable actions. Terra has set up a social green enterprise run by a Maasai women\'s group called \'Enuyata\' for the production of leather handicraft which consists of a vegetal leather tannery in the village of Mkuru and a small manufacturing laboratory in Arusha. This initiative empowers vulnerable women giving them the opportunity to gain skills, knowledge and economic means to support their community. Ethical fashion designer Marina Spadafora along with a team of Italian experts traveled to Tanzania to design a collection of leather accessories in collaboration with the Enuyata group. —Istituto OikosEthical fashion makes the change. In 2017 Istituto Oikos started "Terra", a project funded by the Italian Agency for Cooperation and Development, which aims to improve livelihood of Maasai communities in the Arusha Region (Northern Tanzania) developing environmentally sustainable actions. Terra has set up a social green enterprise run by a Maasai women\'s group called \'Enuyata\' for the production of leather handicraft which consists of a vegetal leather tannery in the village of Mkuru and a small manufacturing laboratory in Arusha. This initiative empowers vulnerable women giving them the opportunity to gain skills, knowledge and economic means to support their community. Ethical fashion designer Marina Spadafora along with a team of Italian experts traveled to Tanzania to design a collection of leather accessories in collaboration with the Enuyata group. —Istituto Oikos'}, 7: {'title': 'Brave Blue World', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMzIzYTFlY2MtYWNhMy00YzMzLTkyYmUtODY4NzZhN2VjZWQ2XkEyXkFqcGdeQXVyNzg5MzIyOA@@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi3319841049', 'genres': 'Documentary', 'storyline': "Brave Blue World is a documentary exploring the exciting new technologies and innovations that have the potential to solve the world's water crisis. The film highlights scientific and technological advancements that have been taking place, often behind the scenes, to ensure the world's population has access to clean water and safe sanitation services and the environment is protected. Narrated by actor Liam Neeson, Brave Blue World features scientists, engineers and activists from around the world, including Matt Damon, who co-founded global non-profit Water.org, and Jaden Smith, co-founder of non-profit 501CThree, which is providing water filtration systems to communities in Flint, Michigan.Brave Blue World is a documentary exploring the exciting new technologies and innovations that have the potential to solve the world's water crisis. The film highlights scientific and technological advancements that have been taking place, often behind the scenes, to ensure the world's population has access to clean water and safe sanitation services and the environment is protected. Narrated by actor Liam Neeson, Brave Blue World features scientists, engineers and activists from around the world, including Matt Damon, who co-founded global non-profit Water.org, and Jaden Smith, co-founder of non-profit 501CThree, which is providing water filtration systems to communities in Flint, Michigan."}, 8: {'title': 'Post to Paycheque', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOWRmMjEwOGQtMDFmOS00YmMwLWEyNDEtNzBjMTgwYTAxODFiL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMzk5NDEyNzk@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary Short', 'storyline': "Post To Paycheque is a twenty-minute short dramatic documentary told through the lense of a television host turned content creator. The documentary explores the shift in Toronto's content culture to a distinct street culture where product placement is a central theme. The rise of online marketing, blogging and micro blogging in the online sphere has set this movement in motion. Various industry insiders share trade secrets as well as give the audience a deeper look into the process of creating culturally relevant content. By analyzing the different aspects of product placement on social media we seek to find out how it impacts one's day to day life. Partnering with various clothing brands , Post To Paycheque runs through the onset of a clothing campaigns in collaboration with the influencers personal brand. The documentary seeks to explore how brands are taking advantage of influencer culture and online clout through content creation avenues. —AnonymousPost To Paycheque is a twenty-minute short dramatic documentary told through the lense of a television host turned content creator. The documentary explores the shift in Toronto's content culture to a distinct street culture where product placement is a central theme. The rise of online marketing, blogging and micro blogging in the online sphere has set this movement in motion. Various industry insiders share trade secrets as well as give the audience a deeper look into the process of creating culturally relevant content. By analyzing the different aspects of product placement on social media we seek to find out how it impacts one's day to day life. Partnering with various clothing brands , Post To Paycheque runs through the onset of a clothing campaigns in collaboration with the influencers personal brand. The documentary seeks to explore how brands are taking advantage of influencer culture and online clout through content creation avenues. —Anonymous"}, 9: {'title': 'The Garden of Secrets', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMjMwMTJmYjgtNTM4MS00NzY2LTllOTctYjNiNGVhZmM2NTQ3XkEyXkFqcGdeQXVyOTU1MDMxMzg@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'A documentary that explores the power of biomimicry as an answer to design and environmental issues, and the potential for botanical gardens to impart these solutions.A documentary that explores the power of biomimicry as an answer to design and environmental issues, and the potential for botanical gardens to impart these solutions.'}}]
+[ 2024-07-11 03:21:39,045  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:21:39] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 03:22:14,168  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 03:22:14,175  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :               description
+0  [best, hidden, movies]]
+[ 2024-07-11 03:22:14,175  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 03:22:14,439  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 03:22:14,439  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 03:22:14,441  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 03:22:14,441  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 03:22:14,442  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 03:22:14,442  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 03:22:14,442  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[-2.20816112e+00 -3.38574958e+00 -3.42515516e+00  3.96598905e-01
+  -1.35183132e+00  1.05417442e+00 -3.31990838e+00  7.09809363e-01
+  -8.31315219e-01 -1.27844274e+00 -1.98075682e-01  1.18233120e+00
+  -6.44160926e-01  6.20327406e-02 -1.76381493e+00  1.50262868e+00
+   1.75911939e+00  9.47395623e-01  1.21409202e+00 -2.68307030e-01
+  -2.18036145e-01  3.42460036e-01 -5.68615139e-01  7.05151916e-01
+   1.00443649e+00 -1.19466591e+00 -1.37467623e+00 -3.32744694e+00
+   1.55577648e+00 -2.54522347e+00 -8.50760758e-01  1.89097297e+00
+  -1.48416281e+00 -1.41346169e+00 -7.91991293e-01  6.52649045e-01
+  -6.39211759e-02  1.43543708e+00 -6.70250297e-01 -1.83530343e+00
+   4.85172927e-01 -2.04925418e+00 -1.64454806e+00  1.84608734e+00
+  -5.36875248e-01  5.35371959e-01  9.99274477e-02 -5.36538541e-01
+  -3.44036072e-01  3.46194841e-02 -5.47217317e-02  4.01893795e-01
+   2.51818568e-01 -1.08535349e+00 -3.94407630e-01  3.58743191e-01
+   2.76201457e-01 -9.42604005e-01 -1.09838450e+00 -8.06561947e-01
+   2.42052242e-01  8.24095607e-01  1.24078858e+00  1.47838712e+00
+   6.91101611e-01  2.58491784e-01  6.33731484e-01 -1.92880511e+00
+  -1.39560330e+00 -9.14460659e-01  1.06599089e-03  1.94247615e+00
+  -6.86335206e-01  6.91283584e-01  7.95666158e-01  2.17625141e+00
+   1.74051666e+00 -9.77279365e-01  2.62613624e-01 -2.60722280e+00
+  -4.81006093e-02 -6.68533325e-01 -2.38166735e-01 -1.85042298e+00
+  -4.35267061e-01 -5.09789824e-01 -3.54289949e-01  3.74312371e-01
+   5.44624984e-01  1.34648609e+00  1.22708547e+00  2.88159561e+00
+   2.17066002e+00  1.52419710e+00 -8.55006099e-01 -1.43378508e+00
+  -7.35791504e-01  2.69197392e+00 -5.59644699e-01  1.05980955e-01]]]
+[ 2024-07-11 03:22:14,443  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 03:22:41,477  84 COMPONENTS - INFO - Unnamed: 0.2                                               143297
+Unnamed: 0.1                                               143297
+Unnamed: 0                                                 157646
+title                                           Video Tape Terror
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt2674050/
+poster_url      https://www.imdb.com/title/tt2674050/mediaview...
+storyline       Brian is a VHS collector that misses the good ...
+description     ['horror', 'brian', 'vhs', 'collector', 'misse...
+Name: 143297, dtype: object]
+[ 2024-07-11 03:22:43,357  84 COMPONENTS - INFO - Unnamed: 0.2                                               160382
+Unnamed: 0.1                                               160382
+Unnamed: 0                                                 177792
+title                                   Danielle Blonde Superstar
+genres                                                      Adult
+videos                                                         []
+url                         https://www.imdb.com/title/tt0188541/
+poster_url                                                       
+storyline       Some of Danielle's best scenes. Compiled from ...
+description     ['adult', 'danielles', 'best', 'scenes', 'comp...
+Name: 160382, dtype: object]
+[ 2024-07-11 03:22:43,358  84 COMPONENTS - INFO - Unnamed: 0.2                                               156516
+Unnamed: 0.1                                               156516
+Unnamed: 0                                                 173170
+title                               Chase & Josh: Fact or Fantasy
+genres                                                    Fantasy
+videos                                                         []
+url                        https://www.imdb.com/title/tt12536380/
+poster_url      https://www.imdb.com/title/tt12536380/mediavie...
+storyline       Chase and Josh break down, review and evaluate...
+description     ['fantasy', 'chase', 'josh', 'break', 'review'...
+Name: 156516, dtype: object]
+[ 2024-07-11 03:22:44,836  84 COMPONENTS - INFO - Unnamed: 0.2                                               109156
+Unnamed: 0.1                                               109156
+Unnamed: 0                                                 118114
+title                                      Remembering Widescreen
+genres                                     Documentary Short News
+videos                                                         []
+url                         https://www.imdb.com/title/tt3435646/
+poster_url      https://www.imdb.com/title/tt3435646/mediaview...
+storyline       They are not related, just bound by interest. ...
+description     ['documentary', 'short', 'news', 'related', 'b...
+Name: 109156, dtype: object]
+[ 2024-07-11 03:22:45,989  84 COMPONENTS - INFO - Unnamed: 0.2                                                67486
+Unnamed: 0.1                                                67486
+Unnamed: 0                                                  71248
+title                                Paranoia Tapes 2: Press Play
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt7160284/
+poster_url      https://www.imdb.com/title/tt7160284/mediaview...
+storyline       In this sequel to Jack Hunter's PARANOIA TAPES...
+description     ['horror', 'sequel', 'jack', 'hunters', 'paran...
+Name: 67486, dtype: object]
+[ 2024-07-11 03:22:47,361  84 COMPONENTS - INFO - Unnamed: 0.2                                               159228
+Unnamed: 0.1                                               159228
+Unnamed: 0                                                 176426
+title                                        Ladies of the Knight
+genres                                                      Adult
+videos                                                         []
+url                         https://www.imdb.com/title/tt0142508/
+poster_url                                                       
+storyline       Welcome to The Knight, the hottest and happies...
+description     ['adult', 'welcome', 'knight', 'hottest', 'hap...
+Name: 159228, dtype: object]
+[ 2024-07-11 03:22:47,362  84 COMPONENTS - INFO - Unnamed: 0.2                                               159940
+Unnamed: 0.1                                               159940
+Unnamed: 0                                                 177252
+title               TV's Greatest Game Shows of the 50's and 60's
+genres                                         Documentary Comedy
+videos                                                         []
+url                        https://www.imdb.com/title/tt16425496/
+poster_url      https://www.imdb.com/title/tt16425496/mediavie...
+storyline       Laugh along to an Incredible 90-minute Collect...
+description     ['documentary', 'comedy', 'laugh', 'along', 'i...
+Name: 159940, dtype: object]
+[ 2024-07-11 03:22:48,679  84 COMPONENTS - INFO - Unnamed: 0.2                                               182709
+Unnamed: 0.1                                               182709
+Unnamed: 0                                                 204200
+title                           Yellow Door: '90s Lo-fi Film Club
+genres                                                Documentary
+videos                                                         []
+url                        https://www.imdb.com/title/tt23902534/
+poster_url      https://www.imdb.com/title/tt23902534/mediavie...
+storyline       Only the few members of Yellow Door have seen ...
+description     ['documentary', 'members', 'yellow', 'door', '...
+Name: 182709, dtype: object]
+[ 2024-07-11 03:22:50,112  84 COMPONENTS - INFO - Unnamed: 0.2                                               212691
+Unnamed: 0.1                                               212691
+Unnamed: 0                                                 240255
+title                                         Hamsters: A History
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt5192210/
+poster_url      https://www.imdb.com/title/tt5192210/mediaview...
+storyline       You've probably seen a Hamster but how many of...
+description     ['documentary', 'short', 'youve', 'probably', ...
+Name: 212691, dtype: object]
+[ 2024-07-11 03:22:51,676  84 COMPONENTS - INFO - Unnamed: 0.2                                               205740
+Unnamed: 0.1                                               205740
+Unnamed: 0                                                 231844
+title                                              Scare Campaign
+genres                                                     Horror
+videos          [{'link': 'https://www.imdb.com/video/vi224098...
+url                         https://www.imdb.com/title/tt4467626/
+poster_url      https://www.imdb.com/title/tt4467626/mediaview...
+storyline       Popular prank TV show, Scare Campaign, has bee...
+description     ['horror', 'popular', 'prank', 'tv', 'show', '...
+Name: 205740, dtype: object]
+[ 2024-07-11 03:22:53,220  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Video Tape Terror', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNjQyMjkyNzczN15BMl5BanBnXkFtZTgwOTk3NzA2MDE@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': "Brian is a VHS collector that misses the good old days...when video rental stores existed, monsters in movies looked real, and films weren't filled with cartoon-looking CGI effects. After coming across a mysterious VCR and a few tapes, he decides to make his own movie. —Nick MendozaBrian is a VHS collector that misses the good old days...when video rental stores existed, monsters in movies looked real, and films weren't filled with cartoon-looking CGI effects. After coming across a mysterious VCR and a few tapes, he decides to make his own movie. —Nick Mendoza"}, 1: {'title': 'Danielle Blonde Superstar', 'poster_url': '', 'videos': '', 'genres': 'Adult', 'storyline': "Some of Danielle's best scenes. Compiled from the Gourmet Video Collection.Some of Danielle's best scenes. Compiled from the Gourmet Video Collection."}, 2: {'title': 'Chase & Josh: Fact or Fantasy', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYmI3ZjlmMzQtYWRhZi00MDE2LTljN2QtNGFhNzk2NjlmYzQ1XkEyXkFqcGdeQXVyMTE5ODc4NDc2._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Fantasy', 'storyline': "Chase and Josh break down, review and evaluate the world's top Fantasy television series, books and movies while debating the hottest topics of the best productions that the Fantasy, Sci-Fi, Action/Adventure genres offer. These hosts summarize, detail and give personal takes on their current topic in a way that's never been done before. —Joshua NelsonChase and Josh break down, review and evaluate the world's top Fantasy television series, books and movies while debating the hottest topics of the best productions that the Fantasy, Sci-Fi, Action/Adventure genres offer. These hosts summarize, detail and give personal takes on their current topic in a way that's never been done before. —Joshua Nelson"}, 3: {'title': 'Remembering Widescreen', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMTA0NDM0NDQ4MTBeQTJeQWpwZ15BbWU4MDE1ODkxOTAx._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary Short News', 'storyline': "They are not related, just bound by interest. Once a year they become family to share their memories in the most unlikely of places: a movie theater! If you ever wondered what Widescreen Weekend is all about, this brand new documentary may give you all the answers you need. Mostly filmed during 2013's Widescreen Weekend at the National Media Museum in Bradford, UK, Wolfram Hannemann's short documentary focuses not just on the people running the festival, but on some of the regular delegates as well - characters you may have already bumped into when attending the festival. As you will find they are all lovely and very knowledgeable enthusiasts, who not only take the chance to watch old films in the best possible way, but also to have discussions with other enthusiasts about films in general and widescreen formats in particular. Come and join us for this unique family gathering! —AnonymousThey are not related, just bound by interest. Once a year they become family to share their memories in the most unlikely of places: a movie theater! If you ever wondered what Widescreen Weekend is all about, this brand new documentary may give you all the answers you need. Mostly filmed during 2013's Widescreen Weekend at the National Media Museum in Bradford, UK, Wolfram Hannemann's short documentary focuses not just on the people running the festival, but on some of the regular delegates as well - characters you may have already bumped into when attending the festival. As you will find they are all lovely and very knowledgeable enthusiasts, who not only take the chance to watch old films in the best possible way, but also to have discussions with other enthusiasts about films in general and widescreen formats in particular. Come and join us for this unique family gathering! —Anonymous"}, 4: {'title': 'Paranoia Tapes 2: Press Play', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOTk3YTZkMWItMjg2Mi00MzhhLTlkOGYtZTMzYWViZTRhY2IxXkEyXkFqcGdeQXVyNDM1Njk3NDk@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': "In this sequel to Jack Hunter's PARANOIA TAPES, we join Chase to find the missing pieces of what went wrong in the events of the first film. Chase, who is another personality of Henry's, decides to look at other Tapes that we're hidden within Henry's house. He desperately searches for answers and clues to find out who he is and if in fact, Chase is the real personality and that Henry was the psychotic one. With each tape that is played, we realize there is a bigger picture than what we realized. Featuring segments from all over the world including Belgium and Japan while also showing segments from several YouTubers who wanted to make their name in the independent found footage community. Each short was written and based on actual events. Some of the shorts shown are in fact, the real deal with no special effects or altered footage. This movie will make you forget about the first one and will make you want more from Jack Hunter and the team at Southern Sykos Productions. —Jack HunterIn this sequel to Jack Hunter's PARANOIA TAPES, we join Chase to find the missing pieces of what went wrong in the events of the first film. Chase, who is another personality of Henry's, decides to look at other Tapes that we're hidden within Henry's house. He desperately searches for answers and clues to find out who he is and if in fact, Chase is the real personality and that Henry was the psychotic one. With each tape that is played, we realize there is a bigger picture than what we realized. Featuring segments from all over the world including Belgium and Japan while also showing segments from several YouTubers who wanted to make their name in the independent found footage community. Each short was written and based on actual events. Some of the shorts shown are in fact, the real deal with no special effects or altered footage. This movie will make you forget about the first one and will make you want more from Jack Hunter and the team at Southern Sykos Productions. —Jack Hunter"}, 5: {'title': 'Ladies of the Knight', 'poster_url': '', 'videos': '', 'genres': 'Adult', 'storyline': "Welcome to The Knight, the hottest and happiest house in town, catering to only the most exclusive and discriminating clientele. It's patrons are men and women from every walk of life. At the Knight they find satisfaction, pleasure, and their wildest fantasies. Each tape is a full length erotic feature, shot directly on video and starring the best and brightest names in adult entertainment. —Gourmet VideoWelcome to The Knight, the hottest and happiest house in town, catering to only the most exclusive and discriminating clientele. It's patrons are men and women from every walk of life. At the Knight they find satisfaction, pleasure, and their wildest fantasies. Each tape is a full length erotic feature, shot directly on video and starring the best and brightest names in adult entertainment. —Gourmet Video"}, 6: {'title': "TV's Greatest Game Shows of the 50's and 60's", 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNmNmYWJlNzUtNTdmYy00M2I0LTgyOWMtOGQ1M2NjZGY1ZmU2XkEyXkFqcGdeQXVyMjIzOTk5MzA@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary Comedy', 'storyline': "Laugh along to an Incredible 90-minute Collection of over 20 Classic TV Game Shows of the '50s and '60s - Celebrity Hosts - Guest appearances from the Biggest Names in Hollywood. Lots of game show trivia, funniest clips, bloopers, scandals, secrets, TV history, more. From the wacky and weird to the quickest and most challenging ever, it's the best and worst game shows ever on TV. Great gift idea.Laugh along to an Incredible 90-minute Collection of over 20 Classic TV Game Shows of the '50s and '60s - Celebrity Hosts - Guest appearances from the Biggest Names in Hollywood. Lots of game show trivia, funniest clips, bloopers, scandals, secrets, TV history, more. From the wacky and weird to the quickest and most challenging ever, it's the best and worst game shows ever on TV. Great gift idea."}, 7: {'title': "Yellow Door: '90s Lo-fi Film Club", 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYmFiOWE3YWItM2ViZS00MmE5LWJiZjctODRkNjIyYjgyYmEwXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary', 'storyline': "Only the few members of Yellow Door have seen fellow member Bong Joon-ho's directorial debut film Looking for Paradise, which was never released. This stop-motion animation about a gorilla leaving a dark and dirty basement to escape the attacks of dung bugs and heading to paradise was screened at an end-of-the-year party for Yellow Door members. When the wooden box containing the 8mm film hidden deep in Bong's study for thirty years is opened, cinephiles' memories of the early 1990s will come flooding back as well. In the era of film enthusiasts, when everyone was mad about studying film, Yellow Door was their own cinematheque and film school, and above all, an ideal youth community.Only the few members of Yellow Door have seen fellow member Bong Joon-ho's directorial debut film Looking for Paradise, which was never released. This stop-motion animation about a gorilla leaving a dark and dirty basement to escape the attacks of dung bugs and heading to paradise was screened at an end-of-the-year party for Yellow Door members. When the wooden box containing the 8mm film hidden deep in Bong's study for thirty years is opened, cinephiles' memories of the early 1990s will come flooding back as well. In the era of film enthusiasts, when everyone was mad about studying film, Yellow Door was their own cinematheque and film school, and above all, an ideal youth community."}, 8: {'title': 'Hamsters: A History', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMjQzOTAzODE0M15BMl5BanBnXkFtZTgwMDc3NTM0NzE@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Documentary Short', 'storyline': "You've probably seen a Hamster but how many of these questions can you answer: Are there wild Hamsters? Are Hamsters from America? When did Hamsters become pets? Why is the Hamster a popular pet? Why are Hamsters so easy to buy? Are Hamsters Domesticated? How do Hamsters show their emotions? What do Hamsters do? Do Hamsters live in groups? What is the biggest Hamster? Filmmaker Mike Fallek could not answer any of these questions when he started this movie. This lack of knowledge on one of the most common pets in the world inspired Mike to get all the answers and then some in this award winning film. Join Mike in a world of stop motion to explain the true History of one of the most important and weirdest pet in the world.You've probably seen a Hamster but how many of these questions can you answer: Are there wild Hamsters? Are Hamsters from America? When did Hamsters become pets? Why is the Hamster a popular pet? Why are Hamsters so easy to buy? Are Hamsters Domesticated? How do Hamsters show their emotions? What do Hamsters do? Do Hamsters live in groups? What is the biggest Hamster? Filmmaker Mike Fallek could not answer any of these questions when he started this movie. This lack of knowledge on one of the most common pets in the world inspired Mike to get all the answers and then some in this award winning film. Join Mike in a world of stop motion to explain the true History of one of the most important and weirdest pet in the world."}, 9: {'title': 'Scare Campaign', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNGZkMTEyZTEtZmE3Zi00NzY4LTliNzAtZTJkNWQ2MjBhYTgzXkEyXkFqcGdeQXVyNzY4MTE5Mw@@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi2240984601', 'genres': 'Horror', 'storyline': "Popular prank TV show, Scare Campaign, has been entertaining audiences for the last 5 years with its mix of old school scares and hidden camera fun. But as we enter a new age of online TV the producers find themselves up against a new hard edged web series which makes their show look decidedly quaint. It's time to up the ante, but will the team go too far this time, and are they about to prank the wrong guy?Popular prank TV show, Scare Campaign, has been entertaining audiences for the last 5 years with its mix of old school scares and hidden camera fun. But as we enter a new age of online TV the producers find themselves up against a new hard edged web series which makes their show look decidedly quaint. It's time to up the ante, but will the team go too far this time, and are they about to prank the wrong guy?"}}]
+[ 2024-07-11 03:22:53,327  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:22:53] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 03:22:53,342  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:22:53] "[36mGET /static/images/default.png HTTP/1.1[0m" 304 -]
+[ 2024-07-11 03:23:17,173  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 03:23:17,177  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :               description
+0  [best, horror, movies]]
+[ 2024-07-11 03:23:17,178  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 03:23:17,382  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 03:23:17,382  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 03:23:17,382  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 03:23:17,383  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 03:23:17,383  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 03:23:17,383  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 03:23:17,384  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 1.9338311e+00  2.4917886e+00 -1.2299807e+00 -4.3180346e-01
+  -3.3893118e+00 -8.7307590e-01 -3.3421073e+00  3.5017405e+00
+   1.5336080e+00 -4.5522070e-01  1.9226351e+00  2.3106699e+00
+  -1.7451062e+00 -2.8531463e-03 -2.9479809e+00 -6.4383966e-01
+   2.8544393e+00  5.8856422e-01  2.6177416e+00  5.5827796e-03
+  -2.3869312e+00  3.6321287e+00  1.5885950e+00  1.9967240e+00
+   2.3468542e+00  6.0681660e-02 -2.0784545e+00 -5.5294746e-01
+   1.6657467e+00 -1.7726469e+00  4.6629373e-02  1.6424302e+00
+  -2.3565676e+00 -1.9623157e+00 -5.3520650e-01 -9.0787876e-01
+   4.5054005e-03  1.0344667e+00 -9.1627294e-01 -1.0698818e+00
+  -5.0641666e-03 -8.8119978e-01 -7.5901759e-01  3.8655880e-01
+  -1.0414721e+00 -4.4765857e-01  8.3114839e-01  6.7829800e-01
+  -8.6854291e-01  8.0773696e-02 -2.8390303e-01  6.2159216e-01
+   2.0224428e-02 -8.9232844e-01  1.1266884e-01  6.1266863e-01
+   1.1611048e+00 -7.8696311e-01 -9.4800532e-01 -1.8155050e-01
+  -6.1200595e-01  6.9345856e-01  5.7034564e-01  8.9415079e-01
+   9.6261948e-01  8.5444862e-01  5.6802493e-01 -6.9823611e-01
+  -1.3503450e+00 -7.5991118e-01  2.1714240e-01  1.9272068e+00
+  -1.0944865e+00  3.7411633e-01  5.1541799e-01  2.5747504e+00
+   1.1194638e+00 -9.8953091e-02  5.0618440e-01 -1.2856839e+00
+   1.5352756e-01 -1.3333993e+00  7.5786996e-01 -1.9883474e+00
+  -8.4479415e-01 -6.6551447e-01 -3.9744785e-01  3.5446227e-01
+   5.6805980e-01  1.8478429e+00  1.3197318e+00  2.5133579e+00
+   1.5867985e+00  1.4459057e+00 -5.5502385e-01 -1.8893071e+00
+  -2.3581453e-01  2.2755919e+00 -3.6050907e-01  1.3643357e-01]]]
+[ 2024-07-11 03:23:17,384  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 03:23:44,561  84 COMPONENTS - INFO - Unnamed: 0.2                                               178305
+Unnamed: 0.1                                               178305
+Unnamed: 0                                                 198922
+title                                            Camp Blood Kills
+genres                                            Horror Thriller
+videos                                                         []
+url                        https://www.imdb.com/title/tt10275180/
+poster_url      https://www.imdb.com/title/tt10275180/mediavie...
+storyline       A compilation of some of the best kill scenes ...
+description     ['horror', 'thriller', 'compilation', 'best', ...
+Name: 178305, dtype: object]
+[ 2024-07-11 03:23:45,879  84 COMPONENTS - INFO - Unnamed: 0.2                                                83435
+Unnamed: 0.1                                                83435
+Unnamed: 0                                                  88952
+title                                   I Was a Teenage Wereskunk
+genres                                              Comedy Horror
+videos          [{'link': 'https://www.imdb.com/video/vi412009...
+url                         https://www.imdb.com/title/tt4225696/
+poster_url      https://www.imdb.com/title/tt4225696/mediaview...
+storyline       A comedy homage to the drive-in monster movies...
+description     ['comedy', 'horror', 'homage', 'drivein', 'mon...
+Name: 83435, dtype: object]
+[ 2024-07-11 03:23:47,259  84 COMPONENTS - INFO - Unnamed: 0.2                                      400
+Unnamed: 0.1                                      400
+Unnamed: 0                                        400
+title                                 La Femme Vampir
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt1510273/
+poster_url                                           
+storyline                                         NaN
+description                            ['horror', '']
+Name: 400, dtype: object]
+[ 2024-07-11 03:23:47,260  84 COMPONENTS - INFO - Unnamed: 0.2                                                  445
+Unnamed: 0.1                                                  445
+Unnamed: 0                                                    445
+title                             Zombie Beast of the Confederacy
+genres                                                     Horror
+videos                                                         []
+url                        https://www.imdb.com/title/tt16107862/
+poster_url      https://www.imdb.com/title/tt16107862/mediavie...
+storyline                                                     NaN
+description                                        ['horror', '']
+Name: 445, dtype: object]
+[ 2024-07-11 03:23:48,508  84 COMPONENTS - INFO - Unnamed: 0.2                                                 1877
+Unnamed: 0.1                                                 1877
+Unnamed: 0                                                   1880
+title                                                           2
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt1144456/
+poster_url      https://www.imdb.com/title/tt1144456/mediaview...
+storyline                                                     NaN
+description                                        ['horror', '']
+Name: 1877, dtype: object]
+[ 2024-07-11 03:23:49,891  84 COMPONENTS - INFO - Unnamed: 0.2                                     1878
+Unnamed: 0.1                                     1878
+Unnamed: 0                                       1881
+title                                   Final Curtain
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt1808130/
+poster_url                                           
+storyline                                         NaN
+description                            ['horror', '']
+Name: 1878, dtype: object]
+[ 2024-07-11 03:23:49,892  84 COMPONENTS - INFO - Unnamed: 0.2                                                 1948
+Unnamed: 0.1                                                 1948
+Unnamed: 0                                                   1952
+title                                                Humanhunters
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt8177940/
+poster_url      https://www.imdb.com/title/tt8177940/mediaview...
+storyline                                                     NaN
+description                                        ['horror', '']
+Name: 1948, dtype: object]
+[ 2024-07-11 03:23:51,929  84 COMPONENTS - INFO - Unnamed: 0.2                                     1977
+Unnamed: 0.1                                     1977
+Unnamed: 0                                       1981
+title                                A Pound of Flesh
+genres                                         Horror
+videos                                             []
+url             https://www.imdb.com/title/tt0393608/
+poster_url                                           
+storyline                                         NaN
+description                            ['horror', '']
+Name: 1977, dtype: object]
+[ 2024-07-11 03:23:51,930  84 COMPONENTS - INFO - Unnamed: 0.2                                                 2465
+Unnamed: 0.1                                                 2465
+Unnamed: 0                                                   2472
+title                                                 No. 1 Villa
+genres                                                     Horror
+videos                                                         []
+url                        https://www.imdb.com/title/tt10500444/
+poster_url      https://www.imdb.com/title/tt10500444/mediavie...
+storyline                                                     NaN
+description                                        ['horror', '']
+Name: 2465, dtype: object]
+[ 2024-07-11 03:23:53,210  84 COMPONENTS - INFO - Unnamed: 0.2                                                 3671
+Unnamed: 0.1                                                 3671
+Unnamed: 0                                                   3687
+title                                                      Jagoda
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt3605010/
+poster_url      https://www.imdb.com/title/tt3605010/mediaview...
+storyline                                                     NaN
+description                                        ['horror', '']
+Name: 3671, dtype: object]
+[ 2024-07-11 03:23:54,603  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Camp Blood Kills', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMTc5NTA3MDgtOWQ0OC00MmQ4LTk1NWYtYjdlOWVhODk5MTAzXkEyXkFqcGdeQXVyMjY5MDIzMjQ@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror Thriller', 'storyline': 'A compilation of some of the best kill scenes from the long running indie horror movie franchise.A compilation of some of the best kill scenes from the long running indie horror movie franchise.'}, 1: {'title': 'I Was a Teenage Wereskunk', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BM2VmMjVkNmEtODA0MC00ODE5LThjZTktZDFkYzFlNzlkZDY5XkEyXkFqcGdeQXVyNjc1NjY2OTA@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi4120099609', 'genres': 'Comedy Horror', 'storyline': 'A comedy homage to the drive-in monster movies of the 50s.A comedy homage to the drive-in monster movies of the 50s.'}, 2: {'title': 'La Femme Vampir', 'poster_url': '', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}, 3: {'title': 'Zombie Beast of the Confederacy', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYTA1ZjA2NTktMTFhZi00OWNmLWIwYjQtODgwZGI0N2Q1ZDE2XkEyXkFqcGdeQXVyOTE5MTQ5OQ@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}, 4: {'title': '2', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BODRkODA1MGUtODJjNS00NmNjLWExMmMtYzM3Nzk0ZTk0YTg4XkEyXkFqcGdeQXVyNjU1MjgyNDk@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}, 5: {'title': 'Final Curtain', 'poster_url': '', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}, 6: {'title': 'Humanhunters', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOTJkZjFhNmItOWMwOS00NzU0LWEyOWItNWI1M2FjMjg5OWFhXkEyXkFqcGdeQXVyNzczOTQ2ODM@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}, 7: {'title': 'A Pound of Flesh', 'poster_url': '', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}, 8: {'title': 'No. 1 Villa', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYTc2OWRkZGMtNDA0Ny00ZWNiLThiMjgtMDVkZDljZTFlNzY3XkEyXkFqcGdeQXVyNTM0MDc1ODE@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}, 9: {'title': 'Jagoda', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BY2Y3NzgwYjMtNWE5MC00MTczLTg1MDktNzkxNTVjNTBlM2EwXkEyXkFqcGdeQXVyMTE4OTEwMjM@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': "['horror', '']"}}]
+[ 2024-07-11 03:23:54,697  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 03:23:54] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-11 03:27:39,994  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/recommendationSystem/src/utils.py', reloading]
+[ 2024-07-11 03:27:40,282  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-11 03:30:29,271  97 werkzeug - INFO -  * Restarting with stat]

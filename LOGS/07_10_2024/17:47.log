@@ -1,0 +1,57 @@
+[ 2024-07-10 17:47:42,316  97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[ 2024-07-10 17:47:42,316  97 werkzeug - INFO - [33mPress CTRL+C to quit[0m]
+[ 2024-07-10 17:47:42,317  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 17:47:43,371  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-10 17:47:43,380  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-10 17:47:48,053  97 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2024 17:47:48] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-10 17:47:58,621  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-10 17:47:58,645  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                 titleDesc
+0  [mens, tshirt, blue, ]]
+[ 2024-07-10 17:47:58,645  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-10 17:47:58,824  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-10 17:47:58,824  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-10 17:47:58,825  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [titleDesc]
+Index: []]
+[ 2024-07-10 17:47:58,825  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-10 17:47:58,838  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-10 17:47:58,838  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-10 17:47:58,840  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[-0.97881263 -2.8189237   2.593017   -2.4891198   0.09155628 -2.5384364
+  -1.3283727   0.48790616 -0.18616535 -2.72743     0.50498855 -0.12719987
+   0.76828605 -0.2462926  -0.5636187  -1.4507402  -0.48535794  0.5313498
+   1.4888204  -0.30869746  0.14479955 -0.04310201 -0.07649729 -0.06375777
+  -0.11368804 -0.06957421 -0.3791142   0.19904454 -0.16900307 -0.27232838
+   0.14409126 -0.8308608   0.09723996  0.39114416  0.12222368 -1.0484955
+  -0.03483378  1.2452585  -0.5904086  -0.14036968  0.711478    1.3910266
+   0.37181383  1.0418451  -0.71283454 -0.05954485 -1.4795419  -1.1136819
+  -1.4508343  -0.40159175 -0.1408954  -0.36364624 -0.8780848  -0.69900006
+   0.6855753  -0.25979668 -0.4661249  -0.41289663 -0.9210071  -0.45830718
+  -0.3752965  -0.02912513 -0.5636359   0.00358965  0.97103167  0.05927799
+   0.72853136 -0.989235   -0.02271572  0.06715203 -0.22332174  0.38938144
+   0.10547221 -0.5228574   0.16292512  0.12125417  0.19365859 -0.06363881
+  -0.24343766  0.35739338 -0.16855638 -0.37560332  0.3449608  -0.10581462
+   0.3843493  -0.05235708 -0.19469403 -0.09340291 -0.1925204   0.7571884
+  -0.68849134 -0.13756718 -0.12298197 -0.29283577  0.0562496  -0.20864578
+   0.02522914 -0.5057497  -0.5265677  -0.13191123]]]
+[ 2024-07-10 17:47:58,840  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-10 17:48:07,910  61 COMPONENTS - INFO - Found top 10 similar products and they are ['airwolf  grid mens tshirt', 'hoonigan kill tires mens tshirt black', 'deadpool salted earth mens black tshirt  l', 'mastodon mens crack skye tshirt xxlarge black', 'affliction mens mercy tshirt', 'deadpool salted earth mens black tshirt  xxl', 'cuican skulllovers shirts theloverstarotcardskull tshirt mens black medium', 'beatles mens revolver sublimated sublimation tshirt xlarge white', 'deftones mens abstract sunset tshirt xxxlarge black', 'namaclosing seth rollins burn mens black tshirt']]
+[ 2024-07-10 17:48:12,564  97 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2024 17:48:12] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-10 17:49:25,590  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/recommendationSystem/application.py', reloading]
+[ 2024-07-10 17:49:25,875  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 17:50:06,994  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 17:50:37,775  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 21:48:44,569  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 21:54:54,642  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 21:58:55,384  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 22:04:51,826  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 22:12:21,137  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 22:12:48,512  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 22:40:47,992  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 22:41:32,665  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 22:42:11,816  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 22:44:08,617  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 22:53:57,015  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 22:54:08,851  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 22:54:41,685  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 22:54:46,130  97 werkzeug - INFO -  * Restarting with stat]

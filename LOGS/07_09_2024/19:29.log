@@ -1,0 +1,74 @@
+[ 2024-07-09 19:29:02,893  97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[ 2024-07-09 19:29:02,893  97 werkzeug - INFO - [33mPress CTRL+C to quit[0m]
+[ 2024-07-09 19:29:02,894  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 19:29:03,890  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-09 19:29:03,899  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-09 19:29:11,856  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 19:29:11] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-09 19:29:19,869  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 19:29:19,879  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                 titleDesc
+0  [mens, jeans, denim, ]]
+[ 2024-07-09 19:29:19,879  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 19:29:20,036  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 19:29:20,036  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 19:29:20,037  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [titleDesc]
+Index: []]
+[ 2024-07-09 19:29:20,037  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-09 19:29:20,049  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-09 19:29:20,049  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-09 19:29:20,051  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 0.5765598  -3.2737896   0.411587    1.7859175  -0.2570012   2.7962036
+  -1.5507874   2.2315314   0.6834191  -3.0093405   0.7474261   1.0280274
+  -2.090844   -2.6404355   0.8512708   0.6085735  -0.12297616 -1.4775301
+   1.4936092   0.3463909   0.5198062   0.7476045  -0.3080133  -1.3892304
+   0.8368275   2.1016822  -0.6443312   0.72301745  0.18678632  0.08513615
+   0.7502878   0.93555117  1.055953    0.24119246  0.7769132   0.49270183
+  -0.7827862   0.5536228  -0.0842356  -0.04097988 -0.04145992  0.18350893
+  -0.20678502 -0.15837432  0.9639503  -0.24818128 -1.4399562  -0.42713597
+  -1.4094874   0.3007558   0.40504926 -1.0376818   0.15552507 -0.5458716
+   0.18210126  0.3501614   0.05842722  0.47816473 -0.11955392  1.0086615
+   0.81155896 -0.5557375   1.1143591  -0.03902173 -0.72691727 -0.7377292
+   0.4864406  -0.0793526  -0.9810946   0.05810313  0.1301209   0.5792113
+  -0.480267    0.06365763  0.30222547  0.14240856 -0.3262145   0.03608362
+  -0.5932423   0.23197031  0.01431092  0.4344208  -0.6500623   0.01746316
+   0.13176976  0.4994821   1.0195487  -0.37722427 -0.80548143 -0.7535913
+  -0.9933203   0.94373745  0.2082497  -0.00732827  0.39143944 -0.32880074
+   0.64931977  0.287779    0.0979687  -0.05335832]]]
+[ 2024-07-09 19:29:20,052  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-09 19:29:29,080  61 COMPONENTS - INFO - Found top 10 similar products and they are ['qazel vorrlon mens biker moto vintage skinny fit ripped distressed strecth denim jeans 606bluesize 42', 'grimgrow jeans men mens skinny ripped distressed destroyed straight fit biker denim pants black 28', 'fredd marshall mens moto biker skinny washed wrinkled stetchy denim blue jeans w38', 'rustler  mens heavyweight denim regular fit bootcut blue jeans 31x30 dark', 'stitchs jeans mens barfly slim camo denim printed jean', 'mens skinny fit ripped distressed stretch fashion washed denim jeans pantsblack32', 'mens biker moto slim fit skinny distressed vintage golden runway denim jeans', 'sarriben mens relaxed regular slim fit ripped washed denim blue jeans', 'heyfanee mens jeans skinny stretch slim fit men denim grey 30', 'moonwalk mens elastic white ripped destroyed jeans holes 32']]
+[ 2024-07-09 19:29:29,100  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 19:29:29] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-09 19:30:29,997  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 19:30:29] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-09 19:30:53,125  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 19:30:53,132  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                       titleDesc
+0  [mens, jeans, denim, blue, ]]
+[ 2024-07-09 19:30:53,132  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 19:30:53,181  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 19:30:53,181  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 19:30:53,182  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [titleDesc]
+Index: []]
+[ 2024-07-09 19:30:53,182  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-09 19:30:53,182  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-09 19:30:53,182  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-09 19:30:53,183  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 0.57966185 -2.580514    0.17368455  1.1551827  -0.22987136  3.194357
+  -0.895614    1.1469288   0.9452039  -3.368972    0.07468456  1.1533432
+  -1.2946649  -1.6119922   1.1570334   0.32168722  0.47024623 -1.3125567
+   1.400023    0.25091702  0.6837045   0.63853514 -0.0671673  -1.3957716
+   0.49188632  1.9270072  -0.6221292   1.0303612   0.26105714 -0.04614346
+   1.112678    0.7384489   0.6944505   0.73012185  0.9226502   0.35382023
+  -0.57639134 -0.02002195 -0.10639182  0.11097184  0.36978135  0.5653276
+  -0.5474683  -0.52843887  0.3630747  -0.02103012 -1.0093867   0.01914759
+  -1.198771    0.32767424  0.33972576 -0.5186955  -0.02617194 -0.5232023
+  -0.12536949 -0.06192195 -0.5588257   0.5606779   0.36043647  0.7085413
+   0.5085611  -0.46808797  0.6995766   0.45254603 -0.6166868  -0.5973415
+   0.4303416  -0.12444592 -0.68353957  0.3904662   0.3069791   0.19935848
+  -0.41675204  0.13222599  0.17456782  0.13025318 -0.24711365  0.26542467
+  -0.5686999   0.29308054  0.10678756  0.78941685 -0.40955848  0.04850601
+   0.49159408  0.34825623  0.5238598  -0.21317126 -0.6506884  -0.41536686
+  -0.4889066   0.88811636  0.22852433  0.1116272   0.0459697  -0.2348494
+   0.18581799  0.02796642  0.00452158 -0.08932114]]]
+[ 2024-07-09 19:30:53,183  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-09 19:31:02,100  61 COMPONENTS - INFO - Found top 10 similar products and they are ['rustler  mens heavyweight denim regular fit bootcut blue jeans 31x30 dark', 'fredd marshall mens moto biker skinny washed wrinkled stetchy denim blue jeans w38', 'sslr mens straight fit flannel lined denim jeans 31 blue 4', 'sarriben mens relaxed regular slim fit ripped washed denim blue jeans', 'demonhunter mens slim fit jeans s831529 blue', 'mens soft stretch denim jeans classic work jean w32l32 blue 32w x 32l', 'heyfanee mens jeans skinny stretch slim fit men denim grey 30', 'boys white blue stretch skinny fit ripped destroyed distressed fashion slim denim jeans 10', 'pishon mens distressed jeans casual bleached straight fit patched destroyed blue tag size 40us 36', 'qazel vorrlon mens light blue skinny ripped jeans destroyed distressed pencil pants dark greyq223size 38']]
+[ 2024-07-09 19:31:02,119  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 19:31:02] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-09 19:33:34,828  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/recommendationSystem/src/components/model_training.py', reloading]
+[ 2024-07-09 19:33:34,988  97 werkzeug - INFO -  * Restarting with stat]

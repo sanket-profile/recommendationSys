@@ -1,0 +1,77 @@
+[ 2024-07-12 00:12:05,738  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-12 00:12:05,747  97 werkzeug - INFO -  * Debugger PIN: 521-569-415]
+[ 2024-07-12 00:12:12,272  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:12:12] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-12 00:12:14,434  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-12 00:12:14,447  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :               description
+0  [best, horror, movies]]
+[ 2024-07-12 00:12:14,447  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-12 00:12:14,744  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-12 00:12:14,744  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-12 00:12:14,745  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-12 00:12:14,745  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-12 00:12:14,760  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-12 00:12:14,760  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-12 00:12:14,761  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 1.9338311e+00  2.4917886e+00 -1.2299807e+00 -4.3180346e-01
+  -3.3893118e+00 -8.7307590e-01 -3.3421073e+00  3.5017405e+00
+   1.5336080e+00 -4.5522070e-01  1.9226351e+00  2.3106699e+00
+  -1.7451062e+00 -2.8531463e-03 -2.9479809e+00 -6.4383966e-01
+   2.8544393e+00  5.8856422e-01  2.6177416e+00  5.5827796e-03
+  -2.3869312e+00  3.6321287e+00  1.5885950e+00  1.9967240e+00
+   2.3468542e+00  6.0681660e-02 -2.0784545e+00 -5.5294746e-01
+   1.6657467e+00 -1.7726469e+00  4.6629373e-02  1.6424302e+00
+  -2.3565676e+00 -1.9623157e+00 -5.3520650e-01 -9.0787876e-01
+   4.5054005e-03  1.0344667e+00 -9.1627294e-01 -1.0698818e+00
+  -5.0641666e-03 -8.8119978e-01 -7.5901759e-01  3.8655880e-01
+  -1.0414721e+00 -4.4765857e-01  8.3114839e-01  6.7829800e-01
+  -8.6854291e-01  8.0773696e-02 -2.8390303e-01  6.2159216e-01
+   2.0224428e-02 -8.9232844e-01  1.1266884e-01  6.1266863e-01
+   1.1611048e+00 -7.8696311e-01 -9.4800532e-01 -1.8155050e-01
+  -6.1200595e-01  6.9345856e-01  5.7034564e-01  8.9415079e-01
+   9.6261948e-01  8.5444862e-01  5.6802493e-01 -6.9823611e-01
+  -1.3503450e+00 -7.5991118e-01  2.1714240e-01  1.9272068e+00
+  -1.0944865e+00  3.7411633e-01  5.1541799e-01  2.5747504e+00
+   1.1194638e+00 -9.8953091e-02  5.0618440e-01 -1.2856839e+00
+   1.5352756e-01 -1.3333993e+00  7.5786996e-01 -1.9883474e+00
+  -8.4479415e-01 -6.6551447e-01 -3.9744785e-01  3.5446227e-01
+   5.6805980e-01  1.8478429e+00  1.3197318e+00  2.5133579e+00
+   1.5867985e+00  1.4459057e+00 -5.5502385e-01 -1.8893071e+00
+  -2.3581453e-01  2.2755919e+00 -3.6050907e-01  1.3643357e-01]]]
+[ 2024-07-12 00:12:14,761  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-12 00:12:34,896  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Mutants', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNWFlN2QzMmYtMDg4MS00OTViLTg5NmMtMjg1MzY4NDVkZDYyXkEyXkFqcGdeQXVyMzUyMzA1NDE@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': 'Proportionally Sized Horror Film.Proportionally Sized Horror Film.'}, 1: {'title': 'Quad X: The Porn Movie Massacre', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMTg1MzQ1MzUzNl5BMl5BanBnXkFtZTgwNDgxMTM3MTE@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action Comedy Horror', 'storyline': 'A killer is stalking the actors of Quadruple X films and trying to get a cut of his favorite porn stars.A killer is stalking the actors of Quadruple X films and trying to get a cut of his favorite porn stars.'}, 2: {'title': "Corpsey's Cheap Chillers", 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYzM1MWQ0Y2QtMzZkZi00OGIzLTgzMTItOTE2MmI1MWEzZDU2XkEyXkFqcGdeQXVyMzk1NzE0ODc@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': 'Late night horror host Corpsey presents an anthology of eight micro-budget horror tales.Late night horror host Corpsey presents an anthology of eight micro-budget horror tales.'}, 3: {'title': 'Mutilator 2', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BN2FjODkzNjEtMzllMi00NTE5LTg4OTYtYzQ3MmQ0NzQ3MmE5XkEyXkFqcGdeQXVyNjg0OTM5NjQ@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': 'A sequel to the 1984 cult classic slasher flick.A sequel to the 1984 cult classic slasher flick.'}, 4: {'title': 'The Vicious Sweet', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMTI4Njg1MjY0MV5BMl5BanBnXkFtZTcwNzA3NDAyMQ@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': 'A popular movie scream queen is abducted by her biggest fan.A popular movie scream queen is abducted by her biggest fan.'}, 5: {'title': 'Peeping Blog', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYTI4OGFjZjItYjAxNC00NTNlLWFkMGItODIwMTEyNGJkOWY1XkEyXkFqcGdeQXVyMTIxMDUyOTI@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror Thriller', 'storyline': 'A sociopath films a how-to instructional video for his website for voyeurs who want to become peepers.A sociopath films a how-to instructional video for his website for voyeurs who want to become peepers.'}, 6: {'title': 'The Weird & Wild Short-Films of Jamie Robert MacDougall', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNDgxY2IwMTgtNzdmMS00ZDQyLWIxYjctM2RjOTI3MzgxNGZlXkEyXkFqcGdeQXVyMTE4NTU5NDc0._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror', 'storyline': 'A trilogy of horror tales.A trilogy of horror tales.'}, 7: {'title': 'Wanda Does Transylvania', 'poster_url': '', 'videos': '', 'genres': 'Adult Comedy Horror', 'storyline': "['adult', 'comedy', 'horror', '']"}, 8: {'title': 'New Chilling Tales: The Anthology', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMGIwMmZkZGMtYjc4Ni00NmQxLThkZTMtMzVjNjE3OWUwNDRkXkEyXkFqcGdeQXVyMTg1MDUzNjc@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi469482777', 'genres': 'Horror', 'storyline': 'Anthology of Classic Gothic Horror Stories.Anthology of Classic Gothic Horror Stories.'}, 9: {'title': "A Beginner's Guide to Snuff", 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYTkwZWRlMDctYzBmOS00OTA4LWE3NzgtOTQ4ZDNhNGNkNDJlXkEyXkFqcGdeQXVyMTQ2OTU2OTQ@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi1923135769', 'genres': 'Comedy Horror Thriller', 'storyline': '"A Beginners Guide To Snuff" is a pitch black comedy thriller in the vein of early Coen Brothers films."A Beginners Guide To Snuff" is a pitch black comedy thriller in the vein of early Coen Brothers films.'}}]
+[ 2024-07-12 00:12:35,092  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:12:35] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-12 00:12:35,114  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:12:35] "[36mGET /static/images/default.png HTTP/1.1[0m" 304 -]
+[ 2024-07-12 00:13:45,082  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-12 00:13:45,090  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                description
+0  [best, action, movie, ]]
+[ 2024-07-12 00:13:45,090  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-12 00:13:45,246  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-12 00:13:45,246  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-12 00:13:45,247  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-12 00:13:45,247  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-12 00:13:45,248  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-12 00:13:45,248  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-12 00:13:45,253  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 2.3577964   1.0527701   0.55988014  0.6262692  -1.9419683   2.2951498
+  -3.4063492   0.54158515 -0.05533583 -0.26941258  0.61886877 -1.1335912
+  -1.2750558  -1.4116198  -0.4752781   0.10612731  1.376627   -0.14086312
+   2.7348285  -0.00579043 -1.5915775   0.44950888  2.9547815   0.9889349
+  -1.3108745  -0.01364548 -1.0349785  -0.76454353  0.9881367  -0.54695183
+   0.00569606  1.1047791  -0.73358727 -1.2029119   0.27421686 -0.17182107
+  -0.07898508  1.1042581  -1.1282525   0.12973104 -0.2600188   0.2989558
+  -0.7261864   0.47508132 -0.9420349  -0.768335    0.19912168  0.6422282
+  -0.7256462   0.10154692  0.767484    0.9116811   1.2694328  -1.0459938
+   0.01781892  0.06713367 -0.20592412 -0.4615738  -0.3693686  -0.13976878
+  -0.7981899   0.36017954  0.2182372   0.303383   -0.18732932  0.9481977
+   0.8061931  -0.8131024  -0.7128197  -0.696267    0.33325207  2.1656218
+  -0.88766617  0.3764921   0.54468983  1.3991774   1.5477519  -0.7713346
+   0.30277097 -0.8970977   0.86529595 -0.85975343  0.9477871  -1.3256893
+  -0.49050403 -0.14804144  0.43462512 -0.7310053   0.85026276  1.3586047
+   0.43288022  1.7048806   0.931316    0.6429419  -0.9378005  -1.1401876
+   0.01439285  0.6943346   0.08017597  0.00919129]]]
+[ 2024-07-12 00:13:45,253  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-12 00:13:56,027  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Conversations with Daniel Ellsberg', 'poster_url': '', 'videos': '', 'genres': nan, 'storyline': "['']"}, 1: {'title': 'PlayCouples', 'poster_url': '', 'videos': '', 'genres': nan, 'storyline': "['']"}, 2: {'title': 'The Last Race', 'poster_url': '', 'videos': '', 'genres': nan, 'storyline': "['']"}, 3: {'title': 'Tales of Edgar Allan Poe', 'poster_url': '', 'videos': '', 'genres': nan, 'storyline': "['']"}, 4: {'title': 'Varnarlioio', 'poster_url': '', 'videos': '', 'genres': nan, 'storyline': "['']"}, 5: {'title': 'The Gap in the Curtain', 'poster_url': '', 'videos': '', 'genres': nan, 'storyline': "['']"}, 6: {'title': 'Tottenham Hotspur vs AC Milan', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYTNmMzg1MDEtY2JjMS00ZDUwLTgyOTgtNzgyNTlmZmJjY2VjXkEyXkFqcGdeQXVyMTA0NTY0NTYy._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': nan, 'storyline': "['']"}, 7: {'title': 'Room for Seven', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNzA3MjUxOTkwOF5BMl5BanBnXkFtZTgwNzEzMzIwMjE@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': nan, 'storyline': "['']"}, 8: {'title': 'Firefight: Stories from the Front Lines', 'poster_url': '', 'videos': '', 'genres': nan, 'storyline': "['']"}, 9: {'title': 'Obsessions', 'poster_url': '', 'videos': '', 'genres': nan, 'storyline': "['']"}}]
+[ 2024-07-12 00:13:56,121  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:13:56] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-12 00:14:33,284  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/RECOMMENDATIONSYSTEM/src/utils.py', reloading]

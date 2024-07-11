@@ -1,0 +1,35 @@
+[ 2024-07-10 00:16:14,318  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-10 00:16:14,328  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-10 00:16:18,843  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-10 00:16:18,853  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :             titleDesc
+0  [blue, shirt, men]]
+[ 2024-07-10 00:16:18,853  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-10 00:16:19,013  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-10 00:16:19,013  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-10 00:16:19,014  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [titleDesc]
+Index: []]
+[ 2024-07-10 00:16:19,014  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-10 00:16:19,026  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-10 00:16:19,026  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-10 00:16:19,028  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[-1.493914   -2.3144119   2.889222   -2.3154283   0.73092216 -0.8310994
+  -1.3744233   0.25734353 -0.5918693  -3.520612   -0.3326596   0.59639066
+  -0.1667381  -1.2220843  -0.81597924 -0.18354863 -0.32036245 -0.41188452
+   1.7941304  -1.2186171   0.26022512 -1.248455    0.19255017  0.44117284
+  -0.07845383  0.48509082 -0.57925993  0.31551355 -0.8866385   0.64812213
+  -0.07563191 -0.83574057  1.4060571   0.68034834  0.17378522 -1.4178337
+   0.9118491   0.70763934  0.32304248 -0.7591      0.7270955   0.8051603
+   0.40270033  1.6473464  -0.20659994  0.32287106 -1.8596966  -0.55079746
+  -0.59603345 -1.2938542  -0.44980624 -0.81975436  0.58433104 -1.7722604
+   0.8902322  -0.38029703 -0.5929613  -1.6500627  -1.4560841  -0.46524957
+  -0.56362134 -0.556282   -1.2096697   0.24681541  0.02285546  0.25442627
+   0.7796445  -2.286064    0.20522422 -0.4286787   0.69926023 -0.44221446
+  -0.18122914 -0.53322417 -0.7371949  -0.5606681   0.40650913 -0.7602723
+  -0.93088865 -0.16522828 -0.23500979 -0.0888831   0.93313193 -0.19510725
+   0.53606313 -1.2891425   0.6268518   0.19734737  1.0638961   0.8778146
+  -0.48796168  0.37352923 -0.30200475  0.02783233 -0.64461815 -0.755822
+  -0.21985738 -0.5024488  -0.02626453  0.10107349]]]
+[ 2024-07-10 00:16:19,028  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-10 00:16:28,166  61 COMPONENTS - INFO - Found top 10 similar products and they are ['sslr mens summer shirts short sleeve aloha shirt hawaiian men small blue rose 168118', 'untuckit franconia wrinkle resistant  untucked shirt men long sleeve xxlarge blue', 'grey long sleeve shirt  full shirts men 40008043 lgs greyplain', 'halloween shirt  funny shirts led light men l black', 'fommykin mens denim shirt dark blue', 'yuezoon mens button shirt shortsleeve regularfit blue casual shirts grey large', 'halloween shirt  funny shirts led light men xl black', 'varnit crafts hawaiian shirt men short sleeve vintage car blue xxl', 'rashbi mens blue dress shirt medium', 'varnit crafts hawaiian shirt men short sleeve vintage car blue 3xl']]
+[ 2024-07-10 00:16:33,565  97 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2024 00:16:33] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-10 00:18:49,199  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/recommendationSystem/application.py', reloading]

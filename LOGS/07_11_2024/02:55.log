@@ -1,0 +1,152 @@
+[ 2024-07-11 02:55:25,421  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-11 02:55:25,430  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-11 02:55:33,821  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 02:55:33,841  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [documentary, follows, amy, powney, daughter, ...]
+[ 2024-07-11 02:55:33,841  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 02:55:34,136  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 02:55:34,136  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 02:55:34,139  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 02:55:34,139  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 02:55:34,153  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 02:55:34,153  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 02:55:34,154  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[-5.65573454e-01 -3.34888244e+00  3.02166671e-01 -5.23226738e-01
+  -6.72224998e-01 -7.99407363e-02 -8.71062279e-01  5.77340126e-01
+  -1.69174284e-01  9.73128617e-01  2.88446218e-01 -1.95598948e+00
+   6.38330877e-01  5.49405098e-01  9.96536314e-01 -9.24093008e-01
+  -1.45135522e-01  1.44830897e-01 -6.77489877e-01 -1.14875715e-02
+   6.54707924e-02  3.43570739e-01 -4.48695570e-02  2.46523499e-01
+   4.41332161e-01  7.64448568e-02 -5.84618628e-01  6.20144010e-01
+  -5.56229830e-01  5.62250651e-02  3.62508655e-01 -4.27054614e-01
+   8.23839679e-02  3.49167168e-01  8.89435485e-02  4.32574227e-02
+  -6.38477087e-01  4.14636463e-01  2.15237603e-01 -4.72847730e-01
+   3.06168795e-01 -2.03179009e-03 -3.23842108e-01 -2.50733614e-01
+  -1.74915925e-01 -7.03510642e-01  1.53828934e-01 -4.49492276e-01
+  -3.76113653e-01 -1.66275054e-01 -7.63622597e-02  1.01394534e+00
+  -1.43511426e+00  4.78133142e-01  1.06514551e-01 -2.44424731e-01
+  -2.53122836e-01  1.76550120e-01 -1.69505253e-01  3.27850640e-01
+   6.51958942e-01  8.54731500e-02 -3.18344146e-01 -3.78542095e-01
+  -1.88916743e-01 -2.24099934e-01  6.60928488e-01  1.28609478e-01
+  -2.61909246e-01  3.90546322e-01  1.33700013e-01 -3.56101513e-01
+  -7.68282950e-01 -2.17338018e-02 -3.95274937e-01  1.76472500e-01
+  -3.44746798e-01 -3.19182932e-01 -7.84906149e-02 -7.61292800e-02
+  -4.77726758e-01 -5.40606957e-03 -1.99733004e-01 -2.16589123e-01
+   7.61452392e-02  5.02786972e-02  3.46004844e-01  1.46675557e-01
+  -5.52340150e-01 -2.24870026e-01 -4.57565129e-01 -5.49461484e-01
+   3.79014879e-01  6.70268163e-02  3.06490928e-01  2.23991051e-01
+   1.65496543e-01 -3.18932950e-01  4.60145950e-01 -1.00714639e-02]]]
+[ 2024-07-11 02:55:34,154  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 02:56:01,452  48 COMPONENTS - INFO - Unnamed: 0.2                                                    2
+Unnamed: 0.1                                                    2
+Unnamed: 0                                                      2
+title                                          Fashion Reimagined
+genres                                                Documentary
+videos          [{'link': 'https://www.imdb.com/video/vi255405...
+url                        https://www.imdb.com/title/tt18292986/
+poster_url      https://www.imdb.com/title/tt18292986/mediavie...
+storyline       Follows Amy Powney, a daughter of environmenta...
+description     ['documentary', 'follows', 'amy', 'powney', 'd...
+Name: 2, dtype: object]
+[ 2024-07-11 02:56:01,454  48 COMPONENTS - INFO - Unnamed: 0.2                                               171115
+Unnamed: 0.1                                               171115
+Unnamed: 0                                                 190490
+title                                             What the Health
+genres                                                Documentary
+videos          [{'link': 'https://www.imdb.com/video/vi303561...
+url                         https://www.imdb.com/title/tt5541848/
+poster_url      https://www.imdb.com/title/tt5541848/mediaview...
+storyline       What the Health is a ground breaking feature l...
+description     ['documentary', 'health', 'ground', 'breaking'...
+Name: 171115, dtype: object]
+[ 2024-07-11 02:56:01,454  48 COMPONENTS - INFO - Unnamed: 0.2                                               131285
+Unnamed: 0.1                                               131285
+Unnamed: 0                                                 143668
+title                                  The UNIDO Energy Programme
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt5622222/
+poster_url      https://www.imdb.com/title/tt5622222/mediaview...
+storyline       Sustainable energy is the golden thread that c...
+description     ['documentary', 'short', 'sustainable', 'energ...
+Name: 131285, dtype: object]
+[ 2024-07-11 02:56:01,455  48 COMPONENTS - INFO - Unnamed: 0.2                                               150354
+Unnamed: 0.1                                               150354
+Unnamed: 0                                                 165918
+title                                                  Real Value
+genres                        Documentary Biography Drama History
+videos                                                         []
+url                         https://www.imdb.com/title/tt3262476/
+poster_url      https://www.imdb.com/title/tt3262476/mediaview...
+storyline       Real Value is an independent documentary by fi...
+description     ['documentary', 'biography', 'drama', 'history...
+Name: 150354, dtype: object]
+[ 2024-07-11 02:56:01,455  48 COMPONENTS - INFO - Unnamed: 0.2                                               199909
+Unnamed: 0.1                                               199909
+Unnamed: 0                                                 224748
+title                                      A Fibreshed for London
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt8396374/
+poster_url      https://www.imdb.com/title/tt8396374/mediaview...
+storyline       A Fibreshed for London (2015) is a documentary...
+description     ['documentary', 'short', 'fibreshed', 'london'...
+Name: 199909, dtype: object]
+[ 2024-07-11 02:56:01,455  48 COMPONENTS - INFO - Unnamed: 0.2                                                 7360
+Unnamed: 0.1                                                 7360
+Unnamed: 0                                                   7420
+title                                        The Riddle of Sweden
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt4708598/
+poster_url      https://www.imdb.com/title/tt4708598/mediaview...
+storyline       The Swedish people, nature and culture, the we...
+description     ['documentary', 'short', 'swedish', 'people', ...
+Name: 7360, dtype: object]
+[ 2024-07-11 02:56:01,455  48 COMPONENTS - INFO - Unnamed: 0.2                                               174096
+Unnamed: 0.1                                               174096
+Unnamed: 0                                                 194011
+title                                              A Maasai Story
+genres                                          Documentary Short
+videos          [{'link': 'https://www.imdb.com/video/vi427070...
+url                         https://www.imdb.com/title/tt7559156/
+poster_url      https://www.imdb.com/title/tt7559156/mediaview...
+storyline       Ethical fashion makes the change. In 2017 Isti...
+description     ['documentary', 'short', 'ethical', 'fashion',...
+Name: 174096, dtype: object]
+[ 2024-07-11 02:56:01,456  48 COMPONENTS - INFO - Unnamed: 0.2                                               164179
+Unnamed: 0.1                                               164179
+Unnamed: 0                                                 182298
+title                                            Brave Blue World
+genres                                                Documentary
+videos          [{'link': 'https://www.imdb.com/video/vi331984...
+url                        https://www.imdb.com/title/tt11921004/
+poster_url      https://www.imdb.com/title/tt11921004/mediavie...
+storyline       Brave Blue World is a documentary exploring th...
+description     ['documentary', 'brave', 'blue', 'world', 'exp...
+Name: 164179, dtype: object]
+[ 2024-07-11 02:56:01,456  48 COMPONENTS - INFO - Unnamed: 0.2                                                34665
+Unnamed: 0.1                                                34665
+Unnamed: 0                                                  35777
+title                                           Post to Paycheque
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt6251072/
+poster_url      https://www.imdb.com/title/tt6251072/mediaview...
+storyline       Post To Paycheque is a twenty-minute short dra...
+description     ['documentary', 'short', 'post', 'paycheque', ...
+Name: 34665, dtype: object]
+[ 2024-07-11 02:56:01,456  48 COMPONENTS - INFO - Unnamed: 0.2                                                 3376
+Unnamed: 0.1                                                 3376
+Unnamed: 0                                                   3390
+title                                       The Garden of Secrets
+genres                                          Documentary Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt9349940/
+poster_url      https://www.imdb.com/title/tt9349940/mediaview...
+storyline       A documentary that explores the power of biomi...
+description     ['documentary', 'short', 'explores', 'power', ...
+Name: 3376, dtype: object]
+[ 2024-07-11 02:56:01,487  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Fashion Reimagined', 'poster_url': 'https://www.imdb.com/title/tt18292986/mediaviewer/rm371660545', 'videos': 'https://www.imdb.com/video/vi2554053913', 'genres': 'Documentary', 'storyline': "Follows Amy Powney, a daughter of environmental activists, during her trajectory from outsider to industry leader as she sets out to create a fashion collection that's ethical and sustainable at every level.Follows Amy Powney, a daughter of environmental activists, during her trajectory from outsider to industry leader as she sets out to create a fashion collection that's ethical and sustainable at every level."}, 1: {'title': 'What the Health', 'poster_url': 'https://www.imdb.com/title/tt5541848/mediaviewer/rm862797056', 'videos': 'https://www.imdb.com/video/vi3035611929', 'genres': 'Documentary', 'storyline': 'What the Health is a ground breaking feature length documentary from the award-winning filmmakers of Cowspiracy, that follows the exciting journey of intrepid filmmaker, Kip Andersen, as he uncovers the impacts of highly processed industrial animal foods on our personal health and greater community, and explores why leading health organizations continue to promote the industry despite countless medical studies and research showing deleterious effects of these products on our health.What the Health is a ground breaking feature length documentary from the award-winning filmmakers of Cowspiracy, that follows the exciting journey of intrepid filmmaker, Kip Andersen, as he uncovers the impacts of highly processed industrial animal foods on our personal health and greater community, and explores why leading health organizations continue to promote the industry despite countless medical studies and research showing deleterious effects of these products on our health.'}, 2: {'title': 'The UNIDO Energy Programme', 'poster_url': 'https://www.imdb.com/title/tt5622222/mediaviewer/rm3249739520', 'videos': '', 'genres': 'Documentary Short', 'storyline': "Sustainable energy is the golden thread that connects economic and social development with an environmental sustainability that allows the world to flourish. UNIDO seeks to promote sustainable energy solutions in moving towards building 'Climate Resilient Industries'. UNIDO promotes sustainable energy solutions to assist industry in reducing their energy consumption, as well as using clean renewable energy in the most efficient manner for the enhancement of industrial competitiveness and productivity, while mainstreaming gender and increasing employment opportunities. —AnonymousSustainable energy is the golden thread that connects economic and social development with an environmental sustainability that allows the world to flourish. UNIDO seeks to promote sustainable energy solutions in moving towards building 'Climate Resilient Industries'. UNIDO promotes sustainable energy solutions to assist industry in reducing their energy consumption, as well as using clean renewable energy in the most efficient manner for the enhancement of industrial competitiveness and productivity, while mainstreaming gender and increasing employment opportunities. —Anonymous"}, 3: {'title': 'Real Value', 'poster_url': 'https://www.imdb.com/title/tt3262476/mediaviewer/rm2531592192', 'videos': '', 'genres': 'Documentary Biography Drama History', 'storyline': "Real Value is an independent documentary by filmmaker Jesse Borkowski that explores how today's thought leaders and social entrepreneurs are re-envisioning business as a powerful force for positive social change - creating long-term, sustainable value in their communities by focusing on people and planet over profit. —AnonymousReal Value is an independent documentary by filmmaker Jesse Borkowski that explores how today's thought leaders and social entrepreneurs are re-envisioning business as a powerful force for positive social change - creating long-term, sustainable value in their communities by focusing on people and planet over profit. —Anonymous"}, 4: {'title': 'A Fibreshed for London', 'poster_url': 'https://www.imdb.com/title/tt8396374/mediaviewer/rm1076514048', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'A Fibreshed for London (2015) is a documentary film that explores the current state of the textile industry in London by meeting with remarkable people who are doing their part to make the industry more sustainable. "Fibreshed develops regenerative textile systems that are based on carbon farming, regional manufacturing and public education" A fibreshed is a bio region that is allocated to encourage the local growth, processing and manufacture of natural textile cloth and garments. The Greater London Fibreshed has been set up to create a network that will feed the London Wardrobe, a project that has been set up with the aim to research whether locally produced garments are possible for a city like London. The documentary follows the stories of some of the people that embarked on this journey. —Jessica Smulders CohenA Fibreshed for London (2015) is a documentary film that explores the current state of the textile industry in London by meeting with remarkable people who are doing their part to make the industry more sustainable. "Fibreshed develops regenerative textile systems that are based on carbon farming, regional manufacturing and public education" A fibreshed is a bio region that is allocated to encourage the local growth, processing and manufacture of natural textile cloth and garments. The Greater London Fibreshed has been set up to create a network that will feed the London Wardrobe, a project that has been set up with the aim to research whether locally produced garments are possible for a city like London. The documentary follows the stories of some of the people that embarked on this journey. —Jessica Smulders Cohen'}, 5: {'title': 'The Riddle of Sweden', 'poster_url': 'https://www.imdb.com/title/tt4708598/mediaviewer/rm1197083392', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'The Swedish people, nature and culture, the welfare, social and health care. Swedish inventions, industry international projects. Swedish beauty and design.The Swedish people, nature and culture, the welfare, social and health care. Swedish inventions, industry international projects. Swedish beauty and design.'}, 6: {'title': 'A Maasai Story', 'poster_url': 'https://www.imdb.com/title/tt7559156/mediaviewer/rm3437254912', 'videos': 'https://www.imdb.com/video/vi4270702873', 'genres': 'Documentary Short', 'storyline': 'Ethical fashion makes the change. In 2017 Istituto Oikos started "Terra", a project funded by the Italian Agency for Cooperation and Development, which aims to improve livelihood of Maasai communities in the Arusha Region (Northern Tanzania) developing environmentally sustainable actions. Terra has set up a social green enterprise run by a Maasai women\'s group called \'Enuyata\' for the production of leather handicraft which consists of a vegetal leather tannery in the village of Mkuru and a small manufacturing laboratory in Arusha. This initiative empowers vulnerable women giving them the opportunity to gain skills, knowledge and economic means to support their community. Ethical fashion designer Marina Spadafora along with a team of Italian experts traveled to Tanzania to design a collection of leather accessories in collaboration with the Enuyata group. —Istituto OikosEthical fashion makes the change. In 2017 Istituto Oikos started "Terra", a project funded by the Italian Agency for Cooperation and Development, which aims to improve livelihood of Maasai communities in the Arusha Region (Northern Tanzania) developing environmentally sustainable actions. Terra has set up a social green enterprise run by a Maasai women\'s group called \'Enuyata\' for the production of leather handicraft which consists of a vegetal leather tannery in the village of Mkuru and a small manufacturing laboratory in Arusha. This initiative empowers vulnerable women giving them the opportunity to gain skills, knowledge and economic means to support their community. Ethical fashion designer Marina Spadafora along with a team of Italian experts traveled to Tanzania to design a collection of leather accessories in collaboration with the Enuyata group. —Istituto Oikos'}, 7: {'title': 'Brave Blue World', 'poster_url': 'https://www.imdb.com/title/tt11921004/mediaviewer/rm226678785', 'videos': 'https://www.imdb.com/video/vi3319841049', 'genres': 'Documentary', 'storyline': "Brave Blue World is a documentary exploring the exciting new technologies and innovations that have the potential to solve the world's water crisis. The film highlights scientific and technological advancements that have been taking place, often behind the scenes, to ensure the world's population has access to clean water and safe sanitation services and the environment is protected. Narrated by actor Liam Neeson, Brave Blue World features scientists, engineers and activists from around the world, including Matt Damon, who co-founded global non-profit Water.org, and Jaden Smith, co-founder of non-profit 501CThree, which is providing water filtration systems to communities in Flint, Michigan.Brave Blue World is a documentary exploring the exciting new technologies and innovations that have the potential to solve the world's water crisis. The film highlights scientific and technological advancements that have been taking place, often behind the scenes, to ensure the world's population has access to clean water and safe sanitation services and the environment is protected. Narrated by actor Liam Neeson, Brave Blue World features scientists, engineers and activists from around the world, including Matt Damon, who co-founded global non-profit Water.org, and Jaden Smith, co-founder of non-profit 501CThree, which is providing water filtration systems to communities in Flint, Michigan."}, 8: {'title': 'Post to Paycheque', 'poster_url': 'https://www.imdb.com/title/tt6251072/mediaviewer/rm1595999232', 'videos': '', 'genres': 'Documentary Short', 'storyline': "Post To Paycheque is a twenty-minute short dramatic documentary told through the lense of a television host turned content creator. The documentary explores the shift in Toronto's content culture to a distinct street culture where product placement is a central theme. The rise of online marketing, blogging and micro blogging in the online sphere has set this movement in motion. Various industry insiders share trade secrets as well as give the audience a deeper look into the process of creating culturally relevant content. By analyzing the different aspects of product placement on social media we seek to find out how it impacts one's day to day life. Partnering with various clothing brands , Post To Paycheque runs through the onset of a clothing campaigns in collaboration with the influencers personal brand. The documentary seeks to explore how brands are taking advantage of influencer culture and online clout through content creation avenues. —AnonymousPost To Paycheque is a twenty-minute short dramatic documentary told through the lense of a television host turned content creator. The documentary explores the shift in Toronto's content culture to a distinct street culture where product placement is a central theme. The rise of online marketing, blogging and micro blogging in the online sphere has set this movement in motion. Various industry insiders share trade secrets as well as give the audience a deeper look into the process of creating culturally relevant content. By analyzing the different aspects of product placement on social media we seek to find out how it impacts one's day to day life. Partnering with various clothing brands , Post To Paycheque runs through the onset of a clothing campaigns in collaboration with the influencers personal brand. The documentary seeks to explore how brands are taking advantage of influencer culture and online clout through content creation avenues. —Anonymous"}, 9: {'title': 'The Garden of Secrets', 'poster_url': 'https://www.imdb.com/title/tt9349940/mediaviewer/rm1125440257', 'videos': '', 'genres': 'Documentary Short', 'storyline': 'A documentary that explores the power of biomimicry as an answer to design and environmental issues, and the potential for botanical gardens to impart these solutions.A documentary that explores the power of biomimicry as an answer to design and environmental issues, and the potential for botanical gardens to impart these solutions.'}}]
+[ 2024-07-11 02:56:01,663  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 02:56:01] "POST /predict HTTP/1.1" 200 -]

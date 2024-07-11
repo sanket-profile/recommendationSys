@@ -1,0 +1,22 @@
+[ 2024-07-09 04:37:21,773  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 04:37:21,776  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                            titleDesc
+0  [western, black, belts, women, fashion, womens...]
+[ 2024-07-09 04:37:21,776  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 04:37:21,920  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 04:37:21,920  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 04:37:21,921  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [titleDesc]
+Index: []]
+[ 2024-07-09 04:37:21,921  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-09 04:37:21,934  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-09 04:37:21,934  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-09 04:37:21,935  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 1.4646535  -0.17924057  2.148984    0.06677717 -1.151122    0.5948629
+  -1.6114593   1.5999635   0.6110268   1.8366804  -0.38870224 -1.0068942
+  -0.11662816 -0.86502576 -0.59010655 -1.649174    0.3048159   0.7483915
+   1.4505941   0.2125462  -0.0648206  -1.0311631  -0.23219725  0.4669338
+   0.9859568   1.020249    0.7113239   0.466289    0.23140278  0.5757795
+  -0.9244845   0.11792845  0.47210565 -0.05683631  0.29851872 -0.42176914
+  -0.3103729   0.00371997 -0.06575324  0.07592906 -0.61935264 -0.65050626
+   0.34757197 -0.09838959 -0.1669043  -0.14674695  0.35543093 -0.15212822
+   0.18923846  0.03555882]]]
+[ 2024-07-09 04:37:21,935  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]

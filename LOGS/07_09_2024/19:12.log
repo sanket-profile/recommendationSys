@@ -1,0 +1,26 @@
+[ 2024-07-09 19:12:17,287  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-09 19:12:17,300  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-09 19:12:24,834  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 19:12:24,848  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :        titleDesc
+0  [blue, shirt]]
+[ 2024-07-09 19:12:24,848  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 19:12:25,031  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 19:12:25,031  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 19:12:25,032  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [titleDesc]
+Index: []]
+[ 2024-07-09 19:12:25,032  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-09 19:12:25,046  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-09 19:12:25,046  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-09 19:12:25,046  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 5.5848684  -0.6535342  -3.3887196   1.3834126   0.22220549  3.0059628
+   2.7595272  -0.46127957  0.5406365   2.533091    0.973883   -0.67153525
+  -0.03914082  0.99224865 -1.310003   -0.14851654  0.13638595  0.22449797
+   1.0988866  -0.40215847  1.059368   -0.6022719   0.4025533   0.03322768
+  -0.1188709  -1.5151331   1.0073597   1.0694262  -0.5308927   0.4324348
+   1.6753933  -0.12063034 -0.90945965 -1.0030919  -0.16129458  0.12321007
+  -2.0414367  -2.550655    0.4250852  -0.36496684  0.07740837  0.59481215
+   1.478532    2.3606436  -0.48233694 -1.8780761   0.1624353  -0.01284474
+  -1.8543279   0.40052593]]]
+[ 2024-07-09 19:12:25,047  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-09 19:12:34,140  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 19:12:34] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-09 19:13:56,454  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/recommendationSystem/src/pipelines/prediction_pipeline.py', reloading]

@@ -1,0 +1,189 @@
+[ 2024-07-12 00:15:41,578  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-12 00:15:41,585  97 werkzeug - INFO -  * Debugger PIN: 521-569-415]
+[ 2024-07-12 00:15:52,302  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:15:52] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-12 00:16:01,095  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-12 00:16:01,104  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                description
+0  [best, action, movie, ]]
+[ 2024-07-12 00:16:01,105  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-12 00:16:01,405  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-12 00:16:01,405  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-12 00:16:01,406  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-12 00:16:01,406  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-12 00:16:01,423  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-12 00:16:01,423  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-12 00:16:01,423  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 2.3577964   1.0527701   0.55988014  0.6262692  -1.9419683   2.2951498
+  -3.4063492   0.54158515 -0.05533583 -0.26941258  0.61886877 -1.1335912
+  -1.2750558  -1.4116198  -0.4752781   0.10612731  1.376627   -0.14086312
+   2.7348285  -0.00579043 -1.5915775   0.44950888  2.9547815   0.9889349
+  -1.3108745  -0.01364548 -1.0349785  -0.76454353  0.9881367  -0.54695183
+   0.00569606  1.1047791  -0.73358727 -1.2029119   0.27421686 -0.17182107
+  -0.07898508  1.1042581  -1.1282525   0.12973104 -0.2600188   0.2989558
+  -0.7261864   0.47508132 -0.9420349  -0.768335    0.19912168  0.6422282
+  -0.7256462   0.10154692  0.767484    0.9116811   1.2694328  -1.0459938
+   0.01781892  0.06713367 -0.20592412 -0.4615738  -0.3693686  -0.13976878
+  -0.7981899   0.36017954  0.2182372   0.303383   -0.18732932  0.9481977
+   0.8061931  -0.8131024  -0.7128197  -0.696267    0.33325207  2.1656218
+  -0.88766617  0.3764921   0.54468983  1.3991774   1.5477519  -0.7713346
+   0.30277097 -0.8970977   0.86529595 -0.85975343  0.9477871  -1.3256893
+  -0.49050403 -0.14804144  0.43462512 -0.7310053   0.85026276  1.3586047
+   0.43288022  1.7048806   0.931316    0.6429419  -0.9378005  -1.1401876
+   0.01439285  0.6943346   0.08017597  0.00919129]]]
+[ 2024-07-12 00:16:01,423  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-12 00:16:28,751  145 COMPONENTS - INFO - Unnamed: 0.2                                                95587
+Unnamed: 0.1                                                95587
+Unnamed: 0                                                 102589
+title                                           Preto the Movie 2
+genres                                                     Action
+videos                                                         []
+url                         https://www.imdb.com/title/tt6247702/
+poster_url      https://www.imdb.com/title/tt6247702/mediaview...
+storyline       Its some not spoil the movie..Its some not spo...
+description              ['action', 'spoil', 'movieits', 'movie']
+Name: 95587, dtype: object]
+[ 2024-07-12 00:16:30,060  145 COMPONENTS - INFO - Unnamed: 0.2                                                87165
+Unnamed: 0.1                                                87165
+Unnamed: 0                                                  93132
+title                            Awesome Girl Gang Street Fighter
+genres                                        Action Comedy Crime
+videos                                                         []
+url                         https://www.imdb.com/title/tt2387395/
+poster_url      https://www.imdb.com/title/tt2387395/mediaview...
+storyline       This movie is about a bad script being made in...
+description     ['action', 'comedy', 'crime', 'movie', 'bad', ...
+Name: 87165, dtype: object]
+[ 2024-07-12 00:16:31,908  145 COMPONENTS - INFO - Unnamed: 0.2                                               185883
+Unnamed: 0.1                                               185883
+Unnamed: 0                                                 207956
+title                                                       Nezha
+genres                                             Action Fantasy
+videos                                                         []
+url                        https://www.imdb.com/title/tt26422092/
+poster_url      https://www.imdb.com/title/tt26422092/mediavie...
+storyline       Nezha, a movie with action and fantasy.Nezha, ...
+description     ['action', 'fantasy', 'nezha', 'movie', 'fanta...
+Name: 185883, dtype: object]
+[ 2024-07-12 00:16:33,174  145 COMPONENTS - INFO - Unnamed: 0.2                                                 7542
+Unnamed: 0.1                                                 7542
+Unnamed: 0                                                   7605
+title                                       For Goodness Sake III
+genres                                                     Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0289192/
+poster_url                                                       
+storyline       A short film about being the best we can be: a...
+description     ['comedy', 'short', 'film', 'best', 'good', 'p...
+Name: 7542, dtype: object]
+[ 2024-07-12 00:16:33,175  145 COMPONENTS - INFO - Unnamed: 0.2                                      428
+Unnamed: 0.1                                      428
+Unnamed: 0                                        428
+title               Ring of Honor: Greatest Rivalries
+genres                                         Action
+videos                                             []
+url             https://www.imdb.com/title/tt2184328/
+poster_url                                           
+storyline                                         NaN
+description                            ['action', '']
+Name: 428, dtype: object]
+[ 2024-07-12 00:16:33,176  145 COMPONENTS - INFO - Unnamed: 0.2                                                 1193
+Unnamed: 0.1                                                 1193
+Unnamed: 0                                                   1194
+title                                                   Detonator
+genres                                                     Action
+videos                                                         []
+url                         https://www.imdb.com/title/tt0118970/
+poster_url      https://www.imdb.com/title/tt0118970/mediaview...
+storyline                                                     NaN
+description                                        ['action', '']
+Name: 1193, dtype: object]
+[ 2024-07-12 00:16:34,429  145 COMPONENTS - INFO - Unnamed: 0.2                                                 1845
+Unnamed: 0.1                                                 1845
+Unnamed: 0                                                   1848
+title                            Advent Commando 5: Sweet Inferno
+genres                                                     Action
+videos                                                         []
+url                         https://www.imdb.com/title/tt5791576/
+poster_url      https://www.imdb.com/title/tt5791576/mediaview...
+storyline                                                     NaN
+description                                        ['action', '']
+Name: 1845, dtype: object]
+[ 2024-07-12 00:16:35,778  145 COMPONENTS - INFO - Unnamed: 0.2                                                 3951
+Unnamed: 0.1                                                 3951
+Unnamed: 0                                                   3968
+title           Liverpool Football Club vs Tottenham Hotspur F...
+genres                                                     Action
+videos                                                         []
+url                        https://www.imdb.com/title/tt11296300/
+poster_url      https://www.imdb.com/title/tt11296300/mediavie...
+storyline                                                     NaN
+description                                        ['action', '']
+Name: 3951, dtype: object]
+[ 2024-07-12 00:16:36,898  145 COMPONENTS - INFO - Unnamed: 0.2                                                 3953
+Unnamed: 0.1                                                 3953
+Unnamed: 0                                                   3970
+title                                   Juventus vs Bayern Munich
+genres                                                     Action
+videos                                                         []
+url                        https://www.imdb.com/title/tt13446160/
+poster_url      https://www.imdb.com/title/tt13446160/mediavie...
+storyline                                                     NaN
+description                                        ['action', '']
+Name: 3953, dtype: object]
+[ 2024-07-12 00:16:38,257  145 COMPONENTS - INFO - Unnamed: 0.2                                     4118
+Unnamed: 0.1                                     4118
+Unnamed: 0                                       4136
+title                                      Crosshairs
+genres                                         Action
+videos                                             []
+url             https://www.imdb.com/title/tt2112929/
+poster_url                                           
+storyline                                         NaN
+description                            ['action', '']
+Name: 4118, dtype: object]
+[ 2024-07-12 00:16:38,301  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Preto the Movie 2', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYzg1ZDY5ZTgtYTcxYS00MjcxLTgwZmYtNmU5MWI3ZjZlMDJiXkEyXkFqcGdeQXVyNTI4NTczNTA@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action', 'storyline': 'Its some not spoil the movie..Its some not spoil the movie..'}, 1: {'title': 'Awesome Girl Gang Street Fighter', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZGRkYjU0MjktOTcyZC00OThjLThmZDMtZmY0NjhlMjljOTFjXkEyXkFqcGdeQXVyMTk5NjA5MTE@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action Comedy Crime', 'storyline': 'This movie is about a bad script being made into a worse a movie. The best part is the end credits.This movie is about a bad script being made into a worse a movie. The best part is the end credits.'}, 2: {'title': 'Nezha', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BY2I2ODFjNDAtN2VlNS00ZTVjLTg3MjAtMzRhNDAzMDdjYzYzXkEyXkFqcGdeQXVyNjQ2MjM1OTk@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action Fantasy', 'storyline': 'Nezha, a movie with action and fantasy.Nezha, a movie with action and fantasy.'}, 3: {'title': 'For Goodness Sake III', 'poster_url': '', 'videos': '', 'genres': 'Comedy', 'storyline': 'A short film about being the best we can be: a GOOD person!A short film about being the best we can be: a GOOD person!'}, 4: {'title': 'Ring of Honor: Greatest Rivalries', 'poster_url': '', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}, 5: {'title': 'Detonator', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMTk5NzcwNjYxN15BMl5BanBnXkFtZTcwMjgzMjcxMQ@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}, 6: {'title': 'Advent Commando 5: Sweet Inferno', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOGUzYzFjMTktMmVmYy00NmM4LWIxZDctNzkwNGU4ZjNlZDc5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}, 7: {'title': 'Liverpool Football Club vs Tottenham Hotspur Football Club', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNzgzODM5MDctOGZlZC00NmJmLThmN2MtYTlkOGRhZGYxMTVhXkEyXkFqcGdeQXVyMTA0NTY0NTYy._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}, 8: {'title': 'Juventus vs Bayern Munich', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZTgzODllMDQtYTExMS00MWU1LTg4NjUtOWJjMmQzYTJmMGFiXkEyXkFqcGdeQXVyMTA0NTY0NTYy._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}, 9: {'title': 'Crosshairs', 'poster_url': '', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}}]
+[ 2024-07-12 00:16:38,440  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:16:38] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-12 00:16:38,457  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:16:38] "[36mGET /static/images/comedy2.jpeg HTTP/1.1[0m" 304 -]
+[ 2024-07-12 00:16:38,457  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:16:38] "[36mGET /static/images/comedy3.jpeg HTTP/1.1[0m" 304 -]
+[ 2024-07-12 00:17:01,129  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-12 00:17:01,137  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                description
+0  [best, action, movie, ]]
+[ 2024-07-12 00:17:01,137  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-12 00:17:01,329  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-12 00:17:01,329  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-12 00:17:01,330  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-12 00:17:01,330  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-12 00:17:01,331  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-12 00:17:01,331  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-12 00:17:01,335  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 2.3577964   1.0527701   0.55988014  0.6262692  -1.9419683   2.2951498
+  -3.4063492   0.54158515 -0.05533583 -0.26941258  0.61886877 -1.1335912
+  -1.2750558  -1.4116198  -0.4752781   0.10612731  1.376627   -0.14086312
+   2.7348285  -0.00579043 -1.5915775   0.44950888  2.9547815   0.9889349
+  -1.3108745  -0.01364548 -1.0349785  -0.76454353  0.9881367  -0.54695183
+   0.00569606  1.1047791  -0.73358727 -1.2029119   0.27421686 -0.17182107
+  -0.07898508  1.1042581  -1.1282525   0.12973104 -0.2600188   0.2989558
+  -0.7261864   0.47508132 -0.9420349  -0.768335    0.19912168  0.6422282
+  -0.7256462   0.10154692  0.767484    0.9116811   1.2694328  -1.0459938
+   0.01781892  0.06713367 -0.20592412 -0.4615738  -0.3693686  -0.13976878
+  -0.7981899   0.36017954  0.2182372   0.303383   -0.18732932  0.9481977
+   0.8061931  -0.8131024  -0.7128197  -0.696267    0.33325207  2.1656218
+  -0.88766617  0.3764921   0.54468983  1.3991774   1.5477519  -0.7713346
+   0.30277097 -0.8970977   0.86529595 -0.85975343  0.9477871  -1.3256893
+  -0.49050403 -0.14804144  0.43462512 -0.7310053   0.85026276  1.3586047
+   0.43288022  1.7048806   0.931316    0.6429419  -0.9378005  -1.1401876
+   0.01439285  0.6943346   0.08017597  0.00919129]]]
+[ 2024-07-12 00:17:01,335  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-12 00:17:28,895  145 COMPONENTS - INFO - Unnamed: 0.2                                                95587
+Unnamed: 0.1                                                95587
+Unnamed: 0                                                 102589
+title                                           Preto the Movie 2
+genres                                                     Action
+videos                                                         []
+url                         https://www.imdb.com/title/tt6247702/
+poster_url      https://www.imdb.com/title/tt6247702/mediaview...
+storyline       Its some not spoil the movie..Its some not spo...
+description              ['action', 'spoil', 'movieits', 'movie']
+Name: 95587, dtype: object]
+[ 2024-07-12 00:17:29,915  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/RECOMMENDATIONSYSTEM/src/pipelines/prediction_pipeline.py', reloading]

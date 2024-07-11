@@ -1,0 +1,6 @@
+outs:
+- md5: b7e3137976073a691a7ec53787e547d1.dir
+  size: 1727770430
+  nfiles: 8
+  hash: md5
+  path: ARTIFACTS

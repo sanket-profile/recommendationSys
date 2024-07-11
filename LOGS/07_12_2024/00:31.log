@@ -1,0 +1,308 @@
+[ 2024-07-12 00:31:40,383  97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[ 2024-07-12 00:31:40,383  97 werkzeug - INFO - [33mPress CTRL+C to quit[0m]
+[ 2024-07-12 00:31:40,384  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-12 00:31:41,448  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-12 00:31:41,458  97 werkzeug - INFO -  * Debugger PIN: 521-569-415]
+[ 2024-07-12 00:31:45,334  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:31:45] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-12 00:31:51,047  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-12 00:31:51,075  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [husband, wife, jefri, dilaila, go, vacation, ...]
+[ 2024-07-12 00:31:51,076  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-12 00:31:51,332  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-12 00:31:51,332  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-12 00:31:51,333  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-12 00:31:51,333  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-12 00:31:51,347  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-12 00:31:51,347  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-12 00:31:51,348  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[-6.3922758e+00  7.2094041e-01 -1.9478962e+00 -1.5341359e+00
+  -5.2961249e-02 -2.4482932e+00  7.6259893e-01  2.9619667e-01
+  -3.6258653e-01  1.4582342e+00  1.3276985e+00  1.4639192e+00
+  -1.7107998e+00  2.6480865e-01 -9.4665760e-01  5.9583026e-01
+  -5.4199445e-01 -5.1979917e-01  7.2212660e-01 -5.8364880e-01
+  -5.1290649e-01 -2.9160650e-03  8.3453113e-01 -4.9413842e-01
+  -2.1530384e-01 -7.7472883e-01  3.5984576e-01  8.6884528e-02
+  -6.5308727e-02  1.7713012e-01 -7.3496611e-03 -2.1099561e-01
+  -3.2489699e-01  2.5392398e-01 -2.4577369e-01  4.9303588e-01
+  -2.3401865e-01 -4.9391884e-01  2.1685940e-01  2.5337952e-01
+   3.0519638e-02  6.4787608e-01  3.2241693e-01 -4.9521618e-02
+  -3.3200227e-03 -3.9863417e-01  3.5122052e-01  4.1538852e-01
+   9.2469342e-02 -1.4298996e-01  1.2745315e-01  4.5650533e-01
+  -1.0312614e-01  3.8309208e-01 -7.2291672e-02  2.8977999e-01
+   3.5233033e-01  1.0977338e-02 -8.6129941e-02  3.5135135e-02
+  -3.3732805e-01  5.8125522e-02  4.2251181e-03  5.2884239e-01
+   1.0738977e-01 -1.4205031e-01 -4.2605338e-01  2.1921290e-02
+  -1.5495437e-01 -4.6933946e-01  5.2309537e-01 -5.1677436e-01
+   1.8441131e-02 -4.4210753e-01 -2.0212992e-01 -9.5896795e-02
+  -5.8376479e-01  2.9102382e-01 -9.6764870e-02  9.4697431e-02
+  -3.5742272e-03  1.7664656e-01  3.3392644e-01  8.7664753e-02
+   3.0967140e-01 -4.4384915e-01 -1.3671699e-01 -2.2608550e-01
+  -3.1489804e-01 -1.3933727e-01 -2.5020334e-01 -1.6549790e-01
+  -1.9027172e-01  1.0273485e-01  3.5667053e-01  8.7993547e-02
+   2.7517512e-01 -2.2579113e-01  1.6566779e-02 -8.5801650e-03]]]
+[ 2024-07-12 00:31:51,348  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-12 00:32:18,487  145 COMPONENTS - INFO - Unnamed: 0.2                                                55200
+Unnamed: 0.1                                                55200
+Unnamed: 0                                                  57809
+title                                             Misteri Dilaila
+genres                                    Horror Mystery Thriller
+videos                                                         []
+url                         https://www.imdb.com/title/tt9820594/
+poster_url      https://www.imdb.com/title/tt9820594/mediaview...
+storyline       Husband and wife Jefri and Dilaila go on a vac...
+description     ['horror', 'mystery', 'thriller', 'husband', '...
+Name: 55200, dtype: object]
+[ 2024-07-12 00:32:20,644  145 COMPONENTS - INFO - Unnamed: 0.2                                                29031
+Unnamed: 0.1                                                29031
+Unnamed: 0                                                  29848
+title                                                   Barbarian
+genres                                    Horror Mystery Thriller
+videos          [{'link': 'https://www.imdb.com/video/vi181913...
+url                        https://www.imdb.com/title/tt15791034/
+poster_url      https://www.imdb.com/title/tt15791034/mediavie...
+storyline       In town for a job interview, a young woman arr...
+description     ['horror', 'mystery', 'thriller', 'town', 'job...
+Name: 29031, dtype: object]
+[ 2024-07-12 00:32:22,001  145 COMPONENTS - INFO - Unnamed: 0.2                                                 3157
+Unnamed: 0.1                                                 3157
+Unnamed: 0                                                   3169
+title                                               Woh Kaun Thi?
+genres                             Drama Mystery Romance Thriller
+videos          [{'link': 'https://www.imdb.com/video/vi391864...
+url                         https://www.imdb.com/title/tt0232960/
+poster_url      https://www.imdb.com/title/tt0232960/mediaview...
+storyline       Dr Anand is depressed after sudden death of hi...
+description     ['drama', 'mystery', 'romance', 'thriller', 'd...
+Name: 3157, dtype: object]
+[ 2024-07-12 00:32:23,182  145 COMPONENTS - INFO - Unnamed: 0.2                                               214063
+Unnamed: 0.1                                               214063
+Unnamed: 0                                                 241934
+title                                           Empire of Passion
+genres                                       Drama Horror Romance
+videos          [{'link': 'https://www.imdb.com/video/vi998742...
+url                         https://www.imdb.com/title/tt0077132/
+poster_url      https://www.imdb.com/title/tt0077132/mediaview...
+storyline       A young man has an affair with an older woman....
+description     ['drama', 'horror', 'romance', 'young', 'man',...
+Name: 214063, dtype: object]
+[ 2024-07-12 00:32:25,177  145 COMPONENTS - INFO - Unnamed: 0.2                                               135478
+Unnamed: 0.1                                               135478
+Unnamed: 0                                                 148553
+title                                              Scream of Fear
+genres                                            Horror Thriller
+videos          [{'link': 'https://www.imdb.com/video/vi339507...
+url                         https://www.imdb.com/title/tt0055505/
+poster_url      https://www.imdb.com/title/tt0055505/mediaview...
+storyline       Penny Appleby's parents were divorced when she...
+description     ['horror', 'thriller', 'penny', 'applebys', 'p...
+Name: 135478, dtype: object]
+[ 2024-07-12 00:32:26,732  145 COMPONENTS - INFO - Unnamed: 0.2                                                73654
+Unnamed: 0.1                                                73654
+Unnamed: 0                                                  78071
+title                                            Pen choo kab pee
+genres                                     Horror Mystery Romance
+videos                                                         []
+url                         https://www.imdb.com/title/tt0950500/
+poster_url      https://www.imdb.com/title/tt0950500/mediaview...
+storyline       Nualjan's life took a happy turn when violin p...
+description     ['horror', 'mystery', 'romance', 'nualjans', '...
+Name: 73654, dtype: object]
+[ 2024-07-12 00:32:28,478  145 COMPONENTS - INFO - Unnamed: 0.2                                                97412
+Unnamed: 0.1                                                97412
+Unnamed: 0                                                 104675
+title                                                      Spasmo
+genres                                    Horror Mystery Thriller
+videos          [{'link': 'https://www.imdb.com/video/vi192944...
+url                         https://www.imdb.com/title/tt0072196/
+poster_url      https://www.imdb.com/title/tt0072196/mediaview...
+storyline       Christian (Robert Hoffman) and his girlfriend ...
+description     ['horror', 'mystery', 'thriller', 'christian',...
+Name: 97412, dtype: object]
+[ 2024-07-12 00:32:29,232  145 COMPONENTS - INFO - Unnamed: 0.2                                                75938
+Unnamed: 0.1                                                75938
+Unnamed: 0                                                  80600
+title                                              Slub doskonaly
+genres                                             Comedy Romance
+videos          [{'link': 'https://www.imdb.com/video/vi322028...
+url                        https://www.imdb.com/title/tt21846774/
+poster_url      https://www.imdb.com/title/tt21846774/mediavie...
+storyline       This wedding didn't go well from the start. Th...
+description     ['comedy', 'romance', 'wedding', 'didnt', 'go'...
+Name: 75938, dtype: object]
+[ 2024-07-12 00:32:30,909  145 COMPONENTS - INFO - Unnamed: 0.2                                                10079
+Unnamed: 0.1                                                10079
+Unnamed: 0                                                  10194
+title                                             Something Waits
+genres                                               Horror Short
+videos                                                         []
+url                         https://www.imdb.com/title/tt0451207/
+poster_url      https://www.imdb.com/title/tt0451207/mediaview...
+storyline       A newly married couple buy a large fixer-upper...
+description     ['horror', 'short', 'newly', 'married', 'coupl...
+Name: 10079, dtype: object]
+[ 2024-07-12 00:32:32,317  145 COMPONENTS - INFO - Unnamed: 0.2                                               153849
+Unnamed: 0.1                                               153849
+Unnamed: 0                                                 170020
+title                                               The Intestine
+genres                                                      Drama
+videos          [{'link': 'https://www.imdb.com/video/vi143109...
+url                         https://www.imdb.com/title/tt5970252/
+poster_url      https://www.imdb.com/title/tt5970252/mediaview...
+storyline       After a one night stand, a young woman (Maya) ...
+description     ['drama', 'one', 'night', 'stand', 'young', 'w...
+Name: 153849, dtype: object]
+[ 2024-07-12 00:32:33,770  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Misteri Dilaila', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMmZhN2JiMGQtNzAzNS00YTIyLWEyM2QtNTRkYzJlMzYyODhiXkEyXkFqcGdeQXVyMzY3MDU4NDk@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror Mystery Thriller', 'storyline': "Husband and wife Jefri and Dilaila go on a vacation in Fraser's Hill, Pahang, staying at Dilaila's late father's mansion while there. Their first night there is already an unpleasant one as Jefri is disturbed by spooky happenings. The next morning, things turn worse as he discovers his wife is missing. Imam Aziz informs him a day later that Dilaila has been found but when he meets the woman, he immediately notices that she is not his wife, even though she insists that she is. —cinema.com.myHusband and wife Jefri and Dilaila go on a vacation in Fraser's Hill, Pahang, staying at Dilaila's late father's mansion while there. Their first night there is already an unpleasant one as Jefri is disturbed by spooky happenings. The next morning, things turn worse as he discovers his wife is missing. Imam Aziz informs him a day later that Dilaila has been found but when he meets the woman, he immediately notices that she is not his wife, even though she insists that she is. —cinema.com.my"}, 1: {'title': 'Barbarian', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BN2M3Y2NhMGYtYjUxOS00M2UwLTlmMGUtYzY4MzFlNjZkYzY2XkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi1819132441', 'genres': 'Horror Mystery Thriller', 'storyline': 'In town for a job interview, a young woman arrives at her Airbnb rental late at night only to find that the house has been mistakenly double-booked and a strange man is already staying there. Against her better judgment, she decides to stay the night anyway, but soon discovers that there is much more to be afraid of in the house than the other house guest.In town for a job interview, a young woman arrives at her Airbnb rental late at night only to find that the house has been mistakenly double-booked and a strange man is already staying there. Against her better judgment, she decides to stay the night anyway, but soon discovers that there is much more to be afraid of in the house than the other house guest.'}, 2: {'title': 'Woh Kaun Thi?', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNTJjZTlkOTMtOGMyZS00YmNmLTk1YWMtNjZmNTA1ZmY2ZjQ2XkEyXkFqcGdeQXVyMzA4OTQ3MTQ@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi3918642713', 'genres': 'Drama Mystery Romance Thriller', 'storyline': "Dr Anand is depressed after sudden death of his lover Seema.On a stormy night he meets a woman in white clad and asks him for lift.After the woman sits in his car strange things start to happen she gets down at her destination and suddenly disappears in graveyard.On the same night he is called to dilapidated mansion where he sees the same girl as his patient who as passed away .He takes help of cops and finds that everything has been changed when cops arrive and the girl is no where. The cops tell him that such thing has happened many a times at this mansion with many other doctors.Next day he sees that same girl as died in train accident.Anand's marriage is arranged by is mother to Sandhya.On the wedding night Anand is shocked to see that Sandhya is the same mysterious girl he encountered in stormy night. —alex.mjacko@gmail.comDr Anand is depressed after sudden death of his lover Seema.On a stormy night he meets a woman in white clad and asks him for lift.After the woman sits in his car strange things start to happen she gets down at her destination and suddenly disappears in graveyard.On the same night he is called to dilapidated mansion where he sees the same girl as his patient who as passed away .He takes help of cops and finds that everything has been changed when cops arrive and the girl is no where. The cops tell him that such thing has happened many a times at this mansion with many other doctors.Next day he sees that same girl as died in train accident.Anand's marriage is arranged by is mother to Sandhya.On the wedding night Anand is shocked to see that Sandhya is the same mysterious girl he encountered in stormy night. —alex.mjacko@gmail.com"}, 3: {'title': 'Empire of Passion', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNmViMzJkNzktMzQ5Ny00OGY2LThmNmYtYTNiNzhlNDI5NjE1XkEyXkFqcGdeQXVyMzIwNDY4NDI@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi998742041', 'genres': 'Drama Horror Romance', 'storyline': "A young man has an affair with an older woman. He is very jealous of her husband and decides that they should kill him. One night, after the husband had plenty of sake to drink and was in bed, they strangle him and dump his body down a well. To avert any suspicions, she pretends her husband has gone off to Tokyo to work. For three years the wife and her lover secretly see each other. Finally, suspicions become very strong and people begin to gossip. To make matters worse, her husband's ghost begins to haunt her and the law arrives to investigate her husband's disappearance. —Kevin Risch <krisch@intranet.on.ca>A young man has an affair with an older woman. He is very jealous of her husband and decides that they should kill him. One night, after the husband had plenty of sake to drink and was in bed, they strangle him and dump his body down a well. To avert any suspicions, she pretends her husband has gone off to Tokyo to work. For three years the wife and her lover secretly see each other. Finally, suspicions become very strong and people begin to gossip. To make matters worse, her husband's ghost begins to haunt her and the law arrives to investigate her husband's disappearance. —Kevin Risch <krisch@intranet.on.ca>"}, 4: {'title': 'Scream of Fear', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BM2M3MWZkN2MtYTFlYS00M2EzLWFmNzktNmMyMGNmMGQ1N2NmXkEyXkFqcGdeQXVyMjI4MjA5MzA@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi3395075865', 'genres': 'Horror Thriller', 'storyline': "Penny Appleby's parents were divorced when she was young and she grew up with her mother. After her mother's death, wheelchair-bound Penny accepts her father's invitation to live with him, but when she arrives, she learns that her father is away, though her stepmother, whom she's meeting for the first time, warmly welcomes her. On her first night there, Penny sees a light in the summerhouse; when she investigates, she sees her father sitting there--apparently dead. Others see nothing there and tell her she must have imagined it. She later sees his body in the library, then in the pool. She comes to believe that her stepmother and her father's friend, Doctor Pierre Gerard, are plotting to drive her insane. She gets a sympathetic ear from Bob, the chauffeur, who feels that there must be some rational explanation for what has been happening. —garykmcdPenny Appleby's parents were divorced when she was young and she grew up with her mother. After her mother's death, wheelchair-bound Penny accepts her father's invitation to live with him, but when she arrives, she learns that her father is away, though her stepmother, whom she's meeting for the first time, warmly welcomes her. On her first night there, Penny sees a light in the summerhouse; when she investigates, she sees her father sitting there--apparently dead. Others see nothing there and tell her she must have imagined it. She later sees his body in the library, then in the pool. She comes to believe that her stepmother and her father's friend, Doctor Pierre Gerard, are plotting to drive her insane. She gets a sympathetic ear from Bob, the chauffeur, who feels that there must be some rational explanation for what has been happening. —garykmcd"}, 5: {'title': 'Pen choo kab pee', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMDdkNDAwMTQtMWUwZi00ZDliLTg5MTAtYjg1MGI3ZjcwZDlmXkEyXkFqcGdeQXVyNjAzNDg0MzY@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror Mystery Romance', 'storyline': "Nualjan's life took a happy turn when violin player Chob arrived in her village Cholburi. It was love at first sight and she got pregnant. Then Chob told her he will leave for business to Bangkok for a few days. He will be back soon he promised, but Chob never came back. Now, months later, Nualjan can't wait any longer and decides to search for him. On her way to Bangkok, she arrives at a mysterious pension. Supervisor miss Somjit refuses to let the very pregnant Nualjan stay at first however. She finally relents, but demands that she stays away from the main house, where the owner madame Ranjuan resides. Nualjan soon finds out there's something going on on the premises. Why does she see moving shadows? Who is the man cutting wood in the middle of the night, who is the old woman living in a garden shed? Only Choy, another guest, seems interested in her and is willing to tell about the disturbing peculiarities of the estate. But not everything. —Arnoud Tiele (imdb@tiele.nl)Nualjan's life took a happy turn when violin player Chob arrived in her village Cholburi. It was love at first sight and she got pregnant. Then Chob told her he will leave for business to Bangkok for a few days. He will be back soon he promised, but Chob never came back. Now, months later, Nualjan can't wait any longer and decides to search for him. On her way to Bangkok, she arrives at a mysterious pension. Supervisor miss Somjit refuses to let the very pregnant Nualjan stay at first however. She finally relents, but demands that she stays away from the main house, where the owner madame Ranjuan resides. Nualjan soon finds out there's something going on on the premises. Why does she see moving shadows? Who is the man cutting wood in the middle of the night, who is the old woman living in a garden shed? Only Choy, another guest, seems interested in her and is willing to tell about the disturbing peculiarities of the estate. But not everything. —Arnoud Tiele (imdb@tiele.nl)"}, 6: {'title': 'Spasmo', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNGY4NWRkZTItNGE3ZS00NzcyLWIwOWYtM2EwNzk5YTQyMzRhXkEyXkFqcGdeQXVyMjA0MzYwMDY@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi1929446169', 'genres': 'Horror Mystery Thriller', 'storyline': "Christian (Robert Hoffman) and his girlfriend are taking a walk on a deserted beach when they discover a woman's body lying on the sand; a closer look proves that she's alive. The next day Christian meets her again at a yacht party and they fall in love. Later, at a nearby motel, they're preparing to go to bed together when an intruder breaks in and starts beating Christian, who accidentally shoots him with his own gun. A few hours later they finds out that the corpse is missing, and weird incidents start happening. —ØrnåsChristian (Robert Hoffman) and his girlfriend are taking a walk on a deserted beach when they discover a woman's body lying on the sand; a closer look proves that she's alive. The next day Christian meets her again at a yacht party and they fall in love. Later, at a nearby motel, they're preparing to go to bed together when an intruder breaks in and starts beating Christian, who accidentally shoots him with his own gun. A few hours later they finds out that the corpse is missing, and weird incidents start happening. —Ørnås"}, 7: {'title': 'Slub doskonaly', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYTNkYWFlOGYtYTc2MC00MDk2LWIxOTgtZDQ0MzUwZjRmMDcyXkEyXkFqcGdeQXVyMTEwMTY3NDI@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi322028825', 'genres': 'Comedy Romance', 'storyline': "This wedding didn't go well from the start. The bride is pregnant and her possessive mommy doesn't want to hear about the baby's real father. The groom basically does not know his future wife, and he was forced to marry by eloquent blackmail by his future mother-in-law. When the wedding day arrives, a real avalanche of events sets in. The groom wakes up in the bridal suite with a gigantic headache after a lavish bachelor party with a woman he doesn't know. There is a knock on the door, you must act quickly and hide your mistress in the bathroom. Luckily, it's just the best man. Unfortunately, a moment later, the future bride and her mother burst into the same room. If both men want to get out of the predicament, they must quickly come up with an alternative version of events. However, this only makes matters worse, because with each lie they fall into the next. It soon turns out that everyone here has something to hide. This day starts to look dangerously like the biggest disaster in the life of the future mother-in-law, father-in-law, witness, wedding planner and everyone around. The trouble that awaits them and getting out of it will seem like an impossible twist. And even if they succeed, it will only be a second of silence before the storm and a prelude to what lies ahead. One thing seems certain: this wedding will be talked about for a long time. Just a question... is it like Mommy wanted? —G"}, 8: {'title': 'Something Waits', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOWUyNjMwZmEtNDdkZC00MjhlLWI3N2UtZjczODliMjUzNmQxXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Horror Short', 'storyline': "A newly married couple buy a large fixer-upper. They're not quite sure why they received such a good deal on the house but soon find out that it's because of rumors of a murder that happened long ago. When the husband is called away on business, his young wife is left alone to finish moving in. As the night unfolds, she begins noticing odd things happening in the house. She dismisses them as her imagination. Is it just her imagination or is it really the ghost of another young wife? Only time will tell if she survives the night. —Heath CrawfordA newly married couple buy a large fixer-upper. They're not quite sure why they received such a good deal on the house but soon find out that it's because of rumors of a murder that happened long ago. When the husband is called away on business, his young wife is left alone to finish moving in. As the night unfolds, she begins noticing odd things happening in the house. She dismisses them as her imagination. Is it just her imagination or is it really the ghost of another young wife? Only time will tell if she survives the night. —Heath Crawford"}, 9: {'title': 'The Intestine', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYmMyNGIxYmEtNDEyNC00Nzg5LWJlMDQtOWNmNTQ2MGFkMWEzXkEyXkFqcGdeQXVyNzMwOTk0Ng@@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi1431091993', 'genres': 'Drama', 'storyline': "After a one night stand, a young woman (Maya) awakes to find she is alone in a luxurious house. There is no sign of her boyfriend from the night before, but she starts enjoying the luxury of her surroundings and has no desire to go back to the dump she shared with her drug-addicted mother. So she settles right in. After a few days, the missing boyfriend's sister shows up and it becomes apparent that Maya will do whatever it takes to claim this home as her own. Then things get rather interesting.After a one night stand, a young woman (Maya) awakes to find she is alone in a luxurious house. There is no sign of her boyfriend from the night before, but she starts enjoying the luxury of her surroundings and has no desire to go back to the dump she shared with her drug-addicted mother. So she settles right in. After a few days, the missing boyfriend's sister shows up and it becomes apparent that Maya will do whatever it takes to claim this home as her own. Then things get rather interesting."}}]
+[ 2024-07-12 00:32:33,850  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:32:33] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-12 00:34:42,737  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-12 00:34:42,745  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [best, action, movies, hero, dies, heroine, le...]
+[ 2024-07-12 00:34:42,745  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-12 00:34:42,916  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-12 00:34:42,916  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-12 00:34:42,917  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-12 00:34:42,917  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-12 00:34:42,918  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-12 00:34:42,918  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-12 00:34:42,919  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[-2.66559458e+00  2.18739271e+00 -6.60757780e-01  9.87063706e-01
+  -9.32111263e-01  5.22480488e-01  8.70668739e-02 -1.18368185e+00
+  -6.21717870e-01 -1.64306294e-02  7.32946754e-01  9.59981561e-01
+  -1.71756709e+00 -1.49099827e+00  3.63556266e-01 -8.35295320e-01
+  -8.53569448e-01  1.80986381e+00 -1.59377456e+00 -1.87588739e+00
+  -1.75529373e+00  1.41244328e+00  1.91415238e+00  5.33416569e-01
+  -4.81171906e-01  4.68420267e-01 -1.04605544e+00 -5.88898838e-01
+   7.08850995e-02  1.08182335e+00 -6.40435755e-01  2.29461506e-01
+   4.12982553e-01 -1.30059278e+00 -1.68170190e+00  6.17451668e-01
+   1.08516908e+00 -1.17563710e-01 -6.49840236e-01 -3.20571989e-01
+  -1.16109185e-01 -4.22995389e-01  3.89002562e-01  3.77311587e-01
+  -5.37061512e-01 -2.59854674e-01 -5.73768854e-01  1.41331100e+00
+   1.03755867e+00  1.36582327e+00 -5.88162422e-01  6.00173891e-01
+  -2.76924372e-01  5.83296597e-01 -6.04791045e-01 -8.86507809e-01
+   1.31073967e-01 -2.65916675e-01  4.10949260e-01 -1.40018904e+00
+   3.28219384e-02 -9.56500232e-01  1.62763461e-01 -6.19347513e-01
+   1.20211852e+00  6.83540851e-02  1.04911244e+00  3.96813415e-02
+  -5.36047161e-01  3.46039802e-01 -5.12836039e-01 -1.27162039e-03
+  -1.40509173e-01 -1.89209974e+00  3.72217596e-01 -1.38522506e+00
+  -5.41883409e-01  1.59125283e-01 -1.67598295e+00  6.83082402e-01
+   5.64035058e-01  7.38626122e-01  1.22836077e+00 -2.75669485e-01
+  -4.78197157e-01  6.21482253e-01 -4.91496980e-01 -2.13226303e-01
+  -1.01995182e+00 -1.96306705e-01  5.28559625e-01  4.36533421e-01
+   1.31346369e+00  2.64945239e-01 -5.98225355e-01  1.95135438e+00
+   8.74470472e-01 -2.69888341e-01 -4.29271817e-01 -1.32474294e-02]]]
+[ 2024-07-12 00:34:42,919  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-12 00:35:10,175  145 COMPONENTS - INFO - Unnamed: 0.2                                                90940
+Unnamed: 0.1                                                90940
+Unnamed: 0                                                  97346
+title                    Remo Williams 2: The Adventure Continues
+genres                                    Action Adventure Comedy
+videos                                                         []
+url                         https://www.imdb.com/title/tt6772978/
+poster_url                                                       
+storyline       A hero who doesn't exist must save America fro...
+description     ['action', 'adventure', 'comedy', 'hero', 'doe...
+Name: 90940, dtype: object]
+[ 2024-07-12 00:35:10,176  145 COMPONENTS - INFO - Unnamed: 0.2                                               212484
+Unnamed: 0.1                                               212484
+Unnamed: 0                                                 240002
+title                                                 Joe Vampire
+genres                                                     Horror
+videos          [{'link': 'https://www.imdb.com/video/vi165836...
+url                         https://www.imdb.com/title/tt2672090/
+poster_url      https://www.imdb.com/title/tt2672090/mediaview...
+storyline       A Life he never asked for, A Curse he didn't w...
+description     ['horror', 'life', 'never', 'asked', 'curse', ...
+Name: 212484, dtype: object]
+[ 2024-07-12 00:35:11,595  145 COMPONENTS - INFO - Unnamed: 0.2                                               217995
+Unnamed: 0.1                                               217995
+Unnamed: 0                                                 246802
+title                                 Savulun Battal Gazi Geliyor
+genres                                           Action Adventure
+videos                                                         []
+url                         https://www.imdb.com/title/tt0282140/
+poster_url      https://www.imdb.com/title/tt0282140/mediaview...
+storyline       After his family is killed in front of his eye...
+description     ['action', 'adventure', 'family', 'killed', 'f...
+Name: 217995, dtype: object]
+[ 2024-07-12 00:35:13,025  145 COMPONENTS - INFO - Unnamed: 0.2                                                24051
+Unnamed: 0.1                                                24051
+Unnamed: 0                                                  24607
+title                               Memphis Rising: Elvis Returns
+genres          Action Adventure Comedy Drama Fantasy Musical ...
+videos                                                         []
+url                         https://www.imdb.com/title/tt1265295/
+poster_url      https://www.imdb.com/title/tt1265295/mediaview...
+storyline       It's been almost 30 years since the King died....
+description     ['action', 'adventure', 'comedy', 'drama', 'fa...
+Name: 24051, dtype: object]
+[ 2024-07-12 00:35:14,339  145 COMPONENTS - INFO - Unnamed: 0.2                                               109287
+Unnamed: 0.1                                               109287
+Unnamed: 0                                                 118263
+title                                                        Asso
+genres                                       Comedy Crime Fantasy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0082034/
+poster_url      https://www.imdb.com/title/tt0082034/mediaview...
+storyline       Asso, THE best poker-player in town, was kille...
+description     ['comedy', 'crime', 'fantasy', 'asso', 'best',...
+Name: 109287, dtype: object]
+[ 2024-07-12 00:35:15,735  145 COMPONENTS - INFO - Unnamed: 0.2                                               105793
+Unnamed: 0.1                                               105793
+Unnamed: 0                                                 114268
+title                                                   War Weary
+genres                                                     Action
+videos                                                         []
+url                         https://www.imdb.com/title/tt5848902/
+poster_url      https://www.imdb.com/title/tt5848902/mediaview...
+storyline       And though a soldier may return from war, the ...
+description     ['action', 'though', 'soldier', 'may', 'return...
+Name: 105793, dtype: object]
+[ 2024-07-12 00:35:17,335  145 COMPONENTS - INFO - Unnamed: 0.2                                                77267
+Unnamed: 0.1                                                77267
+Unnamed: 0                                                  82073
+title                                                      Butter
+genres                                                     Action
+videos                                                         []
+url                        https://www.imdb.com/title/tt11651248/
+poster_url      https://www.imdb.com/title/tt11651248/mediavie...
+storyline       Betrayed and left for dead Butter seeks reveng...
+description     ['action', 'betrayed', 'left', 'dead', 'butter...
+Name: 77267, dtype: object]
+[ 2024-07-12 00:35:18,621  145 COMPONENTS - INFO - Unnamed: 0.2                                                61050
+Unnamed: 0.1                                                61050
+Unnamed: 0                                                  64210
+title                                            Ultraman: Rising
+genres          Animation Action Adventure Comedy Family Fanta...
+videos          [{'link': 'https://www.imdb.com/video/vi128934...
+url                         https://www.imdb.com/title/tt9471678/
+poster_url      https://www.imdb.com/title/tt9471678/mediaview...
+storyline       Ken Sato, a superstar baseball player who retu...
+description     ['animation', 'action', 'adventure', 'comedy',...
+Name: 61050, dtype: object]
+[ 2024-07-12 00:35:19,984  145 COMPONENTS - INFO - Unnamed: 0.2                                               151277
+Unnamed: 0.1                                               151277
+Unnamed: 0                                                 166974
+title                                               Killing Cupid
+genres                          Action Comedy Crime Drama Romance
+videos                                                         []
+url                         https://www.imdb.com/title/tt0389073/
+poster_url      https://www.imdb.com/title/tt0389073/mediaview...
+storyline       When Valenitine, a lifelong assassin, tries to...
+description     ['action', 'comedy', 'crime', 'drama', 'romanc...
+Name: 151277, dtype: object]
+[ 2024-07-12 00:35:20,950  145 COMPONENTS - INFO - Unnamed: 0.2                                               215469
+Unnamed: 0.1                                               215469
+Unnamed: 0                                                 243693
+title                                                   Valor Cat
+genres               Animation Short Action Comedy Musical Sci-Fi
+videos                                                         []
+url                         https://www.imdb.com/title/tt4607438/
+poster_url      https://www.imdb.com/title/tt4607438/mediaview...
+storyline       My 3rd year Calarts film! Valor Cat (secretly ...
+description     ['animation', 'short', 'action', 'comedy', 'mu...
+Name: 215469, dtype: object]
+[ 2024-07-12 00:35:22,419  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Remo Williams 2: The Adventure Continues', 'poster_url': '', 'videos': '', 'genres': 'Action Adventure Comedy', 'storyline': "A hero who doesn't exist must save America from another enemy we never knew we had.A hero who doesn't exist must save America from another enemy we never knew we had."}, 1: {'title': 'Joe Vampire', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNDEyMTcyMzQ3MV5BMl5BanBnXkFtZTgwMjIxNDY4ODE@._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi1658369561', 'genres': 'Horror', 'storyline': "A Life he never asked for, A Curse he didn't want. When a Civil War soldier is left to die after being attacked by a Vampire, he's given a choice, turn or die. Now, after decades of being undead, Joe finally has something to live for when he crosses paths with a beautiful woman who is fascinated with his life. But when an old foe returns, will Joe be able to protect the one he loves, or watch as he looses all he's grown to care about, again. —Mike LeesA Life he never asked for, A Curse he didn't want. When a Civil War soldier is left to die after being attacked by a Vampire, he's given a choice, turn or die. Now, after decades of being undead, Joe finally has something to live for when he crosses paths with a beautiful woman who is fascinated with his life. But when an old foe returns, will Joe be able to protect the one he loves, or watch as he looses all he's grown to care about, again. —Mike Lees"}, 2: {'title': 'Savulun Battal Gazi Geliyor', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOTQ4MDQ5NDktMWRmNy00ZjliLWI4YTktODI0NGY3MGQxODNiXkEyXkFqcGdeQXVyMjExNjgyMTc@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action Adventure', 'storyline': "After his family is killed in front of his eyes, little Seyit Battal grows up to be the nightmare of Byzantine's Black Knighthood.After his family is killed in front of his eyes, little Seyit Battal grows up to be the nightmare of Byzantine's Black Knighthood."}, 3: {'title': 'Memphis Rising: Elvis Returns', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BYWFkOTI2MmQtNzM4Zi00MmU5LThmMTEtMWFhMDA1OWEzZDBiXkEyXkFqcGdeQXVyMTIwOTQ2ODg@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action Adventure Comedy Drama Fantasy Musical Sci-Fi', 'storyline': "It's been almost 30 years since the King died. But was he really dead? In 1977, he was whisked away to another galaxy, but now, the King returns. As he doesn't want anyone to know who he really is, he enters an Elvis impersonator contest in Las Vegas. And the trouble begins... —AnonymousIt's been almost 30 years since the King died. But was he really dead? In 1977, he was whisked away to another galaxy, but now, the King returns. As he doesn't want anyone to know who he really is, he enters an Elvis impersonator contest in Las Vegas. And the trouble begins... —Anonymous"}, 4: {'title': 'Asso', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMzRmZjBlYTUtMGJlOS00Mjc0LThlZmUtZTFjMzliN2FhMzdjXkEyXkFqcGdeQXVyNjc5MjcxNDg@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Comedy Crime Fantasy', 'storyline': "Asso, THE best poker-player in town, was killed in his wedding night, because he won too much against a bad loser. In the 'final' game in heaven the clerk on duty also lost, so Asso can come back to this world as a ghost to search for a good man for his wife (widow). Who is good enough for the wife of Asso ? —Buzanich Christian <h522t4@edv2.boku.ac.at>Asso, THE best poker-player in town, was killed in his wedding night, because he won too much against a bad loser. In the 'final' game in heaven the clerk on duty also lost, so Asso can come back to this world as a ghost to search for a good man for his wife (widow). Who is good enough for the wife of Asso ? —Buzanich Christian <h522t4@edv2.boku.ac.at>"}, 5: {'title': 'War Weary', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZTA3YTk3YzktMjkyNC00ZTQ2LTg0ZjgtMmIzODBjMzUxZTIyXkEyXkFqcGdeQXVyNTY2MTg3Nzg@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action', 'storyline': 'And though a soldier may return from war, the war may never leave him.And though a soldier may return from war, the war may never leave him.'}, 6: {'title': 'Butter', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BOGIxYTFlOWQtNDk5NC00YWYyLThmNWEtZjJjZTczOWNiNTU5XkEyXkFqcGdeQXVyNDc5NjQzMjY@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action', 'storyline': 'Betrayed and left for dead Butter seeks revenge on those who shot her and left her for dead? She learned most her skills as a young girl from her father who was a hit man for the CIA. Running away from home at the age of 16 "Butter" was rescued from the streets by Ms. B. A lady who over time she looked at as a mother figure and mentor. Getting to that place in her life where she did not want to kill anymore she turned to drinking and doing drugs. The biggest mistake she made was leaving the family, Ms. B\'s family.Betrayed and left for dead Butter seeks revenge on those who shot her and left her for dead? She learned most her skills as a young girl from her father who was a hit man for the CIA. Running away from home at the age of 16 "Butter" was rescued from the streets by Ms. B. A lady who over time she looked at as a mother figure and mentor. Getting to that place in her life where she did not want to kill anymore she turned to drinking and doing drugs. The biggest mistake she made was leaving the family, Ms. B\'s family.'}, 7: {'title': 'Ultraman: Rising', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNDE2NzQ5N2YtMTlkNy00ODI2LWEyZDctODY4OTgxMWMxYmE2XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg', 'videos': 'https://www.imdb.com/video/vi1289340441', 'genres': 'Animation Action Adventure Comedy Family Fantasy Sci-Fi', 'storyline': 'Ken Sato, a superstar baseball player who returns to Japan to become the latest hero to carry the mantle of Ultraman. His plans go awry, however, when he is compelled to raise a newborn kaiju monster the offspring of his greatest enemy as his own child. Sato will also have to contend with his relationship with his estranged father and the schemes of the Kaiju Defense Force.Ken Sato, a superstar baseball player who returns to Japan to become the latest hero to carry the mantle of Ultraman. His plans go awry, however, when he is compelled to raise a newborn kaiju monster the offspring of his greatest enemy as his own child. Sato will also have to contend with his relationship with his estranged father and the schemes of the Kaiju Defense Force.'}, 8: {'title': 'Killing Cupid', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMDA4OTRkMTQtNzQwNi00NWRhLWFhMTctMTFjZTA3MmRjZDI5XkEyXkFqcGdeQXVyNjU0NTI0Nw@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action Comedy Crime Drama Romance', 'storyline': 'When Valenitine, a lifelong assassin, tries to leave her old life behind, she enters a world that may be stranger than the one she just left. Searching for the son of a man she has killed she finds the road paved with good intentions can sometimes still have potholes...When Valenitine, a lifelong assassin, tries to leave her old life behind, she enters a world that may be stranger than the one she just left. Searching for the son of a man she has killed she finds the road paved with good intentions can sometimes still have potholes...'}, 9: {'title': 'Valor Cat', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMmE3NzllZWYtNTgxOS00MWUxLTgwYWMtM2QyODhhYWM3MzdiXkEyXkFqcGdeQXVyMjc1ODkyMA@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Animation Short Action Comedy Musical Sci-Fi', 'storyline': "My 3rd year Calarts film! Valor Cat (secretly Mayor Mark Bristle) is the hero of Valor City. John Sci is Valor Cat's best friend and the man who gave him his powers. Burmac is a robot that Valor Cat thought he killed. He has recently repaired himself and is planning to take down Valor Cat with the only thing that could possibly stop him. This is the story of Burmac's revenge. A story so theatrical and over the top that it can only be expressed.... in song....My 3rd year Calarts film! Valor Cat (secretly Mayor Mark Bristle) is the hero of Valor City. John Sci is Valor Cat's best friend and the man who gave him his powers. Burmac is a robot that Valor Cat thought he killed. He has recently repaired himself and is planning to take down Valor Cat with the only thing that could possibly stop him. This is the story of Burmac's revenge. A story so theatrical and over the top that it can only be expressed.... in song...."}}]
+[ 2024-07-12 00:35:22,529  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:35:22] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-12 00:35:22,540  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:35:22] "[36mGET /static/images/comedy2.jpeg HTTP/1.1[0m" 304 -]

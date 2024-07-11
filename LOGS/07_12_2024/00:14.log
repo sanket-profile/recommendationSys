@@ -1,0 +1,37 @@
+[ 2024-07-12 00:14:35,217  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-12 00:14:35,225  97 werkzeug - INFO -  * Debugger PIN: 521-569-415]
+[ 2024-07-12 00:14:38,856  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-12 00:14:38,867  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                description
+0  [best, action, movie, ]]
+[ 2024-07-12 00:14:38,867  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-12 00:14:39,135  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-12 00:14:39,135  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-12 00:14:39,136  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-12 00:14:39,136  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-12 00:14:39,148  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-12 00:14:39,148  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-12 00:14:39,150  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 2.3577964   1.0527701   0.55988014  0.6262692  -1.9419683   2.2951498
+  -3.4063492   0.54158515 -0.05533583 -0.26941258  0.61886877 -1.1335912
+  -1.2750558  -1.4116198  -0.4752781   0.10612731  1.376627   -0.14086312
+   2.7348285  -0.00579043 -1.5915775   0.44950888  2.9547815   0.9889349
+  -1.3108745  -0.01364548 -1.0349785  -0.76454353  0.9881367  -0.54695183
+   0.00569606  1.1047791  -0.73358727 -1.2029119   0.27421686 -0.17182107
+  -0.07898508  1.1042581  -1.1282525   0.12973104 -0.2600188   0.2989558
+  -0.7261864   0.47508132 -0.9420349  -0.768335    0.19912168  0.6422282
+  -0.7256462   0.10154692  0.767484    0.9116811   1.2694328  -1.0459938
+   0.01781892  0.06713367 -0.20592412 -0.4615738  -0.3693686  -0.13976878
+  -0.7981899   0.36017954  0.2182372   0.303383   -0.18732932  0.9481977
+   0.8061931  -0.8131024  -0.7128197  -0.696267    0.33325207  2.1656218
+  -0.88766617  0.3764921   0.54468983  1.3991774   1.5477519  -0.7713346
+   0.30277097 -0.8970977   0.86529595 -0.85975343  0.9477871  -1.3256893
+  -0.49050403 -0.14804144  0.43462512 -0.7310053   0.85026276  1.3586047
+   0.43288022  1.7048806   0.931316    0.6429419  -0.9378005  -1.1401876
+   0.01439285  0.6943346   0.08017597  0.00919129]]]
+[ 2024-07-12 00:14:39,150  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-12 00:14:56,841  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: {'title': 'Detonator', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMTk5NzcwNjYxN15BMl5BanBnXkFtZTcwMjgzMjcxMQ@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}, 1: {'title': 'Liverpool Football Club vs Tottenham Hotspur Football Club', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BNzgzODM5MDctOGZlZC00NmJmLThmN2MtYTlkOGRhZGYxMTVhXkEyXkFqcGdeQXVyMTA0NTY0NTYy._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}, 2: {'title': 'Crosshairs', 'poster_url': '', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}, 3: {'title': 'Champion', 'poster_url': '', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}, 4: {'title': 'L.A. Connection', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZTJjM2ZjYWUtODYwZi00ODQ3LWI1N2UtOGE2YjgxYTczMTQ5XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}, 5: {'title': 'What is it for a man to gain the world and lose his soul', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMWUwZWQ1ODItNDk2Zi00ZTQ2LThhYzktMzU2YTllOWFlNWYzXkEyXkFqcGdeQXVyMTAyNjg5NDc5._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}, 6: {'title': 'Brentford - Manchester City', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BZWNlZjg1OWMtZDYwMy00MTJhLTg3MzMtZDcyZjBhOWMxNGMzXkEyXkFqcGdeQXVyMTA0NTY0NTYy._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}, 7: {'title': 'Has Fallen 5', 'poster_url': '', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}, 8: {'title': 'OMC: The Movie', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BM2Y0NTNhN2ItZjY4Mi00ZDNiLWJlMGItMWE5MDMyMWE3MDUyXkEyXkFqcGdeQXVyMTE5OTU4NjE3._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}, 9: {'title': 'Abraxas: Day of the Warrior', 'poster_url': 'https://m.media-amazon.com/images/M/MV5BMzcyZTZiNzMtYzcxOC00MDcxLWI0YjItMjk5NDQzZTg2MDU1XkEyXkFqcGdeQXVyMDA1NzM3OA@@._V1_FMjpg_UX1000_.jpg', 'videos': '', 'genres': 'Action', 'storyline': "['action', '']"}}]
+[ 2024-07-12 00:14:56,991  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:14:56] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-12 00:14:57,008  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:14:57] "[36mGET /static/images/action2.jpeg HTTP/1.1[0m" 304 -]
+[ 2024-07-12 00:14:57,008  97 werkzeug - INFO - 127.0.0.1 - - [12/Jul/2024 00:14:57] "[36mGET /static/images/comedy4.jpeg HTTP/1.1[0m" 304 -]
+[ 2024-07-12 00:15:39,711  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/recommendationSystem/src/pipelines/prediction_pipeline.py', reloading]

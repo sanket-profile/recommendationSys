@@ -1,0 +1,182 @@
+[ 2024-07-09 23:04:01,073  97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[ 2024-07-09 23:04:01,073  97 werkzeug - INFO - [33mPress CTRL+C to quit[0m]
+[ 2024-07-09 23:04:01,073  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:04:02,103  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-09 23:04:02,113  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-09 23:04:20,316  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 23:04:20] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-09 23:05:06,960  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 23:05:06] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-09 23:05:20,413  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 23:05:20,429  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :            titleDesc
+0  [mens, underwear]]
+[ 2024-07-09 23:05:20,429  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 23:05:20,651  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 23:05:20,651  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 23:05:20,653  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [titleDesc]
+Index: []]
+[ 2024-07-09 23:05:20,653  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-09 23:05:20,669  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-09 23:05:20,669  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-09 23:05:20,672  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[-0.11719945 -6.6512923  -0.5515511  -2.5223799  -2.924741    0.44488946
+   1.367731   -0.14216521 -0.76677006 -1.9788312   1.05248    -2.8531582
+   2.0431437   1.4899619  -1.2435586  -0.7876358  -4.298797    3.3417804
+   1.4053121  -2.3385623   1.3751019  -1.287996   -1.4205375   0.900842
+  -0.74974626  2.3951373   1.0821799   0.39695773 -1.1141487   2.4403188
+   0.3290389  -0.2638564  -0.66627675 -0.6586204  -0.6652517   0.714987
+  -0.35328326 -0.96288896 -1.2750584   0.44495106  0.9099158  -0.2621393
+  -0.53132635  0.5578942  -1.2968313  -0.16864127  0.5338236   0.06556265
+  -0.8611366   1.1037625  -0.08009888 -1.3274441  -1.3381101  -0.5894224
+   0.54423594 -0.00693579 -1.2064867   0.968383   -0.59620875  0.11095837
+  -1.2427864  -1.396327    0.3978705   0.2420741   0.89791197  0.433355
+   0.2142182   0.330387   -0.6671844  -1.530665   -0.9953041   0.13657558
+   0.39803126 -0.92481    -0.6084167  -1.3477792  -0.19184427 -0.84195054
+  -1.4561907  -0.6812796   1.7416085  -1.4588368   0.522578   -0.7150534
+   0.25895816 -0.41070026  0.17163794  0.17606013 -0.86095834  0.83692133
+  -0.69481325  0.60633814  0.36396396 -0.36771724 -0.8159036   0.4324746
+   0.7106088  -0.08994834  0.01205135 -0.24399541]]]
+[ 2024-07-09 23:05:20,672  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-09 23:05:29,614  61 COMPONENTS - INFO - Found top 10 similar products and they are ['neartime mens underwear boxer briefs casual underpants man', 'saxx underwear co mens kinetic boxer', 'mens 4pack fashion boxer briefs underwear luk blackwarm redkhakilimeade medium', 'makeiit mens boxer briefs underwear low rise men', 'js collections jinshi ride boxer briefs underwear men long leg mens athletic underpants pack print4 xxxlarge', 'rusaevon mens 6pack classic underwear cotton stretch boxer brief', 'tapuu mens underwear bamboo cooling boxer briefs l', 'deenrsee mens underwear micro modal boxers multipack stretchy men sexy briefs tagless fit trunks c1 xlarge x_l', 'mens 4pack fashion boxer briefs underwear luk blackcobaltorangedark grey xlarge', 'winday mens openwork mesh boxer briefs breathable underwear b1686']]
+[ 2024-07-09 23:05:29,635  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 23:05:29] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-09 23:06:09,635  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 23:06:09,642  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :   titleDesc
+0    [food]]
+[ 2024-07-09 23:06:09,642  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 23:06:09,738  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 23:06:09,738  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 23:06:09,739  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [titleDesc]
+Index: []]
+[ 2024-07-09 23:06:09,739  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-09 23:06:09,742  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-09 23:06:09,742  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-09 23:06:09,751  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 5.6258497  -3.198281    2.7390172   1.3326443  -1.2481315   0.27672407
+  -1.8365709  -0.9311181  -1.930087    1.4987224  -2.8918617   0.82913107
+  -0.51721424 -0.72118944 -0.29087192 -0.8064465  -2.0132015   0.34119067
+   0.6377455  -0.8965967   2.8431003  -0.4111679   0.01771859  0.21887645
+   1.1747607  -1.1549817   0.12618236 -1.3479043   0.15285158 -0.33563015
+   0.25667414  1.2034502  -0.3051314  -0.8321902  -1.5225273  -2.0783763
+  -0.76899606 -0.18463673  0.7354534   0.21490005 -0.5997611   2.5123508
+  -0.73431164 -0.6098953  -0.15757248 -2.9665143  -1.2717099  -1.0520186
+   0.38250905  0.26381668 -0.17211092 -0.13622047  1.9307297   1.25507
+   0.64400834  0.34516585 -0.16289495 -1.1821804   0.03567859 -1.4032158
+   0.016834    0.92554677 -0.87733406  0.45278794  0.07484508  1.0659157
+   0.6429411   0.48339853  0.7992527  -0.96858597 -0.12158012  0.75343764
+  -1.0504084   1.562131   -0.44663435 -0.6076681  -0.85097617 -0.588986
+  -0.64785355  0.2721266  -1.4637312  -0.04800581  1.4103519  -0.07004029
+   1.7309374   0.2684469  -0.1960631  -1.0954936  -0.56950516 -0.4912753
+  -1.0325787   0.39063507 -1.5141113  -0.7653479  -0.6052139  -0.62747324
+  -0.28946912  0.7423567  -0.4522548  -0.2656034 ]]]
+[ 2024-07-09 23:06:09,751  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-09 23:06:18,639  61 COMPONENTS - INFO - Found top 10 similar products and they are ['100 pcs disposable clear vinyl gloves pet care food handling dental catering', 'juchen bigfoot forest waterproof apron novelty kitchen creative cooking baking party aprons men women ull function used decoration wedding pub  high quality let family immersed joy enhance experience dirty put washing machine', 'essort 100pcs disposable gloves medium pvc food handling grade cleaning large', 'omega psi phi seamless anti dust mouth cover face scarf filter washable reusable erfect daily life bus metro sporting cycling running hiking climbing protectors pollen procedure gardening work pet grooming home cleaning restaurant etcawesome present cleaner builder farmer waiter student also nice gift choice painting nail salons uses etc gifts holidays christmas halloween thanksgiving day birthday', 'nitrile gloves medium  100 count powder free rubber disposable latex medical use food servicecooking cleaning', 'poly disposable aprons 28 x 46 polyethylene latexfree safety protectors  2 mil sleeveless blue apron perfect food service janitorial laboratory industrial use 100 per box', 'goat jordan fan club premium sticker set waterproof uv protected decal pro shop accessories gifts', 'walk diary disposable gloves dishwashing food grade vinyl plastic alk', '500 pcs 55x 39 disposable waterproof hair cutting capes salons hairdressing barber shop apron home use  coloringtransparent 500pcs', 'aakihi grill gifts men  funny grilling apron dad husband el jefe black bbq waterproof adjustable pockets fathers day large e always hope use products create variety colorful memories customerswe believe small gift add color lives people lovechoose like perhaps fill unexpected happiness']]
+[ 2024-07-09 23:06:18,659  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 23:06:18] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-09 23:06:24,631  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 23:06:24,637  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :   titleDesc
+0     [oov]]
+[ 2024-07-09 23:06:24,637  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 23:06:24,688  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 23:06:24,688  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 23:06:24,700  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 23:06:24] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2024-07-09 23:06:26,086  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 23:06:26,090  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :   titleDesc
+0     [oov]]
+[ 2024-07-09 23:06:26,090  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 23:06:26,143  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 23:06:26,144  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 23:06:26,149  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 23:06:26] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2024-07-09 23:06:26,858  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 23:06:26,864  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :   titleDesc
+0     [oov]]
+[ 2024-07-09 23:06:26,864  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 23:06:26,931  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 23:06:26,931  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 23:06:26,938  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 23:06:26] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2024-07-09 23:06:27,406  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 23:06:27,410  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :   titleDesc
+0     [oov]]
+[ 2024-07-09 23:06:27,410  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 23:06:27,467  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 23:06:27,467  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 23:06:27,474  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 23:06:27] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2024-07-09 23:06:27,938  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 23:06:27,942  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :   titleDesc
+0     [oov]]
+[ 2024-07-09 23:06:27,942  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 23:06:27,993  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 23:06:27,994  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 23:06:28,001  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 23:06:28] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2024-07-09 23:06:33,213  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 23:06:33,218  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :   titleDesc
+0    [food]]
+[ 2024-07-09 23:06:33,219  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 23:06:33,265  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 23:06:33,266  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 23:06:33,269  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [titleDesc]
+Index: []]
+[ 2024-07-09 23:06:33,269  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-09 23:06:33,270  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-09 23:06:33,271  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-09 23:06:33,281  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 5.6258497  -3.198281    2.7390172   1.3326443  -1.2481315   0.27672407
+  -1.8365709  -0.9311181  -1.930087    1.4987224  -2.8918617   0.82913107
+  -0.51721424 -0.72118944 -0.29087192 -0.8064465  -2.0132015   0.34119067
+   0.6377455  -0.8965967   2.8431003  -0.4111679   0.01771859  0.21887645
+   1.1747607  -1.1549817   0.12618236 -1.3479043   0.15285158 -0.33563015
+   0.25667414  1.2034502  -0.3051314  -0.8321902  -1.5225273  -2.0783763
+  -0.76899606 -0.18463673  0.7354534   0.21490005 -0.5997611   2.5123508
+  -0.73431164 -0.6098953  -0.15757248 -2.9665143  -1.2717099  -1.0520186
+   0.38250905  0.26381668 -0.17211092 -0.13622047  1.9307297   1.25507
+   0.64400834  0.34516585 -0.16289495 -1.1821804   0.03567859 -1.4032158
+   0.016834    0.92554677 -0.87733406  0.45278794  0.07484508  1.0659157
+   0.6429411   0.48339853  0.7992527  -0.96858597 -0.12158012  0.75343764
+  -1.0504084   1.562131   -0.44663435 -0.6076681  -0.85097617 -0.588986
+  -0.64785355  0.2721266  -1.4637312  -0.04800581  1.4103519  -0.07004029
+   1.7309374   0.2684469  -0.1960631  -1.0954936  -0.56950516 -0.4912753
+  -1.0325787   0.39063507 -1.5141113  -0.7653479  -0.6052139  -0.62747324
+  -0.28946912  0.7423567  -0.4522548  -0.2656034 ]]]
+[ 2024-07-09 23:06:33,282  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-09 23:06:42,273  61 COMPONENTS - INFO - Found top 10 similar products and they are ['100 pcs disposable clear vinyl gloves pet care food handling dental catering', 'juchen bigfoot forest waterproof apron novelty kitchen creative cooking baking party aprons men women ull function used decoration wedding pub  high quality let family immersed joy enhance experience dirty put washing machine', 'essort 100pcs disposable gloves medium pvc food handling grade cleaning large', 'omega psi phi seamless anti dust mouth cover face scarf filter washable reusable erfect daily life bus metro sporting cycling running hiking climbing protectors pollen procedure gardening work pet grooming home cleaning restaurant etcawesome present cleaner builder farmer waiter student also nice gift choice painting nail salons uses etc gifts holidays christmas halloween thanksgiving day birthday', 'nitrile gloves medium  100 count powder free rubber disposable latex medical use food servicecooking cleaning', 'poly disposable aprons 28 x 46 polyethylene latexfree safety protectors  2 mil sleeveless blue apron perfect food service janitorial laboratory industrial use 100 per box', 'goat jordan fan club premium sticker set waterproof uv protected decal pro shop accessories gifts', 'walk diary disposable gloves dishwashing food grade vinyl plastic alk', '500 pcs 55x 39 disposable waterproof hair cutting capes salons hairdressing barber shop apron home use  coloringtransparent 500pcs', 'aakihi grill gifts men  funny grilling apron dad husband el jefe black bbq waterproof adjustable pockets fathers day large e always hope use products create variety colorful memories customerswe believe small gift add color lives people lovechoose like perhaps fill unexpected happiness']]
+[ 2024-07-09 23:06:42,295  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 23:06:42] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-09 23:06:48,300  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 23:06:48,304  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :   titleDesc
+0     [oov]]
+[ 2024-07-09 23:06:48,304  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 23:06:48,361  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 23:06:48,361  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 23:06:48,366  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 23:06:48] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2024-07-09 23:08:26,712  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/recommendationSystem/src/pipelines/prediction_pipeline.py', reloading]
+[ 2024-07-09 23:08:27,010  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:09:05,390  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:09:07,703  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:09:47,445  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:26:49,468  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:36:58,460  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:38:25,648  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:39:43,323  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:41:21,056  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:41:35,641  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:42:45,961  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:52:05,618  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:54:27,990  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:56:06,736  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:57:03,306  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-09 23:58:37,553  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 00:02:37,267  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 00:05:01,239  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 00:08:14,889  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 00:11:08,353  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 00:13:34,533  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 00:16:12,922  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 00:18:49,386  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 00:19:47,525  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 00:25:18,358  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 00:26:23,591  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 00:42:23,521  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 00:46:03,987  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 15:52:47,784  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 15:54:10,200  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 15:55:03,739  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 15:55:53,932  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 15:56:38,506  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 15:57:23,488  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-10 15:58:19,955  97 werkzeug - INFO -  * Restarting with stat]

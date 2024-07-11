@@ -1,0 +1,96 @@
+[ 2024-07-11 00:34:43,384  97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[ 2024-07-11 00:34:43,384  97 werkzeug - INFO - [33mPress CTRL+C to quit[0m]
+[ 2024-07-11 00:34:43,384  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-11 00:34:44,424  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-11 00:34:44,435  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-11 00:34:51,237  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 00:34:51] "GET /predict HTTP/1.1" 200 -]
+[ 2024-07-11 00:34:53,526  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 00:34:53,537  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                          description
+0  [movie, dinosaurs, people, little, horror, thr...]
+[ 2024-07-11 00:34:53,538  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 00:34:53,818  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 00:34:53,818  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 00:34:53,819  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 00:34:53,819  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 00:34:53,831  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 00:34:53,832  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 00:34:53,832  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 0.18754405 -0.789632   -2.7328324   3.0946634  -2.690498   -0.18204921
+  -0.3837613   2.5755162   1.1848258   0.07997366 -0.37928104  1.3371694
+   0.4835178  -1.0768423  -0.8258082   0.63661706  0.756158    1.1726627
+   2.0729277  -1.1748934  -0.98006564  0.6921027   1.8683665   0.23090042
+   0.5833832  -1.2397722  -1.3462033   0.20500866  0.85556173 -1.0249736
+   2.0367947   0.23246217 -0.48358065 -0.18997109  1.3664503  -0.3881832
+   0.67546874 -0.01882338  0.4897199   0.20994963  0.39863428 -0.11880853
+  -0.2535556   0.06013892 -0.69314414 -0.7002884   0.0672183   0.30356482
+  -0.34677887 -0.62380314 -0.48202264 -0.610522    0.29232126  0.945114
+  -0.7855193   0.44522956 -0.5560284  -0.9112705  -0.09956916  0.6403524
+   0.8244194   0.10002303 -0.10465798  0.6392772  -0.13464688 -0.51662916
+   0.45225602 -0.44232106 -0.9022305  -0.18952958  0.06550684  1.1020916
+   0.5454313   0.20585233  0.03961719 -0.12775663 -0.8447232   0.02265673
+  -1.5585058  -0.23346746  1.098012    0.2009306  -0.32761714 -0.6511142
+  -1.2211988  -0.03699126  0.71845037 -0.7195855  -0.7285066   0.58040094
+   0.34503505 -0.5683948   0.22014514 -0.5613619  -0.55809814  0.43298173
+   0.6390676  -0.05351109  0.62716913 -0.05770205]]]
+[ 2024-07-11 00:34:53,832  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 00:34:58,909  35 COMPONENTS - INFO - VIDEO URLS ARE:--> https://www.imdb.com/video/vi2554053913]
+[ 2024-07-11 00:35:20,984  49 COMPONENTS - INFO - Unnamed: 0.2                                                56157
+Unnamed: 0.1                                                56157
+Unnamed: 0                                                  58860
+title                        Adventure at the Center of the Earth
+genres                            Sci-Fi Horror Adventure Fantasy
+videos                                                         []
+url                         https://www.imdb.com/title/tt0126205/
+poster_url      https://www.imdb.com/title/tt0126205/mediaview...
+storyline       Mexican horror film with a variety of classic ...
+Name: 56157, dtype: object]
+[ 2024-07-11 00:35:20,985  49 COMPONENTS - INFO - Unnamed: 0.2                                                68653
+Unnamed: 0.1                                                68653
+Unnamed: 0                                                  72539
+title                                      The Mister Burger Show
+genres                                     Animation Short Comedy
+videos                                                         []
+url                        https://www.imdb.com/title/tt15511934/
+poster_url      https://www.imdb.com/title/tt15511934/mediavie...
+storyline       The Mister Burger Show is a comedic adult-them...
+Name: 68653, dtype: object]
+[ 2024-07-11 00:35:20,985  49 COMPONENTS - INFO - Unnamed: 0.2                                               214398
+Unnamed: 0.1                                               214398
+Unnamed: 0                                                 242368
+title                                                Terrortory 2
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt6802950/
+poster_url      https://www.imdb.com/title/tt6802950/mediaview...
+storyline       The sequel to the hit anthology film: Four chi...
+Name: 214398, dtype: object]
+[ 2024-07-11 00:35:20,985  49 COMPONENTS - INFO - Unnamed: 0.2                                               134430
+Unnamed: 0.1                                               134430
+Unnamed: 0                                                 147336
+title                                                 Trashtastic
+genres                                                     Horror
+videos                                                         []
+url                         https://www.imdb.com/title/tt5224644/
+poster_url      https://www.imdb.com/title/tt5224644/mediaview...
+storyline       Anthology compilation of of the most Insane, s...
+Name: 134430, dtype: object]
+[ 2024-07-11 00:35:20,985  49 COMPONENTS - INFO - Unnamed: 0.2                                               128144
+Unnamed: 0.1                                               128144
+Unnamed: 0                                                 140032
+title                                 Adventures in Dinosaur City
+genres                                   Adventure Family Fantasy
+videos          [{'link': 'https://www.imdb.com/video/vi322055...
+url                         https://www.imdb.com/title/tt0103621/
+poster_url      https://www.imdb.com/title/tt0103621/mediaview...
+storyline       A scientist's kids are sucked into a TV screen...
+Name: 128144, dtype: object]
+[ 2024-07-11 00:35:20,990  97 werkzeug - INFO - 127.0.0.1 - - [11/Jul/2024 00:35:20] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2024-07-11 00:41:24,075  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/recommendationSystem/src/utils.py', reloading]
+[ 2024-07-11 00:41:24,541  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-11 00:43:07,292  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-11 00:54:11,212  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-11 00:57:34,924  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-11 00:58:46,045  97 werkzeug - INFO -  * Restarting with stat]
+[ 2024-07-11 01:37:11,957  97 werkzeug - INFO -  * Restarting with stat]

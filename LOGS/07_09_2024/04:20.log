@@ -1,0 +1,26 @@
+[ 2024-07-09 04:20:15,661  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 04:20:15,664  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :             titleDesc
+0  [blue, shirt, men]]
+[ 2024-07-09 04:20:15,664  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 04:20:15,820  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 04:20:15,820  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 04:20:15,821  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [titleDesc]
+Index: []]
+[ 2024-07-09 04:20:15,821  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-09 04:20:15,833  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-09 04:20:15,833  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-09 04:20:15,834  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 1.3997135e+00 -2.4796062e+00 -2.7945049e+00  2.3528070e+00
+  -5.1842815e-01  7.1501470e-01  1.4887724e+00 -2.3057848e-02
+   1.1459796e+00  3.4194720e+00  6.8663436e-01 -5.4200304e-01
+   7.7234024e-01  1.3359900e+00 -1.0028132e+00 -2.9887366e-01
+  -9.6783042e-05 -1.2992968e-01  1.9273459e+00 -9.3423045e-01
+   3.2045376e-01 -1.1016665e+00  2.6863001e-02 -1.7352578e-01
+   1.6916949e-01 -8.5933650e-01  8.0184358e-01  9.0436691e-01
+   2.9548377e-01  2.8444862e-01  6.0237741e-01  4.4837999e-01
+  -1.7236491e-01 -1.1419040e+00 -4.7802100e-01 -7.1250921e-01
+  -1.0738554e+00 -1.6864572e+00 -8.0395490e-01  3.8807067e-01
+   5.8591002e-01  5.7276821e-01 -4.0277991e-01  2.0633345e+00
+  -3.3726361e-01 -1.8876315e+00 -3.4948683e-01 -2.1156135e-01
+  -4.5194405e-01 -5.9342116e-01]]]
+[ 2024-07-09 04:20:15,834  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]

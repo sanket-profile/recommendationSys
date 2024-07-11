@@ -1,0 +1,50 @@
+[ 2024-07-09 19:23:34,859  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-09 19:23:34,866  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-09 19:23:38,612  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 19:23:38,622  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :        titleDesc
+0  [blue, shirt]]
+[ 2024-07-09 19:23:38,623  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 19:23:38,791  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 19:23:38,791  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 19:23:38,793  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [titleDesc]
+Index: []]
+[ 2024-07-09 19:23:38,793  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-09 19:23:38,805  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-09 19:23:38,805  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-09 19:23:38,806  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 5.5848684  -0.6535342  -3.3887196   1.3834126   0.22220549  3.0059628
+   2.7595272  -0.46127957  0.5406365   2.533091    0.973883   -0.67153525
+  -0.03914082  0.99224865 -1.310003   -0.14851654  0.13638595  0.22449797
+   1.0988866  -0.40215847  1.059368   -0.6022719   0.4025533   0.03322768
+  -0.1188709  -1.5151331   1.0073597   1.0694262  -0.5308927   0.4324348
+   1.6753933  -0.12063034 -0.90945965 -1.0030919  -0.16129458  0.12321007
+  -2.0414367  -2.550655    0.4250852  -0.36496684  0.07740837  0.59481215
+   1.478532    2.3606436  -0.48233694 -1.8780761   0.1624353  -0.01284474
+  -1.8543279   0.40052593]]]
+[ 2024-07-09 19:23:38,806  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-09 19:23:47,922  61 COMPONENTS - INFO - Found top 10 similar products and they are ['suck shirt xl navy blue', 'john lennon blue black plaid shirt xlarge', 'awdis kids short sleeve cool polo shirt sapphire blue 78', 'sslr mens summer shirts short sleeve aloha shirt hawaiian men small blue rose 168118', 'daupanzees mens pineapple short sleeve orange shirt aloha cotton hawaiian shirts yellow xl', 'yuezoon mens button shirt shortsleeve regularfit blue casual shirts grey large', 'cartoon hands cali tshirt shirts large royal blue', 'rashbi mens blue dress shirt medium', 'sslr mens cotton button short sleeve hawaiian shirt 4xlarge blue 16847', 'daupanzees mens hawaiian flamingos shirts floral printed tropical unisex casual short sleeve aloha vacation button island shirt navy blue xxl']]
+[ 2024-07-09 19:23:47,940  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 19:23:47] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-09 19:24:26,067  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 19:24:26,072  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                 titleDesc
+0  [mens, jeans, denim, ]]
+[ 2024-07-09 19:24:26,072  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 19:24:26,166  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 19:24:26,167  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 19:24:26,168  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [titleDesc]
+Index: []]
+[ 2024-07-09 19:24:26,168  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-09 19:24:26,170  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-09 19:24:26,170  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-09 19:24:26,170  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 1.018451   -3.3739526   0.53434384  2.0992465  -0.15742758  2.6826952
+  -1.764389    1.553333    1.168951    2.9631333  -1.0171458  -0.24362755
+  -1.8586571  -1.988157   -1.6351883  -1.2232513   0.63708895  1.4470546
+   1.364521   -0.19513774  0.09552624 -0.8075428   0.21818385  1.7078861
+   0.91574657 -0.3126147   1.6599075   0.66541713 -0.43086907  0.82935447
+   0.6767282   0.92493355  1.0692432  -0.2501199   0.57338995 -0.9251853
+  -0.60088855  1.319245   -0.37384814 -0.89103687 -0.3440548  -0.91685236
+  -0.14174232 -0.2896176  -0.5896714  -0.01554883 -0.583142    0.43040133
+   0.32698774  0.5412927 ]]]
+[ 2024-07-09 19:24:26,170  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-09 19:24:35,166  61 COMPONENTS - INFO - Found top 10 similar products and they are ['grimgrow jeans men mens skinny ripped distressed destroyed straight fit biker denim pants black 28', 'rustler  mens heavyweight denim regular fit bootcut blue jeans 31x30 dark', 'sarriben mens relaxed regular slim fit ripped washed denim blue jeans', 'qazel vorrlon mens biker moto vintage skinny fit ripped distressed strecth denim jeans 606bluesize 42', 'stitchs jeans mens barfly slim camo denim printed jean', 'raw x mens skinny fit stretch jeans fashion destroyed distressed washed denim jean pants men blackdark wash 32w 32l', 'mens soft stretch denim jeans classic work jean w32l32 blue 32w x 32l', 'fredd marshall mens moto biker skinny washed wrinkled stetchy denim blue jeans w38', 'moonwalk mens elastic white ripped destroyed jeans holes 32', 'heyfanee mens jeans skinny stretch slim fit men denim grey 30']]
+[ 2024-07-09 19:24:35,185  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 19:24:35] "POST /predict HTTP/1.1" 200 -]

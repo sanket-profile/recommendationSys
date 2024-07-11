@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-learn==1.4.2
+mlflow
+dvc
+tensorflow
+matplotlib
+gensim
+nltk
+flask

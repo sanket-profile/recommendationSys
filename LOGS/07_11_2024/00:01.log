@@ -1,0 +1,141 @@
+[ 2024-07-11 00:01:10,203  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-11 00:01:10,207  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :         description
+0  [olive, satchel]]
+[ 2024-07-11 00:01:10,209  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-11 00:01:10,533  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-11 00:01:10,533  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-11 00:01:10,534  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [description]
+Index: []]
+[ 2024-07-11 00:01:10,534  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-11 00:01:10,549  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-11 00:01:10,549  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-11 00:01:10,552  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[-0.93698364  2.2812316  -3.3818908  -0.7850346   4.4046626   1.0889862
+   0.6275643  -0.07994081  0.53636956  0.21861096  0.43864495 -0.04717257
+  -0.4691248  -1.0934492   0.950062    0.6149937  -1.1892679   0.49581426
+   1.824469    0.04024452  2.8905149  -0.7214535   2.8411968  -0.5754873
+  -0.49023846 -1.9127789  -0.56307906  1.8108692   0.20203502 -0.20850393
+  -1.3390487  -0.01729393 -0.5460237   0.97925043  0.561533   -0.02403113
+   0.32534868 -1.852463   -0.78358144 -1.0746251  -1.6388754   0.32688197
+  -0.6509885   0.6653481   0.19873418 -0.6191989   1.3956213   1.4540414
+   1.0852029   0.64464515  0.2294881   0.24030729  1.8172624  -1.1067626
+   0.8398861  -0.4247005  -1.2467668   0.98666555 -0.02884827 -0.0892904
+  -0.72005844 -0.17996396  1.2678745  -1.0592573  -1.9546154   0.443911
+   0.3724261  -0.01266912 -0.2350924   1.3168142  -0.51189244 -1.541739
+  -1.5664008   0.02085043 -0.03790405  1.2822266  -0.3485624   2.686674
+  -0.3140737  -1.1305727  -0.24524169 -0.85555184 -0.53400373  0.64407384
+   0.5382612  -0.5657941   0.6088019   0.58536327 -0.8912869   0.38943616
+   0.18698753  0.6336592  -1.681399    0.58652914  0.43443838  0.25818458
+  -0.37909973  0.43771824 -0.35440123 -0.06508745]]]
+[ 2024-07-11 00:01:10,552  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-11 00:01:36,642  61 COMPONENTS - INFO - Found top 10 similar products and they are {0: Unnamed: 0.2                                               184003
+Unnamed: 0.1                                               184003
+Unnamed: 0                                                 205741
+title                                              Axe Me Another
+genres                              Family Comedy Animation Short
+videos                                                         []
+top_cast        [{"actor":"Charles Carver","character":"Lumber...
+url                         https://www.imdb.com/title/tt0024850/
+poster_url      https://www.imdb.com/title/tt0024850/mediaview...
+storyline       Pierre Bluto, running a logging camp, has thro...
+description     ['family', 'comedy', 'animation', 'short', 'pi...
+Name: 184003, dtype: object, 1: Unnamed: 0.2                                                70200
+Unnamed: 0.1                                                70200
+Unnamed: 0                                                  74237
+title                                                Toreadorable
+genres                                            Animation Short
+videos                                                         []
+top_cast        [{"actor":"Jackson Beck","character":"Bluto","...
+url                         https://www.imdb.com/title/tt0153190/
+poster_url      https://www.imdb.com/title/tt0153190/mediaview...
+storyline       Popeye takes Olive to a bullfight. When she is...
+description     ['animation', 'short', 'popeye', 'takes', 'oli...
+Name: 70200, dtype: object, 2: Unnamed: 0.2                                                 2811
+Unnamed: 0.1                                                 2811
+Unnamed: 0                                                   2820
+title                                         Symphony in Spinach
+genres                              Animation Family Comedy Short
+videos                                                         []
+top_cast        [{"actor":"Jackson Beck","character":"Bluto","...
+url                         https://www.imdb.com/title/tt0152788/
+poster_url      https://www.imdb.com/title/tt0152788/mediaview...
+storyline       Singer Olive Oyl needs an accompanist, and bot...
+description     ['animation', 'family', 'comedy', 'short', 'si...
+Name: 2811, dtype: object, 3: Unnamed: 0.2                                                 6802
+Unnamed: 0.1                                                 6802
+Unnamed: 0                                                   6852
+title                                              Shoein' Hosses
+genres                              Animation Short Comedy Family
+videos                                                         []
+top_cast        [{"actor":"Charles Carver","character":"Singer...
+url                         https://www.imdb.com/title/tt0025783/
+poster_url      https://www.imdb.com/title/tt0025783/mediaview...
+storyline       Wimpy is such a terrible helper that blacksmit...
+description     ['animation', 'short', 'comedy', 'family', 'wi...
+Name: 6802, dtype: object, 4: Unnamed: 0.2                                               217033
+Unnamed: 0.1                                               217033
+Unnamed: 0                                                 245624
+title                                     Let's You and Him Fight
+genres                              Comedy Family Animation Short
+videos                                                         []
+top_cast        [{"actor":"William Costello","character":"Pope...
+url                         https://www.imdb.com/title/tt0025385/
+poster_url      https://www.imdb.com/title/tt0025385/mediaview...
+storyline       Bluto is the boxing champ; Popeye is his chall...
+description     ['comedy', 'family', 'animation', 'short', 'bl...
+Name: 217033, dtype: object, 5: Unnamed: 0.2                                                 2967
+Unnamed: 0.1                                                 2967
+Unnamed: 0                                                   2977
+title                                       The Anvil Chorus Girl
+genres                              Animation Comedy Short Family
+videos                                                         []
+top_cast        [{"actor":"Jackson Beck","character":"Bluto","...
+url                         https://www.imdb.com/title/tt0149688/
+poster_url      https://www.imdb.com/title/tt0149688/mediaview...
+storyline       Popeye and Bluto pass by Olive's blacksmith sh...
+description     ['animation', 'comedy', 'short', 'family', 'po...
+Name: 2967, dtype: object, 6: Unnamed: 0.2                                               133556
+Unnamed: 0.1                                               133556
+Unnamed: 0                                                 146304
+title                                     Beware of Barnacle Bill
+genres              Animation Short Comedy Family Musical Romance
+videos                                                         []
+top_cast        [{"actor":"William Costello","character":"Pope...
+url                         https://www.imdb.com/title/tt0026111/
+poster_url      https://www.imdb.com/title/tt0026111/mediaview...
+storyline       To the classic tune of "Barnacle Bill the Sail...
+description     ['animation', 'short', 'comedy', 'family', 'mu...
+Name: 133556, dtype: object, 7: Unnamed: 0.2                                                50337
+Unnamed: 0.1                                                50337
+Unnamed: 0                                                  52515
+title                                     Kickin' the Conga Round
+genres                      Animation Short Comedy Family Romance
+videos                                                         []
+top_cast        [{"actor":"Margie Hines","character":"Olivia O...
+url                         https://www.imdb.com/title/tt0034940/
+poster_url      https://www.imdb.com/title/tt0034940/mediaview...
+storyline       Shore leave in South America; Bluto muscles in...
+description     ['animation', 'short', 'comedy', 'family', 'ro...
+Name: 50337, dtype: object, 8: Unnamed: 0.2                                               142412
+Unnamed: 0.1                                               142412
+Unnamed: 0                                                 156582
+title                                              Hello How Am I
+genres                              Animation Short Comedy Family
+videos                                                         []
+top_cast        [{"actor":"Margie Hines","character":"Olive Oy...
+url                         https://www.imdb.com/title/tt0031413/
+poster_url      https://www.imdb.com/title/tt0031413/mediaview...
+storyline       Olive invites Popeye over for a hamburger dinn...
+description     ['animation', 'short', 'comedy', 'family', 'ol...
+Name: 142412, dtype: object, 9: Unnamed: 0.2                                               119152
+Unnamed: 0.1                                               119152
+Unnamed: 0                                                 129687
+title                                          Quick on the Vigor
+genres                             Animation Short Comedy Romance
+videos                                                         []
+top_cast        [{"actor":"Jackson Beck","character":"Bluto","...
+url                         https://www.imdb.com/title/tt0152118/
+poster_url      https://www.imdb.com/title/tt0152118/mediaview...
+storyline       Popeye takes Olive to the carnival; while he's...
+description     ['animation', 'short', 'comedy', 'romance', 'p...
+Name: 119152, dtype: object}]

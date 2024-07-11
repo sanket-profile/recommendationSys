@@ -1,0 +1,80 @@
+[ 2024-07-09 23:09:06,544  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-09 23:09:06,550  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-09 23:09:07,569  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/recommendationSystem/src/pipelines/prediction_pipeline.py', reloading]
+[ 2024-07-09 23:09:08,717  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-09 23:09:08,725  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-09 23:09:14,493  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 23:09:14,503  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :   titleDesc
+0     [oov]]
+[ 2024-07-09 23:09:14,503  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 23:09:14,709  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 23:09:14,709  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 23:09:14,722  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 23:09:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2024-07-09 23:09:47,276  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/recommendationSystem/src/pipelines/prediction_pipeline.py', reloading]
+[ 2024-07-09 23:09:48,653  97 werkzeug - WARNING -  * Debugger is active!]
+[ 2024-07-09 23:09:48,670  97 werkzeug - INFO -  * Debugger PIN: 121-992-361]
+[ 2024-07-09 23:09:58,236  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 23:09:58,247  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :          titleDesc
+0  [dining, cloth]]
+[ 2024-07-09 23:09:58,247  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 23:09:58,448  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 23:09:58,448  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 23:09:58,449  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [titleDesc]
+Index: []]
+[ 2024-07-09 23:09:58,449  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-09 23:09:58,460  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-09 23:09:58,460  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-09 23:09:58,461  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 3.9506125  -2.0673509   0.25298724  0.685161    0.8359775   1.9053063
+  -2.1530426  -1.4017069  -0.5951652   1.7293093   0.41357043 -1.9757029
+  -0.26170716 -1.4350997  -2.1841335  -0.8405417  -1.0450183   2.0501204
+  -1.7963021   0.1400417   0.03080382  0.8288328  -0.17310284  0.5982603
+  -0.82680285 -0.08480565 -0.5262978  -0.78104323 -1.1511192  -0.7056506
+  -0.5630007   0.92216367 -0.18152218 -1.6804123   0.56560606  0.9310923
+  -0.26231977 -0.2570101   1.0866319   0.08400034  0.17514624  1.8142688
+   0.43343258 -0.45314407 -0.81468266 -1.1604     -0.4127487  -0.48750833
+  -1.1124779   0.18476884  0.6015899  -1.1051419  -0.70036066  0.03887946
+  -1.0382382  -1.8301886   0.57517993  1.6361828  -0.51810783  0.61395526
+   0.9954719  -0.6806049   0.44006655  0.08447364 -0.99390835  1.4755907
+  -1.159453    1.0133463  -0.1743277  -0.5549276  -0.940013    0.10845728
+   0.8872213   0.04732249  0.7705704  -1.5777462  -0.3498375  -0.01568185
+  -0.42366204  0.48792237  0.18964453  0.93571794 -0.4553443   0.09086786
+   0.8850124  -0.10825097  0.08470907  0.4318277  -0.40326822  1.9771206
+   0.42965287 -0.15846582 -0.2206152   1.190167   -0.23611636 -0.12029413
+  -0.3314448   0.08475999  0.3335694   0.28529003]]]
+[ 2024-07-09 23:09:58,461  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-09 23:10:07,652  61 COMPONENTS - INFO - Found top 10 similar products and they are ['washable  reusable cloth fabric face masks 3pack white', 'reusable face cloth pack 5_mid greylight bluelight blueorange pinkpink', '3 pcs washable resuable breathable 2 layer cloth fabric face madks cag', '10 pack face bandanaskids cloth bandanasfashion protective reusable cotton fabricantidust kidsmulticolor', '3 pack fashion washable reusable cloth modal face mask black', 'laotie 3 ply nonwoven disposable face bandanas cloth covering washable breathable health suitable kids', '3 pack face covering unisex mouth black dust cotton washable reusable cloth adultsusa seller', 'dreamworks trolls kids cloth face masks cotton pack 3 accessory innovations washable reusable nonmedical', 'washable face madks activated carbon filter p 2 5 cloth reusable cotton breathable material sicilian wanderers', 'unisex reusable face cloth washable fabric pack 3_light blue']]
+[ 2024-07-09 23:10:07,673  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 23:10:07] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-09 23:10:48,420  24 COMPONENTS - INFO - Doing text preprocessing]
+[ 2024-07-09 23:10:48,426  31 COMPONENTS - INFO - Text preprocessing done. After text preprocessing X is :                                  titleDesc
+0  [dining, cloth, food, drinks, cleaning]]
+[ 2024-07-09 23:10:48,426  32 COMPONENTS - INFO - Loading the w2vModel]
+[ 2024-07-09 23:10:48,486  36 COMPONENTS - INFO - Loaded w2vModel]
+[ 2024-07-09 23:10:48,486  37 COMPONENTS - INFO - Applying w2vModel on input X]
+[ 2024-07-09 23:10:48,487  42 COMPONENTS - INFO - Applied w2vModel on input X. X = Empty DataFrame
+Columns: [titleDesc]
+Index: []]
+[ 2024-07-09 23:10:48,487  43 COMPONENTS - INFO - Loading the pcaModel]
+[ 2024-07-09 23:10:48,488  47 COMPONENTS - INFO - Loaded pcamodel]
+[ 2024-07-09 23:10:48,488  48 COMPONENTS - INFO - Applying pcamodel on input X]
+[ 2024-07-09 23:10:48,489  53 COMPONENTS - INFO - Applied pcamodel on input X. X = [[ 4.5004363  -2.8207965   0.19328482  0.7608762   0.23993619  1.3708044
+  -2.5903983  -1.162768   -0.88681364  2.3092701  -0.7558939  -0.6711973
+  -0.9067119  -0.57625294 -1.3406833  -0.33470282 -1.2748625   1.4304963
+  -1.079388   -0.74790055  1.3874682   0.08281261 -0.41607702  0.04312804
+   0.48398668 -0.9339531  -0.41881087 -0.87259966 -0.51499593 -0.86000574
+  -0.3638877   1.0095179   0.10910655 -1.0145148   0.05085106  0.26249322
+  -0.54885155 -0.41680446  0.5940049  -0.4782113   0.22965588  1.7665821
+  -0.10798924 -0.90355223 -0.18852492 -1.5355965  -0.54184896 -0.37077624
+  -0.20906554  0.6850649   0.4168599  -1.0045185   0.17578802  0.71311224
+  -0.6465014  -0.9787141  -0.12233162  0.65291715 -0.09653246 -0.53609693
+   0.20984335 -0.32577986  0.18244857  0.4844114  -0.23059617  0.8078888
+  -0.5947806   0.6198134   0.41929883 -0.16430767 -0.151506    0.2076398
+  -0.2200819   0.11619619  0.47103587 -0.54495347 -0.37256464 -0.34281188
+  -0.7391908   0.5632255  -0.35947955  0.64892316  0.03437584 -0.25686044
+   0.39731398  0.25735995  0.3367305   0.25701013 -0.19313176  0.9081143
+  -0.6171691   0.21298069 -0.1689637   0.24505386 -0.5425356   0.02992732
+  -0.04382559  0.31741232  0.04541928  0.14937867]]]
+[ 2024-07-09 23:10:48,489  54 COMPONENTS - INFO - Finding top 10 similar products by calculating cosine similarity]
+[ 2024-07-09 23:10:57,335  61 COMPONENTS - INFO - Found top 10 similar products and they are ['hi ninger magic silicone dishwashing gloves scrub cleaning great washing dishkitchencarbathroom reusable sponge glovesblue', 'idefair magic silicone cleaning gloves kitchen dish washing sponge easy household scrubber rubber tools car pet grooming brush 2 different pairs', 'vanblue bacon grease container 14l strainer iron oil pot keeper storage kitchen cooking storing fats frying oils cleaning brush silver', 'caps keurig kcup cups cleaning brush 04', 'lorelo 2 pairs dishwashing gloves reusable silicone cleaning washing mitts wash sponge scrubbers kitchen bathroom car', 'nitrile gloves medium  100 count powder free rubber disposable latex medical use food servicecooking cleaning', 'magic silicone gloves wash scrubber reusable brush heat resistant kitchen tool cleaning', '100 pcs disposable clear vinyl gloves pet care food handling dental catering', 'houhou  may heatresistant longcuff silicone gloves splashproof scaldproof reusable cleaning purple', 'kitchen cleaning gloves reusable rubber household dishwashing heavy duty 2pairs cloth 2pack long cuff thickening waterproof xlarge']]
+[ 2024-07-09 23:10:57,354  97 werkzeug - INFO - 127.0.0.1 - - [09/Jul/2024 23:10:57] "POST /predict HTTP/1.1" 200 -]
+[ 2024-07-09 23:26:49,267  97 werkzeug - INFO -  * Detected change in '/Users/sanketsaxena/Desktop/recommendationSystem/application.py', reloading]
