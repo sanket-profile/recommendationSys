@@ -1,7 +1,4 @@
 import pickle
-import re
-import bs4
-
 import ast
 import requests
 
@@ -13,65 +10,10 @@ from src.exception import CustomException
 from src.logger import logger
 from sklearn.metrics.pairwise import cosine_similarity
 
-from annoy import AnnoyIndex
-import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
-from annoy import AnnoyIndex
-from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
 import pandas as pd
 
-def calculate_cosine_similarity1(pca_data, X_pca, X_transformed):
-    X_transformed.drop(["top_cast"],axis = 1, inplace = True)
-    X_transformed['videos'] = X_transformed['videos'].fillna('[]')
-    X_transformed['videos'] = X_transformed['videos'].apply(ast.literal_eval)
-    X_transformed['poster_url'] = X_transformed['poster_url'].fillna('')
-    annoy_index = AnnoyIndex(pca_data.shape[1], 'angular')  # 'angular' for cosine similarity approximation
-
-    # Add items to Annoy index
-    for i, vec in enumerate(pca_data):
-        annoy_index.add_item(i, vec)
-
-    annoy_index.build(10)  # 10 trees for better precision, adjust as needed
-
-    similar_items = []
-    onlyTenItems = {}
-
-    # Query vector is X_pca, and we find nearest neighbors in pca_data
-    for i, query_vector in enumerate(X_pca):
-        neighbors = annoy_index.get_nns_by_vector(query_vector, 11)  # Retrieve top 11 (including itself)
-        
-        # Compute cosine similarity and store results
-        for idx in neighbors[1:]:  # Skip itself
-            sim = cosine_similarity([query_vector], [pca_data[idx]])[0, 0]
-            similar_items.append((idx, sim))
-
-    # Sort similar_items by similarity score in descending order
-    similar_items.sort(key=lambda x: x[1], reverse=True)
-
-    # Retrieve top 10 similar items
-    top_10_similar_items = similar_items[:10]
-
-    j = 0
-    for idx, sim in top_10_similar_items:
-        a = X_transformed.iloc[idx]
-        title = a['title']
-        poster_url = scrape_image_url(a['poster_url'])
-        genres = a['genres'] if a['genres'] else ""
-        videos = a['videos'][0]['link'] if a['videos'] else ""
-        storyline = a['storyline'] if not pd.isna(a['storyline']) else a['description']
-
-        onlyTenItems[j] = {
-            "title": title,
-            "poster_url": poster_url,
-            "videos": videos,
-            "genres": genres,
-            "storyline": storyline
-        }
-        j += 1
-
-    return onlyTenItems
 
 
 def scrape_image_url(imdb_url):

@@ -1,7 +1,6 @@
 import os
 import time
 import mlflow
-import gensim
 
 import dagshub
 dagshub.init(repo_owner='sanket-profile', repo_name='recommendationSystem', mlflow=True)
