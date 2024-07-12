@@ -32,6 +32,7 @@ class predictionPipeline():
             logger.info("Loading the w2vModel")
 
             w2vmodel = pickle.load(open("/app/ARTIFACTS/w2vmodel.pkl",'rb'))
+            #w2vmodel = pickle.load(open("/Users/sanketsaxena/Desktop/recommendationSystem/ARTIFACTS/w2vmodel.pkl",'rb'))
 
             logger.info("Loaded w2vModel")
             logger.info("Applying w2vModel on input X")
@@ -43,6 +44,7 @@ class predictionPipeline():
             logger.info("Loading the pcaModel")
 
             pcamodel = pickle.load(open("/app/ARTIFACTS/pcamodel.pkl",'rb'))
+            #pcamodel = pickle.load(open("/Users/sanketsaxena/Desktop/recommendationSystem/ARTIFACTS/pcamodel.pkl",'rb'))
 
             logger.info("Loaded pcamodel")
             logger.info("Applying pcamodel on input X")
@@ -55,6 +57,8 @@ class predictionPipeline():
 
             pc_data = np.load("/app/ARTIFACTS/pcaTransformed.npy")
             x_trans = pd.read_csv("/app/ARTIFACTS/df_Transformed.csv")
+            #pc_data = np.load("/Users/sanketsaxena/Desktop/recommendationSystem/ARTIFACTS/pcaTransformed.npy")
+            #x_trans = pd.read_csv("/Users/sanketsaxena/Desktop/recommendationSystem/ARTIFACTS/df_Transformed.csv")
 
             top_10_similar_items = calculate_cosine_similarity(pca_data=pc_data,X_pca=X_pca,X_transformed=x_trans)
 

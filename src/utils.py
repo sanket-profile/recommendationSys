@@ -1,5 +1,4 @@
 import pickle
-import ast
 import requests
 
 from bs4 import BeautifulSoup
@@ -10,7 +9,6 @@ from src.exception import CustomException
 from src.logger import logger
 from sklearn.metrics.pairwise import cosine_similarity
 
-from sklearn.metrics.pairwise import cosine_similarity
 
 import pandas as pd
 
@@ -45,14 +43,6 @@ def scrape_image_url(imdb_url):
     except Exception as e:
         print(f"Error fetching image URL: {e}")
         return ""
-
-def concatenate_strings(row):
-    str1 = row['title']
-    str2_list = row['description']
-    if str2_list == "[]": 
-        return str1
-    else:
-        return str1 + " " + str2_list[3:]
     
 
 
@@ -68,8 +58,6 @@ def calculate_cosine_similarity(pca_data,X_pca,X_transformed):
     similar_items = []
     onlyTenItems = dict()
     X_transformed.drop(["top_cast"],axis = 1, inplace = True)
-    X_transformed['videos'] = X_transformed['videos'].fillna('[]')
-    X_transformed['videos'] = X_transformed['videos'].apply(ast.literal_eval)
     X_transformed['poster_url'] = X_transformed['poster_url'].fillna('')
     for i in range(len(pca_data)):
         sim = cosine_similarity(pca_data[i].reshape(1, -1), X_pca.reshape(1, -1))[0, 0]
@@ -92,19 +80,10 @@ def calculate_cosine_similarity(pca_data,X_pca,X_transformed):
         else:
             print(a['genres'])
             genres = a['genres']
-        if a['videos'] == []:
-            videos = ""
-        else:
-            videos = a['videos'][0]['link']
         storyline = a['storyline'] if not pd.isna(a['storyline']) else a['description']
-        onlyTenItems[j] = {"title":title,"poster_url":poster_url,"videos":videos,"genres":genres,"storyline":storyline}
+        onlyTenItems[j] = {"title":title,"poster_url":poster_url,"genres":genres,"storyline":storyline}
         j += 1
 
     return onlyTenItems
 
 
-def shortDesc(x):
-  if len(x) > 1000:
-    return x[:1000]
-  else:
-    return x

@@ -1,0 +1,13 @@
+prefix=/Users/sanketsaxena/Desktop/recommendationSystem/.conda
+exec_prefix=/Users/sanketsaxena/Desktop/recommendationSystem/.conda
+libdir=/Users/sanketsaxena/Desktop/recommendationSystem/.conda/lib
+sharedlibdir=/Users/sanketsaxena/Desktop/recommendationSystem/.conda/lib
+includedir=/Users/sanketsaxena/Desktop/recommendationSystem/.conda/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

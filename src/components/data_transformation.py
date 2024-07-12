@@ -6,7 +6,6 @@ import pandas as pd
 
 from src.exception import CustomException
 from src.logger import logger
-from src.utils import shortDesc
 
 import nltk
 from nltk.corpus import stopwords
